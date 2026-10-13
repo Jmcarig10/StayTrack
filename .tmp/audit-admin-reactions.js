@@ -1,0 +1,3 @@
+const ids=['284:5601','284:5720','284:5867','284:5983','284:6086','284:6189','284:6327','284:6430','284:6533','284:6636','284:6751','284:6867','358:5091','358:5295','358:5524','358:5710','358:5922'];
+const all=(n,out=[])=>{out.push(n);if(n.children)for(const c of n.children)all(c,out);return out};const out=[];
+for(const id of ids){const r=figma.currentPage.findAll(n=>n.id===id)[0];if(!r)continue;const a=[];for(const n of all(r)){if(n.reactions?.length){a.push({id:n.id,name:n.name,type:n.type,text:n.type==='TEXT'?n.characters:undefined,reactions:Array.from(n.reactions).map(x=>(x.actions||[]).map(y=>({type:y.type,destinationId:y.destinationId,navigation:y.navigation})))});}}out.push({id,name:r.name,count:a.length,reactions:a.slice(0,80)});}return out;

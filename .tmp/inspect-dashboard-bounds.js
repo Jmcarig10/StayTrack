@@ -1,0 +1,1 @@
+const r=await figma.getNodeByIdAsync('284:5601');const n=await figma.getNodeByIdAsync('284:5616');return {root:{type:r.type,bounds:r.absoluteRenderBounds,x:r.x,y:r.y},source:{type:n.type,bounds:n.absoluteRenderBounds,x:n.x,y:n.y,parent:n.parent?.id}};

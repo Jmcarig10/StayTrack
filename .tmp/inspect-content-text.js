@@ -1,0 +1,1 @@
+const ids=['278:2378','278:2383','278:2394']; const out=[]; for(const id of ids){const n=await figma.getNodeByIdAsync(id); const arr=[]; if(n&&n.findAll) for(const x of n.findAll(y=>y.type==='TEXT')) arr.push({id:x.id,name:x.name,chars:x.characters}); out.push({id,arr});} return out;

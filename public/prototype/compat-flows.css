@@ -1,0 +1,1897 @@
+/* StayTrack prototype: transactional, tenant, profile, and overlay flows.
+   Loaded after styles.css so the live single-hyphen markup maps to the
+   shared design tokens without changing the application shell. */
+
+/* Compatibility modifiers used by the flow markup */
+
+.button.button-primary {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow-xs);
+}
+
+.button.button-primary:hover {
+    border-color: var(--primary-hover);
+    background: var(--primary-hover);
+    box-shadow: var(--shadow-sm);
+}
+
+.button.button-secondary {
+    border-color: var(--border-strong);
+    background: var(--surface);
+    color: var(--slate-700);
+    box-shadow: var(--shadow-xs);
+}
+
+.button.button-secondary:hover {
+    border-color: var(--slate-400);
+    background: var(--slate-50);
+    color: var(--text-strong);
+}
+
+.button.button-ghost {
+    border-color: transparent;
+    background: transparent;
+    color: var(--text-muted);
+}
+
+.button.button-ghost:hover {
+    background: var(--slate-100);
+    color: var(--text-strong);
+}
+
+.button.button-danger {
+    border-color: var(--red-600);
+    background: var(--red-600);
+    color: var(--white);
+    box-shadow: var(--shadow-xs);
+}
+
+.button.button-danger:hover {
+    border-color: var(--red-700);
+    background: var(--red-700);
+}
+
+.button.button-small {
+    min-height: 2.75rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+}
+
+.button.button-large {
+    min-height: 3.125rem;
+    padding: 0.75rem 1.125rem;
+}
+
+.button.button-full {
+    width: 100%;
+}
+
+.badge.badge-success {
+    background: var(--emerald-50);
+    color: var(--emerald-700);
+}
+
+.badge.badge-info {
+    background: var(--blue-50);
+    color: var(--blue-700);
+}
+
+.badge.badge-warning {
+    background: var(--amber-50);
+    color: var(--amber-700);
+}
+
+.badge.badge-danger {
+    background: var(--red-50);
+    color: var(--red-700);
+}
+
+.badge.badge-neutral {
+    background: var(--slate-100);
+    color: var(--slate-600);
+}
+
+.badge.badge-large {
+    min-height: 2rem;
+    padding-inline: var(--space-4);
+    font-size: 0.8125rem;
+}
+
+.tag {
+    display: inline-flex;
+    min-height: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.625rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    white-space: nowrap;
+}
+
+.tag.tag-blue {
+    border-color: var(--blue-100);
+    background: var(--blue-50);
+    color: var(--blue-700);
+}
+
+.tag.tag-green {
+    border-color: var(--emerald-100);
+    background: var(--emerald-50);
+    color: var(--emerald-700);
+}
+
+.tag.tag-slate {
+    border-color: var(--slate-200);
+    background: var(--slate-100);
+    color: var(--slate-700);
+}
+
+.success-text { color: var(--emerald-700) !important; }
+.warning-text { color: var(--amber-700) !important; }
+.danger-text { color: var(--red-700) !important; }
+.muted { color: var(--text-muted) !important; }
+.align-right { text-align: right; }
+
+.avatar.avatar-soft {
+    background: var(--slate-100);
+    color: var(--slate-600);
+}
+
+.avatar.avatar-large {
+    width: 4.5rem;
+    height: 4.5rem;
+    flex-basis: 4.5rem;
+    font-size: 1.25rem;
+}
+
+.summary-icon {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex: 0 0 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: var(--slate-100);
+    color: var(--slate-600);
+}
+
+.summary-icon .icon,
+.notification-icon .icon,
+.success-seal .icon,
+.section-number .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.summary-icon.blue,
+.metric-icon.blue {
+    background: var(--blue-50);
+    color: var(--blue-600);
+}
+
+.summary-icon.green,
+.metric-icon.green {
+    background: var(--emerald-50);
+    color: var(--emerald-600);
+}
+
+.summary-icon.amber,
+.metric-icon.amber {
+    background: var(--amber-50);
+    color: var(--amber-600);
+}
+
+.summary-icon.red,
+.metric-icon.red {
+    background: var(--red-50);
+    color: var(--red-600);
+}
+
+.summary-icon.slate,
+.metric-icon.slate {
+    background: var(--slate-100);
+    color: var(--slate-600);
+}
+
+/* Shared headings and controls for the requested screens */
+
+:is(
+    [data-screen="lease-create"],
+    [data-screen="bills"],
+    [data-screen="payment-create"],
+    [data-screen="payments"],
+    [data-screen="payment-detail"],
+    [data-screen="tenant-dashboard"],
+    [data-screen="profile"]
+) > .page-heading {
+    width: 100%;
+    margin: 0 auto var(--space-8);
+}
+
+:is(
+    [data-screen="lease-create"],
+    [data-screen="bills"],
+    [data-screen="payment-create"],
+    [data-screen="payments"],
+    [data-screen="payment-detail"],
+    [data-screen="tenant-dashboard"],
+    [data-screen="profile"]
+) > .page-heading.heading-with-actions {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-6);
+}
+
+:is(
+    [data-screen="lease-create"],
+    [data-screen="bills"],
+    [data-screen="payment-create"],
+    [data-screen="payments"],
+    [data-screen="payment-detail"],
+    [data-screen="tenant-dashboard"],
+    [data-screen="profile"]
+) > .page-heading h1 {
+    margin-top: var(--space-1);
+    color: var(--text-strong);
+    font-size: clamp(1.75rem, 2.4vw, 2.25rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+}
+
+:is(
+    [data-screen="lease-create"],
+    [data-screen="bills"],
+    [data-screen="payment-create"],
+    [data-screen="payments"],
+    [data-screen="payment-detail"],
+    [data-screen="tenant-dashboard"],
+    [data-screen="profile"]
+) > .page-heading p {
+    max-width: 44rem;
+    margin-top: var(--space-2);
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+.back-link {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: var(--space-2);
+    margin: -0.625rem 0 var(--space-2);
+    padding: 0.5rem 0;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    transition: color var(--duration-fast);
+}
+
+.back-link:hover {
+    color: var(--text-strong);
+}
+
+.back-link .icon,
+.text-link .icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Structured forms */
+
+.form-panel {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+}
+
+[data-screen="lease-create"] > .form-panel {
+    max-width: 64rem;
+    margin-inline: auto;
+}
+
+.form-panel .form-section {
+    padding: var(--space-8);
+    border-bottom: 1px solid var(--border);
+}
+
+.form-panel .form-section + .form-section {
+    margin-top: 0;
+}
+
+.form-panel .form-section.no-border {
+    border-bottom: 0;
+}
+
+.form-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.section-number {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--slate-900);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.form-section-heading h2 {
+    color: var(--text-strong);
+    font-size: 1.0625rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.form-section-heading p {
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-6);
+}
+
+.field.field-wide {
+    grid-column: 1 / -1;
+}
+
+.form-section > .field + .form-grid,
+.form-section > .form-grid + .field,
+.form-section > .field + .field,
+.form-section > .info-callout {
+    margin-top: var(--space-5);
+}
+
+.field > small {
+    display: block;
+    margin-top: var(--space-2);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+
+.currency-field {
+    position: relative;
+}
+
+.currency-field > span {
+    position: absolute;
+    top: 3.125rem;
+    left: 0.875rem;
+    z-index: 1;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.currency-field > input {
+    padding-left: 2rem !important;
+}
+
+.form-panel > .form-actions {
+    margin-top: 0;
+    padding: var(--space-5) var(--space-8);
+    border-top: 0;
+    background: var(--slate-50);
+}
+
+.info-callout {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border: 1px solid var(--blue-100);
+    border-radius: var(--radius-md);
+    background: var(--blue-50);
+    color: var(--blue-900);
+}
+
+.info-callout strong {
+    display: block;
+    color: var(--blue-900);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.info-callout p {
+    margin-top: var(--space-1);
+    color: var(--blue-900);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.info-callout.compact {
+    padding: var(--space-3);
+}
+
+/* Bill and payment list controls */
+
+.metric-grid.compact-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.metric-grid.metric-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mini-stat {
+    display: flex;
+    min-width: 0;
+    min-height: 6rem;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-5);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+}
+
+.mini-stat > span:last-child {
+    min-width: 0;
+}
+
+.mini-stat small,
+.mini-stat strong {
+    display: block;
+}
+
+.mini-stat small {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.mini-stat strong {
+    margin-top: var(--space-1);
+    overflow: hidden;
+    color: var(--text-strong);
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+[data-screen="bills"] > .panel,
+[data-screen="payments"] > .panel {
+    overflow: hidden;
+}
+
+.toolbar {
+    display: flex;
+    min-height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.search-field,
+.select-compact {
+    display: flex;
+    min-width: 0;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: var(--space-2);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text-muted);
+    box-shadow: var(--shadow-xs);
+    transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+.search-field {
+    width: min(100%, 22rem);
+    padding-left: var(--space-3);
+}
+
+.search-field:focus-within,
+.select-compact:focus-within {
+    border-color: var(--blue-600);
+    box-shadow: var(--focus-ring);
+}
+
+.search-field .icon,
+.select-compact .icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    flex: 0 0 1.125rem;
+}
+
+.search-field input,
+.select-compact select {
+    width: 100%;
+    min-width: 0;
+    min-height: 2.625rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text-strong);
+    font-size: 0.875rem;
+    box-shadow: none;
+}
+
+.search-field input {
+    padding: 0.625rem var(--space-3) 0.625rem 0;
+}
+
+.search-field input::placeholder {
+    color: var(--text-subtle);
+}
+
+.select-compact {
+    padding-left: var(--space-3);
+}
+
+.select-compact select {
+    padding: 0.625rem 2rem 0.625rem 0;
+}
+
+.filter-group {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.chip {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.875rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: border-color var(--duration-fast), background-color var(--duration-fast), color var(--duration-fast);
+}
+
+.chip:hover {
+    border-color: var(--slate-400);
+    color: var(--text-strong);
+}
+
+.chip.is-active,
+.chip[aria-pressed="true"] {
+    border-color: var(--slate-900);
+    background: var(--slate-900);
+    color: var(--white);
+}
+
+[data-screen="bills"] .table-wrap,
+[data-screen="payments"] .table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-gutter: stable;
+    -webkit-overflow-scrolling: touch;
+}
+
+[data-screen="bills"] table,
+[data-screen="payments"] table {
+    width: 100%;
+    color: var(--text);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: left;
+}
+
+[data-screen="bills"] table { min-width: 62rem; }
+[data-screen="payments"] table { min-width: 70rem; }
+
+[data-screen="bills"] thead,
+[data-screen="payments"] thead {
+    background: var(--slate-50);
+}
+
+[data-screen="bills"] th,
+[data-screen="payments"] th {
+    height: 2.75rem;
+    padding: 0.75rem var(--space-5);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    line-height: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+[data-screen="bills"] td,
+[data-screen="payments"] td {
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--slate-100);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+[data-screen="bills"] tbody tr,
+[data-screen="payments"] tbody tr {
+    transition: background-color var(--duration-fast);
+}
+
+[data-screen="bills"] tbody tr:hover,
+[data-screen="payments"] tbody tr:hover {
+    background: var(--slate-50);
+}
+
+[data-screen="bills"] tbody tr:last-child td,
+[data-screen="payments"] tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+[data-screen="bills"] td > small,
+[data-screen="payments"] td > small,
+.person-cell small {
+    display: block;
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.person-cell {
+    display: inline-flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.person-cell > span:last-child {
+    min-width: 0;
+}
+
+.pagination {
+    display: flex;
+    min-height: 4.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+.pagination > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.pagination button {
+    display: inline-flex;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+}
+
+.pagination button:hover:not(:disabled) {
+    border-color: var(--slate-400);
+    color: var(--text-strong);
+}
+
+.pagination button.is-current,
+.pagination button[aria-current="page"] {
+    border-color: var(--slate-900);
+    background: var(--slate-900);
+    color: var(--white);
+}
+
+/* Payment entry and bill summary */
+
+.payment-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(19rem, 22rem);
+    gap: var(--space-6);
+    align-items: start;
+}
+
+.payment-layout > * {
+    min-width: 0;
+}
+
+.bill-summary {
+    position: sticky;
+    top: calc(var(--topbar-height) + var(--space-6));
+}
+
+.bill-summary .panel-header h2,
+.tenant-lease-card .panel-header h2,
+.tenant-content-grid .panel-header h2 {
+    color: var(--text-strong);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.bill-summary .panel-header p,
+.tenant-lease-card .panel-header p,
+.tenant-content-grid .panel-header p {
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.bill-summary > dl,
+.receipt-side > dl {
+    margin: 0;
+    padding: var(--space-3) var(--space-6);
+}
+
+.bill-summary > dl > div,
+.receipt-side > dl > div {
+    display: flex;
+    min-height: 3.25rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    border-bottom: 1px solid var(--slate-100);
+}
+
+.bill-summary > dl > div:last-child,
+.receipt-side > dl > div:last-child {
+    border-bottom: 0;
+}
+
+.bill-summary dt,
+.receipt-side dt {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+.bill-summary dd,
+.receipt-side dd {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 0.875rem;
+    font-weight: 800;
+    text-align: right;
+}
+
+.bill-summary .summary-balance,
+.receipt-side .summary-balance {
+    margin-inline: calc(var(--space-3) * -1);
+    padding-inline: var(--space-3);
+    border-radius: var(--radius-sm);
+    background: var(--slate-50);
+}
+
+.bill-summary > .info-callout {
+    margin: 0 var(--space-6) var(--space-6);
+}
+
+/* Payment detail / receipt */
+
+.receipt-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.65fr);
+    gap: var(--space-6);
+    max-width: 64rem;
+    margin-inline: auto;
+    align-items: start;
+}
+
+.receipt-layout > * {
+    min-width: 0;
+}
+
+.receipt-card {
+    padding: var(--space-8);
+}
+
+.receipt-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.success-seal {
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+    border: 1px solid var(--emerald-100);
+    border-radius: var(--radius-pill);
+    background: var(--emerald-50);
+    color: var(--emerald-600);
+    box-shadow: 0 0 0 0.5rem var(--emerald-50);
+}
+
+.success-seal .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.receipt-status > strong {
+    margin: var(--space-2) 0 var(--space-3);
+    color: var(--text-strong);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 1.1;
+}
+
+.section-divider {
+    height: 1px;
+    margin: var(--space-8) 0;
+    background: var(--border);
+}
+
+.receipt-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-8);
+    margin: 0;
+}
+
+.receipt-details > div {
+    min-width: 0;
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--slate-100);
+}
+
+.receipt-details dt,
+.receipt-note > span {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.receipt-details dd {
+    margin: var(--space-2) 0 0;
+    overflow-wrap: anywhere;
+    color: var(--text-strong);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+}
+
+.receipt-note {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background: var(--slate-50);
+}
+
+.receipt-note p {
+    margin-top: var(--space-2);
+    color: var(--text);
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+.receipt-side {
+    padding: var(--space-6);
+}
+
+.receipt-side h2 {
+    margin-top: var(--space-2);
+    color: var(--text-strong);
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.75rem;
+}
+
+.receipt-side > p {
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+.receipt-side > dl {
+    margin-top: var(--space-5);
+    padding-inline: 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.receipt-side > .info-callout {
+    margin-top: var(--space-5);
+}
+
+.receipt-side > .button {
+    margin-top: var(--space-5);
+}
+
+/* Tenant portal */
+
+.tenant-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.tenant-summary-card {
+    min-width: 0;
+    padding: var(--space-6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+}
+
+.tenant-summary-card .metric-top > span:first-child {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+}
+
+.tenant-summary-card > strong {
+    display: block;
+    margin-top: var(--space-5);
+    color: var(--text-strong);
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 2.125rem;
+}
+
+.tenant-summary-card > p {
+    margin: var(--space-1) 0 var(--space-4);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.tenant-summary-card > .muted,
+.tenant-summary-card > .success-text {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.tenant-lease-card {
+    margin-top: var(--space-6);
+}
+
+.lease-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: var(--space-6);
+}
+
+.lease-detail-grid > div {
+    min-width: 0;
+    padding-inline: var(--space-5);
+    border-right: 1px solid var(--border);
+}
+
+.lease-detail-grid > div:first-child { padding-left: 0; }
+.lease-detail-grid > div:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.lease-detail-grid span,
+.lease-detail-grid strong,
+.lease-detail-grid small {
+    display: block;
+}
+
+.lease-detail-grid span {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.lease-detail-grid strong {
+    margin-top: var(--space-2);
+    color: var(--text-strong);
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+}
+
+.lease-detail-grid small {
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+
+.lease-progress {
+    padding: 0 var(--space-6) var(--space-6);
+}
+
+.lease-progress > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-2);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.lease-progress > div strong {
+    color: var(--text-strong);
+}
+
+.lease-progress > span {
+    display: block;
+    height: 0.5rem;
+    overflow: hidden;
+    border-radius: var(--radius-pill);
+    background: var(--slate-100);
+}
+
+.lease-progress i {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--blue-600);
+}
+
+.tenant-content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+.tenant-bill-list > div,
+.payment-timeline > div {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 4.75rem;
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--slate-100);
+}
+
+.tenant-bill-list > div:last-child,
+.payment-timeline > div:last-child {
+    border-bottom: 0;
+}
+
+.tenant-bill-list span,
+.payment-timeline span {
+    min-width: 0;
+}
+
+.tenant-bill-list strong,
+.tenant-bill-list small,
+.payment-timeline strong,
+.payment-timeline small {
+    display: block;
+}
+
+.tenant-bill-list strong,
+.payment-timeline strong {
+    color: var(--text-strong);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.tenant-bill-list small,
+.payment-timeline small {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.tenant-bill-list > div > span:last-child,
+.payment-timeline > div > strong:last-child {
+    text-align: right;
+}
+
+.timeline-dot {
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-inline: 0.375rem;
+    border: 0.1875rem solid var(--emerald-100);
+    border-radius: var(--radius-pill);
+    background: var(--emerald-600);
+    box-sizing: content-box;
+}
+
+.tenant-help {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    padding: var(--space-5) var(--space-6);
+    border: 1px solid var(--blue-100);
+    border-radius: var(--radius-lg);
+    background: var(--blue-50);
+}
+
+.tenant-help > div {
+    min-width: 0;
+    flex: 1;
+}
+
+.tenant-help strong {
+    color: var(--blue-900);
+    font-size: 0.875rem;
+}
+
+.tenant-help p {
+    margin-top: var(--space-1);
+    overflow-wrap: anywhere;
+    color: var(--blue-900);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+/* Profile */
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 16rem minmax(0, 1fr);
+    gap: var(--space-6);
+    max-width: 68rem;
+    margin-inline: auto;
+    align-items: start;
+}
+
+.profile-layout > * {
+    min-width: 0;
+}
+
+.profile-nav {
+    position: sticky;
+    top: calc(var(--topbar-height) + var(--space-6));
+    padding: var(--space-3);
+}
+
+.profile-avatar-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-5) var(--space-3) var(--space-6);
+    text-align: center;
+}
+
+.profile-avatar-block strong,
+.profile-avatar-block small {
+    display: block;
+}
+
+.profile-avatar-block strong {
+    margin-top: var(--space-3);
+    color: var(--text-strong);
+    font-size: 0.9375rem;
+}
+
+.profile-avatar-block small {
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.profile-nav > a {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: var(--space-3);
+    padding: 0.625rem var(--space-3);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    transition: background-color var(--duration-fast), color var(--duration-fast);
+}
+
+.profile-nav > a + a {
+    margin-top: var(--space-1);
+}
+
+.profile-nav > a .icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    flex: 0 0 1.125rem;
+}
+
+.profile-nav > a:hover {
+    background: var(--slate-50);
+    color: var(--text-strong);
+}
+
+.profile-nav > a.is-active,
+.profile-nav > a[aria-current="true"] {
+    background: var(--slate-900);
+    color: var(--white);
+}
+
+.profile-content {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.profile-content > * {
+    scroll-margin-top: calc(var(--topbar-height) + var(--space-6));
+}
+
+.danger-zone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+    padding: var(--space-6);
+    border: 1px solid var(--red-200);
+    border-radius: var(--radius-lg);
+    background: var(--red-50);
+}
+
+.danger-zone > div {
+    min-width: 0;
+}
+
+.danger-zone h2 {
+    color: var(--red-700);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.danger-zone p {
+    max-width: 38rem;
+    margin-top: var(--space-1);
+    color: var(--red-700);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+/* Notifications, destructive confirmation, and feedback */
+
+#notification-panel .overlay-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    min-height: 4.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+#notification-panel .overlay-header h2 {
+    margin-top: 0.125rem;
+    color: var(--text-strong);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.375rem;
+}
+
+#notification-panel .notification-item {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 5.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    background: var(--surface);
+    color: var(--text);
+    text-align: left;
+}
+
+#notification-panel .notification-item:hover {
+    background: var(--slate-50);
+}
+
+#notification-panel .notification-item.is-unread {
+    background: var(--blue-50);
+}
+
+#notification-panel .notification-item.is-unread:hover {
+    background: var(--blue-100);
+}
+
+.notification-icon {
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--slate-100);
+    color: var(--slate-600);
+}
+
+.notification-icon.danger {
+    background: var(--red-50);
+    color: var(--red-600);
+}
+
+.notification-icon.success {
+    background: var(--emerald-50);
+    color: var(--emerald-600);
+}
+
+.notification-icon.info {
+    background: var(--blue-50);
+    color: var(--blue-600);
+}
+
+#notification-panel .notification-item > span:nth-child(2) {
+    min-width: 0;
+    padding-right: var(--space-3);
+}
+
+#notification-panel .notification-item strong,
+#notification-panel .notification-item small,
+#notification-panel .notification-item time {
+    display: block;
+}
+
+#notification-panel .notification-item strong {
+    color: var(--text-strong);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+#notification-panel .notification-item small {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+
+#notification-panel .notification-item time {
+    margin-top: var(--space-2);
+    color: var(--text-subtle);
+    font-size: 0.6875rem;
+    line-height: 1rem;
+}
+
+#notification-panel > .button-full {
+    min-height: 3.25rem;
+    border-width: 1px 0 0;
+    border-color: var(--border);
+    border-radius: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 130;
+    display: grid;
+    visibility: hidden;
+    padding: var(--space-6);
+    place-items: center;
+    overflow: auto;
+    background: rgb(15 23 42 / 0.58);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-normal) var(--ease-standard), visibility var(--duration-normal) var(--ease-standard);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.modal-backdrop.is-open,
+.modal-backdrop[data-active="true"],
+.modal-backdrop[aria-hidden="false"] {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-backdrop > .modal {
+    position: relative;
+    inset: auto;
+    z-index: auto;
+    display: block;
+    visibility: visible;
+    width: min(100%, 30rem);
+    min-height: 0;
+    max-height: calc(100vh - 3rem);
+    padding: var(--space-8);
+    overflow: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    pointer-events: auto;
+    transform: translateY(0.75rem) scale(0.98);
+    transition: opacity var(--duration-normal) var(--ease-out), transform var(--duration-normal) var(--ease-out);
+}
+
+.modal-backdrop.is-open > .modal,
+.modal-backdrop[data-active="true"] > .modal,
+.modal-backdrop[aria-hidden="false"] > .modal {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.modal-backdrop .modal-close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+}
+
+.modal-backdrop .modal-icon {
+    margin-bottom: var(--space-5);
+}
+
+.modal-backdrop .modal-icon.danger {
+    background: var(--red-50);
+    color: var(--red-600);
+}
+
+.modal-backdrop .modal-icon .icon {
+    width: 1.375rem;
+    height: 1.375rem;
+}
+
+.modal-backdrop .modal h2 {
+    padding-right: var(--space-8);
+    color: var(--text-strong);
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.75rem;
+}
+
+.modal-backdrop .modal > p {
+    margin-top: var(--space-2);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.modal-backdrop .modal-actions {
+    margin: var(--space-6) calc(var(--space-8) * -1) calc(var(--space-8) * -1);
+    padding: var(--space-4) var(--space-8);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+#success-toast > div {
+    min-width: 0;
+    flex: 1;
+}
+
+#success-toast > div strong {
+    display: block;
+    color: var(--text-strong);
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1.25rem;
+}
+
+#success-toast > div p {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+
+#success-toast > .icon-button {
+    flex: 0 0 2.75rem;
+}
+
+/* Responsive flow layouts */
+
+@media (max-width: 63.999rem) {
+    .metric-grid.compact-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .metric-grid.metric-grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .payment-layout,
+    .receipt-layout,
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .bill-summary,
+    .profile-nav {
+        position: static;
+    }
+
+    .profile-nav {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-2);
+    }
+
+    .profile-avatar-block {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: var(--space-3);
+        padding: var(--space-3);
+        text-align: left;
+    }
+
+    .profile-avatar-block strong {
+        margin-top: 0;
+    }
+
+    .profile-nav > a + a {
+        margin-top: 0;
+    }
+
+    .tenant-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tenant-summary-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .tenant-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 47.999rem) {
+    :is(
+        [data-screen="lease-create"],
+        [data-screen="bills"],
+        [data-screen="payment-create"],
+        [data-screen="payments"],
+        [data-screen="payment-detail"],
+        [data-screen="tenant-dashboard"],
+        [data-screen="profile"]
+    ) > .page-heading {
+        margin-bottom: var(--space-6);
+    }
+
+    :is(
+        [data-screen="lease-create"],
+        [data-screen="bills"],
+        [data-screen="payment-create"],
+        [data-screen="payments"],
+        [data-screen="payment-detail"]
+    ) > .page-heading.heading-with-actions {
+        align-items: stretch;
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    :is(
+        [data-screen="lease-create"],
+        [data-screen="bills"],
+        [data-screen="payments"],
+        [data-screen="payment-detail"]
+    ) > .page-heading.heading-with-actions > .button {
+        width: 100%;
+    }
+
+    :is(
+        [data-screen="lease-create"],
+        [data-screen="bills"],
+        [data-screen="payment-create"],
+        [data-screen="payments"],
+        [data-screen="payment-detail"],
+        [data-screen="tenant-dashboard"],
+        [data-screen="profile"]
+    ) > .page-heading h1 {
+        font-size: 1.625rem;
+        line-height: 2rem;
+    }
+
+    [data-screen="lease-create"] > .page-heading .badge-large {
+        align-self: flex-start;
+    }
+
+    .form-panel .form-section,
+    .receipt-card,
+    .receipt-side {
+        padding: var(--space-5);
+    }
+
+    .form-panel > .form-actions {
+        padding: var(--space-4) var(--space-5);
+    }
+
+    .form-grid,
+    .receipt-details {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section-heading {
+        gap: var(--space-3);
+        margin-bottom: var(--space-5);
+    }
+
+    .toolbar {
+        align-items: stretch;
+        flex-direction: column;
+        padding: var(--space-4);
+    }
+
+    .search-field {
+        width: 100%;
+    }
+
+    .toolbar .filter-group {
+        width: calc(100% + var(--space-4) * 2);
+        margin-inline: calc(var(--space-4) * -1);
+        padding: 0 var(--space-4) var(--space-1);
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scrollbar-width: thin;
+    }
+
+    .toolbar .toolbar-actions {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .toolbar .select-compact {
+        width: 100%;
+    }
+
+    [data-screen="bills"] th,
+    [data-screen="payments"] th,
+    [data-screen="bills"] td,
+    [data-screen="payments"] td {
+        padding-right: var(--space-4);
+        padding-left: var(--space-4);
+    }
+
+    .pagination {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: var(--space-4);
+    }
+
+    .pagination > div {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: var(--space-1);
+    }
+
+    .pagination button {
+        flex: 1 0 auto;
+    }
+
+    .receipt-status > strong {
+        font-size: 2rem;
+    }
+
+    .section-divider {
+        margin-block: var(--space-6);
+    }
+
+    .tenant-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tenant-summary-card:last-child {
+        grid-column: auto;
+    }
+
+    .tenant-summary-card {
+        padding: var(--space-5);
+    }
+
+    .tenant-summary-card > strong {
+        margin-top: var(--space-4);
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+    }
+
+    .lease-detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-5) 0;
+        padding: var(--space-5);
+    }
+
+    .lease-detail-grid > div,
+    .lease-detail-grid > div:first-child,
+    .lease-detail-grid > div:last-child {
+        padding-inline: var(--space-4);
+        border-right: 0;
+    }
+
+    .lease-detail-grid > div:nth-child(odd) {
+        padding-left: 0;
+        border-right: 1px solid var(--border);
+    }
+
+    .lease-progress {
+        padding: 0 var(--space-5) var(--space-5);
+    }
+
+    .tenant-bill-list > div,
+    .payment-timeline > div {
+        padding-inline: var(--space-4);
+    }
+
+    .tenant-help {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: var(--space-5);
+    }
+
+    .tenant-help > .button {
+        width: 100%;
+    }
+
+    .profile-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-nav > a + a {
+        margin-top: var(--space-1);
+    }
+
+    .profile-avatar-block {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    .profile-avatar-block .avatar {
+        grid-row: 1 / 3;
+    }
+
+    .danger-zone {
+        align-items: stretch;
+        flex-direction: column;
+        gap: var(--space-4);
+        padding: var(--space-5);
+    }
+
+    .danger-zone .button {
+        width: 100%;
+    }
+
+    .modal-backdrop {
+        align-items: end;
+        padding: var(--space-3);
+    }
+
+    .modal-backdrop > .modal {
+        width: 100%;
+        max-height: calc(100vh - var(--space-6));
+        padding: var(--space-6);
+        border-radius: var(--radius-lg);
+        transform: translateY(1.25rem);
+    }
+
+    .modal-backdrop .modal-actions {
+        margin: var(--space-6) calc(var(--space-6) * -1) calc(var(--space-6) * -1);
+        padding-inline: var(--space-6);
+    }
+}
+
+@media (max-width: 27.499rem) {
+    .metric-grid.compact-metrics {
+        gap: var(--space-3);
+    }
+
+    .mini-stat {
+        min-height: 5.5rem;
+        padding: var(--space-4);
+    }
+
+    .mini-stat .summary-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        flex-basis: 2.25rem;
+    }
+
+    .mini-stat strong {
+        font-size: 1rem;
+    }
+
+    .tenant-bill-list > div,
+    .payment-timeline > div {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .tenant-bill-list > div > span:last-child,
+    .payment-timeline > div > strong:last-child {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .modal-backdrop .modal-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (forced-colors: active) {
+    .button.button-primary,
+    .button.button-secondary,
+    .button.button-danger,
+    .badge,
+    .tag,
+    .chip,
+    .summary-icon,
+    .notification-icon,
+    .success-seal {
+        border: 1px solid currentColor;
+    }
+}
+
+@media print {
+    [data-screen="payment-detail"].is-active {
+        display: block !important;
+    }
+
+    [data-screen="payment-detail"] > .page-heading .button,
+    [data-screen="payment-detail"] .receipt-side > .button {
+        display: none !important;
+    }
+
+    .receipt-layout {
+        grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.65fr);
+        gap: var(--space-4);
+        max-width: none;
+    }
+
+    .receipt-card,
+    .receipt-side {
+        break-inside: avoid;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,1 @@
+const s=await figma.getNodeByIdAsync('284:5601');const d=await figma.getNodeByIdAsync('284:5720');const a={type:'NODE',destinationId:d.id,navigation:'NAVIGATE',transition:null,resetVideoPosition:false};await s.setReactionsAsync([{trigger:{type:'ON_CLICK'},actions:[a]}]);return {source:s.id,reactions:s.reactions};

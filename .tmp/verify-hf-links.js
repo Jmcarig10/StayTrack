@@ -1,0 +1,2 @@
+const ids=['283:1920','283:1926','283:1932','283:1938','283:1944','283:1948','283:1955','283:1966','277:1122','278:3982','283:1883','283:1898'];
+const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);out.push({id,name:n&&n.name,reactions:n&&n.reactions?n.reactions.length:0,destination:n&&n.reactions&&n.reactions[0]&&n.reactions[0].actions&&n.reactions[0].actions[0]?n.reactions[0].actions[0].destinationId:null});}return out;

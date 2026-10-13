@@ -1,0 +1,1 @@
+const ids=['277:1415','278:1825','278:2163','278:2501','278:2839','278:3177','278:3681'];const all=x=>{const a=[x];if(x.children)for(const c of x.children)a.push(...all(c));return a;};return ids.map(id=>{const n=figma.getNodeByIdAsync;return null;});

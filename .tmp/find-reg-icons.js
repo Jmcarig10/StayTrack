@@ -1,0 +1,1 @@
+const n=await figma.getNodeByIdAsync('278:3963'); const all=x=>{const a=[x];if(x.children)for(const c of x.children)a.push(...all(c));return a;}; return all(n).filter(x=>x.name==='Icon / Eye'||x.name==='Icon / Arrow').map(x=>({id:x.id,type:x.type,x:x.x,y:x.y,w:x.width,h:x.height,parent:x.parent?.id}));

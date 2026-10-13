@@ -1,0 +1,1 @@
+const ids=['284:5601','284:5720','284:5867','284:5983','284:6086','284:6189','284:6327','284:6430','284:6533','284:6636','284:6751','284:6867','358:5091','358:5295','358:5524','358:5710'];const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);if(!n)continue;n.resizeWithoutConstraints(1366,768);out.push({id,width:n.width,height:n.height});}return out;

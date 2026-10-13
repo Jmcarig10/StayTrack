@@ -1,0 +1,1 @@
+const p=figma.currentPage;const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o};return all(p).filter(n=>n.type==='TEXT'&&/join staytrack|create your account|set up your account/i.test(n.characters||'')).map(n=>{let q=n;const c=[];while(q){c.push({id:q.id,name:q.name,type:q.type});q=q.parent;}return {id:n.id,text:n.characters,chain:c}});

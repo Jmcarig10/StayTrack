@@ -1,0 +1,1 @@
+const out=[]; for(const p of figma.root.children){ for(const n of p.children||[]){ if(/Landing|Authentication\/Login|Flow 2|PROTOTYPE/i.test(n.name)) out.push({page:p.name,id:n.id,name:n.name,type:n.type,x:n.x,y:n.y,w:n.width,h:n.height,reactions:n.reactions?.length||0}); }} return out;

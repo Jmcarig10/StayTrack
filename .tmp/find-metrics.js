@@ -1,0 +1,1 @@
+const n=await figma.getNodeByIdAsync('277:1041'); const out=[]; if(n&&n.findAll) for(const x of n.findAll(y=>y.type==='TEXT' && ['Total apartments','Occupied units','Active tenants','September revenue'].includes(y.characters))) out.push({id:x.id,name:x.name,chars:x.characters,parent:x.parent?.id,parentName:x.parent?.name}); return out;

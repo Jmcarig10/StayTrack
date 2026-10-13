@@ -1,0 +1,10 @@
+const get=async id=>await figma.getNodeByIdAsync(id);
+const link=async(a,b)=>{const f=await get(a),t=await get(b);if(!f||!t)throw new Error(`${a}->${b} missing`);await f.setReactionsAsync([{trigger:{type:'ON_CLICK'},actions:[{type:'NODE',destinationId:t.id,navigation:'NAVIGATE',transition:{type:'DISSOLVE',duration:.2,easing:{type:'EASE_IN_AND_OUT'}}}]}]);return {from:a,to:b};};
+const landing=await get('275:746'),login=await get('275:799'),register=await get('278:3944'),tenant=await get('283:1899');
+if(landing)landing.name='FLOW 2 / Landing / Welcome';
+const out=[];
+out.push(await link('275:782','275:799'));
+out.push(await link('275:790','278:3944'));
+out.push(await link('275:853','283:1899'));
+out.push(await link('275:857','278:3944'));
+return out;

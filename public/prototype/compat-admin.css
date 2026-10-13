@@ -1,0 +1,1671 @@
+/*
+ * StayTrack admin prototype compatibility layer
+ * Loaded after styles.css. These rules intentionally target admin screens only;
+ * the shared application shell, authentication, tenant portal, and profile keep
+ * their own layout rules.
+ */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) {
+    width: 100%;
+    max-width: calc(var(--content-max) + (var(--space-8) * 2));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Page headings and actions */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading {
+    margin-bottom: var(--space-8);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading.heading-with-actions {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .heading-with-actions > div:first-child {
+    min-width: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading h1 {
+    margin-top: var(--space-1);
+    color: var(--text-strong);
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading p {
+    max-width: 42rem;
+    margin-top: var(--space-2);
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .back-link {
+    display: inline-flex;
+    min-height: 2.25rem;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-3);
+    padding: 0;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    transition: color var(--duration-fast);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .back-link:hover {
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .back-link .icon,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .text-link .icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Actual button modifiers used by index.html */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-primary {
+    background: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow-xs);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-primary:hover {
+    background: var(--primary-hover);
+    box-shadow: var(--shadow-sm);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-secondary {
+    border-color: var(--border-strong);
+    background: var(--surface);
+    color: var(--slate-700);
+    box-shadow: var(--shadow-xs);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-secondary:hover {
+    border-color: var(--slate-400);
+    background: var(--slate-50);
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-ghost {
+    color: var(--text-muted);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-ghost:hover {
+    background: var(--slate-100);
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-small {
+    min-height: 2.25rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button.button-full {
+    width: 100%;
+}
+
+/* Metrics */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-grid {
+    margin-bottom: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-card {
+    isolation: isolate;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-card::after {
+    position: absolute;
+    z-index: -1;
+    top: -3rem;
+    right: -3rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: var(--radius-pill);
+    background: var(--slate-50);
+    content: "";
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-card .metric-value {
+    display: block;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-icon.slate,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon.slate {
+    background: var(--slate-100);
+    color: var(--slate-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-icon.green,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon.green {
+    background: var(--emerald-50);
+    color: var(--emerald-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-icon.blue,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon.blue {
+    background: var(--blue-50);
+    color: var(--blue-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-icon.amber,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon.amber {
+    background: var(--amber-50);
+    color: var(--amber-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon.red {
+    background: var(--red-50);
+    color: var(--red-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-foot {
+    display: flex;
+    min-height: 1.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-foot button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: 0;
+    background: transparent;
+    color: var(--slate-700);
+    font-size: inherit;
+    font-weight: 700;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-foot button:hover {
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-foot .icon {
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .trend.positive,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .success-text {
+    color: var(--emerald-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .warning-text {
+    color: var(--amber-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .danger-text {
+    color: var(--red-700);
+}
+
+/* Dashboard panels, finance summary, occupancy chart, and recent leases */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .dashboard-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(17rem, 0.85fr);
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .dashboard-grid-lower {
+    grid-template-columns: minmax(17rem, 0.85fr) minmax(0, 2fr);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .panel-header h2 {
+    color: var(--text-strong);
+    font-size: 1rem;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+    line-height: 1.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .panel-header p {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .text-link {
+    gap: var(--space-1);
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .finance-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .finance-panel > .button {
+    width: auto;
+    margin: auto var(--space-6) var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-list {
+    padding: var(--space-2) var(--space-6) var(--space-5);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-list > div {
+    display: flex;
+    min-height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    border-bottom: 1px solid var(--slate-100);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-list > div:last-child {
+    border-bottom: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-list > div > span {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--text);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-list > div > strong {
+    color: var(--text-strong);
+    font-size: 1rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex: 0 0 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--slate-100);
+    color: var(--slate-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-icon .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .occupancy-body {
+    display: grid;
+    grid-template-columns: 8.75rem minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-6);
+    padding: var(--space-8) var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .donut {
+    position: relative;
+    display: grid;
+    width: 8.75rem;
+    height: 8.75rem;
+    place-items: center;
+    border-radius: var(--radius-pill);
+    background: conic-gradient(var(--slate-900) 0 79%, var(--emerald-600) 79% 91%, var(--amber-600) 91% 96%, var(--red-600) 96% 100%);
+    box-shadow: inset 0 0 0 1px var(--border);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .donut::before {
+    position: absolute;
+    inset: 1rem;
+    border-radius: inherit;
+    background: var(--surface);
+    content: "";
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .donut > span {
+    position: relative;
+    display: grid;
+    text-align: center;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .donut strong {
+    color: var(--text-strong);
+    font-size: 1.5rem;
+    letter-spacing: -0.04em;
+    line-height: 1.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .donut small {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend li strong {
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend-dot.occupied { background: var(--slate-900); }
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend-dot.available { background: var(--emerald-600); }
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend-dot.reserved { background: var(--amber-600); }
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend-dot.maintenance { background: var(--red-600); }
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a {
+    display: grid;
+    width: 100%;
+    min-height: 4.75rem;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--slate-100);
+    background: var(--surface);
+    color: var(--text);
+    text-align: left;
+    transition: background-color var(--duration-fast);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button:last-child,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a:last-child {
+    border-bottom: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button:hover,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a:hover {
+    background: var(--slate-50);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button > span:nth-child(2),
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a > span:nth-child(2) {
+    display: grid;
+    min-width: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list strong {
+    color: var(--text-strong);
+    font-size: 0.875rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list small {
+    overflow: hidden;
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button > .icon:last-child,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a > .icon:last-child {
+    width: 1rem;
+    height: 1rem;
+    color: var(--text-subtle);
+    transform: rotate(-90deg);
+}
+
+/* Compact finance/property metrics */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .compact-metrics {
+    gap: var(--space-4);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-xs);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat > span:last-child {
+    display: grid;
+    min-width: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat small {
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat strong {
+    overflow: hidden;
+    margin-top: 0.125rem;
+    color: var(--text-strong);
+    font-size: 1.125rem;
+    letter-spacing: -0.025em;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Toolbars, filters, data tables, record cells, and pagination */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .toolbar {
+    display: flex;
+    min-height: 4.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .search-field {
+    position: relative;
+    display: flex;
+    width: min(100%, 22rem);
+    min-width: 14rem;
+    align-items: center;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .search-field > .icon {
+    position: absolute;
+    z-index: 1;
+    left: var(--space-3);
+    width: 1rem;
+    height: 1rem;
+    color: var(--text-subtle);
+    pointer-events: none;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .search-field input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.625rem var(--space-4) 0.625rem 2.375rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    outline: 0;
+    background: var(--surface);
+    color: var(--text-strong);
+    font-size: 0.8125rem;
+    box-shadow: var(--shadow-xs);
+    transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .search-field input:focus {
+    border-color: var(--slate-500);
+    box-shadow: 0 0 0 3px var(--slate-100);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .search-field input::placeholder {
+    color: var(--text-subtle);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .filter-group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .chip {
+    min-height: 2.25rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: color var(--duration-fast), background-color var(--duration-fast), border-color var(--duration-fast);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .chip:hover {
+    border-color: var(--border-strong);
+    background: var(--slate-50);
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .chip.is-active {
+    border-color: var(--slate-900);
+    background: var(--slate-900);
+    color: var(--white);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .select-compact {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .select-compact > .icon {
+    position: absolute;
+    z-index: 1;
+    left: var(--space-3);
+    width: 1rem;
+    height: 1rem;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .select-compact select {
+    min-height: 2.75rem;
+    padding: 0.625rem 2.25rem 0.625rem 2.25rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    outline: 0;
+    background-color: var(--surface);
+    color: var(--text);
+    font-size: 0.8125rem;
+    font-weight: 650;
+    box-shadow: var(--shadow-xs);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap table {
+    width: 100%;
+    color: var(--text);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    text-align: left;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap thead {
+    background: var(--slate-50);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap th {
+    height: 2.75rem;
+    padding: 0.75rem var(--space-5);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    line-height: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap td {
+    height: 4.25rem;
+    padding: var(--space-3) var(--space-5);
+    border-bottom: 1px solid var(--slate-100);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap tbody tr {
+    transition: background-color var(--duration-fast);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap tbody tr:hover {
+    background: var(--slate-50);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap tbody tr.clickable-row {
+    cursor: pointer;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap td > strong,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .person-cell strong,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .unit-cell strong {
+    display: block;
+    color: var(--text-strong);
+    font-weight: 700;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap td > small,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .person-cell small,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .unit-cell small {
+    display: block;
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    line-height: 1rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .person-cell,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .unit-cell {
+    display: inline-flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .person-cell > span:last-child,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .unit-cell > span:last-child {
+    min-width: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .unit-icon {
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex: 0 0 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--slate-100);
+    color: var(--slate-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .unit-icon .icon {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .align-right {
+    text-align: right;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) td.table-actions {
+    display: table-cell;
+    text-align: right;
+    white-space: nowrap;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) td.table-actions > .icon-button {
+    display: inline-flex;
+    margin-left: var(--space-1);
+    vertical-align: middle;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .danger-action {
+    color: var(--red-600);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .danger-action:hover {
+    background: var(--red-50);
+    color: var(--red-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination {
+    display: flex;
+    min-height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination button {
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    padding: 0.375rem 0.625rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination button:hover:not(:disabled) {
+    border-color: var(--border-strong);
+    background: var(--slate-50);
+    color: var(--text-strong);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination button.is-current {
+    border-color: var(--slate-900);
+    background: var(--slate-900);
+    color: var(--white);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination button:disabled {
+    color: var(--text-subtle);
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/* Badges and payment-method tags used by the prototype markup */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .badge.badge-success {
+    background: var(--emerald-50);
+    color: var(--emerald-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .badge.badge-info {
+    background: var(--blue-50);
+    color: var(--blue-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .badge.badge-warning {
+    background: var(--amber-50);
+    color: var(--amber-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .badge.badge-danger {
+    background: var(--red-50);
+    color: var(--red-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .badge.badge-neutral {
+    background: var(--slate-100);
+    color: var(--slate-600);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .badge.badge-large {
+    min-height: 2rem;
+    padding: 0.375rem 0.875rem;
+    font-size: 0.8125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .tag {
+    display: inline-flex;
+    min-height: 1.625rem;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.6875rem;
+    font-weight: 750;
+    line-height: 1rem;
+    white-space: nowrap;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .tag.tag-blue {
+    background: var(--blue-50);
+    color: var(--blue-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .tag.tag-green {
+    background: var(--emerald-50);
+    color: var(--emerald-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .tag.tag-slate {
+    background: var(--slate-100);
+    color: var(--slate-700);
+}
+
+/* Apartment detail */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+    padding: var(--space-6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, var(--surface) 0%, var(--slate-50) 100%);
+    box-shadow: var(--shadow-xs);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-identity {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-icon {
+    display: inline-flex;
+    width: 4rem;
+    height: 4rem;
+    flex: 0 0 4rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background: var(--slate-900);
+    color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-icon .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-identity h2 {
+    margin-top: 0.125rem;
+    color: var(--text-strong);
+    font-size: 1.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-identity p {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-grid {
+    grid-template-columns: minmax(0, 2fr) minmax(17rem, 0.8fr);
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-main,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-side {
+    padding: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .value-grid > div {
+    min-width: 0;
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    background: var(--slate-50);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .value-grid span,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list dt {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .value-grid strong {
+    display: block;
+    margin-top: var(--space-1);
+    color: var(--text-strong);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .section-divider {
+    height: 1px;
+    margin: var(--space-6) 0;
+    background: var(--border);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-main h3,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-side h3 {
+    color: var(--text-strong);
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list {
+    margin-top: var(--space-3);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list > div {
+    display: flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5);
+    border-bottom: 1px solid var(--slate-100);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list > div:last-child {
+    border-bottom: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list dd {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .body-copy {
+    margin-top: var(--space-3);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .amenity-list {
+    display: grid;
+    gap: var(--space-2);
+    margin: var(--space-4) 0 var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .amenity-list > div {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--slate-100);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .amenity-list > div:last-child {
+    border-bottom: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .amenity-list > div > span:last-child {
+    display: grid;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .amenity-list strong {
+    color: var(--text-strong);
+    font-size: 0.8125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .amenity-list small {
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+}
+
+/* Forms and numbered sections */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-panel {
+    width: min(100%, 62rem);
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-panel-compact {
+    width: 100%;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-section {
+    padding: var(--space-8);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-panel > .form-section + .form-section {
+    margin-top: 0;
+    border-top: 1px solid var(--border);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-section.no-border {
+    border: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-section-heading {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .section-number {
+    display: inline-grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: var(--radius-pill);
+    background: var(--slate-900);
+    color: var(--white);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-section-heading h2 {
+    color: var(--text-strong);
+    font-size: 1.0625rem;
+    letter-spacing: -0.015em;
+    line-height: 1.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-section-heading p {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .field-wide {
+    grid-column: 1 / -1;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-grid + .field-wide,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .field-wide + .info-callout {
+    margin-top: var(--space-5);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .field > small {
+    display: block;
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    line-height: 1rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .currency-field {
+    position: relative;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .currency-field > span {
+    position: absolute;
+    z-index: 1;
+    bottom: 0.6875rem;
+    left: var(--space-4);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    pointer-events: none;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .currency-field > input {
+    padding-left: 2rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .info-callout {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border: 1px solid var(--blue-200);
+    border-radius: var(--radius-md);
+    background: var(--blue-50);
+    color: var(--blue-900);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .info-callout.compact {
+    padding: var(--space-3);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .info-callout strong {
+    color: inherit;
+    font-size: 0.8125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .info-callout p {
+    margin-top: 0.125rem;
+    color: inherit;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-panel > .form-actions {
+    margin: 0;
+    padding: var(--space-5) var(--space-8);
+    border-top: 1px solid var(--border);
+    background: var(--slate-50);
+}
+
+/* Clickable quick-create tenant panel */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create > summary {
+    list-style: none;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create > summary::-webkit-details-marker {
+    display: none;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-card {
+    position: absolute;
+    z-index: 30;
+    top: calc(100% + var(--space-3));
+    right: 0;
+    width: min(36rem, calc(100vw - var(--space-8)));
+    padding: var(--space-6);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-lg);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-heading {
+    margin-bottom: var(--space-5);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-heading h2 {
+    color: var(--text-strong);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-heading p {
+    margin-top: var(--space-1);
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-card > .field-wide {
+    margin-top: var(--space-5);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-card > .form-actions {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+}
+
+/* Payment create and receipt/detail layouts */
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .payment-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(18rem, 0.75fr);
+    align-items: start;
+    gap: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary .panel-header {
+    align-items: flex-start;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary dl,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side dl {
+    margin: 0;
+    padding: var(--space-3) var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary dl > div,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side dl > div {
+    display: flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    border-bottom: 1px solid var(--slate-100);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary dt,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side dt {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary dd,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side dd {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary .summary-balance,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side .summary-balance {
+    margin-top: var(--space-2);
+    border-bottom: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary .summary-balance dd,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side .summary-balance dd {
+    font-size: 1.125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary > .info-callout {
+    margin: var(--space-4) var(--space-6) var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(18rem, 0.7fr);
+    align-items: start;
+    gap: var(--space-6);
+    width: min(100%, 64rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-card {
+    padding: var(--space-8);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .success-seal {
+    display: inline-flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+    border-radius: var(--radius-pill);
+    background: var(--emerald-50);
+    color: var(--emerald-700);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .success-seal .icon {
+    width: 1.625rem;
+    height: 1.625rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-status > strong {
+    margin: var(--space-1) 0 var(--space-3);
+    color: var(--text-strong);
+    font-size: 2rem;
+    letter-spacing: -0.04em;
+    line-height: 2.5rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5) var(--space-8);
+    margin: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-details > div {
+    min-width: 0;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-details dt {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-details dd {
+    margin: var(--space-1) 0 0;
+    color: var(--text-strong);
+    font-size: 0.875rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-note {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    background: var(--slate-50);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-note > span {
+    color: var(--text-muted);
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-note p {
+    margin-top: var(--space-1);
+    color: var(--text);
+    font-size: 0.8125rem;
+    line-height: 1.35rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side {
+    padding-bottom: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > .eyebrow,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > h2,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > p {
+    margin-right: var(--space-6);
+    margin-left: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > .eyebrow {
+    display: block;
+    margin-top: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > h2 {
+    margin-top: var(--space-1);
+    color: var(--text-strong);
+    font-size: 1.125rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > p {
+    margin-top: 0.125rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > .info-callout,
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > .button {
+    width: calc(100% - (var(--space-6) * 2));
+    margin-right: var(--space-6);
+    margin-left: var(--space-6);
+}
+
+:where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side > .info-callout {
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+/* Tablet */
+
+@media (max-width: 63.999rem) {
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .dashboard-grid,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .dashboard-grid-lower,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-grid,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .payment-layout,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-layout {
+        grid-template-columns: 1fr;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-side,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side {
+        width: 100%;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .value-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile, including the 390px prototype frame */
+
+@media (max-width: 47.999rem) {
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) {
+        max-width: none;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading {
+        margin-bottom: var(--space-6);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading.heading-with-actions {
+        align-items: stretch;
+        flex-direction: column;
+        gap: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading h1 {
+        font-size: 1.625rem;
+        line-height: 2rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .page-heading p {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .heading-with-actions > .button,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .heading-with-actions > .quick-create > summary {
+        width: 100%;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button-row {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button-row .button {
+        width: 100%;
+        padding-right: var(--space-3);
+        padding-left: var(--space-3);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-grid.compact-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-3);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-card {
+        padding: var(--space-5);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .metric-foot {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: var(--space-3);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat .summary-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        flex-basis: 2.25rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .mini-stat strong {
+        font-size: 1rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .panel-header {
+        min-height: 4.25rem;
+        padding: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .panel-header .text-link {
+        min-height: 2.25rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .summary-list {
+        padding-right: var(--space-4);
+        padding-left: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .finance-panel > .button {
+        margin-right: var(--space-4);
+        margin-bottom: var(--space-4);
+        margin-left: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .occupancy-body {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: var(--space-6) var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .legend {
+        width: min(100%, 16rem);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: var(--space-3);
+        padding: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button > .badge,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a > .badge {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > button > .icon:last-child,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .lease-list > a > .icon:last-child {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .toolbar {
+        min-height: 0;
+        align-items: stretch;
+        flex-direction: column;
+        padding: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .search-field {
+        width: 100%;
+        min-width: 0;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .filter-group {
+        width: 100%;
+        padding-bottom: 0.125rem;
+        overflow-x: auto;
+        scrollbar-width: thin;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .toolbar-actions {
+        display: grid;
+        width: 100%;
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .toolbar-actions .select-compact,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .toolbar-actions select {
+        width: 100%;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap table {
+        min-width: 44rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .dashboard-grid .table-wrap table {
+        min-width: 38rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap th,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .table-wrap td {
+        padding-right: var(--space-4);
+        padding-left: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .pagination > div {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-hero {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: var(--space-5);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        flex-basis: 3.5rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-main,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-side {
+        padding: var(--space-5);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-section {
+        padding: var(--space-5);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-panel > .form-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: var(--space-4) var(--space-5);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .quick-create-card {
+        position: fixed;
+        z-index: 80;
+        top: calc(var(--topbar-height) + var(--space-3));
+        right: var(--space-4);
+        bottom: var(--space-4);
+        left: var(--space-4);
+        width: auto;
+        max-height: calc(100vh - var(--topbar-height) - (var(--space-3) + var(--space-4)));
+        padding: var(--space-5);
+        overflow-y: auto;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-card {
+        padding: var(--space-5);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-details {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-status > strong {
+        font-size: 1.75rem;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary dl,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .receipt-side dl {
+        padding-right: var(--space-4);
+        padding-left: var(--space-4);
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .bill-summary > .info-callout {
+        margin-right: var(--space-4);
+        margin-left: var(--space-4);
+    }
+}
+
+@media (max-width: 27.499rem) {
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .button-row,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .form-panel > .form-actions,
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .toolbar-actions {
+        grid-template-columns: 1fr;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list > div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: var(--space-1);
+        padding: var(--space-3) 0;
+    }
+
+    :where(#prototype-main > .screen:not([data-screen="tenant-dashboard"]):not([data-screen="profile"])) .detail-list dd {
+        text-align: left;
+    }
+}

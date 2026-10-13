@@ -1,0 +1,1 @@
+const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o;};const nodes=all(figma.root);return nodes.filter(n=>(n.type==='SECTION'||n.type==='FRAME')&&/^(03|04|FLOW 3|FLOW 4|Admin Flow|Tenant Flow|NEW FLOW \/ (Admin|Tenant))/i.test(n.name||'')).map(n=>({id:n.id,type:n.type,name:n.name,parent:n.parent&&n.parent.name}));

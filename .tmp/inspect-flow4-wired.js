@@ -1,0 +1,1 @@
+const ids=['166:602','166:715','166:804','170:893','170:987','170:1419','170:1086','219:2814','219:2817','219:2965','219:2968','219:2828','219:2979','219:2824','219:2975','219:2894','219:2896','166:842','170:1133','170:1294'];const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);out.push({id,exists:!!n,name:n&&n.name,reactions:n&&n.reactions});}return out;

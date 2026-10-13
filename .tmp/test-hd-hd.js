@@ -1,0 +1,2 @@
+const a=await figma.getNodeByIdAsync('284:5735');const b=await figma.getNodeByIdAsync('284:5720');
+try{const action={type:'NODE',destinationId:b.id,navigation:'NAVIGATE',transition:{type:'DISSOLVE',duration:.2,easing:{type:'EASE_IN_AND_OUT'}},resetVideoPosition:false};await a.setReactionsAsync([{action,actions:[action],trigger:{type:'ON_CLICK'}}]);return JSON.stringify({ok:true,reactions:a.reactions.length});}catch(e){return JSON.stringify({ok:false,error:String(e)});}

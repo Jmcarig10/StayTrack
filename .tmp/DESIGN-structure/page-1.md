@@ -1,0 +1,7034 @@
+# Structure: Page 1
+
+- **Dashboard** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **layout-dashboard** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **building** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **users** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **file-text** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **receipt** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **credit-card** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 2 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **user** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+              - **chevron-down** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **log-out** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 332×50 · vertical stack, gap 4px · 2 children
+        - **Dashboard** · `TEXT` · 129×29 · “Dashboard”
+        - **Overview of your apartment management system.** · `TEXT` · 332×17 · “Overview of your apartment management system.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **bell** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 14×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row, gap 8px · 1 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×678 · vertical stack, gap 24px, padding 21/32/21/32px · 3 children
+      - **Frame** · `FRAME` · 1042×66 · horizontal row · 2 children
+        - **Frame** · `FRAME` · 320×66 · vertical stack, gap 4px · 3 children
+          - **Admin Portal** · `TEXT` · 88×17 · “Admin Portal”
+          - **Welcome back, StayTrack Admin** · `TEXT` · 320×24 · “Welcome back, StayTrack Admin”
+          - **Here's what's happening in StayTrack today.** · `TEXT` · 293×17 · “Here's what's happening in StayTrack today.”
+        - **Frame** · `FRAME` · 325×37 · horizontal row, gap 12px · 2 children
+          - **Frame** · `FRAME` · 146×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+            - **plus** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 9×9
+            - **Create Lease** · `TEXT` · 90×17 · “Create Lease”
+          - **Frame** · `FRAME` · 167×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+            - **credit-card** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 13×9
+            - **Record Payment** · `TEXT` · 111×17 · “Record Payment”
+      - **Frame** · `FRAME` · 1042×162 · horizontal row, gap 16px · 4 children
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Total Apartments** · `TEXT` · 116×17 · “Total Apartments”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **building** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 13×17
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **3** · `TEXT` · 22×39 · “3”
+            - **View apartments →** · `TEXT` · 111×15 · “View apartments →”
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Occupied Units** · `TEXT` · 103×17 · “Occupied Units”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **check** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 13×9
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **2** · `TEXT` · 21×39 · “2”
+            - **1 available** · `TEXT` · 59×15 · “1 available”
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Active Tenants** · `TEXT` · 100×17 · “Active Tenants”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **users** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 17×15
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **8** · `TEXT` · 22×39 · “8”
+            - **View tenants →** · `TEXT` · 89×15 · “View tenants →”
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Monthly Revenue** · `TEXT` · 117×17 · “Monthly Revenue”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **credit-card** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 17×12
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **₱0.00** · `TEXT` · 101×39 · “₱0.00”
+            - **View payments →** · `TEXT` · 102×15 · “View payments →”
+      - **Frame** · `FRAME` · 1042×360 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 642×155 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 594×19 · horizontal row · 2 children
+            - **Recent Payments** · `TEXT` · 137×19 · “Recent Payments”
+            - **View all** · `TEXT` · 53×17 · “View all”
+          - **Frame** · `FRAME` · 594×72 · horizontal row, padding 16px · 2 children
+            - **Frame** · `FRAME` · 207×40 · horizontal row, gap 12px · 2 children
+              - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+                - **user** · `FRAME` · 20×20
+                  - _…and 1 more_
+              - **Frame** · `FRAME` · 155×34 · vertical stack, gap 2px · 2 children
+                - **JOHN MICHAEL CARIG** · `TEXT` · 155×17 · “JOHN MICHAEL CARIG”
+                - **Unit A-101 • Jul 29, 2026** · `TEXT` · 143×15 · “Unit A-101 • Jul 29, 2026”
+            - **Frame** · `FRAME` · 146×23 · horizontal row, gap 16px · 2 children
+              - **₱1,000.00** · `TEXT` · 84×19 · “₱1,000.00”
+              - **Frame** · `FRAME` · 46×23 · horizontal row, padding 4/10/4/10px · 1 children
+                - **Paid** · `TEXT` · 26×15 · “Paid”
+        - **Frame** · `FRAME` · 380×316 · vertical stack, gap 20px, padding 24px · 3 children
+          - **Frame** · `FRAME` · 135×38 · vertical stack, gap 4px · 2 children
+            - **Billing Overview** · `TEXT` · 127×19 · “Billing Overview”
+            - **Current financial status.** · `TEXT` · 135×15 · “Current financial status.”
+          - **Frame** · `FRAME` · 332×153 · vertical stack, gap 12px · 3 children
+            - **Frame** · `FRAME` · 332×43 · horizontal row, padding 12px · 2 children
+              - **Frame** · `FRAME` · 116×17 · horizontal row, gap 8px · 2 children
+                - **file-text** · `FRAME` · 16×16
+                  - _…and 1 more_
+                - **Active Leases** · `TEXT` · 92×17 · “Active Leases”
+              - **3** · `TEXT` · 11×19 · “3”
+            - **Frame** · `FRAME` · 332×43 · horizontal row, padding 12px · 2 children
+              - **Frame** · `FRAME` · 149×17 · horizontal row, gap 8px · 2 children
+                - **alert-circle** · `FRAME` · 16×16
+                  - _…and 1 more_
+                - **Unpaid/Partial Bills** · `TEXT` · 125×17 · “Unpaid/Partial Bills”
+              - **2** · `TEXT` · 11×19 · “2”
+            - **Frame** · `FRAME` · 332×43 · horizontal row, padding 12px · 2 children
+              - **Frame** · `FRAME` · 111×17 · horizontal row, gap 8px · 2 children
+                - **x-circle** · `FRAME` · 16×16
+                  - _…and 1 more_
+                - **Overdue Bills** · `TEXT` · 87×17 · “Overdue Bills”
+              - **0** · `TEXT` · 12×19 · “0”
+          - **Frame** · `FRAME` · 142×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+            - **receipt** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 11×13
+            - **Manage Bills** · `TEXT` · 86×17 · “Manage Bills”
+- **Apartments** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **layout-dashboard** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **building** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **users** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **file-text** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **receipt** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **credit-card** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 2 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **user** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+              - **chevron-down** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **log-out** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 301×50 · vertical stack, gap 4px · 2 children
+        - **Apartments** · `TEXT` · 141×29 · “Apartments”
+        - **Manage apartment units and their availability.** · `TEXT` · 301×17 · “Manage apartment units and their availability.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **bell** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 14×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row, gap 8px · 1 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×379 · vertical stack, gap 24px, padding 32px · 2 children
+      - **Frame** · `FRAME` · 1042×37 · horizontal row · 2 children
+        - **Apartment Units** · `TEXT` · 146×22 · “Apartment Units”
+        - **Frame** · `FRAME` · 160×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+          - **plus** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+          - **Add Apartment** · `TEXT` · 104×17 · “Add Apartment”
+      - **Frame** · `FRAME` · 1042×254 · vertical stack · 4 children
+        - **Frame** · `FRAME` · 1042×47 · horizontal row, padding 16/24/16/24px · 6 children
+          - **UNIT** · `TEXT` · 150×15 · “UNIT”
+          - **TYPE** · `TEXT` · 190×15 · “TYPE”
+          - **FLOOR** · `TEXT` · 150×15 · “FLOOR”
+          - **MONTHLY RENT** · `TEXT` · 190×15 · “MONTHLY RENT”
+          - **STATUS** · `TEXT` · 170×15 · “STATUS”
+          - **ACTIONS** · `TEXT` · 192×15 · “ACTIONS”
+        - **Frame** · `FRAME` · 1042×69 · horizontal row, padding 16/24/16/24px · 6 children
+          - **A-002** · `TEXT` · 150×17 · “A-002”
+          - **2 Bedroom** · `TEXT` · 190×17 · “2 Bedroom”
+          - **1st floor** · `TEXT` · 150×17 · “1st floor”
+          - **$10,000.00** · `TEXT` · 190×17 · “$10,000.00”
+          - **Frame** · `FRAME` · 170×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 73×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Available** · `TEXT` · 53×15 · “Available”
+          - **Frame** · `FRAME` · 192×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×69 · horizontal row, padding 16/24/16/24px · 6 children
+          - **A-001** · `TEXT` · 150×17 · “A-001”
+          - **2 Bedroom** · `TEXT` · 190×17 · “2 Bedroom”
+          - **1st floor** · `TEXT` · 150×17 · “1st floor”
+          - **$8,000.00** · `TEXT` · 190×17 · “$8,000.00”
+          - **Frame** · `FRAME` · 170×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 76×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Occupied** · `TEXT` · 56×15 · “Occupied”
+          - **Frame** · `FRAME` · 192×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×69 · horizontal row, padding 16/24/16/24px · 6 children
+          - **A-101** · `TEXT` · 150×17 · “A-101”
+          - **1 Bedroom** · `TEXT` · 190×17 · “1 Bedroom”
+          - **1st floor** · `TEXT` · 150×17 · “1st floor”
+          - **$800.00** · `TEXT` · 190×17 · “$800.00”
+          - **Frame** · `FRAME` · 170×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 76×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Occupied** · `TEXT` · 56×15 · “Occupied”
+          - **Frame** · `FRAME` · 192×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+- **Tenants** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **layout-dashboard** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **building** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **users** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **file-text** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **receipt** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **credit-card** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 2 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **user** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+              - **chevron-down** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **log-out** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 255×50 · vertical stack, gap 4px · 2 children
+        - **Tenants** · `TEXT` · 95×29 · “Tenants”
+        - **Manage registered apartment tenants.** · `TEXT` · 255×17 · “Manage registered apartment tenants.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **bell** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 14×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row, gap 8px · 1 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×620 · vertical stack, gap 24px, padding 32px · 2 children
+      - **Frame** · `FRAME` · 1042×37 · horizontal row · 2 children
+        - **Tenant Records** · `TEXT` · 138×22 · “Tenant Records”
+        - **Frame** · `FRAME` · 134×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+          - **plus** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+          - **Add Tenant** · `TEXT` · 78×17 · “Add Tenant”
+      - **Frame** · `FRAME` · 1042×474 · vertical stack · 8 children
+        - **Frame** · `FRAME` · 1042×47 · horizontal row, padding 16/24/16/24px · 5 children
+          - **TENANT** · `TEXT` · 260×15 · “TENANT”
+          - **CONTACT** · `TEXT` · 180×15 · “CONTACT”
+          - **EMAIL** · `TEXT` · 260×15 · “EMAIL”
+          - **STATUS** · `TEXT` · 120×15 · “STATUS”
+          - **ACTIONS** · `TEXT` · 174×15 · “ACTIONS”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Tenant 1** · `TEXT` · 58×17 · “Tenant 1”
+            - **Account: tenant1@gmail.com** · `TEXT` · 152×13 · “Account: tenant1@gmail.com”
+          - **09275875043** · `TEXT` · 180×17 · “09275875043”
+          - **tenant1@gmail.com** · `TEXT` · 260×17 · “tenant1@gmail.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Owner** · `TEXT` · 45×17 · “Owner”
+            - **Account: admin@gmail.com** · `TEXT` · 145×13 · “Account: admin@gmail.com”
+          - **N/A** · `TEXT` · 180×17 · “N/A”
+          - **admin@gmail.com** · `TEXT` · 260×17 · “admin@gmail.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Mickaela Jade Carig** · `TEXT` · 137×17 · “Mickaela Jade Carig”
+            - **Account: mikay@gmail.com** · `TEXT` · 143×13 · “Account: mikay@gmail.com”
+          - **09275875043** · `TEXT` · 180×17 · “09275875043”
+          - **mikay@gmail.com** · `TEXT` · 260×17 · “mikay@gmail.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Emily Carig** · `TEXT` · 77×17 · “Emily Carig”
+            - **Account: emz@gmail.com** · `TEXT` · 135×13 · “Account: emz@gmail.com”
+          - **N/A** · `TEXT` · 180×17 · “N/A”
+          - **emz@gmail.com** · `TEXT` · 260×17 · “emz@gmail.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Juan Dela Cruz** · `TEXT` · 103×17 · “Juan Dela Cruz”
+            - **Account: jayboy@gmail.com** · `TEXT` · 147×13 · “Account: jayboy@gmail.com”
+          - **N/A** · `TEXT` · 180×17 · “N/A”
+          - **jayboy@gmail.com** · `TEXT` · 260×17 · “jayboy@gmail.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Juanito Mico** · `TEXT` · 87×17 · “Juanito Mico”
+            - **Account: jose.carig.up@phinmaed.com** · `TEXT` · 203×13 · “Account: jose.carig.up@phinmaed.com”
+          - **09275875043** · `TEXT` · 180×17 · “09275875043”
+          - **jose.carig.up@phinmaed.com** · `TEXT` · 260×17 · “jose.carig.up@phinmaed.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+        - **Frame** · `FRAME` · 1042×61 · horizontal row, padding 12/24/12/24px · 5 children
+          - **Frame** · `FRAME` · 260×32 · vertical stack, gap 2px · 2 children
+            - **Jm Carig** · `TEXT` · 61×17 · “Jm Carig”
+            - **Account: carigjohnmichaelscarig@gmail.com** · `TEXT` · 232×13 · “Account: carigjohnmichaelscarig@gmail.com”
+          - **09275875043** · `TEXT` · 180×17 · “09275875043”
+          - **carigjohnmichaelscarig@gmail.com** · `TEXT` · 260×17 · “carigjohnmichaelscarig@gmail.com”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+          - **Frame** · `FRAME` · 174×37 · horizontal row, gap 8px · 1 children
+            - **Frame** · `FRAME` · 66×37 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **View** · `TEXT` · 34×17 · “View”
+- **Leases** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **layout-dashboard** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **building** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **users** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **file-text** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **receipt** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **credit-card** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 2 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **user** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+              - **chevron-down** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **log-out** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 231×50 · vertical stack, gap 4px · 2 children
+        - **Lease Management** · `TEXT` · 231×29 · “Lease Management”
+        - **Manage tenant apartment leases.** · `TEXT` · 223×17 · “Manage tenant apartment leases.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **bell** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 14×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row, gap 8px · 1 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×337 · vertical stack, gap 24px, padding 32px · 2 children
+      - **Frame** · `FRAME` · 1042×37 · horizontal row · 2 children
+        - **Active Leases** · `TEXT` · 124×22 · “Active Leases”
+        - **Frame** · `FRAME` · 146×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+          - **plus** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+          - **Create Lease** · `TEXT` · 90×17 · “Create Lease”
+      - **Frame** · `FRAME` · 1042×212 · vertical stack · 4 children
+        - **Frame** · `FRAME` · 1042×47 · horizontal row, padding 16/24/16/24px · 6 children
+          - **TENANT** · `TEXT` · 230×15 · “TENANT”
+          - **APARTMENT** · `TEXT` · 160×15 · “APARTMENT”
+          - **START DATE** · `TEXT` · 160×15 · “START DATE”
+          - **END DATE** · `TEXT` · 160×15 · “END DATE”
+          - **MONTHLY RENT** · `TEXT` · 150×15 · “MONTHLY RENT”
+          - **STATUS** · `TEXT` · 182×15 · “STATUS”
+        - **Frame** · `FRAME` · 1042×55 · horizontal row, padding 16/24/16/24px · 6 children
+          - **Juanito Mico** · `TEXT` · 230×17 · “Juanito Mico”
+          - **Unit A-001** · `TEXT` · 160×17 · “Unit A-001”
+          - **Aug 01, 2026** · `TEXT` · 160×17 · “Aug 01, 2026”
+          - **Aug 01, 2027** · `TEXT` · 160×17 · “Aug 01, 2027”
+          - **$8,000.00** · `TEXT` · 150×17 · “$8,000.00”
+          - **Frame** · `FRAME` · 182×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+        - **Frame** · `FRAME` · 1042×55 · horizontal row, padding 16/24/16/24px · 6 children
+          - **Jm Carig** · `TEXT` · 230×17 · “Jm Carig”
+          - **Unit A-101** · `TEXT` · 160×17 · “Unit A-101”
+          - **Jul 29, 2026** · `TEXT` · 160×17 · “Jul 29, 2026”
+          - **Aug 29, 2026** · `TEXT` · 160×17 · “Aug 29, 2026”
+          - **$800.00** · `TEXT` · 150×17 · “$800.00”
+          - **Frame** · `FRAME` · 182×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+        - **Frame** · `FRAME` · 1042×55 · horizontal row, padding 16/24/16/24px · 6 children
+          - **JOHN MICHAEL CARIG** · `TEXT` · 230×17 · “JOHN MICHAEL CARIG”
+          - **Unit A-101** · `TEXT` · 160×17 · “Unit A-101”
+          - **Jul 29, 2026** · `TEXT` · 160×17 · “Jul 29, 2026”
+          - **Aug 29, 2026** · `TEXT` · 160×17 · “Aug 29, 2026”
+          - **$800.00** · `TEXT` · 150×17 · “$800.00”
+          - **Frame** · `FRAME` · 182×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Active** · `TEXT` · 37×15 · “Active”
+- **Bills** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **layout-dashboard** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **building** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **users** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **file-text** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **receipt** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **credit-card** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 2 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **user** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+              - **chevron-down** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **log-out** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 269×50 · vertical stack, gap 4px · 2 children
+        - **Billing Management** · `TEXT` · 233×29 · “Billing Management”
+        - **Manage tenant bills and payment status.** · `TEXT` · 269×17 · “Manage tenant bills and payment status.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **bell** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 14×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row, gap 8px · 1 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×335 · vertical stack, gap 24px, padding 32px · 2 children
+      - **Frame** · `FRAME` · 1042×37 · horizontal row · 2 children
+        - **Bills Statement** · `TEXT` · 134×22 · “Bills Statement”
+        - **Frame** · `FRAME` · 126×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+          - **plus** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+          - **Create Bill** · `TEXT` · 70×17 · “Create Bill”
+      - **Frame** · `FRAME` · 1042×210 · vertical stack · 4 children
+        - **Frame** · `FRAME` · 1042×45 · horizontal row, padding 16/24/16/24px · 8 children
+          - **TENANT** · `TEXT` · 180×13 · “TENANT”
+          - **APARTMENT** · `TEXT` · 120×13 · “APARTMENT”
+          - **BILLING MONTH** · `TEXT` · 120×13 · “BILLING MONTH”
+          - **DUE DATE** · `TEXT` · 120×13 · “DUE DATE”
+          - **AMOUNT** · `TEXT` · 110×13 · “AMOUNT”
+          - **LATE FEE** · `TEXT` · 100×13 · “LATE FEE”
+          - **TOTAL** · `TEXT` · 120×13 · “TOTAL”
+          - **STATUS** · `TEXT` · 124×13 · “STATUS”
+        - **Frame** · `FRAME` · 1042×55 · horizontal row, padding 16/24/16/24px · 8 children
+          - **Juanito Mico** · `TEXT` · 180×16 · “Juanito Mico”
+          - **Unit A-001** · `TEXT` · 120×16 · “Unit A-001”
+          - **August 2026** · `TEXT` · 120×16 · “August 2026”
+          - **Aug 31, 2026** · `TEXT` · 120×16 · “Aug 31, 2026”
+          - **$8,000.00** · `TEXT` · 110×16 · “$8,000.00”
+          - **$500.00** · `TEXT` · 100×16 · “$500.00”
+          - **$8,500.00** · `TEXT` · 120×16 · “$8,500.00”
+          - **Frame** · `FRAME` · 124×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 62×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Unpaid** · `TEXT` · 42×15 · “Unpaid”
+        - **Frame** · `FRAME` · 1042×55 · horizontal row, padding 16/24/16/24px · 8 children
+          - **JOHN MICHAEL CARIG** · `TEXT` · 180×16 · “JOHN MICHAEL CARIG”
+          - **Unit A-101** · `TEXT` · 120×16 · “Unit A-101”
+          - **August 2026** · `TEXT` · 120×16 · “August 2026”
+          - **Jul 28, 2026** · `TEXT` · 120×16 · “Jul 28, 2026”
+          - **$800.00** · `TEXT` · 110×16 · “$800.00”
+          - **$200.00** · `TEXT` · 100×16 · “$200.00”
+          - **$1,000.00** · `TEXT` · 120×16 · “$1,000.00”
+          - **Frame** · `FRAME` · 124×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 46×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Paid** · `TEXT` · 26×15 · “Paid”
+        - **Frame** · `FRAME` · 1042×55 · horizontal row, padding 16/24/16/24px · 8 children
+          - **Jm Carig** · `TEXT` · 180×16 · “Jm Carig”
+          - **Unit A-101** · `TEXT` · 120×16 · “Unit A-101”
+          - **July 2026** · `TEXT` · 120×16 · “July 2026”
+          - **Aug 01, 2026** · `TEXT` · 120×16 · “Aug 01, 2026”
+          - **$1,000.00** · `TEXT` · 110×16 · “$1,000.00”
+          - **$200.00** · `TEXT` · 100×16 · “$200.00”
+          - **$1,200.00** · `TEXT` · 120×16 · “$1,200.00”
+          - **Frame** · `FRAME` · 124×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 62×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Unpaid** · `TEXT` · 42×15 · “Unpaid”
+- **Payments** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **Frame** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 260×50 · vertical stack, gap 4px · 2 children
+        - **Payment History** · `TEXT` · 195×29 · “Payment History”
+        - **Track and manage all tenant payments.** · `TEXT` · 260×17 · “Track and manage all tenant payments.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **Frame** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 13×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×678 · vertical stack, gap 24px, padding 32px · 2 children
+      - **Frame** · `FRAME` · 1042×37 · horizontal row · 2 children
+        - **Recent Payments** · `TEXT` · 154×22 · “Recent Payments”
+        - **Frame** · `FRAME` · 167×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+          - **Frame** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+          - **Record Payment** · `TEXT` · 111×17 · “Record Payment”
+      - **Frame** · `FRAME` · 1042×111 · vertical stack · 2 children
+        - **Frame** · `FRAME` · 1042×45 · horizontal row, padding 16/24/16/24px · 8 children
+          - **TENANT** · `TEXT` · 180×13 · “TENANT”
+          - **UNIT** · `TEXT` · 120×13 · “UNIT”
+          - **PAYMENT DATE** · `TEXT` · 110×13 · “PAYMENT DATE”
+          - **AMOUNT PAID** · `TEXT` · 130×13 · “AMOUNT PAID”
+          - **METHOD** · `TEXT` · 120×13 · “METHOD”
+          - **REFERENCE** · `TEXT` · 110×13 · “REFERENCE”
+          - **RECORDED BY** · `TEXT` · 110×13 · “RECORDED BY”
+          - **ACTION** · `TEXT` · 114×13 · “ACTION”
+        - **Frame** · `FRAME` · 1042×66 · horizontal row, padding 16/24/16/24px · 8 children
+          - **Frame** · `FRAME` · 180×32 · vertical stack, gap 2px · 2 children
+            - **JOHN MICHAEL CARIG** · `TEXT` · 155×17 · “JOHN MICHAEL CARIG”
+            - **Bill #1** · `TEXT` · 31×13 · “Bill #1”
+          - **Unit A-101** · `TEXT` · 120×17 · “Unit A-101”
+          - **Jul 29, 2026** · `TEXT` · 110×17 · “Jul 29, 2026”
+          - **$1,000.00** · `TEXT` · 130×17 · “$1,000.00”
+          - **Frame** · `FRAME` · 120×23 · horizontal row · 1 children
+            - **Frame** · `FRAME` · 50×23 · horizontal row, padding 4/10/4/10px · 1 children
+              - **Cash** · `TEXT` · 30×15 · “Cash”
+          - **-** · `TEXT` · 110×17 · “-”
+          - **StayTrack Admin** · `TEXT` · 110×34 · “StayTrack Admin”
+          - **Frame** · `FRAME` · 114×17 · horizontal row · 1 children
+            - **View** · `TEXT` · 34×17 · “View”
+- **Profile** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **Frame** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 205×50 · vertical stack, gap 4px · 2 children
+        - **Profile** · `TEXT` · 77×29 · “Profile”
+        - **Manage your account settings.** · `TEXT` · 205×17 · “Manage your account settings.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **Frame** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 13×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×678 · horizontal row, gap 24px, padding 24px · 2 children
+      - **Frame** · `FRAME` · 517×326 · vertical stack, gap 24px, padding 24px · 3 children
+        - **Frame** · `FRAME` · 469×43 · vertical stack, gap 4px · 2 children
+          - **Profile Information** · `TEXT` · 164×22 · “Profile Information”
+          - **Update your account's profile information and email address.** · `TEXT` · 403×17 · “Update your account's profile information and email address.”
+        - **Frame** · `FRAME` · 469×150 · vertical stack, gap 16px · 2 children
+          - **Frame** · `FRAME` · 469×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 40×17 · horizontal row, gap 4px · 1 children
+              - **Name** · `TEXT` · 40×17 · “Name”
+            - **Frame** · `FRAME` · 469×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **StayTrack Admin** · `TEXT` · 437×17 · “StayTrack Admin”
+          - **Frame** · `FRAME` · 469×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 37×17 · horizontal row, gap 4px · 1 children
+              - **Email** · `TEXT` · 37×17 · “Email”
+            - **Frame** · `FRAME` · 469×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **admin@staytrack.test** · `TEXT` · 437×17 · “admin@staytrack.test”
+        - **Frame** · `FRAME` · 100×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **SAVE** · `TEXT` · 37×17 · “SAVE”
+      - **Frame** · `FRAME` · 517×409 · vertical stack, gap 24px, padding 24px · 3 children
+        - **Frame** · `FRAME` · 469×43 · vertical stack, gap 4px · 2 children
+          - **Update Password** · `TEXT` · 155×22 · “Update Password”
+          - **Ensure your account is using a long, random password to stay secure.** · `TEXT` · 462×17 · “Ensure your account is using a long, random password to stay secure.”
+        - **Frame** · `FRAME` · 469×233 · vertical stack, gap 16px · 3 children
+          - **Frame** · `FRAME` · 469×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 122×17 · horizontal row, gap 4px · 1 children
+              - **Current Password** · `TEXT` · 122×17 · “Current Password”
+            - **Frame** · `FRAME` · 469×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **••••••••** · `TEXT` · 437×17 · “••••••••”
+          - **Frame** · `FRAME` · 469×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 101×17 · horizontal row, gap 4px · 1 children
+              - **New Password** · `TEXT` · 101×17 · “New Password”
+            - **Frame** · `FRAME` · 469×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **••••••••** · `TEXT` · 437×17 · “••••••••”
+          - **Frame** · `FRAME` · 469×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 125×17 · horizontal row, gap 4px · 1 children
+              - **Confirm Password** · `TEXT` · 125×17 · “Confirm Password”
+            - **Frame** · `FRAME` · 469×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **••••••••** · `TEXT` · 437×17 · “••••••••”
+        - **Frame** · `FRAME` · 100×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **SAVE** · `TEXT` · 37×17 · “SAVE”
+- **Create Lease** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **Frame** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **Frame** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 388×50 · vertical stack, gap 4px · 2 children
+        - **Create Lease** · `TEXT` · 155×29 · “Create Lease”
+        - **Create a new lease agreement for a tenant and apartment.** · `TEXT` · 388×17 · “Create a new lease agreement for a tenant and apartment.”
+      - **Frame** · `FRAME` · 151×37 · horizontal row, padding 10/16/10/16px · 1 children
+        - **← Back to Leases** · `TEXT` · 119×17 · “← Back to Leases”
+    - **Frame** · `FRAME` · 1106×678 · vertical stack, gap 24px, padding 32px · 1 children
+      - **Frame** · `FRAME` · 1042×614 · vertical stack, gap 8px, padding 26/32/26/32px · 7 children
+        - **Frame** · `FRAME` · 978×43 · vertical stack, gap 4px · 2 children
+          - **Lease Information** · `TEXT` · 159×22 · “Lease Information”
+          - **Enter the details below to create the tenant's lease.** · `TEXT` · 341×17 · “Enter the details below to create the tenant's lease.”
+        - **Frame** · `FRAME` · 978×154 · vertical stack, gap 20px · 2 children
+          - **Frame** · `FRAME` · 978×67 · horizontal row, gap 24px · 2 children
+            - **Frame** · `FRAME` · 477×67 · vertical stack, gap 6px · 2 children
+              - **Frame** · `FRAME` · 47×17 · horizontal row, gap 4px · 1 children
+                - **Tenant** · `TEXT` · 47×17 · “Tenant”
+              - **Frame** · `FRAME` · 477×44 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+                - **Select Tenant** · `TEXT` · 423×17 · “Select Tenant”
+                - **Frame** · `FRAME` · 14×14
+                  - _…and 1 more_
+            - **Frame** · `FRAME` · 477×67 · vertical stack, gap 6px · 2 children
+              - **Frame** · `FRAME` · 73×17 · horizontal row, gap 4px · 1 children
+                - **Apartment** · `TEXT` · 73×17 · “Apartment”
+              - **Frame** · `FRAME` · 477×44 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+                - **Select Available Apartment** · `TEXT` · 423×17 · “Select Available Apartment”
+                - **Frame** · `FRAME` · 14×14
+                  - _…and 1 more_
+          - **Frame** · `FRAME` · 978×67 · horizontal row, gap 24px · 2 children
+            - **Frame** · `FRAME` · 477×67 · vertical stack, gap 6px · 2 children
+              - **Frame** · `FRAME` · 69×17 · horizontal row, gap 4px · 1 children
+                - **Start Date** · `TEXT` · 69×17 · “Start Date”
+              - **Frame** · `FRAME` · 477×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+                - **dd/mm/yyyy** · `TEXT` · 445×17 · “dd/mm/yyyy”
+            - **Frame** · `FRAME` · 477×67 · vertical stack, gap 6px · 2 children
+              - **Frame** · `FRAME` · 123×17 · horizontal row, gap 4px · 2 children
+                - **End Date** · `TEXT` · 62×17 · “End Date”
+                - **(Optional)** · `TEXT` · 57×15 · “(Optional)”
+              - **Frame** · `FRAME` · 477×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+                - **dd/mm/yyyy** · `TEXT` · 445×17 · “dd/mm/yyyy”
+        - **Frame** · `FRAME` · 978×29 · vertical stack, gap 16px · 2 children
+          - **FINANCIAL INFORMATION** · `TEXT` · 141×13 · “FINANCIAL INFORMATION”
+          - **Line** · `LINE` · 978×0
+        - **Frame** · `FRAME` · 978×67 · horizontal row, gap 24px · 2 children
+          - **Frame** · `FRAME` · 477×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 91×17 · horizontal row, gap 4px · 1 children
+              - **Monthly Rent** · `TEXT` · 91×17 · “Monthly Rent”
+            - **Frame** · `FRAME` · 477×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **$** · `TEXT` · 445×17 · “$”
+          - **Frame** · `FRAME` · 477×67 · vertical stack, gap 6px · 2 children
+            - **Frame** · `FRAME` · 113×17 · horizontal row, gap 4px · 1 children
+              - **Security Deposit** · `TEXT` · 113×17 · “Security Deposit”
+            - **Frame** · `FRAME` · 477×44 · horizontal row, gap 8px, padding 10/16/10/16px · 1 children
+              - **$ 0** · `TEXT` · 445×17 · “$ 0”
+        - **Frame** · `FRAME` · 978×123 · vertical stack, gap 6px · 2 children
+          - **Frame** · `FRAME` · 86×17 · horizontal row, gap 4px · 1 children
+            - **Lease Terms** · `TEXT` · 86×17 · “Lease Terms”
+          - **Frame** · `FRAME` · 978×100 · horizontal row, gap 8px, padding 12/16/12/16px · 1 children
+            - **Enter additional lease terms or notes...** · `TEXT` · 946×17 · “Enter additional lease terms or notes...”
+        - **Frame** · `FRAME` · 978×49 · horizontal row, gap 12px, padding 16px · 2 children
+          - **● Lease Status: Active** · `TEXT` · 155×17 · “● Lease Status: Active”
+          - **Creating this lease will automatically mark the selected apartment as occupied.** · `TEXT` · 779×17 · “Creating this lease will automatically mark the selected apartment as occupied.”
+        - **Frame** · `FRAME` · 978×49 · horizontal row, gap 12px, padding 12/0/0/0px · 2 children
+          - **Frame** · `FRAME` · 80×37 · horizontal row, padding 10/16/10/16px · 1 children
+            - **Cancel** · `TEXT` · 48×17 · “Cancel”
+          - **Frame** · `FRAME` · 122×37 · horizontal row, padding 10/16/10/16px · 1 children
+            - **Create Lease** · `TEXT` · 90×17 · “Create Lease”
+- **Desktop Dashboard** · `FRAME` · 1366×768 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 260×768 · vertical stack, padding 20px · 2 children
+    - **Frame** · `FRAME` · 220×495 · vertical stack, gap 28px · 2 children
+      - **Frame** · `FRAME` · 220×49 · vertical stack, gap 4px · 2 children
+        - **Frame** · `FRAME` · 139×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 99×24 · “StayTrack”
+        - **APARTMENT MANAGEMENT** · `TEXT` · 151×13 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 220×418 · vertical stack, gap 20px · 4 children
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **MAIN MENU** · `TEXT` · 60×12 · “MAIN MENU”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 104×18 · horizontal row, gap 12px · 2 children
+                - **layout-dashboard** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Dashboard** · `TEXT` · 74×17 · “Dashboard”
+        - **Frame** · `FRAME` · 220×142 · vertical stack, gap 8px · 2 children
+          - **PROPERTY MANAGEMENT** · `TEXT` · 131×12 · “PROPERTY MANAGEMENT”
+          - **Frame** · `FRAME` · 220×122 · vertical stack, gap 4px · 3 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 109×18 · horizontal row, gap 12px · 2 children
+                - **building** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Apartments** · `TEXT` · 79×17 · “Apartments”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 84×18 · horizontal row, gap 12px · 2 children
+                - **users** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Tenants** · `TEXT` · 54×17 · “Tenants”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 78×18 · horizontal row, gap 12px · 2 children
+                - **file-text** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Leases** · `TEXT` · 48×17 · “Leases”
+        - **Frame** · `FRAME` · 220×100 · vertical stack, gap 8px · 2 children
+          - **FINANCE** · `TEXT` · 45×12 · “FINANCE”
+          - **Frame** · `FRAME` · 220×80 · vertical stack, gap 4px · 2 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 58×18 · horizontal row, gap 12px · 2 children
+                - **receipt** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Bills** · `TEXT` · 28×17 · “Bills”
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 1 children
+              - **Frame** · `FRAME` · 97×18 · horizontal row, gap 12px · 2 children
+                - **credit-card** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Payments** · `TEXT` · 67×17 · “Payments”
+        - **Frame** · `FRAME` · 220×58 · vertical stack, gap 8px · 2 children
+          - **ACCOUNT** · `TEXT` · 52×12 · “ACCOUNT”
+          - **Frame** · `FRAME` · 220×38 · vertical stack, gap 4px · 1 children
+            - **Frame** · `FRAME` · 220×38 · horizontal row, padding 10/12/10/12px · 2 children
+              - **Frame** · `FRAME` · 73×18 · horizontal row, gap 12px · 2 children
+                - **user** · `FRAME` · 18×18
+                  - _…and 1 more_
+                - **Profile** · `TEXT` · 43×17 · “Profile”
+              - **chevron-down** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+    - **Frame** · `FRAME` · 220×106 · vertical stack, gap 16px · 3 children
+      - **Rectangle** · `RECTANGLE` · 220×1
+      - **Frame** · `FRAME` · 220×40 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 168×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack Admin** · `TEXT` · 115×17 · “StayTrack Admin”
+          - **admin@staytrack.test** · `TEXT` · 124×15 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 220×33 · horizontal row, gap 8px, padding 8/12/8/12px · 2 children
+        - **log-out** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 12×12
+        - **Sign Out** · `TEXT` · 58×17 · “Sign Out”
+  - **Frame** · `FRAME` · 1106×768 · vertical stack · 2 children
+    - **Header** · `FRAME` · 1106×90 · horizontal row, padding 20/32/20/32px · 2 children
+      - **Frame** · `FRAME` · 332×50 · vertical stack, gap 4px · 2 children
+        - **Dashboard** · `TEXT` · 129×29 · “Dashboard”
+        - **Overview of your apartment management system.** · `TEXT` · 332×17 · “Overview of your apartment management system.”
+      - **Frame** · `FRAME` · 100×40 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **bell** · `FRAME` · 18×18 · 1 children
+            - **Vector** · `VECTOR` · 13×15
+        - **Frame** · `FRAME` · 40×40 · horizontal row, gap 8px · 1 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 1106×678 · vertical stack, gap 24px, padding 21/32/21/32px · 3 children
+      - **Frame** · `FRAME` · 1042×66 · horizontal row · 2 children
+        - **Frame** · `FRAME` · 320×66 · vertical stack, gap 4px · 3 children
+          - **Admin Portal** · `TEXT` · 88×17 · “Admin Portal”
+          - **Welcome back, StayTrack Admin** · `TEXT` · 320×24 · “Welcome back, StayTrack Admin”
+          - **Here's what's happening in StayTrack today.** · `TEXT` · 293×17 · “Here's what's happening in StayTrack today.”
+        - **Frame** · `FRAME` · 325×37 · horizontal row, gap 12px · 2 children
+          - **Frame** · `FRAME` · 146×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+            - **plus** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 9×9
+            - **Create Lease** · `TEXT` · 90×17 · “Create Lease”
+          - **Frame** · `FRAME` · 167×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+            - **credit-card** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 13×9
+            - **Record Payment** · `TEXT` · 111×17 · “Record Payment”
+      - **Frame** · `FRAME` · 1042×162 · horizontal row, gap 16px · 4 children
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Total Apartments** · `TEXT` · 116×17 · “Total Apartments”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **building** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 13×17
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **3** · `TEXT` · 22×39 · “3”
+            - **View apartments →** · `TEXT` · 111×15 · “View apartments →”
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Occupied Units** · `TEXT` · 103×17 · “Occupied Units”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **check** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 13×9
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **2** · `TEXT` · 21×39 · “2”
+            - **1 available** · `TEXT` · 59×15 · “1 available”
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Active Tenants** · `TEXT` · 100×17 · “Active Tenants”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **users** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 17×15
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **8** · `TEXT` · 22×39 · “8”
+            - **View tenants →** · `TEXT` · 89×15 · “View tenants →”
+        - **Frame** · `FRAME` · 249×162 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 201×40 · horizontal row · 2 children
+            - **Monthly Revenue** · `TEXT` · 117×17 · “Monthly Revenue”
+            - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **credit-card** · `FRAME` · 20×20 · 1 children
+                - **Vector** · `VECTOR` · 17×12
+          - **Frame** · `FRAME` · 201×58 · vertical stack, gap 4px · 2 children
+            - **₱0.00** · `TEXT` · 101×39 · “₱0.00”
+            - **View payments →** · `TEXT` · 102×15 · “View payments →”
+      - **Frame** · `FRAME` · 1042×360 · horizontal row, gap 20px · 2 children
+        - **Frame** · `FRAME` · 642×155 · vertical stack, gap 16px, padding 24px · 2 children
+          - **Frame** · `FRAME` · 594×19 · horizontal row · 2 children
+            - **Recent Payments** · `TEXT` · 137×19 · “Recent Payments”
+            - **View all** · `TEXT` · 53×17 · “View all”
+          - **Frame** · `FRAME` · 594×72 · horizontal row, padding 16px · 2 children
+            - **Frame** · `FRAME` · 207×40 · horizontal row, gap 12px · 2 children
+              - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+                - **user** · `FRAME` · 20×20
+                  - _…and 1 more_
+              - **Frame** · `FRAME` · 155×34 · vertical stack, gap 2px · 2 children
+                - **JOHN MICHAEL CARIG** · `TEXT` · 155×17 · “JOHN MICHAEL CARIG”
+                - **Unit A-101 • Jul 29, 2026** · `TEXT` · 143×15 · “Unit A-101 • Jul 29, 2026”
+            - **Frame** · `FRAME` · 146×23 · horizontal row, gap 16px · 2 children
+              - **₱1,000.00** · `TEXT` · 84×19 · “₱1,000.00”
+              - **Frame** · `FRAME` · 46×23 · horizontal row, padding 4/10/4/10px · 1 children
+                - **Paid** · `TEXT` · 26×15 · “Paid”
+        - **Frame** · `FRAME` · 380×316 · vertical stack, gap 20px, padding 24px · 3 children
+          - **Frame** · `FRAME` · 135×38 · vertical stack, gap 4px · 2 children
+            - **Billing Overview** · `TEXT` · 127×19 · “Billing Overview”
+            - **Current financial status.** · `TEXT` · 135×15 · “Current financial status.”
+          - **Frame** · `FRAME` · 332×153 · vertical stack, gap 12px · 3 children
+            - **Frame** · `FRAME` · 332×43 · horizontal row, padding 12px · 2 children
+              - **Frame** · `FRAME` · 116×17 · horizontal row, gap 8px · 2 children
+                - **file-text** · `FRAME` · 16×16
+                  - _…and 1 more_
+                - **Active Leases** · `TEXT` · 92×17 · “Active Leases”
+              - **3** · `TEXT` · 11×19 · “3”
+            - **Frame** · `FRAME` · 332×43 · horizontal row, padding 12px · 2 children
+              - **Frame** · `FRAME` · 149×17 · horizontal row, gap 8px · 2 children
+                - **alert-circle** · `FRAME` · 16×16
+                  - _…and 1 more_
+                - **Unpaid/Partial Bills** · `TEXT` · 125×17 · “Unpaid/Partial Bills”
+              - **2** · `TEXT` · 11×19 · “2”
+            - **Frame** · `FRAME` · 332×43 · horizontal row, padding 12px · 2 children
+              - **Frame** · `FRAME` · 111×17 · horizontal row, gap 8px · 2 children
+                - **x-circle** · `FRAME` · 16×16
+                  - _…and 1 more_
+                - **Overdue Bills** · `TEXT` · 87×17 · “Overdue Bills”
+              - **0** · `TEXT` · 12×19 · “0”
+          - **Frame** · `FRAME` · 142×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+            - **receipt** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 11×13
+            - **Manage Bills** · `TEXT` · 86×17 · “Manage Bills”
+- **Mobile Dashboard** · `FRAME` · 390×844 · vertical stack · 4 children
+  - **Header** · `FRAME` · 390×134 · vertical stack, gap 12px, padding 16px · 2 children
+    - **Frame** · `FRAME` · 358×40 · horizontal row · 2 children
+      - **Frame** · `FRAME` · 129×32 · horizontal row, gap 8px · 2 children
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **S** · `TEXT` · 12×22 · “S”
+        - **StayTrack** · `TEXT` · 89×22 · “StayTrack”
+      - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+        - **S** · `TEXT` · 11×19 · “S”
+    - **Frame** · `FRAME` · 358×50 · vertical stack, gap 4px · 2 children
+      - **Dashboard** · `TEXT` · 129×29 · “Dashboard”
+      - **Overview of your apartment management system.** · `TEXT` · 332×17 · “Overview of your apartment management system.”
+  - **Frame** · `FRAME` · 390×644 · vertical stack, gap 16px, padding 16px · 6 children
+    - **Frame** · `FRAME` · 358×142 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×40 · horizontal row · 2 children
+        - **Total Apartments** · `TEXT` · 116×17 · “Total Apartments”
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **building** · `FRAME` · 20×20 · 1 children
+            - **Vector** · `VECTOR` · 13×17
+      - **Frame** · `FRAME` · 326×58 · vertical stack, gap 4px · 2 children
+        - **3** · `TEXT` · 22×39 · “3”
+        - **View apartments →** · `TEXT` · 111×15 · “View apartments →”
+    - **Frame** · `FRAME` · 358×142 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×40 · horizontal row · 2 children
+        - **Occupied Units** · `TEXT` · 103×17 · “Occupied Units”
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **check** · `FRAME` · 20×20 · 1 children
+            - **Vector** · `VECTOR` · 13×9
+      - **Frame** · `FRAME` · 326×58 · vertical stack, gap 4px · 2 children
+        - **2** · `TEXT` · 21×39 · “2”
+        - **1 available** · `TEXT` · 59×15 · “1 available”
+    - **Frame** · `FRAME` · 358×142 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×40 · horizontal row · 2 children
+        - **Active Tenants** · `TEXT` · 100×17 · “Active Tenants”
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **users** · `FRAME` · 20×20 · 1 children
+            - **Vector** · `VECTOR` · 17×15
+      - **Frame** · `FRAME` · 326×58 · vertical stack, gap 4px · 2 children
+        - **8** · `TEXT` · 22×39 · “8”
+        - **View tenants →** · `TEXT` · 89×15 · “View tenants →”
+    - **Frame** · `FRAME` · 358×142 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×40 · horizontal row · 2 children
+        - **Monthly Revenue** · `TEXT` · 117×17 · “Monthly Revenue”
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **credit-card** · `FRAME` · 20×20 · 1 children
+            - **Vector** · `VECTOR` · 17×12
+      - **Frame** · `FRAME` · 326×58 · vertical stack, gap 4px · 2 children
+        - **₱0.00** · `TEXT` · 101×39 · “₱0.00”
+        - **View payments →** · `TEXT` · 102×15 · “View payments →”
+    - **Frame** · `FRAME` · 358×127 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×19 · horizontal row · 2 children
+        - **Recent Payments** · `TEXT` · 137×19 · “Recent Payments”
+        - **View all** · `TEXT` · 53×17 · “View all”
+      - **Frame** · `FRAME` · 326×64 · horizontal row, padding 12px · 2 children
+        - **Frame** · `FRAME` · 207×40 · horizontal row, gap 12px · 2 children
+          - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+            - **user** · `FRAME` · 20×20 · 1 children
+              - **Vector** · `VECTOR` · 12×15
+          - **Frame** · `FRAME` · 155×34 · vertical stack, gap 2px · 2 children
+            - **JOHN MICHAEL CARIG** · `TEXT` · 155×17 · “JOHN MICHAEL CARIG”
+            - **Unit A-101 • Jul 29, 2026** · `TEXT` · 143×15 · “Unit A-101 • Jul 29, 2026”
+        - **Frame** · `FRAME` · 146×23 · horizontal row, gap 16px · 2 children
+          - **₱1,000.00** · `TEXT` · 84×19 · “₱1,000.00”
+          - **Frame** · `FRAME` · 46×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Paid** · `TEXT` · 26×15 · “Paid”
+    - **Frame** · `FRAME` · 358×276 · vertical stack, gap 12px, padding 16px · 3 children
+      - **Frame** · `FRAME` · 135×38 · vertical stack, gap 4px · 2 children
+        - **Billing Overview** · `TEXT` · 127×19 · “Billing Overview”
+        - **Current financial status.** · `TEXT` · 135×15 · “Current financial status.”
+      - **Frame** · `FRAME` · 326×145 · vertical stack, gap 8px · 3 children
+        - **Frame** · `FRAME` · 326×43 · horizontal row, padding 12px · 2 children
+          - **Frame** · `FRAME` · 116×17 · horizontal row, gap 8px · 2 children
+            - **file-text** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 11×13
+            - **Active Leases** · `TEXT` · 92×17 · “Active Leases”
+          - **3** · `TEXT` · 11×19 · “3”
+        - **Frame** · `FRAME` · 326×43 · horizontal row, padding 12px · 2 children
+          - **Frame** · `FRAME` · 149×17 · horizontal row, gap 8px · 2 children
+            - **alert-circle** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 13×13
+            - **Unpaid/Partial Bills** · `TEXT` · 125×17 · “Unpaid/Partial Bills”
+          - **2** · `TEXT` · 11×19 · “2”
+        - **Frame** · `FRAME` · 326×43 · horizontal row, padding 12px · 2 children
+          - **Frame** · `FRAME` · 111×17 · horizontal row, gap 8px · 2 children
+            - **x-circle** · `FRAME` · 16×16 · 1 children
+              - **Vector** · `VECTOR` · 13×13
+            - **Overdue Bills** · `TEXT` · 87×17 · “Overdue Bills”
+          - **0** · `TEXT` · 12×19 · “0”
+      - **Frame** · `FRAME` · 142×37 · horizontal row, gap 8px, padding 10/16/10/16px · 2 children
+        - **receipt** · `FRAME` · 16×16 · 1 children
+          - **Vector** · `VECTOR` · 11×13
+        - **Manage Bills** · `TEXT` · 86×17 · “Manage Bills”
+  - **Bottom Navigation** · `FRAME` · 390×66 · horizontal row, padding 12/24/20/24px · 5 children
+    - **Frame** · `FRAME` · 53×34 · vertical stack, gap 4px · 2 children
+      - **layout-dashboard** · `FRAME` · 18×18 · 1 children
+        - **Vector** · `VECTOR` · 14×14
+      - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+    - **Frame** · `FRAME` · 57×34 · vertical stack, gap 4px · 2 children
+      - **building** · `FRAME` · 18×18 · 1 children
+        - **Vector** · `VECTOR` · 12×15
+      - **Apartments** · `TEXT` · 57×12 · “Apartments”
+    - **Frame** · `FRAME` · 39×34 · vertical stack, gap 4px · 2 children
+      - **users** · `FRAME` · 18×18 · 1 children
+        - **Vector** · `VECTOR` · 15×14
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **Frame** · `FRAME` · 20×34 · vertical stack, gap 4px · 2 children
+      - **receipt** · `FRAME` · 18×18 · 1 children
+        - **Vector** · `VECTOR` · 12×15
+      - **Bills** · `TEXT` · 20×12 · “Bills”
+    - **Frame** · `FRAME` · 31×34 · vertical stack, gap 4px · 2 children
+      - **user** · `FRAME` · 18×18 · 1 children
+        - **Vector** · `VECTOR` · 11×14
+      - **Profile** · `TEXT` · 31×12 · “Profile”
+  - **Mobile Create Lease** · `FRAME` · 390×844 · vertical stack · 3 children
+    - **Header** · `FRAME` · 390×131 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 358×40 · horizontal row · 2 children
+        - **Frame** · `FRAME` · 129×32 · horizontal row, gap 8px · 2 children
+          - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+            - **S** · `TEXT` · 12×22 · “S”
+          - **StayTrack** · `TEXT` · 89×22 · “StayTrack”
+        - **Frame** · `FRAME` · 40×40 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+      - **Frame** · `FRAME` · 358×47 · vertical stack, gap 4px · 2 children
+        - **Create Lease** · `TEXT` · 142×27 · “Create Lease”
+        - **Create a new lease agreement for a tenant and apartment.** · `TEXT` · 360×16 · “Create a new lease agreement for a tenant and apartment.”
+    - **Frame** · `FRAME` · 390×647 · vertical stack, gap 16px, padding 16px · 1 children
+      - **Frame** · `FRAME` · 358×714 · vertical stack, gap 20px, padding 20px · 3 children
+        - **Frame** · `FRAME` · 318×39 · vertical stack, gap 4px · 2 children
+          - **Lease Information** · `TEXT` · 142×19 · “Lease Information”
+          - **Enter the details below to create the tenant's lease.** · `TEXT` · 316×16 · “Enter the details below to create the tenant's lease.”
+        - **Frame** · `FRAME` · 318×558 · vertical stack, gap 14px · 7 children
+          - **Frame** · `FRAME` · 318×66 · vertical stack, gap 6px · 2 children
+            - **Tenant** · `TEXT` · 44×16 · “Tenant”
+            - **Frame** · `FRAME` · 318×44 · horizontal row, gap 8px, padding 10/14/10/14px · 2 children
+              - **Select Tenant** · `TEXT` · 268×16 · “Select Tenant”
+              - **Frame** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+          - **Frame** · `FRAME` · 318×66 · vertical stack, gap 6px · 2 children
+            - **Apartment** · `TEXT` · 68×16 · “Apartment”
+            - **Frame** · `FRAME` · 318×44 · horizontal row, gap 8px, padding 10/14/10/14px · 2 children
+              - **Select Available Apartment** · `TEXT` · 268×16 · “Select Available Apartment”
+              - **Frame** · `FRAME` · 14×14 · 1 children
+                - **Vector** · `VECTOR` · 7×4
+          - **Frame** · `FRAME` · 318×66 · horizontal row, gap 12px · 2 children
+            - **Frame** · `FRAME` · 153×66 · vertical stack, gap 6px · 2 children
+              - **Start Date** · `TEXT` · 64×16 · “Start Date”
+              - **Frame** · `FRAME` · 153×44 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+                - **dd/mm/yyyy** · `TEXT` · 125×16 · “dd/mm/yyyy”
+            - **Frame** · `FRAME` · 153×66 · vertical stack, gap 6px · 2 children
+              - **Frame** · `FRAME` · 118×16 · horizontal row, gap 4px · 2 children
+                - **End Date** · `TEXT` · 57×16 · “End Date”
+                - **(Optional)** · `TEXT` · 57×15 · “(Optional)”
+              - **Frame** · `FRAME` · 153×44 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+                - **dd/mm/yyyy** · `TEXT` · 125×16 · “dd/mm/yyyy”
+          - **Frame** · `FRAME` · 318×24 · vertical stack, gap 12px · 2 children
+            - **FINANCIAL INFORMATION** · `TEXT` · 128×12 · “FINANCIAL INFORMATION”
+            - **Line** · `LINE` · 318×0
+          - **Frame** · `FRAME` · 318×66 · horizontal row, gap 12px · 2 children
+            - **Frame** · `FRAME` · 153×66 · vertical stack, gap 6px · 2 children
+              - **Monthly Rent** · `TEXT` · 84×16 · “Monthly Rent”
+              - **Frame** · `FRAME` · 153×44 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+                - **$** · `TEXT` · 125×16 · “$”
+            - **Frame** · `FRAME` · 153×66 · vertical stack, gap 6px · 2 children
+              - **Security Deposit** · `TEXT` · 105×16 · “Security Deposit”
+              - **Frame** · `FRAME` · 153×44 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+                - **$ 0** · `TEXT` · 125×16 · “$ 0”
+          - **Frame** · `FRAME` · 318×102 · vertical stack, gap 6px · 2 children
+            - **Lease Terms** · `TEXT` · 80×16 · “Lease Terms”
+            - **Frame** · `FRAME` · 318×80 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+              - **Enter additional lease terms or notes...** · `TEXT` · 290×16 · “Enter additional lease terms or notes...”
+          - **Frame** · `FRAME` · 318×84 · horizontal row, gap 10px, padding 12px · 2 children
+            - **● Lease Status: Active** · `TEXT` · 144×16 · “● Lease Status: Active”
+            - **Creating this lease will automatically mark the selected apartment as occupied.** · `TEXT` · 140×60 · “Creating this lease will automatically mark the selected apartment as occupied.”
+        - **Frame** · `FRAME` · 318×37 · horizontal row, gap 10px · 2 children
+          - **Frame** · `FRAME` · 80×37 · horizontal row, padding 10/16/10/16px · 1 children
+            - **Cancel** · `TEXT` · 48×17 · “Cancel”
+          - **Frame** · `FRAME` · 122×37 · horizontal row, padding 10/16/10/16px · 1 children
+            - **Create Lease** · `TEXT` · 90×17 · “Create Lease”
+    - **Bottom Navigation** · `FRAME` · 390×66 · horizontal row, padding 12/24/20/24px · 5 children
+      - **Frame** · `FRAME` · 53×34 · vertical stack, gap 4px · 2 children
+        - **layout-dashboard** · `FRAME` · 18×18 · 1 children
+          - **Vector** · `VECTOR` · 14×14
+        - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+      - **Frame** · `FRAME` · 57×34 · vertical stack, gap 4px · 2 children
+        - **building** · `FRAME` · 18×18 · 1 children
+          - **Vector** · `VECTOR` · 12×15
+        - **Apartments** · `TEXT` · 57×12 · “Apartments”
+      - **Frame** · `FRAME` · 39×34 · vertical stack, gap 4px · 2 children
+        - **users** · `FRAME` · 18×18 · 1 children
+          - **Vector** · `VECTOR` · 15×14
+        - **Tenants** · `TEXT` · 39×12 · “Tenants”
+      - **Frame** · `FRAME` · 35×34 · vertical stack, gap 4px · 2 children
+        - **file-text** · `FRAME` · 18×18 · 1 children
+          - **Vector** · `VECTOR` · 12×15
+        - **Leases** · `TEXT` · 35×12 · “Leases”
+      - **Frame** · `FRAME` · 31×34 · vertical stack, gap 4px · 2 children
+        - **user** · `FRAME` · 18×18 · 1 children
+          - **Vector** · `VECTOR` · 11×14
+        - **Profile** · `TEXT` · 31×12 · “Profile”
+- **Mobile Dashboard** · `FRAME` · 390×1234 · vertical stack · 6 children
+  - **HeaderBlock** · `FRAME` · 390×104 · vertical stack, padding 0/0/20/0px · 2 children
+    - **MobileStatusBar** · `FRAME` · 390×44 · horizontal row, padding 0/20/0/20px · 2 children
+      - **9:41** · `TEXT` · 30×17 · “9:41”
+      - **Frame** · `FRAME` · 69×11 · horizontal row, gap 6px · 3 children
+        - **ios-signal** · `FRAME` · 17×11 · 1 children
+          - **Vector** · `VECTOR` · 16×7
+        - **ios-wifi-signal** · `FRAME` · 15×11 · 1 children
+          - **Vector** · `VECTOR` · 13×7
+        - **ios-battery-full** · `FRAME` · 25×11 · 1 children
+          - **Vector** · `VECTOR` · 24×7
+    - **LogoAndProfile** · `FRAME` · 390×40 · horizontal row, padding 8/16/0/16px · 2 children
+      - **Frame** · `FRAME` · 148×29 · horizontal row, gap 8px · 2 children
+        - **Frame** · `FRAME` · 28×28 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 112×29 · vertical stack · 2 children
+          - **StayTrack** · `TEXT` · 79×19 · “StayTrack”
+          - **APARTMENT MANAGEMENT** · `TEXT` · 112×10 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 76×32 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 16×16
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **S** · `TEXT` · 9×16 · “S”
+  - **WelcomeSection** · `FRAME` · 390×103 · vertical stack, gap 12px, padding 16/16/0/16px · 2 children
+    - **Frame** · `FRAME` · 358×39 · vertical stack, gap 2px · 2 children
+      - **Admin Portal** · `TEXT` · 75×15 · “Admin Portal”
+      - **Welcome back, StayTrack Admin** · `TEXT` · 358×22 · “Welcome back, StayTrack Admin”
+    - **Frame** · `FRAME` · 358×36 · horizontal row, gap 8px · 2 children
+      - **CreateLeaseBtn** · `FRAME` · 174×36 · horizontal row, gap 6px, padding 10/12/10/12px · 2 children
+        - **Vector** · `VECTOR` · 14×14
+        - **Create Lease** · `TEXT` · 83×16 · “Create Lease”
+      - **RecordPaymentBtn** · `FRAME` · 176×36 · horizontal row, gap 6px, padding 10/12/10/12px · 2 children
+        - **Vector** · `VECTOR` · 14×14
+        - **Record Payment** · `TEXT` · 103×16 · “Record Payment”
+  - **StatsGridMobile** · `FRAME` · 390×592 · vertical stack, gap 12px, padding 16px · 4 children
+    - **StatCard** · `FRAME` · 358×131 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+        - **Total Apartments** · `TEXT` · 116×17 · “Total Apartments”
+        - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 18×18
+      - **Frame** · `FRAME` · 326×51 · vertical stack, gap 2px · 2 children
+        - **3** · `TEXT` · 19×34 · “3”
+        - **View apartments →** · `TEXT` · 113×15 · “View apartments →”
+    - **StatCard** · `FRAME` · 358×131 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+        - **Occupied Units** · `TEXT` · 103×17 · “Occupied Units”
+        - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 18×18
+      - **Frame** · `FRAME` · 326×51 · vertical stack, gap 2px · 2 children
+        - **2** · `TEXT` · 18×34 · “2”
+        - **1 available** · `TEXT` · 60×15 · “1 available”
+    - **StatCard** · `FRAME` · 358×131 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+        - **Active Tenants** · `TEXT` · 100×17 · “Active Tenants”
+        - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 18×18
+      - **Frame** · `FRAME` · 326×51 · vertical stack, gap 2px · 2 children
+        - **8** · `TEXT` · 19×34 · “8”
+        - **View tenants →** · `TEXT` · 90×15 · “View tenants →”
+    - **StatCard** · `FRAME` · 358×131 · vertical stack, gap 12px, padding 16px · 2 children
+      - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+        - **Monthly Revenue** · `TEXT` · 117×17 · “Monthly Revenue”
+        - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 18×18
+      - **Frame** · `FRAME` · 326×51 · vertical stack, gap 2px · 2 children
+        - **₱0.00** · `TEXT` · 89×34 · “₱0.00”
+        - **View payments →** · `TEXT` · 103×15 · “View payments →”
+  - **RecentPaymentsSection** · `FRAME` · 390×108 · vertical stack, gap 12px, padding 0/16/12/16px · 2 children
+    - **Frame** · `FRAME` · 358×19 · horizontal row · 2 children
+      - **Recent Payments** · `TEXT` · 137×19 · “Recent Payments”
+      - **View all** · `TEXT` · 49×16 · “View all”
+    - **PaymentCard** · `FRAME` · 358×65 · horizontal row, padding 14px · 2 children
+      - **Frame** · `FRAME` · 240×34 · horizontal row, gap 10px · 2 children
+        - **Frame** · `FRAME` · 34×34 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 16×16
+        - **Frame** · `FRAME` · 196×31 · vertical stack, gap 2px · 2 children
+          - **JOHN MICHAEL CARIG** · `TEXT` · 196×16 · “JOHN MICHAEL CARIG”
+          - **Unit A-101 • Jul 29, 2026** · `TEXT` · 131×13 · “Unit A-101 • Jul 29, 2026”
+      - **Frame** · `FRAME` · 90×37 · vertical stack, gap 4px · 2 children
+        - **₱1,000.00** · `TEXT` · 74×17 · “₱1,000.00”
+        - **Frame** · `FRAME` · 37×16 · horizontal row, padding 2/8/2/8px · 1 children
+          - **Paid** · `TEXT` · 21×12 · “Paid”
+  - **BillingOverviewSection** · `FRAME` · 390×327 · vertical stack, gap 12px, padding 0/16/100/16px · 3 children
+    - **Frame** · `FRAME` · 135×36 · vertical stack, gap 2px · 2 children
+      - **Billing Overview** · `TEXT` · 127×19 · “Billing Overview”
+      - **Current financial status.** · `TEXT` · 135×15 · “Current financial status.”
+    - **Frame** · `FRAME` · 358×127 · vertical stack, gap 8px · 3 children
+      - **Frame** · `FRAME` · 358×37 · horizontal row, padding 10px · 2 children
+        - **Frame** · `FRAME` · 108×16 · horizontal row, gap 8px · 2 children
+          - **Vector** · `VECTOR` · 14×14
+          - **Active Leases** · `TEXT` · 86×16 · “Active Leases”
+        - **3** · `TEXT` · 10×17 · “3”
+      - **Frame** · `FRAME` · 358×37 · horizontal row, padding 10px · 2 children
+        - **Frame** · `FRAME` · 138×16 · horizontal row, gap 8px · 2 children
+          - **Vector** · `VECTOR` · 14×14
+          - **Unpaid/Partial Bills** · `TEXT` · 116×16 · “Unpaid/Partial Bills”
+        - **2** · `TEXT` · 9×17 · “2”
+      - **Frame** · `FRAME` · 358×37 · horizontal row, padding 10px · 2 children
+        - **Frame** · `FRAME` · 103×16 · horizontal row, gap 8px · 2 children
+          - **Vector** · `VECTOR` · 14×14
+          - **Overdue Bills** · `TEXT` · 81×16 · “Overdue Bills”
+        - **0** · `TEXT` · 10×17 · “0”
+    - **ManageBillsBtn** · `FRAME` · 358×40 · horizontal row, gap 8px, padding 12/16/12/16px · 2 children
+      - **Vector** · `VECTOR` · 14×14
+      - **Manage Bills** · `TEXT` · 80×16 · “Manage Bills”
+  - **BottomNavigation** · `FRAME` · 390×68 · horizontal row, padding 12/16/20/16px · 5 children
+    - **NavItem** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+    - **NavItem** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Apartments** · `TEXT` · 57×12 · “Apartments”
+    - **NavItem** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **NavItem** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Bills** · `TEXT` · 20×12 · “Bills”
+    - **NavItem** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Profile** · `TEXT` · 31×12 · “Profile”
+- **Mobile Apartments** · `FRAME` · 390×844 · vertical stack · 3 children
+  - **HeaderBlock** · `FRAME` · 390×106 · vertical stack, padding 0/0/20/0px · 2 children
+    - **MobileStatusBar** · `FRAME` · 390×44 · horizontal row, padding 0/20/0/20px · 2 children
+      - **9:41** · `TEXT` · 30×17 · “9:41”
+      - **Frame** · `FRAME` · 69×12 · horizontal row, gap 6px · 3 children
+        - **ios-signal** · `FRAME` · 17×11 · 1 children
+          - **Vector** · `VECTOR` · 16×7
+        - **ios-wifi-signal** · `FRAME` · 15×11 · 1 children
+          - **Vector** · `VECTOR` · 13×7
+        - **ios-battery-full** · `FRAME` · 25×12 · 1 children
+          - **Vector** · `VECTOR` · 24×8
+    - **LogoAndProfile** · `FRAME` · 390×42 · horizontal row, padding 8/16/0/16px · 2 children
+      - **Frame** · `FRAME` · 151×34 · horizontal row, gap 8px · 2 children
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **S** · `TEXT` · 12×22 · “S”
+        - **Frame** · `FRAME` · 111×34 · vertical stack, gap 2px · 2 children
+          - **StayTrack** · `TEXT` · 89×22 · “StayTrack”
+          - **Apartment Management** · `TEXT` · 111×10 · “Apartment Management”
+      - **Frame** · `FRAME` · 32×32 · horizontal row, gap 8px · 1 children
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **S** · `TEXT` · 10×17 · “S”
+  - **ScrollContent** · `FRAME` · 390×738 · vertical stack, gap 20px, padding 20/16/100/16px · 2 children
+    - **Frame** · `FRAME` · 358×41 · horizontal row · 2 children
+      - **Frame** · `FRAME` · 195×41 · vertical stack, gap 2px · 2 children
+        - **Apartment Units** · `TEXT` · 163×24 · “Apartment Units”
+        - **Manage properties and availability** · `TEXT` · 195×15 · “Manage properties and availability”
+      - **Frame** · `FRAME` · 66×31 · horizontal row, gap 6px, padding 8/12/8/12px · 2 children
+        - **Vector** · `VECTOR` · 12×12
+        - **Add** · `TEXT` · 24×15 · “Add”
+    - **Frame** · `FRAME` · 358×546 · vertical stack, gap 12px · 3 children
+      - **UnitCard-A-002** · `FRAME` · 358×174 · vertical stack, gap 16px, padding 16px · 4 children
+        - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 92×36 · horizontal row, gap 8px · 2 children
+            - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+              - **Vector** · `VECTOR` · 16×16
+            - **Frame** · `FRAME` · 52×36 · vertical stack, gap 2px · 2 children
+              - **A-002** · `TEXT` · 52×19 · “A-002”
+              - **1st floor** · `TEXT` · 46×15 · “1st floor”
+          - **Frame** · `FRAME` · 73×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Available** · `TEXT` · 53×15 · “Available”
+        - **Line** · `LINE` · 326×0
+        - **Frame** · `FRAME` · 326×34 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 99×34 · vertical stack, gap 4px · 2 children
+            - **Apartment Type** · `TEXT` · 99×13 · “Apartment Type”
+            - **2 Bedroom** · `TEXT` · 74×17 · “2 Bedroom”
+          - **Frame** · `FRAME` · 88×34 · vertical stack, gap 4px · 2 children
+            - **Monthly Rent** · `TEXT` · 88×13 · “Monthly Rent”
+            - **$10,000.00** · `TEXT` · 81×17 · “$10,000.00”
+        - **Frame** · `FRAME` · 326×24 · horizontal row, padding 8/0/0/0px · 2 children
+          - **View Lease Details** · `TEXT` · 119×16 · “View Lease Details”
+          - **arrow-right** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+      - **UnitCard-A-001** · `FRAME` · 358×174 · vertical stack, gap 16px, padding 16px · 4 children
+        - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 90×36 · horizontal row, gap 8px · 2 children
+            - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+              - **Vector** · `VECTOR` · 16×16
+            - **Frame** · `FRAME` · 50×36 · vertical stack, gap 2px · 2 children
+              - **A-001** · `TEXT` · 50×19 · “A-001”
+              - **1st floor** · `TEXT` · 46×15 · “1st floor”
+          - **Frame** · `FRAME` · 76×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Occupied** · `TEXT` · 56×15 · “Occupied”
+        - **Line** · `LINE` · 326×0
+        - **Frame** · `FRAME` · 326×34 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 99×34 · vertical stack, gap 4px · 2 children
+            - **Apartment Type** · `TEXT` · 99×13 · “Apartment Type”
+            - **2 Bedroom** · `TEXT` · 74×17 · “2 Bedroom”
+          - **Frame** · `FRAME` · 88×34 · vertical stack, gap 4px · 2 children
+            - **Monthly Rent** · `TEXT` · 88×13 · “Monthly Rent”
+            - **$8,000.00** · `TEXT` · 74×17 · “$8,000.00”
+        - **Frame** · `FRAME` · 326×24 · horizontal row, padding 8/0/0/0px · 2 children
+          - **View Lease Details** · `TEXT` · 119×16 · “View Lease Details”
+          - **arrow-right** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+      - **UnitCard-A-101** · `FRAME` · 358×174 · vertical stack, gap 16px, padding 16px · 4 children
+        - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 87×36 · horizontal row, gap 8px · 2 children
+            - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+              - **Vector** · `VECTOR` · 16×16
+            - **Frame** · `FRAME` · 47×36 · vertical stack, gap 2px · 2 children
+              - **A-101** · `TEXT` · 47×19 · “A-101”
+              - **1st floor** · `TEXT` · 46×15 · “1st floor”
+          - **Frame** · `FRAME` · 76×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Occupied** · `TEXT` · 56×15 · “Occupied”
+        - **Line** · `LINE` · 326×0
+        - **Frame** · `FRAME` · 326×34 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 99×34 · vertical stack, gap 4px · 2 children
+            - **Apartment Type** · `TEXT` · 99×13 · “Apartment Type”
+            - **1 Bedroom** · `TEXT` · 72×17 · “1 Bedroom”
+          - **Frame** · `FRAME` · 88×34 · vertical stack, gap 4px · 2 children
+            - **Monthly Rent** · `TEXT` · 88×13 · “Monthly Rent”
+            - **$800.00** · `TEXT` · 61×17 · “$800.00”
+        - **Frame** · `FRAME` · 326×24 · horizontal row, padding 8/0/0/0px · 2 children
+          - **View Lease Details** · `TEXT` · 119×16 · “View Lease Details”
+          - **arrow-right** · `FRAME` · 16×16 · 1 children
+            - **Vector** · `VECTOR` · 9×9
+  - **BottomNavigation** · `FRAME` · 390×72 · horizontal row, padding 12/12/20/12px · 5 children
+    - **NavItem-Dashboard** · `FRAME` · 73×40 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 24×24 · horizontal row · 1 children
+        - **Vector** · `VECTOR` · 20×20
+      - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+    - **NavItem-Apartments** · `FRAME` · 73×40 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 24×24 · horizontal row · 1 children
+        - **Vector** · `VECTOR` · 20×20
+      - **Apartments** · `TEXT` · 59×12 · “Apartments”
+    - **NavItem-Tenants** · `FRAME` · 73×40 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 24×24 · horizontal row · 1 children
+        - **Vector** · `VECTOR` · 20×20
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **NavItem-Leases** · `FRAME` · 73×40 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 24×24 · horizontal row · 1 children
+        - **Vector** · `VECTOR` · 20×20
+      - **Leases** · `TEXT` · 34×12 · “Leases”
+    - **NavItem-Profile** · `FRAME` · 73×40 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 24×24 · horizontal row · 1 children
+        - **Vector** · `VECTOR` · 20×20
+      - **Profile** · `TEXT` · 31×12 · “Profile”
+- **Mobile Tenants** · `FRAME` · 390×1714 · vertical stack · 3 children
+  - **HeaderBlock** · `FRAME` · 390×100 · vertical stack, padding 0/0/16/0px · 2 children
+    - **MobileStatusBar** · `FRAME` · 390×44 · horizontal row, padding 0/24/0/24px · 2 children
+      - **9:41** · `TEXT` · 30×17 · “9:41”
+      - **Frame** · `FRAME` · 69×12 · horizontal row, gap 6px · 3 children
+        - **ios-signal** · `FRAME` · 17×11 · 1 children
+          - **Vector** · `VECTOR` · 16×7
+        - **ios-wifi-signal** · `FRAME` · 15×11 · 1 children
+          - **Vector** · `VECTOR` · 13×7
+        - **ios-battery-full** · `FRAME` · 25×12 · 1 children
+          - **Vector** · `VECTOR` · 24×8
+    - **LogoAndProfile** · `FRAME` · 390×40 · horizontal row, padding 8/16/0/16px · 2 children
+      - **LogoWrap** · `FRAME` · 125×28 · horizontal row, gap 8px · 2 children
+        - **LogoIcon** · `FRAME` · 28×28 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **StayTrack** · `TEXT` · 89×22 · “StayTrack”
+      - **ProfileWrap** · `FRAME` · 76×32 · horizontal row, gap 12px · 2 children
+        - **BellIcon** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **Vector** · `VECTOR` · 16×16
+        - **Avatar** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **S** · `TEXT` · 10×17 · “S”
+  - **ScrollContent** · `FRAME` · 390×1614 · vertical stack, gap 20px, padding 20/16/100/16px · 2 children
+    - **TitleAndAction** · `FRAME` · 358×44 · horizontal row · 2 children
+      - **TitleText** · `FRAME` · 233×44 · vertical stack, gap 4px · 2 children
+        - **Tenants** · `TEXT` · 80×24 · “Tenants”
+        - **Manage registered apartment tenants** · `TEXT` · 233×16 · “Manage registered apartment tenants”
+      - **AddTenantButton** · `FRAME` · 70×32 · horizontal row, gap 6px, padding 8/12/8/12px · 2 children
+        - **Vector** · `VECTOR` · 14×14
+        - **Add** · `TEXT` · 26×16 · “Add”
+    - **TenantList** · `FRAME` · 358×1430 · vertical stack, gap 12px · 7 children
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 192×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **T** · `TEXT` · 11×19 · “T”
+            - **InfoText** · `FRAME` · 140×35 · vertical stack, gap 2px · 2 children
+              - **Tenant 1** · `TEXT` · 62×18 · “Tenant 1”
+              - **Acc: tenant1@gmail.com** · `TEXT` · 140×15 · “Acc: tenant1@gmail.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 110×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **09275875043** · `TEXT` · 88×16 · “09275875043”
+          - **EmailRow** · `FRAME` · 143×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **tenant1@gmail.com** · `TEXT` · 121×16 · “tenant1@gmail.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 184×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **O** · `TEXT` · 13×19 · “O”
+            - **InfoText** · `FRAME` · 132×35 · vertical stack, gap 2px · 2 children
+              - **Owner** · `TEXT` · 49×18 · “Owner”
+              - **Acc: admin@gmail.com** · `TEXT` · 132×15 · “Acc: admin@gmail.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 46×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **N/A** · `TEXT` · 24×16 · “N/A”
+          - **EmailRow** · `FRAME` · 135×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **admin@gmail.com** · `TEXT` · 113×16 · “admin@gmail.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 199×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **M** · `TEXT` · 15×19 · “M”
+            - **InfoText** · `FRAME` · 147×35 · vertical stack, gap 2px · 2 children
+              - **Mickaela Jade Carig** · `TEXT` · 147×18 · “Mickaela Jade Carig”
+              - **Acc: mikay@gmail.com** · `TEXT` · 131×15 · “Acc: mikay@gmail.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 110×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **09275875043** · `TEXT` · 88×16 · “09275875043”
+          - **EmailRow** · `FRAME` · 133×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **mikay@gmail.com** · `TEXT` · 111×16 · “mikay@gmail.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 174×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **E** · `TEXT` · 10×19 · “E”
+            - **InfoText** · `FRAME` · 122×35 · vertical stack, gap 2px · 2 children
+              - **Emily Carig** · `TEXT` · 82×18 · “Emily Carig”
+              - **Acc: emz@gmail.com** · `TEXT` · 122×15 · “Acc: emz@gmail.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 46×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **N/A** · `TEXT` · 24×16 · “N/A”
+          - **EmailRow** · `FRAME` · 123×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **emz@gmail.com** · `TEXT` · 101×16 · “emz@gmail.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 187×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **J** · `TEXT` · 10×19 · “J”
+            - **InfoText** · `FRAME` · 135×35 · vertical stack, gap 2px · 2 children
+              - **Juan Dela Cruz** · `TEXT` · 110×18 · “Juan Dela Cruz”
+              - **Acc: jayboy@gmail.com** · `TEXT` · 135×15 · “Acc: jayboy@gmail.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 46×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **N/A** · `TEXT` · 24×16 · “N/A”
+          - **EmailRow** · `FRAME` · 137×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **jayboy@gmail.com** · `TEXT` · 115×16 · “jayboy@gmail.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 212×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **J** · `TEXT` · 10×19 · “J”
+            - **InfoText** · `FRAME` · 160×35 · vertical stack, gap 2px · 2 children
+              - **Juanito Mico** · `TEXT` · 93×18 · “Juanito Mico”
+              - **Acc: jose.carig.up@phinmaed.com** · `TEXT` · 160×15 · “Acc: jose.carig.up@phinmaed.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 110×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **09275875043** · `TEXT` · 88×16 · “09275875043”
+          - **EmailRow** · `FRAME` · 203×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **jose.carig.up@phinmaed.com** · `TEXT` · 181×16 · “jose.carig.up@phinmaed.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+      - **TenantCard** · `FRAME` · 358×194 · vertical stack, gap 16px, padding 16px · 4 children
+        - **CardHeader** · `FRAME` · 326×40 · horizontal row · 2 children
+          - **AvatarAndInfo** · `FRAME` · 212×40 · horizontal row, gap 12px · 2 children
+            - **AvatarCircle** · `FRAME` · 40×40 · horizontal row · 1 children
+              - **J** · `TEXT` · 10×19 · “J”
+            - **InfoText** · `FRAME` · 160×35 · vertical stack, gap 2px · 2 children
+              - **Jm Carig** · `TEXT` · 65×18 · “Jm Carig”
+              - **Acc: carigjohnmichaelscarig@gmail.com** · `TEXT` · 160×15 · “Acc: carigjohnmichaelscarig@gmail.com”
+          - **StatusBadge** · `FRAME` · 57×23 · horizontal row, padding 4/10/4/10px · 1 children
+            - **Active** · `TEXT` · 37×15 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **ContactDetails** · `FRAME` · 326×42 · vertical stack, gap 10px · 2 children
+          - **PhoneRow** · `FRAME` · 110×16 · horizontal row, gap 8px · 2 children
+            - **phone** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×12
+            - **09275875043** · `TEXT` · 88×16 · “09275875043”
+          - **EmailRow** · `FRAME` · 238×16 · horizontal row, gap 8px · 2 children
+            - **mail** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 12×9
+            - **carigjohnmichaelscarig@gmail.com** · `TEXT` · 216×16 · “carigjohnmichaelscarig@gmail.com”
+        - **ActionRow** · `FRAME` · 326×32 · horizontal row, padding 8/0/8/0px · 1 children
+          - **View Records** · `TEXT` · 87×16 · “View Records”
+  - **BottomNavigation** · `FRAME` · 390×66 · horizontal row, padding 12/16/20/16px · 5 children
+    - **NavHome** · `FRAME` · 64×34 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 18×18
+      - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+    - **NavApartments** · `FRAME` · 64×34 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 18×18
+      - **Apartments** · `TEXT` · 57×12 · “Apartments”
+    - **NavTenants** · `FRAME` · 64×34 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 18×18
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **NavBills** · `FRAME` · 64×34 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 18×18
+      - **Bills** · `TEXT` · 20×12 · “Bills”
+    - **NavProfile** · `FRAME` · 64×34 · vertical stack, gap 4px · 2 children
+      - **Vector** · `VECTOR` · 18×18
+      - **Profile** · `TEXT` · 31×12 · “Profile”
+- **Mobile Leases** · `FRAME` · 390×844 · vertical stack · 3 children
+  - **HeaderBlock** · `FRAME` · 390×100 · vertical stack, padding 0/0/16/0px · 2 children
+    - **MobileStatusBar** · `FRAME` · 390×44 · horizontal row, padding 0/20/0/20px · 2 children
+      - **9:41** · `TEXT` · 30×17 · “9:41”
+      - **Frame** · `FRAME` · 80×20 · horizontal row, gap 6px · 3 children
+        - **ios-signal** · `FRAME` · 20×20 · 1 children
+          - **Vector** · `VECTOR` · 19×12
+        - **ios-wifi-signal** · `FRAME` · 20×20 · 1 children
+          - **Vector** · `VECTOR` · 17×12
+        - **ios-battery-full** · `FRAME` · 28×20 · 1 children
+          - **Vector** · `VECTOR` · 27×13
+    - **LogoAndProfile** · `FRAME` · 390×40 · horizontal row, padding 8/16/0/16px · 2 children
+      - **logoWrap** · `FRAME` · 147×30 · horizontal row, gap 8px · 2 children
+        - **logoIcon** · `FRAME` · 28×28 · vertical stack · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 111×30 · vertical stack, gap 1px · 2 children
+          - **StayTrack** · `TEXT` · 79×19 · “StayTrack”
+          - **APARTMENT MANAGEMENT** · `TEXT` · 111×10 · “APARTMENT MANAGEMENT”
+      - **Profile** · `FRAME` · 32×32 · horizontal row, gap 8px · 1 children
+        - **Frame** · `FRAME` · 32×32 · vertical stack · 1 children
+          - **S** · `TEXT` · 10×17 · “S”
+  - **ScrollContent** · `FRAME` · 390×744 · vertical stack, gap 16px, padding 16/16/100/16px · 3 children
+    - **Frame** · `FRAME` · 358×39 · horizontal row · 2 children
+      - **Frame** · `FRAME` · 148×39 · vertical stack, gap 2px · 2 children
+        - **Active Leases** · `TEXT` · 124×22 · “Active Leases”
+        - **Lease agreement tracking** · `TEXT` · 148×15 · “Lease agreement tracking”
+      - **CreateLeaseBtn** · `FRAME` · 82×31 · horizontal row, gap 4px, padding 8/12/8/12px · 2 children
+        - **plus** · `FRAME` · 14×14 · 1 children
+          - **Vector** · `VECTOR` · 8×8
+        - **Create** · `TEXT` · 40×15 · “Create”
+    - **Frame** · `FRAME` · 358×40 · horizontal row, gap 12px, padding 12px · 2 children
+      - **Frame** · `FRAME` · 8×8 · horizontal row
+      - **You currently have 3 Active Leases in this cycle.** · `TEXT` · 314×16 · “You currently have 3 Active Leases in this cycle.”
+    - **Frame** · `FRAME` · 358×444 · vertical stack, gap 12px · 3 children
+      - **LeaseCard** · `FRAME` · 358×140 · vertical stack, gap 16px, padding 16px · 3 children
+        - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 139×36 · horizontal row, gap 10px · 2 children
+            - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+              - **user** · `FRAME` · 16×16 · 1 children
+                - **Vector** · `VECTOR` · 9×12
+            - **Frame** · `FRAME` · 93×35 · vertical stack, gap 2px · 2 children
+              - **Juanito Mico** · `TEXT` · 93×18 · “Juanito Mico”
+              - **Unit A-001** · `TEXT` · 61×15 · “Unit A-001”
+          - **Frame** · `FRAME` · 50×21 · horizontal row, padding 4/8/4/8px · 1 children
+            - **Active** · `TEXT` · 34×13 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **Frame** · `FRAME` · 326×40 · vertical stack, gap 10px · 2 children
+          - **Frame** · `FRAME` · 326×15 · horizontal row, gap 8px · 2 children
+            - **calendar** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 11×12
+            - **Duration: Aug 01, 2026 – Aug 01, 2027** · `TEXT` · 304×15 · “Duration: Aug 01, 2026 – Aug 01, 2027”
+          - **Frame** · `FRAME` · 326×15 · horizontal row, gap 8px · 2 children
+            - **dollar-sign** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 7×12
+            - **Monthly Rent: $8,000.00** · `TEXT` · 304×15 · “Monthly Rent: $8,000.00”
+      - **LeaseCard** · `FRAME` · 358×140 · vertical stack, gap 16px, padding 16px · 3 children
+        - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 115×36 · horizontal row, gap 10px · 2 children
+            - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+              - **user** · `FRAME` · 16×16 · 1 children
+                - **Vector** · `VECTOR` · 9×12
+            - **Frame** · `FRAME` · 69×35 · vertical stack, gap 2px · 2 children
+              - **Jim Carig** · `TEXT` · 69×18 · “Jim Carig”
+              - **Unit A-101** · `TEXT` · 59×15 · “Unit A-101”
+          - **Frame** · `FRAME` · 50×21 · horizontal row, padding 4/8/4/8px · 1 children
+            - **Active** · `TEXT` · 34×13 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **Frame** · `FRAME` · 326×40 · vertical stack, gap 10px · 2 children
+          - **Frame** · `FRAME` · 326×15 · horizontal row, gap 8px · 2 children
+            - **calendar** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 11×12
+            - **Duration: Jul 29, 2026 – Aug 29, 2026** · `TEXT` · 304×15 · “Duration: Jul 29, 2026 – Aug 29, 2026”
+          - **Frame** · `FRAME` · 326×15 · horizontal row, gap 8px · 2 children
+            - **dollar-sign** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 7×12
+            - **Monthly Rent: $800.00** · `TEXT` · 304×15 · “Monthly Rent: $800.00”
+      - **LeaseCard** · `FRAME` · 358×140 · vertical stack, gap 16px, padding 16px · 3 children
+        - **Frame** · `FRAME` · 326×36 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 212×36 · horizontal row, gap 10px · 2 children
+            - **Frame** · `FRAME` · 36×36 · horizontal row · 1 children
+              - **user** · `FRAME` · 16×16 · 1 children
+                - **Vector** · `VECTOR` · 9×12
+            - **Frame** · `FRAME` · 166×35 · vertical stack, gap 2px · 2 children
+              - **JOHN MICHAEL CARIG** · `TEXT` · 166×18 · “JOHN MICHAEL CARIG”
+              - **Unit A-101** · `TEXT` · 59×15 · “Unit A-101”
+          - **Frame** · `FRAME` · 50×21 · horizontal row, padding 4/8/4/8px · 1 children
+            - **Active** · `TEXT` · 34×13 · “Active”
+        - **Line** · `LINE` · 326×0
+        - **Frame** · `FRAME` · 326×40 · vertical stack, gap 10px · 2 children
+          - **Frame** · `FRAME` · 326×15 · horizontal row, gap 8px · 2 children
+            - **calendar** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 11×12
+            - **Duration: Jul 29, 2026 – Aug 29, 2026** · `TEXT` · 304×15 · “Duration: Jul 29, 2026 – Aug 29, 2026”
+          - **Frame** · `FRAME` · 326×15 · horizontal row, gap 8px · 2 children
+            - **dollar-sign** · `FRAME` · 14×14 · 1 children
+              - **Vector** · `VECTOR` · 7×12
+            - **Monthly Rent: $800.00** · `TEXT` · 304×15 · “Monthly Rent: $800.00”
+  - **BottomNavigation** · `FRAME` · 390×68 · horizontal row, padding 12/16/20/16px · 5 children
+    - **Frame** · `FRAME` · 64×36 · vertical stack, gap 4px · 2 children
+      - **layout-dashboard** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 15×15
+      - **Home** · `TEXT` · 29×12 · “Home”
+    - **Frame** · `FRAME` · 64×36 · vertical stack, gap 4px · 2 children
+      - **building** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 13×17
+      - **Apartments** · `TEXT` · 57×12 · “Apartments”
+    - **Frame** · `FRAME` · 64×36 · vertical stack, gap 4px · 2 children
+      - **users** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 17×15
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **Frame** · `FRAME` · 64×36 · vertical stack, gap 4px · 2 children
+      - **file-text** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 13×17
+      - **Leases** · `TEXT` · 35×12 · “Leases”
+    - **Frame** · `FRAME` · 64×36 · vertical stack, gap 4px · 2 children
+      - **user** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 12×15
+      - **Profile** · `TEXT` · 31×12 · “Profile”
+- **Mobile Bills** · `FRAME` · 390×1060 · vertical stack · 4 children
+  - **HeaderBlock** · `FRAME` · 390×104 · vertical stack · 2 children
+    - **MobileStatusBar** · `FRAME` · 390×44 · horizontal row, padding 0/24/0/24px · 2 children
+      - **9:41** · `TEXT` · 30×17 · “9:41”
+      - **Frame** · `FRAME` · 80×20 · horizontal row, gap 6px · 3 children
+        - **ios-signal** · `FRAME` · 20×20 · 1 children
+          - **Vector** · `VECTOR` · 19×12
+        - **ios-wifi-signal** · `FRAME` · 20×20 · 1 children
+          - **Vector** · `VECTOR` · 17×12
+        - **ios-battery-full** · `FRAME` · 28×20 · 1 children
+          - **Vector** · `VECTOR` · 27×13
+    - **LogoAndProfile** · `FRAME` · 390×60 · horizontal row, padding 8/20/20/20px · 2 children
+      - **Frame** · `FRAME` · 147×30 · horizontal row, gap 8px · 2 children
+        - **Frame** · `FRAME` · 28×28 · horizontal row · 1 children
+          - **S** · `TEXT` · 10×18 · “S”
+        - **Frame** · `FRAME` · 111×30 · vertical stack, gap 1px · 2 children
+          - **StayTrack** · `TEXT` · 79×19 · “StayTrack”
+          - **APARTMENT MANAGEMENT** · `TEXT` · 111×10 · “APARTMENT MANAGEMENT”
+      - **Frame** · `FRAME` · 76×32 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **Icon-bell** · `FRAME` · 16×16 · vertical stack · 1 children
+            - **vector** · `VECTOR` · 16×16
+        - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+          - **S** · `TEXT` · 9×16 · “S”
+  - **TitleBar** · `FRAME` · 390×63 · horizontal row, padding 20/20/4/20px · 2 children
+    - **Frame** · `FRAME` · 135×39 · vertical stack, gap 2px · 2 children
+      - **Bills Statement** · `TEXT` · 134×22 · “Bills Statement”
+      - **Manage tenant invoices** · `TEXT` · 135×15 · “Manage tenant invoices”
+    - **Frame** · `FRAME` · 108×31 · horizontal row, gap 6px, padding 8/14/8/14px · 2 children
+      - **Icon-plus** · `FRAME` · 14×14 · vertical stack · 1 children
+        - **vector** · `VECTOR` · 14×14
+      - **Create Bill** · `TEXT` · 60×15 · “Create Bill”
+  - **ScrollContent** · `FRAME` · 390×893 · vertical stack, gap 16px, padding 12/20/120/20px · 3 children
+    - **BillCard** · `FRAME` · 350×243 · vertical stack, gap 16px, padding 16px · 4 children
+      - **Frame** · `FRAME` · 318×35 · horizontal row · 2 children
+        - **Frame** · `FRAME` · 180×35 · vertical stack, gap 2px · 2 children
+          - **Juanito Mico** · `TEXT` · 180×18 · “Juanito Mico”
+          - **Unit A-001** · `TEXT` · 62×15 · “Unit A-001”
+        - **Frame** · `FRAME` · 66×27 · horizontal row, padding 6/12/6/12px · 1 children
+          - **Unpaid** · `TEXT` · 42×15 · “Unpaid”
+      - **Line** · `LINE` · 318×0
+      - **Frame** · `FRAME` · 318×33 · horizontal row, gap 16px · 2 children
+        - **Frame** · `FRAME` · 151×33 · vertical stack, gap 4px · 2 children
+          - **Billing Month** · `TEXT` · 88×13 · “Billing Month”
+          - **August 2026** · `TEXT` · 81×16 · “August 2026”
+        - **Frame** · `FRAME` · 151×33 · vertical stack, gap 4px · 2 children
+          - **Due Date** · `TEXT` · 54×13 · “Due Date”
+          - **Aug 31, 2026** · `TEXT` · 82×16 · “Aug 31, 2026”
+      - **Frame** · `FRAME` · 318×95 · vertical stack, gap 8px, padding 12px · 4 children
+        - **Frame** · `FRAME` · 294×15 · horizontal row · 2 children
+          - **Amount** · `TEXT` · 45×15 · “Amount”
+          - **$8,000.00** · `TEXT` · 60×15 · “$8,000.00”
+        - **Frame** · `FRAME` · 294×15 · horizontal row · 2 children
+          - **Late Fee** · `TEXT` · 49×15 · “Late Fee”
+          - **$500.00** · `TEXT` · 49×15 · “$500.00”
+        - **Line** · `LINE` · 294×0
+        - **Frame** · `FRAME` · 294×17 · horizontal row · 2 children
+          - **Total Amount** · `TEXT` · 85×16 · “Total Amount”
+          - **$8,500.00** · `TEXT` · 74×17 · “$8,500.00”
+    - **BillCard** · `FRAME` · 350×243 · vertical stack, gap 16px, padding 16px · 4 children
+      - **Frame** · `FRAME` · 318×35 · horizontal row · 2 children
+        - **Frame** · `FRAME` · 180×35 · vertical stack, gap 2px · 2 children
+          - **JOHN MICHAEL CARIG** · `TEXT` · 180×18 · “JOHN MICHAEL CARIG”
+          - **Unit A-101** · `TEXT` · 60×15 · “Unit A-101”
+        - **Frame** · `FRAME` · 50×27 · horizontal row, padding 6/12/6/12px · 1 children
+          - **Paid** · `TEXT` · 26×15 · “Paid”
+      - **Line** · `LINE` · 318×0
+      - **Frame** · `FRAME` · 318×33 · horizontal row, gap 16px · 2 children
+        - **Frame** · `FRAME` · 151×33 · vertical stack, gap 4px · 2 children
+          - **Billing Month** · `TEXT` · 88×13 · “Billing Month”
+          - **August 2026** · `TEXT` · 81×16 · “August 2026”
+        - **Frame** · `FRAME` · 151×33 · vertical stack, gap 4px · 2 children
+          - **Due Date** · `TEXT` · 54×13 · “Due Date”
+          - **Jul 28, 2026** · `TEXT` · 78×16 · “Jul 28, 2026”
+      - **Frame** · `FRAME` · 318×95 · vertical stack, gap 8px, padding 12px · 4 children
+        - **Frame** · `FRAME` · 294×15 · horizontal row · 2 children
+          - **Amount** · `TEXT` · 45×15 · “Amount”
+          - **$800.00** · `TEXT` · 50×15 · “$800.00”
+        - **Frame** · `FRAME` · 294×15 · horizontal row · 2 children
+          - **Late Fee** · `TEXT` · 49×15 · “Late Fee”
+          - **$200.00** · `TEXT` · 49×15 · “$200.00”
+        - **Line** · `LINE` · 294×0
+        - **Frame** · `FRAME` · 294×17 · horizontal row · 2 children
+          - **Total Amount** · `TEXT` · 85×16 · “Total Amount”
+          - **$1,000.00** · `TEXT` · 71×17 · “$1,000.00”
+    - **BillCard** · `FRAME` · 350×243 · vertical stack, gap 16px, padding 16px · 4 children
+      - **Frame** · `FRAME` · 318×35 · horizontal row · 2 children
+        - **Frame** · `FRAME` · 180×35 · vertical stack, gap 2px · 2 children
+          - **Jm Carig** · `TEXT` · 180×18 · “Jm Carig”
+          - **Unit A-101** · `TEXT` · 60×15 · “Unit A-101”
+        - **Frame** · `FRAME` · 66×27 · horizontal row, padding 6/12/6/12px · 1 children
+          - **Unpaid** · `TEXT` · 42×15 · “Unpaid”
+      - **Line** · `LINE` · 318×0
+      - **Frame** · `FRAME` · 318×33 · horizontal row, gap 16px · 2 children
+        - **Frame** · `FRAME` · 151×33 · vertical stack, gap 4px · 2 children
+          - **Billing Month** · `TEXT` · 88×13 · “Billing Month”
+          - **July 2026** · `TEXT` · 62×16 · “July 2026”
+        - **Frame** · `FRAME` · 151×33 · vertical stack, gap 4px · 2 children
+          - **Due Date** · `TEXT` · 54×13 · “Due Date”
+          - **Aug 01, 2026** · `TEXT` · 82×16 · “Aug 01, 2026”
+      - **Frame** · `FRAME` · 318×95 · vertical stack, gap 8px, padding 12px · 4 children
+        - **Frame** · `FRAME` · 294×15 · horizontal row · 2 children
+          - **Amount** · `TEXT` · 45×15 · “Amount”
+          - **$1,000.00** · `TEXT` · 58×15 · “$1,000.00”
+        - **Frame** · `FRAME` · 294×15 · horizontal row · 2 children
+          - **Late Fee** · `TEXT` · 49×15 · “Late Fee”
+          - **$200.00** · `TEXT` · 49×15 · “$200.00”
+        - **Line** · `LINE` · 294×0
+        - **Frame** · `FRAME` · 294×17 · horizontal row · 2 children
+          - **Total Amount** · `TEXT` · 85×16 · “Total Amount”
+          - **$1,200.00** · `TEXT` · 71×17 · “$1,200.00”
+  - **BottomNavigation** · `FRAME` · 390×67 · horizontal row, padding 10/16/20/16px · 5 children
+    - **NavItem** · `FRAME` · 72×37 · vertical stack, gap 4px · 2 children
+      - **Icon-Dashboard** · `FRAME` · 20×20 · vertical stack · 1 children
+        - **vector** · `VECTOR` · 20×20
+      - **Dashboard** · `TEXT` · 58×13 · “Dashboard”
+    - **NavItem** · `FRAME` · 72×37 · vertical stack, gap 4px · 2 children
+      - **Icon-Apartments** · `FRAME` · 20×20 · vertical stack · 1 children
+        - **vector** · `VECTOR` · 20×20
+      - **Apartments** · `TEXT` · 63×13 · “Apartments”
+    - **NavItem** · `FRAME` · 72×37 · vertical stack, gap 4px · 2 children
+      - **Icon-Tenants** · `FRAME` · 20×20 · vertical stack · 1 children
+        - **vector** · `VECTOR` · 20×20
+      - **Tenants** · `TEXT` · 43×13 · “Tenants”
+    - **NavItem** · `FRAME` · 72×37 · vertical stack, gap 4px · 2 children
+      - **Icon-Bills** · `FRAME` · 20×20 · vertical stack · 1 children
+        - **vector** · `VECTOR` · 20×20
+      - **Bills** · `TEXT` · 22×13 · “Bills”
+    - **NavItem** · `FRAME` · 72×37 · vertical stack, gap 4px · 2 children
+      - **Icon-Profile** · `FRAME` · 20×20 · vertical stack · 1 children
+        - **vector** · `VECTOR` · 20×20
+      - **Profile** · `TEXT` · 34×13 · “Profile”
+- **Mobile Payments** · `FRAME` · 390×919 · vertical stack · 4 children
+  - **status-bar** · `FRAME` · 390×44 · horizontal row, padding 0/20/0/20px · 2 children
+    - **9:41** · `TEXT` · 30×17 · “9:41”
+    - **Frame** · `FRAME` · 69×12 · horizontal row, gap 6px · 3 children
+      - **ios-signal** · `FRAME` · 17×11 · 1 children
+        - **Vector** · `VECTOR` · 16×7
+      - **ios-wifi-signal** · `FRAME` · 15×11 · 1 children
+        - **Vector** · `VECTOR` · 13×7
+      - **ios-battery-full** · `FRAME` · 25×12 · 1 children
+        - **Vector** · `VECTOR` · 24×8
+  - **app-header** · `FRAME` · 390×64 · horizontal row, padding 16/20/16/20px · 2 children
+    - **logo-group** · `FRAME` · 115×29 · horizontal row, gap 8px · 2 children
+      - **logo-badge** · `FRAME` · 28×28 · horizontal row · 1 children
+        - **S** · `TEXT` · 11×19 · “S”
+      - **Frame** · `FRAME` · 79×29 · vertical stack · 2 children
+        - **StayTrack** · `TEXT` · 79×19 · “StayTrack”
+        - **MANAGEMENT** · `TEXT` · 60×10 · “MANAGEMENT”
+    - **avatar-badge** · `FRAME` · 32×32 · horizontal row · 1 children
+      - **S** · `TEXT` · 9×16 · “S”
+  - **scroll-content** · `FRAME` · 390×811 · vertical stack, gap 20px, padding 20/20/100/20px · 3 children
+    - **Frame** · `FRAME` · 350×47 · vertical stack, gap 4px · 2 children
+      - **Payment History** · `TEXT` · 350×27 · “Payment History”
+      - **Track and manage all tenant payments.** · `TEXT` · 350×16 · “Track and manage all tenant payments.”
+    - **Frame** · `FRAME` · 350×31 · horizontal row · 2 children
+      - **Recent Payments** · `TEXT` · 137×19 · “Recent Payments”
+      - **btn-record** · `FRAME` · 86×31 · horizontal row, gap 6px, padding 8/12/8/12px · 2 children
+        - **plus** · `FRAME` · 14×14 · 1 children
+          - **Vector** · `VECTOR` · 8×8
+        - **Record** · `TEXT` · 42×15 · “Record”
+    - **Frame** · `FRAME` · 350×573 · vertical stack, gap 12px · 3 children
+      - **payment-card** · `FRAME` · 350×183 · vertical stack, gap 12px, padding 16px · 3 children
+        - **Frame** · `FRAME` · 318×34 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 265×34 · vertical stack, gap 2px · 2 children
+            - **JOHN MICHAEL CARIG** · `TEXT` · 156×17 · “JOHN MICHAEL CARIG”
+            - **Unit A-101 • Jul 29, 2026** · `TEXT` · 143×15 · “Unit A-101 • Jul 29, 2026”
+          - **action-button** · `FRAME` · 53×27 · horizontal row, padding 6/12/6/12px · 1 children
+            - **View** · `TEXT` · 29×15 · “View”
+        - **Line** · `LINE` · 318×0
+        - **Frame** · `FRAME` · 318×93 · vertical stack, gap 8px · 4 children
+          - **Frame** · `FRAME` · 318×18 · horizontal row · 2 children
+            - **Amount Paid** · `TEXT` · 73×15 · “Amount Paid”
+            - **$1,000.00** · `TEXT` · 76×18 · “$1,000.00”
+          - **Frame** · `FRAME` · 318×21 · horizontal row · 2 children
+            - **Payment Method** · `TEXT` · 97×15 · “Payment Method”
+            - **method-badge** · `FRAME` · 44×21 · horizontal row, padding 4/8/4/8px · 1 children
+              - **Cash** · `TEXT` · 28×13 · “Cash”
+          - **Frame** · `FRAME` · 318×15 · horizontal row · 2 children
+            - **Reference** · `TEXT` · 58×15 · “Reference”
+            - **—** · `TEXT` · 12×15 · “—”
+          - **Frame** · `FRAME` · 318×15 · horizontal row · 2 children
+            - **Recorded By** · `TEXT` · 73×15 · “Recorded By”
+            - **StayTrack Admin** · `TEXT` · 97×15 · “StayTrack Admin”
+      - **payment-card** · `FRAME` · 350×183 · vertical stack, gap 12px, padding 16px · 3 children
+        - **Frame** · `FRAME` · 318×34 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 265×34 · vertical stack, gap 2px · 2 children
+            - **SARAH JENKINS** · `TEXT` · 113×17 · “SARAH JENKINS”
+            - **Unit B-204 • Jul 28, 2026** · `TEXT` · 146×15 · “Unit B-204 • Jul 28, 2026”
+          - **action-button** · `FRAME` · 53×27 · horizontal row, padding 6/12/6/12px · 1 children
+            - **View** · `TEXT` · 29×15 · “View”
+        - **Line** · `LINE` · 318×0
+        - **Frame** · `FRAME` · 318×93 · vertical stack, gap 8px · 4 children
+          - **Frame** · `FRAME` · 318×18 · horizontal row · 2 children
+            - **Amount Paid** · `TEXT` · 73×15 · “Amount Paid”
+            - **$1,250.00** · `TEXT` · 75×18 · “$1,250.00”
+          - **Frame** · `FRAME` · 318×21 · horizontal row · 2 children
+            - **Payment Method** · `TEXT` · 97×15 · “Payment Method”
+            - **method-badge** · `FRAME` · 62×21 · horizontal row, padding 4/8/4/8px · 1 children
+              - **Transfer** · `TEXT` · 46×13 · “Transfer”
+          - **Frame** · `FRAME` · 318×15 · horizontal row · 2 children
+            - **Reference** · `TEXT` · 58×15 · “Reference”
+            - **TXN-849204** · `TEXT` · 77×15 · “TXN-849204”
+          - **Frame** · `FRAME` · 318×15 · horizontal row · 2 children
+            - **Recorded By** · `TEXT` · 73×15 · “Recorded By”
+            - **StayTrack Admin** · `TEXT` · 97×15 · “StayTrack Admin”
+      - **payment-card** · `FRAME` · 350×183 · vertical stack, gap 12px, padding 16px · 3 children
+        - **Frame** · `FRAME` · 318×34 · horizontal row · 2 children
+          - **Frame** · `FRAME` · 265×34 · vertical stack, gap 2px · 2 children
+            - **DAVID CHEN** · `TEXT` · 87×17 · “DAVID CHEN”
+            - **Unit C-302 • Jul 25, 2026** · `TEXT` · 147×15 · “Unit C-302 • Jul 25, 2026”
+          - **action-button** · `FRAME` · 53×27 · horizontal row, padding 6/12/6/12px · 1 children
+            - **View** · `TEXT` · 29×15 · “View”
+        - **Line** · `LINE` · 318×0
+        - **Frame** · `FRAME` · 318×93 · vertical stack, gap 8px · 4 children
+          - **Frame** · `FRAME` · 318×18 · horizontal row · 2 children
+            - **Amount Paid** · `TEXT` · 73×15 · “Amount Paid”
+            - **$950.00** · `TEXT` · 64×18 · “$950.00”
+          - **Frame** · `FRAME` · 318×21 · horizontal row · 2 children
+            - **Payment Method** · `TEXT` · 97×15 · “Payment Method”
+            - **method-badge** · `FRAME` · 42×21 · horizontal row, padding 4/8/4/8px · 1 children
+              - **Card** · `TEXT` · 26×13 · “Card”
+          - **Frame** · `FRAME` · 318×15 · horizontal row · 2 children
+            - **Reference** · `TEXT` · 58×15 · “Reference”
+            - **PMT-992015** · `TEXT` · 75×15 · “PMT-992015”
+          - **Frame** · `FRAME` · 318×15 · horizontal row · 2 children
+            - **Recorded By** · `TEXT` · 73×15 · “Recorded By”
+            - **StayTrack Admin** · `TEXT` · 97×15 · “StayTrack Admin”
+  - **bottom-nav** · `FRAME` · 390×71 · horizontal row, padding 12/12/20/12px · 5 children
+    - **nav-item-dashboard** · `FRAME` · 73×39 · vertical stack, gap 4px · 2 children
+      - **home** · `FRAME` · 22×22 · 1 children
+        - **Vector** · `VECTOR` · 17×17
+      - **Dashboard** · `TEXT` · 58×13 · “Dashboard”
+    - **nav-item-apartments** · `FRAME` · 73×39 · vertical stack, gap 4px · 2 children
+      - **building** · `FRAME` · 22×22 · 1 children
+        - **Vector** · `VECTOR` · 15×18
+      - **Apartments** · `TEXT` · 63×13 · “Apartments”
+    - **nav-item-tenants** · `FRAME` · 73×39 · vertical stack, gap 4px · 2 children
+      - **users** · `FRAME` · 22×22 · 1 children
+        - **Vector** · `VECTOR` · 18×17
+      - **Tenants** · `TEXT` · 43×13 · “Tenants”
+    - **nav-item-payments** · `FRAME` · 73×39 · vertical stack, gap 4px · 2 children
+      - **credit-card** · `FRAME` · 22×22 · 1 children
+        - **Vector** · `VECTOR` · 18×13
+      - **Payments** · `TEXT` · 53×13 · “Payments”
+    - **nav-item-profile** · `FRAME` · 73×39 · vertical stack, gap 4px · 2 children
+      - **user** · `FRAME` · 22×22 · 1 children
+        - **Vector** · `VECTOR` · 13×17
+      - **Profile** · `TEXT` · 34×13 · “Profile”
+- **Mobile Profile** · `FRAME` · 390×844 · vertical stack · 3 children
+  - **HeaderBlock** · `FRAME` · 390×192 · vertical stack, padding 0/0/24/0px · 3 children
+    - **StatusBar** · `FRAME` · 390×44 · horizontal row, padding 0/20/0/20px · 2 children
+      - **9:41** · `TEXT` · 30×17 · “9:41”
+      - **Frame** · `FRAME` · 69×11 · horizontal row, gap 6px · 3 children
+        - **ios-signal** · `FRAME` · 17×11 · 1 children
+          - **Vector** · `VECTOR` · 16×7
+        - **ios-wifi-signal** · `FRAME` · 15×11 · 1 children
+          - **Vector** · `VECTOR` · 13×7
+        - **ios-battery-full** · `FRAME` · 25×11 · 1 children
+          - **Vector** · `VECTOR` · 24×7
+    - **Frame** · `FRAME` · 390×56 · horizontal row, padding 12/20/12/20px · 2 children
+      - **Frame** · `FRAME` · 125×28 · horizontal row, gap 8px · 2 children
+        - **Frame** · `FRAME` · 28×28 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **StayTrack** · `TEXT` · 89×22 · “StayTrack”
+      - **Frame** · `FRAME` · 32×32 · horizontal row · 1 children
+        - **S** · `TEXT` · 10×17 · “S”
+    - **Frame** · `FRAME` · 245×68 · vertical stack, gap 4px, padding 16/20/0/20px · 2 children
+      - **Profile** · `TEXT` · 83×31 · “Profile”
+      - **Manage your account settings.** · `TEXT` · 205×17 · “Manage your account settings.”
+  - **ScrollContent** · `FRAME` · 390×652 · vertical stack, gap 20px, padding 20/16/100/16px · 2 children
+    - **Frame** · `FRAME` · 358×306 · vertical stack, gap 20px, padding 20px · 3 children
+      - **Frame** · `FRAME` · 318×38 · vertical stack, gap 4px · 2 children
+        - **Profile Information** · `TEXT` · 146×19 · “Profile Information”
+        - **Update your account's profile details.** · `TEXT` · 212×15 · “Update your account's profile details.”
+      - **Frame** · `FRAME` · 318×148 · vertical stack, gap 14px · 2 children
+        - **Frame** · `FRAME` · 318×67 · vertical stack, gap 6px · 2 children
+          - **Name** · `TEXT` · 40×17 · “Name”
+          - **Frame** · `FRAME` · 318×44 · horizontal row, padding 10/16/10/16px · 1 children
+            - **StayTrack Admin** · `TEXT` · 286×17 · “StayTrack Admin”
+        - **Frame** · `FRAME` · 318×67 · vertical stack, gap 6px · 2 children
+          - **Email** · `TEXT` · 37×17 · “Email”
+          - **Frame** · `FRAME` · 318×44 · horizontal row, padding 10/16/10/16px · 1 children
+            - **admin@staytrack.test** · `TEXT` · 286×17 · “admin@staytrack.test”
+      - **Frame** · `FRAME` · 318×40 · horizontal row, padding 10/16/10/16px · 1 children
+        - **SAVE** · `TEXT` · 37×17 · “SAVE”
+    - **Frame** · `FRAME` · 358×387 · vertical stack, gap 20px, padding 20px · 3 children
+      - **Frame** · `FRAME` · 318×38 · vertical stack, gap 4px · 2 children
+        - **Update Password** · `TEXT` · 138×19 · “Update Password”
+        - **Ensure your account is using a secure password.** · `TEXT` · 276×15 · “Ensure your account is using a secure password.”
+      - **Frame** · `FRAME` · 318×229 · vertical stack, gap 14px · 3 children
+        - **Frame** · `FRAME` · 318×67 · vertical stack, gap 6px · 2 children
+          - **Current Password** · `TEXT` · 122×17 · “Current Password”
+          - **Frame** · `FRAME` · 318×44 · horizontal row, padding 10/16/10/16px · 1 children
+            - **••••••••** · `TEXT` · 286×17 · “••••••••”
+        - **Frame** · `FRAME` · 318×67 · vertical stack, gap 6px · 2 children
+          - **New Password** · `TEXT` · 101×17 · “New Password”
+          - **Frame** · `FRAME` · 318×44 · horizontal row, padding 10/16/10/16px · 1 children
+            - **••••••••** · `TEXT` · 286×17 · “••••••••”
+        - **Frame** · `FRAME` · 318×67 · vertical stack, gap 6px · 2 children
+          - **Confirm Password** · `TEXT` · 125×17 · “Confirm Password”
+          - **Frame** · `FRAME` · 318×44 · horizontal row, padding 10/16/10/16px · 1 children
+            - **••••••••** · `TEXT` · 286×17 · “••••••••”
+      - **Frame** · `FRAME` · 318×40 · horizontal row, padding 10/16/10/16px · 1 children
+        - **SAVE** · `TEXT` · 37×17 · “SAVE”
+  - **BottomNavigation** · `FRAME` · 390×72 · horizontal row, padding 12/16/24/16px · 5 children
+    - **Frame** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 16×16
+      - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+    - **Frame** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 16×16
+      - **Apartments** · `TEXT` · 57×12 · “Apartments”
+    - **Frame** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 16×16
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **Frame** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 16×16
+      - **Bills** · `TEXT` · 20×12 · “Bills”
+    - **Frame** · `FRAME` · 72×36 · vertical stack, gap 4px · 2 children
+      - **Frame** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 16×16
+      - **Profile** · `TEXT` · 32×12 · “Profile”
+- **Mobile Create Lease** · `FRAME` · 390×1008 · vertical stack · 4 children
+  - **status-bar** · `FRAME` · 390×44 · horizontal row, padding 0/20/0/20px · 2 children
+    - **9:41** · `TEXT` · 30×17 · “9:41”
+    - **Frame** · `FRAME` · 80×20 · horizontal row, gap 6px · 3 children
+      - **ios-signal** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 19×12
+      - **ios-wifi-signal** · `FRAME` · 20×20 · 1 children
+        - **Vector** · `VECTOR` · 17×12
+      - **ios-battery-full** · `FRAME` · 28×20 · 1 children
+        - **Vector** · `VECTOR` · 27×13
+  - **Header-Container** · `FRAME` · 390×107 · vertical stack, gap 12px, padding 8/16/16/16px · 2 children
+    - **Brand-Row** · `FRAME` · 358×30 · horizontal row · 2 children
+      - **Frame** · `FRAME` · 141×30 · horizontal row, gap 8px · 2 children
+        - **Frame** · `FRAME` · 28×28 · horizontal row · 1 children
+          - **S** · `TEXT` · 11×19 · “S”
+        - **Frame** · `FRAME` · 105×30 · vertical stack, gap 1px · 2 children
+          - **StayTrack** · `TEXT` · 79×19 · “StayTrack”
+          - **PROPERTY MANAGEMENT** · `TEXT` · 105×10 · “PROPERTY MANAGEMENT”
+      - **Back-Link** · `FRAME` · 63×27 · horizontal row, padding 6/10/6/10px · 1 children
+        - **← Back** · `TEXT` · 43×15 · “← Back”
+    - **Frame** · `FRAME` · 358×41 · vertical stack, gap 2px · 2 children
+      - **Create Lease** · `TEXT` · 358×24 · “Create Lease”
+      - **Create a new lease agreement for a tenant and apartment.** · `TEXT` · 358×15 · “Create a new lease agreement for a tenant and apartment.”
+  - **Form-Content** · `FRAME` · 390×857 · vertical stack, gap 20px, padding 16/16/100/16px · 4 children
+    - **Frame** · `FRAME` · 358×301 · vertical stack, gap 16px, padding 16px · 4 children
+      - **Frame** · `FRAME` · 326×35 · vertical stack, gap 2px · 2 children
+        - **Lease Information** · `TEXT` · 133×18 · “Lease Information”
+        - **Enter the main details for this lease agreement.** · `TEXT` · 268×15 · “Enter the main details for this lease agreement.”
+      - **Frame** · `FRAME` · 326×62 · vertical stack, gap 6px · 2 children
+        - **Frame** · `FRAME` · 326×16 · horizontal row, gap 4px · 1 children
+          - **Tenant** · `TEXT` · 44×16 · “Tenant”
+        - **Frame** · `FRAME` · 326×40 · horizontal row, gap 8px, padding 10/14/10/14px · 2 children
+          - **Select Tenant** · `TEXT` · 276×16 · “Select Tenant”
+          - **Vector** · `VECTOR` · 14×14
+      - **Frame** · `FRAME` · 326×62 · vertical stack, gap 6px · 2 children
+        - **Frame** · `FRAME` · 326×16 · horizontal row, gap 4px · 1 children
+          - **Apartment** · `TEXT` · 68×16 · “Apartment”
+        - **Frame** · `FRAME` · 326×40 · horizontal row, gap 8px, padding 10/14/10/14px · 2 children
+          - **Select Available Apartment** · `TEXT` · 276×16 · “Select Available Apartment”
+          - **Vector** · `VECTOR` · 14×14
+      - **Frame** · `FRAME` · 326×62 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 157×62 · vertical stack, gap 6px · 2 children
+          - **Frame** · `FRAME` · 157×16 · horizontal row, gap 4px · 1 children
+            - **Start Date** · `TEXT` · 64×16 · “Start Date”
+          - **Frame** · `FRAME` · 157×40 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+            - **dd/mm/yyyy** · `TEXT` · 129×16 · “dd/mm/yyyy”
+        - **Frame** · `FRAME` · 157×62 · vertical stack, gap 6px · 2 children
+          - **Frame** · `FRAME` · 157×16 · horizontal row, gap 4px · 2 children
+            - **End Date** · `TEXT` · 57×16 · “End Date”
+            - **(Optional)** · `TEXT` · 52×13 · “(Optional)”
+          - **Frame** · `FRAME` · 157×40 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+            - **dd/mm/yyyy** · `TEXT` · 129×16 · “dd/mm/yyyy”
+    - **Frame** · `FRAME` · 358×263 · vertical stack, gap 16px, padding 16px · 3 children
+      - **Frame** · `FRAME` · 326×35 · vertical stack, gap 2px · 2 children
+        - **Financial Information** · `TEXT` · 155×18 · “Financial Information”
+        - **Define rent, deposits, and any special clauses.** · `TEXT` · 263×15 · “Define rent, deposits, and any special clauses.”
+      - **Frame** · `FRAME` · 326×62 · horizontal row, gap 12px · 2 children
+        - **Frame** · `FRAME` · 157×62 · vertical stack, gap 6px · 2 children
+          - **Frame** · `FRAME` · 157×16 · horizontal row, gap 4px · 1 children
+            - **Monthly Rent** · `TEXT` · 84×16 · “Monthly Rent”
+          - **Frame** · `FRAME` · 157×40 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+            - **$** · `TEXT` · 129×16 · “$”
+        - **Frame** · `FRAME` · 157×62 · vertical stack, gap 6px · 2 children
+          - **Frame** · `FRAME` · 157×16 · horizontal row, gap 4px · 1 children
+            - **Security Deposit** · `TEXT` · 105×16 · “Security Deposit”
+          - **Frame** · `FRAME` · 157×40 · horizontal row, gap 8px, padding 10/14/10/14px · 1 children
+            - **$ 0** · `TEXT` · 129×16 · “$ 0”
+      - **Frame** · `FRAME` · 326×102 · vertical stack, gap 6px · 2 children
+        - **Lease Terms** · `TEXT` · 80×16 · “Lease Terms”
+        - **Frame** · `FRAME` · 326×80 · horizontal row, padding 12px · 1 children
+          - **Enter additional lease terms or notes...** · `TEXT` · 302×16 · “Enter additional lease terms or notes...”
+    - **Frame** · `FRAME` · 358×76 · vertical stack, gap 6px, padding 12px · 2 children
+      - **● Lease Status: Active** · `TEXT` · 145×16 · “● Lease Status: Active”
+      - **Creating this lease will automatically mark the selected apartment as occupied.** · `TEXT` · 334×30 · “Creating this lease will automatically mark the selected apartment as occupied.”
+    - **Frame** · `FRAME` · 358×41 · horizontal row, gap 12px · 2 children
+      - **Cancel-Btn** · `FRAME` · 174×41 · horizontal row, padding 12/0/12/0px · 1 children
+        - **Cancel** · `TEXT` · 48×17 · “Cancel”
+      - **Submit-Btn** · `FRAME` · 172×41 · horizontal row, padding 12/0/12/0px · 1 children
+        - **Create Lease** · `TEXT` · 90×17 · “Create Lease”
+  - **Bottom-Navigation** · `FRAME` · 390×74 · horizontal row, padding 10/12/20/12px · 5 children
+    - **Tab-Dashboard** · `FRAME` · 64×44 · vertical stack, gap 4px, padding 4/0/4/0px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Dashboard** · `TEXT` · 53×12 · “Dashboard”
+    - **Tab-Apartments** · `FRAME` · 64×44 · vertical stack, gap 4px, padding 4/0/4/0px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Apartments** · `TEXT` · 57×12 · “Apartments”
+    - **Tab-Tenants** · `FRAME` · 64×44 · vertical stack, gap 4px, padding 4/0/4/0px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Tenants** · `TEXT` · 39×12 · “Tenants”
+    - **Tab-Leases** · `FRAME` · 64×44 · vertical stack, gap 4px, padding 4/0/4/0px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Leases** · `TEXT` · 35×12 · “Leases”
+    - **Tab-Bills** · `FRAME` · 64×44 · vertical stack, gap 4px, padding 4/0/4/0px · 2 children
+      - **Vector** · `VECTOR` · 20×20
+      - **Bills** · `TEXT` · 20×12 · “Bills”
+- **Primary Button** · `FRAME` · 77×37 · horizontal row, padding 10/16/10/16px · 1 children
+  - **Button** · `TEXT` · 45×17 · “Button”
+- **Desktop Tenant Dashboard** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 3 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Tenant portal** · `TEXT` · 1042×15 · “Tenant portal”
+      - **Welcome, Ana** · `TEXT` · 1042×36 · “Welcome, Ana”
+      - **Your apartment, lease, bills, and payment history in one place.** · `TEXT` · 1042×18 · “Your apartment, lease, bills, and payment history in one place.”
+    - **Nested Frame** · `FRAME` · 1042×142 · horizontal row, gap 16px · 3 children
+      - **Nested Frame** · `FRAME` · 337×142 · vertical stack, gap 8px, padding 20px · 4 children
+        - **MY APARTMENT** · `TEXT` · 295×16 · “MY APARTMENT”
+        - **Unit B-204** · `TEXT` · 295×27 · “Unit B-204”
+        - **2 Bedroom ? 2nd floor** · `TEXT` · 295×17 · “2 Bedroom ? 2nd floor”
+        - **Active lease** · `TEXT` · 295×16 · “Active lease”
+      - **Nested Frame** · `FRAME` · 337×142 · vertical stack, gap 8px, padding 20px · 4 children
+        - **MONTHLY RENT** · `TEXT` · 295×16 · “MONTHLY RENT”
+        - **?18,500** · `TEXT` · 295×27 · “?18,500”
+        - **Due every 5th of the month** · `TEXT` · 295×17 · “Due every 5th of the month”
+        - **Next due Oct 5, 2026** · `TEXT` · 295×16 · “Next due Oct 5, 2026”
+      - **Nested Frame** · `FRAME` · 337×142 · vertical stack, gap 8px, padding 20px · 4 children
+        - **OUTSTANDING BALANCE** · `TEXT` · 295×16 · “OUTSTANDING BALANCE”
+        - **?0.00** · `TEXT` · 295×27 · “?0.00”
+        - **All September bills paid** · `TEXT` · 295×17 · “All September bills paid”
+        - **You are up to date** · `TEXT` · 295×16 · “You are up to date”
+    - **Nested Frame** · `FRAME` · 1042×146 · horizontal row, gap 16px · 2 children
+      - **Nested Frame** · `FRAME` · 513×126 · vertical stack, gap 14px, padding 20px · 3 children
+        - **My lease** · `TEXT` · 471×22 · “My lease”
+        - **Unit B-204 ? Aug 1, 2026 ? Jul 31, 2027** · `TEXT` · 471×17 · “Unit B-204 ? Aug 1, 2026 ? Jul 31, 2027”
+        - **Security deposit: ?37,000 ? 11 months remaining** · `TEXT` · 471×17 · “Security deposit: ?37,000 ? 11 months remaining”
+      - **Nested Frame** · `FRAME` · 513×146 · vertical stack, gap 14px, padding 20px · 3 children
+        - **Recent payments** · `TEXT` · 471×22 · “Recent payments”
+        - **Sep 2, 2026 ? GCash ? ?18,500** · `TEXT` · 471×17 · “Sep 2, 2026 ? GCash ? ?18,500”
+        - **TenantDashboardPayments** · `FRAME` · 182×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **View payment history** · `TEXT` · 150×17 · “View payment history”
+- **Desktop Create Apartment** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Property management** · `TEXT` · 1042×15 · “Property management”
+      - **Add apartment** · `TEXT` · 1042×36 · “Add apartment”
+      - **Create a unit and set its initial availability.** · `TEXT` · 1042×18 · “Create a unit and set its initial availability.”
+    - **Nested Frame** · `FRAME` · 1042×417 · vertical stack, gap 18px, padding 24px · 5 children
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Unit number** · `TEXT` · 992×16 · “Unit number”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **A-401** · `TEXT` · 41×17 · “A-401”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Apartment type** · `TEXT` · 992×16 · “Apartment type”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **2 Bedroom** · `TEXT` · 73×17 · “2 Bedroom”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Floor** · `TEXT` · 992×16 · “Floor”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **4th floor** · `TEXT` · 57×17 · “4th floor”
+      - **Nested Frame** · `FRAME` · 992×64 · horizontal row, gap 16px · 2 children
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Monthly rent** · `TEXT` · 488×16 · “Monthly rent”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **?22,000** · `TEXT` · 54×17 · “?22,000”
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Status** · `TEXT` · 488×16 · “Status”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **Available** · `TEXT` · 59×17 · “Available”
+      - **Nested Frame** · `FRAME` · 992×39 · horizontal row, gap 10px · 2 children
+        - **CreateApartmentCancel** · `FRAME` · 82×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Cancel** · `TEXT` · 48×17 · “Cancel”
+        - **CreateApartmentSubmit** · `FRAME` · 156×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Create Apartment** · `TEXT` · 124×17 · “Create Apartment”
+- **Desktop Apartment Details** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Property management** · `TEXT` · 1042×15 · “Property management”
+      - **Apartment A-301** · `TEXT` · 1042×36 · “Apartment A-301”
+      - **View unit information, occupancy, and leasing status.** · `TEXT` · 1042×18 · “View unit information, occupancy, and leasing status.”
+    - **Nested Frame** · `FRAME` · 1042×165 · horizontal row, gap 20px · 2 children
+      - **Nested Frame** · `FRAME` · 762×165 · vertical stack, gap 14px, padding 24px · 4 children
+        - **Unit overview** · `TEXT` · 712×22 · “Unit overview”
+        - **2 Bedroom ? 1 Bathroom ? 3rd floor** · `TEXT` · 712×17 · “2 Bedroom ? 1 Bathroom ? 3rd floor”
+        - **Monthly rent: ?22,000 ? Status: Available** · `TEXT` · 712×17 · “Monthly rent: ?22,000 ? Status: Available”
+        - **Last updated September 2026** · `TEXT` · 712×17 · “Last updated September 2026”
+      - **Nested Frame** · `FRAME` · 260×165 · vertical stack, gap 14px, padding 20px · 3 children
+        - **Actions** · `TEXT` · 218×19 · “Actions”
+        - **ApartmentDetailsEdit** · `FRAME` · 134×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Edit apartment** · `TEXT` · 102×17 · “Edit apartment”
+        - **ApartmentDetailsBack** · `FRAME` · 168×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Back to apartments** · `TEXT` · 134×17 · “Back to apartments”
+- **Desktop Edit Apartment** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Property management** · `TEXT` · 1042×15 · “Property management”
+      - **Edit apartment** · `TEXT` · 1042×36 · “Edit apartment”
+      - **Update apartment details and availability.** · `TEXT` · 1042×18 · “Update apartment details and availability.”
+    - **Nested Frame** · `FRAME` · 1042×417 · vertical stack, gap 18px, padding 24px · 5 children
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Unit number** · `TEXT` · 992×16 · “Unit number”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **A-301** · `TEXT` · 40×17 · “A-301”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Apartment type** · `TEXT` · 992×16 · “Apartment type”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **2 Bedroom** · `TEXT` · 73×17 · “2 Bedroom”
+      - **Nested Frame** · `FRAME` · 992×64 · horizontal row, gap 16px · 2 children
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Monthly rent** · `TEXT` · 488×16 · “Monthly rent”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **?22,000** · `TEXT` · 54×17 · “?22,000”
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Status** · `TEXT` · 488×16 · “Status”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **Available** · `TEXT` · 59×17 · “Available”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Notes** · `TEXT` · 992×16 · “Notes”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **Freshly prepared for occupancy.** · `TEXT` · 214×17 · “Freshly prepared for occupancy.”
+      - **Nested Frame** · `FRAME` · 992×39 · horizontal row, gap 10px · 2 children
+        - **EditApartmentCancel** · `FRAME` · 82×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Cancel** · `TEXT` · 48×17 · “Cancel”
+        - **EditApartmentSubmit** · `FRAME` · 128×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Save changes** · `TEXT` · 96×17 · “Save changes”
+- **Desktop Create Tenant** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Tenant management** · `TEXT` · 1042×15 · “Tenant management”
+      - **Add tenant** · `TEXT` · 1042×36 · “Add tenant”
+      - **Register a tenant and assign their contact information.** · `TEXT` · 1042×18 · “Register a tenant and assign their contact information.”
+    - **Nested Frame** · `FRAME` · 1042×417 · vertical stack, gap 18px, padding 24px · 5 children
+      - **Nested Frame** · `FRAME` · 992×64 · horizontal row, gap 16px · 2 children
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **First name** · `TEXT` · 488×16 · “First name”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **Ana** · `TEXT` · 26×17 · “Ana”
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Last name** · `TEXT` · 488×16 · “Last name”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **Reyes** · `TEXT` · 40×17 · “Reyes”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Email address** · `TEXT` · 992×16 · “Email address”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **ana.reyes@example.com** · `TEXT` · 165×17 · “ana.reyes@example.com”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Phone number** · `TEXT` · 992×16 · “Phone number”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **+63 917 000 0000** · `TEXT` · 124×17 · “+63 917 000 0000”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Emergency contact** · `TEXT` · 992×16 · “Emergency contact”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **Maria Reyes** · `TEXT` · 81×17 · “Maria Reyes”
+      - **Nested Frame** · `FRAME` · 992×39 · horizontal row, gap 10px · 2 children
+        - **CreateTenantCancel** · `FRAME` · 82×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Cancel** · `TEXT` · 48×17 · “Cancel”
+        - **CreateTenantSubmit** · `FRAME` · 129×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Create Tenant** · `TEXT` · 97×17 · “Create Tenant”
+- **Desktop Tenant Records** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Tenant management** · `TEXT` · 1042×15 · “Tenant management”
+      - **Ana Reyes** · `TEXT` · 1042×36 · “Ana Reyes”
+      - **Tenant profile, active lease, and account records.** · `TEXT` · 1042×18 · “Tenant profile, active lease, and account records.”
+    - **Nested Frame** · `FRAME` · 1042×237 · horizontal row, gap 20px · 2 children
+      - **Nested Frame** · `FRAME` · 762×237 · vertical stack, gap 14px, padding 24px · 6 children
+        - **Contact information** · `TEXT` · 712×22 · “Contact information”
+        - **ana.reyes@example.com ? +63 917 000 0000** · `TEXT` · 712×17 · “ana.reyes@example.com ? +63 917 000 0000”
+        - **Current lease** · `TEXT` · 712×22 · “Current lease”
+        - **Unit B-204 ? Aug 1, 2026 ? Jul 31, 2027 ? Active** · `TEXT` · 712×17 · “Unit B-204 ? Aug 1, 2026 ? Jul 31, 2027 ? Active”
+        - **Billing status** · `TEXT` · 712×22 · “Billing status”
+        - **No outstanding balance ? Latest payment ?18,500** · `TEXT` · 712×17 · “No outstanding balance ? Latest payment ?18,500”
+      - **Nested Frame** · `FRAME` · 260×132 · vertical stack, gap 14px, padding 20px · 2 children
+        - **TenantRecordsEdit** · `FRAME` · 107×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Edit tenant** · `TEXT` · 75×17 · “Edit tenant”
+        - **TenantRecordsBack** · `FRAME` · 141×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Back to tenants** · `TEXT` · 107×17 · “Back to tenants”
+- **Desktop Edit Tenant** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Tenant management** · `TEXT` · 1042×15 · “Tenant management”
+      - **Edit tenant** · `TEXT` · 1042×36 · “Edit tenant”
+      - **Update tenant account and contact information.** · `TEXT` · 1042×18 · “Update tenant account and contact information.”
+    - **Nested Frame** · `FRAME` · 1042×417 · vertical stack, gap 18px, padding 24px · 5 children
+      - **Nested Frame** · `FRAME` · 992×64 · horizontal row, gap 16px · 2 children
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **First name** · `TEXT` · 488×16 · “First name”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **Ana** · `TEXT` · 26×17 · “Ana”
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Last name** · `TEXT` · 488×16 · “Last name”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **Reyes** · `TEXT` · 40×17 · “Reyes”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Email address** · `TEXT` · 992×16 · “Email address”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **ana.reyes@example.com** · `TEXT` · 165×17 · “ana.reyes@example.com”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Phone number** · `TEXT` · 992×16 · “Phone number”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **+63 917 000 0000** · `TEXT` · 124×17 · “+63 917 000 0000”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Emergency contact** · `TEXT` · 992×16 · “Emergency contact”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **Maria Reyes** · `TEXT` · 81×17 · “Maria Reyes”
+      - **Nested Frame** · `FRAME` · 992×39 · horizontal row, gap 10px · 2 children
+        - **EditTenantCancel** · `FRAME` · 82×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Cancel** · `TEXT` · 48×17 · “Cancel”
+        - **EditTenantSubmit** · `FRAME` · 128×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Save changes** · `TEXT` · 96×17 · “Save changes”
+- **Desktop Create Bill** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Finance** · `TEXT` · 1042×15 · “Finance”
+      - **Create bill** · `TEXT` · 1042×36 · “Create bill”
+      - **Issue a billing record for a tenant and apartment.** · `TEXT` · 1042×18 · “Issue a billing record for a tenant and apartment.”
+    - **Nested Frame** · `FRAME` · 1042×417 · vertical stack, gap 18px, padding 24px · 5 children
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Tenant** · `TEXT` · 992×16 · “Tenant”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **Ana Reyes** · `TEXT` · 70×17 · “Ana Reyes”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Apartment** · `TEXT` · 992×16 · “Apartment”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **Unit B-204** · `TEXT` · 73×17 · “Unit B-204”
+      - **Nested Frame** · `FRAME` · 992×64 · horizontal row, gap 16px · 2 children
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Billing month** · `TEXT` · 488×16 · “Billing month”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **September 2026** · `TEXT` · 112×17 · “September 2026”
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Due date** · `TEXT` · 488×16 · “Due date”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **September 5, 2026** · `TEXT` · 128×17 · “September 5, 2026”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Amount due** · `TEXT` · 992×16 · “Amount due”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **?18,500** · `TEXT` · 52×17 · “?18,500”
+      - **Nested Frame** · `FRAME` · 992×39 · horizontal row, gap 10px · 2 children
+        - **CreateBillCancel** · `FRAME` · 82×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Cancel** · `TEXT` · 48×17 · “Cancel”
+        - **CreateBillSubmit** · `FRAME` · 103×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Create Bill** · `TEXT` · 71×17 · “Create Bill”
+- **Desktop Bill Details** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Finance** · `TEXT` · 1042×15 · “Finance”
+      - **Bill ST-1048** · `TEXT` · 1042×36 · “Bill ST-1048”
+      - **September 2026 rent for Ana Reyes.** · `TEXT` · 1042×18 · “September 2026 rent for Ana Reyes.”
+    - **Nested Frame** · `FRAME` · 1042×175 · horizontal row, gap 20px · 2 children
+      - **Nested Frame** · `FRAME` · 762×175 · vertical stack, gap 14px, padding 24px · 4 children
+        - **Bill summary** · `TEXT` · 712×22 · “Bill summary”
+        - **Tenant: Ana Reyes ? Unit B-204** · `TEXT` · 712×17 · “Tenant: Ana Reyes ? Unit B-204”
+        - **Due Sep 5, 2026 ? Rent ?18,500** · `TEXT` · 712×17 · “Due Sep 5, 2026 ? Rent ?18,500”
+        - **Balance ?18,500** · `TEXT` · 712×27 · “Balance ?18,500”
+      - **Nested Frame** · `FRAME` · 260×132 · vertical stack, gap 14px, padding 20px · 2 children
+        - **BillDetailsRecordPayment** · `FRAME` · 144×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Record Payment** · `TEXT` · 112×17 · “Record Payment”
+        - **BillDetailsBack** · `FRAME` · 117×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Back to bills** · `TEXT` · 83×17 · “Back to bills”
+- **Desktop Record Payment** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Finance** · `TEXT` · 1042×15 · “Finance”
+      - **Record payment** · `TEXT` · 1042×36 · “Record payment”
+      - **Record a tenant payment against an outstanding bill.** · `TEXT` · 1042×18 · “Record a tenant payment against an outstanding bill.”
+    - **Nested Frame** · `FRAME` · 1042×417 · vertical stack, gap 18px, padding 24px · 5 children
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Bill / tenant** · `TEXT` · 992×16 · “Bill / tenant”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **ST-1048 ? Ana Reyes ? Unit B-204** · `TEXT` · 228×17 · “ST-1048 ? Ana Reyes ? Unit B-204”
+      - **Nested Frame** · `FRAME` · 992×64 · horizontal row, gap 16px · 2 children
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Payment date** · `TEXT` · 488×16 · “Payment date”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **September 2, 2026** · `TEXT` · 128×17 · “September 2, 2026”
+        - **Nested Frame** · `FRAME` · 488×64 · vertical stack, gap 6px · 2 children
+          - **Amount paid** · `TEXT` · 488×16 · “Amount paid”
+          - **Nested Frame** · `FRAME` · 488×42 · horizontal row, padding 0/12/0/12px · 1 children
+            - **?18,500** · `TEXT` · 52×17 · “?18,500”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Payment method** · `TEXT` · 992×16 · “Payment method”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **GCash** · `TEXT` · 45×17 · “GCash”
+      - **Nested Frame** · `FRAME` · 992×64 · vertical stack, gap 6px · 2 children
+        - **Reference number** · `TEXT` · 992×16 · “Reference number”
+        - **Nested Frame** · `FRAME` · 992×42 · horizontal row, padding 0/12/0/12px · 1 children
+          - **GC-2026-0902-1842** · `TEXT` · 142×17 · “GC-2026-0902-1842”
+      - **Nested Frame** · `FRAME` · 992×39 · horizontal row, gap 10px · 2 children
+        - **RecordPaymentCancel** · `FRAME` · 82×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Cancel** · `TEXT` · 48×17 · “Cancel”
+        - **RecordPaymentSubmit** · `FRAME` · 144×37 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Record Payment** · `TEXT` · 112×17 · “Record Payment”
+- **Desktop Payment Details** · `FRAME` · 1366×900 · horizontal row · 2 children
+  - **Sidebar** · `FRAME` · 244×900 · vertical stack, gap 10px, padding 24px · 11 children
+    - **StayTrack** · `TEXT` · 194×24 · “StayTrack”
+    - **Apartment Management** · `TEXT` · 194×15 · “Apartment Management”
+    - **Nested Frame** · `FRAME` · 100×20 · vertical stack
+    - **WORKSPACE** · `TEXT` · 194×16 · “WORKSPACE”
+    - **NavDashboard** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Dashboard** · `TEXT` · 73×17 · “Dashboard”
+    - **NavApartments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Apartments** · `TEXT` · 78×17 · “Apartments”
+    - **NavTenants** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Tenants** · `TEXT` · 53×17 · “Tenants”
+    - **NavBills** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Bills** · `TEXT` · 27×17 · “Bills”
+    - **NavPayments** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Payments** · `TEXT` · 66×17 · “Payments”
+    - **Nested Frame** · `FRAME` · 100×435 · vertical stack
+    - **NavProfile** · `FRAME` · 194×40 · horizontal row, padding 0/12/0/12px · 1 children
+      - **Profile** · `TEXT` · 43×17 · “Profile”
+  - **Content** · `FRAME` · 1122×900 · vertical stack, gap 24px, padding 40px · 2 children
+    - **Nested Frame** · `FRAME` · 1042×81 · vertical stack, gap 6px · 3 children
+      - **Finance** · `TEXT` · 1042×15 · “Finance”
+      - **Payment ST-P-294** · `TEXT` · 1042×36 · “Payment ST-P-294”
+      - **Verified payment recorded September 2, 2026.** · `TEXT` · 1042×18 · “Verified payment recorded September 2, 2026.”
+    - **Nested Frame** · `FRAME` · 1042×213 · horizontal row, gap 20px · 2 children
+      - **Nested Frame** · `FRAME` · 762×213 · vertical stack, gap 14px, padding 24px · 5 children
+        - **Payment receipt** · `TEXT` · 712×22 · “Payment receipt”
+        - **?18,500.00** · `TEXT` · 712×34 · “?18,500.00”
+        - **Ana Reyes ? Unit B-204 ? GCash** · `TEXT` · 712×17 · “Ana Reyes ? Unit B-204 ? GCash”
+        - **Reference GC-2026-0902-1842 ? Bill ST-1048** · `TEXT` · 712×17 · “Reference GC-2026-0902-1842 ? Bill ST-1048”
+        - **Payment verified** · `TEXT` · 712×17 · “Payment verified”
+      - **Nested Frame** · `FRAME` · 260×81 · vertical stack, gap 14px, padding 20px · 1 children
+        - **PaymentDetailsBack** · `FRAME` · 157×39 · horizontal row, padding 10/16/10/16px · 1 children
+          - **Back to payments** · `TEXT` · 123×17 · “Back to payments”
+- **Live Prototype / Login** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Admin Dashboard** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Apartments** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Create Apartment** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Apartment Details** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Tenants** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Create Lease** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Bills** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Record Payment** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Payments** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Payment Details** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Tenant Dashboard** · `RECTANGLE` · 1440×1000
+- **Live Prototype / Profile** · `RECTANGLE` · 1440×1000
+- **Prototype / Login** · `FRAME` · 1366×768 · 5 children
+  - **Hotspot / 001 / Sign in as administrator** · `RECTANGLE` · 357×51
+  - **Hotspot / 002 / Open tenant portal demo** · `RECTANGLE` · 357×44
+  - **Hotspot / 003 / Preview tenant account** · `RECTANGLE` · 155×26
+  - **Real Button / Login / Sign in as administrator** · `INSTANCE` · 357×51 · horizontal row, padding 0/18/0/18px · instance of Real Button / Login / Sign in as administrator
+  - **Real Button / Login / Open tenant portal demo** · `INSTANCE` · 357×44 · horizontal row, padding 0/18/0/18px · instance of Real Button / Login / Open tenant portal demo
+- **Prototype / Admin Dashboard** · `FRAME` · 1366×768 · 19 children
+  - **Hotspot / 004 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 005 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 006 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 007 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 008 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 009 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 010 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 011 / Sign out** · `RECTANGLE` · 224×45
+  - **Hotspot / 095 / Record payment** · `RECTANGLE` · 146×45
+  - **Hotspot / 096 / Create lease** · `RECTANGLE` · 116×45
+  - **Real Button / Dashboard / Record payment** · `INSTANCE` · 146×45 · horizontal row, padding 0/18/0/18px · instance of Real Button / Dashboard / Record payment
+  - **Real Button / Dashboard / Create lease** · `INSTANCE` · 116×45 · horizontal row, padding 0/18/0/18px · instance of Real Button / Dashboard / Create lease
+  - **Real Navigation / dashboard / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / dashboard
+  - **Real Navigation / dashboard / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / apartments
+  - **Real Navigation / dashboard / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / tenants
+  - **Real Navigation / dashboard / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / leaseCreate
+  - **Real Navigation / dashboard / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / bills
+  - **Real Navigation / dashboard / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / payments
+  - **Real Navigation / dashboard / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / dashboard / profile
+- **Prototype / Apartments** · `FRAME` · 1366×768 · 17 children
+  - **Hotspot / 012 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 013 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 014 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 015 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 016 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 017 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 018 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 019 / Sign out** · `RECTANGLE` · 224×45
+  - **Hotspot / 097 / Add apartment** · `RECTANGLE` · 174×45
+  - **Real Button / Apartments / Add apartment** · `INSTANCE` · 173×45 · horizontal row, padding 0/18/0/18px · instance of Real Button / Apartments / Add apartment
+  - **Real Navigation / apartments / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / dashboard
+  - **Real Navigation / apartments / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / apartments
+  - **Real Navigation / apartments / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / tenants
+  - **Real Navigation / apartments / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / leaseCreate
+  - **Real Navigation / apartments / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / bills
+  - **Real Navigation / apartments / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / payments
+  - **Real Navigation / apartments / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartments / profile
+- **Prototype / Create Apartment** · `FRAME` · 1366×768 · 16 children
+  - **Hotspot / 020 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 021 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 022 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 023 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 024 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 025 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 026 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 027 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 028 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Navigation / apartmentCreate / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / dashboard
+  - **Real Navigation / apartmentCreate / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / apartments
+  - **Real Navigation / apartmentCreate / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / tenants
+  - **Real Navigation / apartmentCreate / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / leaseCreate
+  - **Real Navigation / apartmentCreate / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / bills
+  - **Real Navigation / apartmentCreate / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / payments
+  - **Real Navigation / apartmentCreate / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentCreate / profile
+- **Prototype / Apartment Details** · `FRAME` · 1366×768 · 17 children
+  - **Hotspot / 029 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 030 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 031 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 032 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 033 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 034 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 035 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 036 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 037 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Button / Apartment details / Edit apartment** · `INSTANCE` · 173×45 · horizontal row, padding 0/18/0/18px · instance of Real Button / Apartment details / Edit apartment
+  - **Real Navigation / apartmentDetail / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / dashboard
+  - **Real Navigation / apartmentDetail / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / apartments
+  - **Real Navigation / apartmentDetail / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / tenants
+  - **Real Navigation / apartmentDetail / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / leaseCreate
+  - **Real Navigation / apartmentDetail / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / bills
+  - **Real Navigation / apartmentDetail / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / payments
+  - **Real Navigation / apartmentDetail / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / apartmentDetail / profile
+- **Prototype / Tenants** · `FRAME` · 1366×768 · 15 children
+  - **Hotspot / 038 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 039 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 040 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 041 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 042 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 043 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 044 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 045 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Navigation / tenants / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / dashboard
+  - **Real Navigation / tenants / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / apartments
+  - **Real Navigation / tenants / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / tenants
+  - **Real Navigation / tenants / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / leaseCreate
+  - **Real Navigation / tenants / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / bills
+  - **Real Navigation / tenants / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / payments
+  - **Real Navigation / tenants / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / tenants / profile
+- **Prototype / Create Lease** · `FRAME` · 1366×768 · 15 children
+  - **Hotspot / 046 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 047 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 048 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 049 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 050 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 051 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 052 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 053 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Navigation / leaseCreate / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / dashboard
+  - **Real Navigation / leaseCreate / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / apartments
+  - **Real Navigation / leaseCreate / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / tenants
+  - **Real Navigation / leaseCreate / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / leaseCreate
+  - **Real Navigation / leaseCreate / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / bills
+  - **Real Navigation / leaseCreate / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / payments
+  - **Real Navigation / leaseCreate / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / leaseCreate / profile
+- **Prototype / Bills** · `FRAME` · 1366×768 · 17 children
+  - **Hotspot / 054 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 055 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 056 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 057 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 058 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 059 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 060 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 061 / Sign out** · `RECTANGLE` · 224×45
+  - **Hotspot / 098 / Record payment** · `RECTANGLE` · 168×45
+  - **Real Button / Bills / Record payment** · `INSTANCE` · 168×45 · horizontal row, padding 0/18/0/18px · instance of Real Button / Bills / Record payment
+  - **Real Navigation / bills / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / dashboard
+  - **Real Navigation / bills / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / apartments
+  - **Real Navigation / bills / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / tenants
+  - **Real Navigation / bills / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / leaseCreate
+  - **Real Navigation / bills / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / bills
+  - **Real Navigation / bills / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / payments
+  - **Real Navigation / bills / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / bills / profile
+- **Prototype / Record Payment** · `FRAME` · 1366×768 · 16 children
+  - **Hotspot / 062 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 063 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 064 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 065 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 066 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 067 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 068 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 069 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 070 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Navigation / paymentCreate / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / dashboard
+  - **Real Navigation / paymentCreate / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / apartments
+  - **Real Navigation / paymentCreate / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / tenants
+  - **Real Navigation / paymentCreate / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / leaseCreate
+  - **Real Navigation / paymentCreate / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / bills
+  - **Real Navigation / paymentCreate / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / payments
+  - **Real Navigation / paymentCreate / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentCreate / profile
+- **Prototype / Payments** · `FRAME` · 1366×768 · 17 children
+  - **Hotspot / 071 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 072 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 073 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 074 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 075 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 076 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 077 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 078 / Sign out** · `RECTANGLE` · 224×45
+  - **Hotspot / 099 / Record payment** · `RECTANGLE` · 168×45
+  - **Real Button / Payments / Record payment** · `INSTANCE` · 168×45 · horizontal row, padding 0/18/0/18px · instance of Real Button / Payments / Record payment
+  - **Real Navigation / payments / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / dashboard
+  - **Real Navigation / payments / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / apartments
+  - **Real Navigation / payments / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / tenants
+  - **Real Navigation / payments / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / leaseCreate
+  - **Real Navigation / payments / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / bills
+  - **Real Navigation / payments / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / payments
+  - **Real Navigation / payments / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / payments / profile
+- **Prototype / Payment Details** · `FRAME` · 1366×768 · 16 children
+  - **Hotspot / 079 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 080 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 081 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 082 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 083 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 084 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 085 / Sidebar Profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 086 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 087 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Navigation / paymentDetail / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / dashboard
+  - **Real Navigation / paymentDetail / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / apartments
+  - **Real Navigation / paymentDetail / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / tenants
+  - **Real Navigation / paymentDetail / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / leaseCreate
+  - **Real Navigation / paymentDetail / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / bills
+  - **Real Navigation / paymentDetail / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / payments
+  - **Real Navigation / paymentDetail / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / paymentDetail / profile
+- **Prototype / Tenant Dashboard** · `FRAME` · 1366×768 · 3 children
+  - **Hotspot / 100 / Topbar profile** · `RECTANGLE` · 180×48
+  - **Hotspot / 101 / Sidebar profile** · `RECTANGLE` · 224×45
+  - **Hotspot / 102 / Sign out** · `RECTANGLE` · 224×45
+- **Prototype / Profile** · `FRAME` · 1366×768 · 14 children
+  - **Hotspot / 088 / Sidebar Dashboard** · `RECTANGLE` · 224×45
+  - **Hotspot / 089 / Sidebar Apartments** · `RECTANGLE` · 224×45
+  - **Hotspot / 090 / Sidebar Tenants** · `RECTANGLE` · 224×45
+  - **Hotspot / 091 / Sidebar Leases** · `RECTANGLE` · 224×45
+  - **Hotspot / 092 / Sidebar Bills** · `RECTANGLE` · 224×45
+  - **Hotspot / 093 / Sidebar Payments** · `RECTANGLE` · 224×45
+  - **Hotspot / 094 / Sign out** · `RECTANGLE` · 224×45
+  - **Real Navigation / profile / dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / dashboard
+  - **Real Navigation / profile / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / apartments
+  - **Real Navigation / profile / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / tenants
+  - **Real Navigation / profile / leaseCreate** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / leaseCreate
+  - **Real Navigation / profile / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / bills
+  - **Real Navigation / profile / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / payments
+  - **Real Navigation / profile / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Real Navigation / profile / profile
+- **Login / Native Editable** · `FRAME` · 1366×768 · 2 children
+  - **Login Showcase** · `FRAME` · 740×768 · 18 children
+    - **Decorative Ring** · `ELLIPSE` · 500×500
+    - **Brand Mark** · `RECTANGLE` · 36×36
+    - **Brand Initial** · `TEXT` · 18×23 · “S”
+    - **Brand** · `TEXT` · 180×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 180×17 · “Apartment Management”
+    - **Eyebrow** · `TEXT` · 430×18 · “ONE PLACE. EVERY PROPERTY DETAIL.”
+    - **Headline One** · `TEXT` · 580×81 · “Run your apartments”
+    - **Headline Two** · `TEXT` · 580×81 · “with clarity.”
+    - **Description One** · `TEXT` · 580×26 · “Track units, tenants, leases, bills, and payments from a calm, reliable”
+    - **Description Two** · `TEXT` · 580×26 · “workspace built for property teams.”
+    - **Metric Divider** · `RECTANGLE` · 580×1
+    - **Metric 0** · `TEXT` · 170×36 · “24”
+    - **Metric label 0** · `TEXT` · 180×18 · “Units managed”
+    - **Metric 1** · `TEXT` · 170×36 · “96%”
+    - **Metric label 1** · `TEXT` · 180×18 · “Occupancy”
+    - **Metric 2** · `TEXT` · 170×36 · “PHP 286K”
+    - **Metric label 2** · `TEXT` · 180×18 · “Collected this month”
+    - **Footer** · `TEXT` · 400×18 · “Secure property operations for Metro Manila teams”
+  - **Login Form Area** · `FRAME` · 626×768 · 1 children
+    - **Login Card** · `FRAME` · 438×648 · 20 children
+      - **Welcome** · `TEXT` · 240×18 · “WELCOME BACK”
+      - **Title** · `TEXT` · 360×42 · “Sign in to StayTrack”
+      - **Subtitle** · `TEXT` · 360×21 · “Use the demo account to explore the clickable prototype.”
+      - **Email address** · `TEXT` · 170×21 · “Email address”
+      - **Email address Input** · `RECTANGLE` · 358×44
+      - **Email address Value** · `TEXT` · 300×21 · “maria@staytrack.ph”
+      - **Password** · `TEXT` · 170×21 · “Password”
+      - **Forgot Password** · `TEXT` · 150×20 · “Forgot password?”
+      - **Password Input** · `RECTANGLE` · 358×44
+      - **Password Value** · `TEXT` · 300×21 · “••••••••••••”
+      - **Remember Checkbox** · `RECTANGLE` · 18×18
+      - **Remember Check** · `TEXT` · 16×24 · “✓”
+      - **Remember Label** · `TEXT` · 270×21 · “Keep me signed in on this device”
+      - **Button / Sign in as administrator** · `INSTANCE` · 358×52 · horizontal row, padding 0/18/0/18px · instance of Button / Sign in as administrator
+      - **Divider Left** · `RECTANGLE` · 96×1
+      - **Divider Text** · `TEXT` · 170×17 · “OR EXPLORE ANOTHER VIEW”
+      - **Divider Right** · `RECTANGLE` · 85×1
+      - **Button / Open tenant portal demo** · `INSTANCE` · 358×44 · horizontal row, padding 0/18/0/18px · instance of Button / Open tenant portal demo
+      - **New Tenant** · `TEXT` · 82×20 · “New tenant?”
+      - **Preview Link** · `TEXT` · 150×20 · “Preview your account”
+- **Native / Admin Dashboard** · `FRAME` · 1366×768 · 12 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / admin-dashboard / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / admin-dashboard
+    - **Navigation / admin-dashboard / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / apartments
+    - **Navigation / admin-dashboard / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / tenants
+    - **Navigation / admin-dashboard / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / lease-create
+    - **Navigation / admin-dashboard / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / bills
+    - **Navigation / admin-dashboard / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / payments
+    - **Navigation / admin-dashboard / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / admin-dashboard / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Admin Dashboard”
+  - **Page Description** · `TEXT` · 650×23 · “Property overview and performance at a glance.”
+  - **Action / admin-dashboard / lease-create** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / admin-dashboard / lease-create
+  - **Metric / Total apartments** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Total apartments”
+    - **Metric Value** · `TEXT` · 120×33 · “24”
+  - **Metric / Occupied units** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Occupied units”
+    - **Metric Value** · `TEXT` · 120×33 · “21”
+  - **Metric / Active tenants** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Active tenants”
+    - **Metric Value** · `TEXT` · 120×33 · “21”
+  - **Metric / September revenue** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “September revenue”
+    - **Metric Value** · `TEXT` · 120×33 · “PHP 286,500”
+  - **Recent Payments** · `FRAME` · 650×340 · 8 children
+    - **Panel Title** · `TEXT` · 610×26 · “Recent payments”
+    - **Panel Subtitle** · `TEXT` · 610×18 · “Latest tenant transactions”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 0** · `TEXT` · 610×21 · “Ana Reyes · Unit B-204 · GCash · PHP 18,500”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 1** · `TEXT` · 610×21 · “Carlo Mendoza · Unit A-301 · Bank transfer · PHP 22,000”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 2** · `TEXT` · 610×21 · “Lea Villanueva · Unit C-105 · Cash · PHP 10,000”
+  - **Billing Summary** · `FRAME` · 362×340 · 8 children
+    - **Panel Title** · `TEXT` · 322×26 · “Billing summary”
+    - **Panel Subtitle** · `TEXT` · 322×18 · “Current month status”
+    - **Row Divider** · `RECTANGLE` · 322×1
+    - **Row 0** · `TEXT` · 322×21 · “Active leases                         19”
+    - **Row Divider** · `RECTANGLE` · 322×1
+    - **Row 1** · `TEXT` · 322×21 · “Unpaid / partial                        4”
+    - **Row Divider** · `RECTANGLE` · 322×1
+    - **Row 2** · `TEXT` · 322×21 · “Overdue bills                           2”
+- **Native / Apartments** · `FRAME` · 1366×768 · 11 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / apartments / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / admin-dashboard
+    - **Navigation / apartments / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / apartments
+    - **Navigation / apartments / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / tenants
+    - **Navigation / apartments / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / lease-create
+    - **Navigation / apartments / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / bills
+    - **Navigation / apartments / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / payments
+    - **Navigation / apartments / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartments / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Apartments”
+  - **Page Description** · `TEXT` · 650×23 · “Manage inventory, rates, and availability across all units.”
+  - **Action / apartments / apartment-create** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / apartments / apartment-create
+  - **Metric / Total units** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Total units”
+    - **Metric Value** · `TEXT` · 120×33 · “24”
+  - **Metric / Available** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Available”
+    - **Metric Value** · `TEXT` · 120×33 · “3”
+  - **Metric / Occupied** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Occupied”
+    - **Metric Value** · `TEXT` · 120×33 · “19”
+  - **Metric / Maintenance** · `FRAME` · 200×104 · 3 children
+    - **Accent** · `RECTANGLE` · 34×34
+    - **Metric Label** · `TEXT` · 120×18 · “Maintenance”
+    - **Metric Value** · `TEXT` · 120×33 · “1”
+  - **Apartment Table** · `FRAME` · 1032×340 · 10 children
+    - **Panel Title** · `TEXT` · 992×26 · “Apartment inventory”
+    - **Panel Subtitle** · `TEXT` · 992×18 · “Unit · Type · Floor · Monthly rent · Status”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 0** · `TEXT` · 992×21 · “A-301     2 Bedroom     3rd floor     PHP 22,000     Available”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 1** · `TEXT` · 992×21 · “B-204     2 Bedroom     2nd floor     PHP 18,500     Occupied”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 2** · `TEXT` · 992×21 · “C-105     Studio        1st floor     PHP 14,000     Occupied”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 3** · `TEXT` · 992×21 · “D-402     3 Bedroom     4th floor     PHP 31,000     Maintenance”
+- **Native / Create Apartment** · `FRAME` · 1366×768 · 8 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / apartment-create / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / admin-dashboard
+    - **Navigation / apartment-create / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / apartments
+    - **Navigation / apartment-create / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / tenants
+    - **Navigation / apartment-create / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / lease-create
+    - **Navigation / apartment-create / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / bills
+    - **Navigation / apartment-create / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / payments
+    - **Navigation / apartment-create / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-create / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Create Apartment”
+  - **Page Description** · `TEXT` · 650×23 · “Add a unit and set its rental details.”
+  - **Action / apartment-create / apartments** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / apartment-create / apartments
+  - **Apartment Form** · `FRAME` · 680×440 · 14 children
+    - **Panel Title** · `TEXT` · 640×26 · “Apartment details”
+    - **Panel Subtitle** · `TEXT` · 640×18 · “Complete the unit information below.”
+    - **Field label 0** · `TEXT` · 250×20 · “Unit number”
+    - **Field 0** · `RECTANGLE` · 280×44
+    - **Field value 0** · `TEXT` · 240×21 · “A-301”
+    - **Field label 1** · `TEXT` · 250×20 · “Unit type”
+    - **Field 1** · `RECTANGLE` · 280×44
+    - **Field value 1** · `TEXT` · 240×21 · “2 Bedroom”
+    - **Field label 2** · `TEXT` · 250×20 · “Floor”
+    - **Field 2** · `RECTANGLE` · 280×44
+    - **Field value 2** · `TEXT` · 240×21 · “3rd floor”
+    - **Field label 3** · `TEXT` · 250×20 · “Monthly rent”
+    - **Field 3** · `RECTANGLE` · 280×44
+    - **Field value 3** · `TEXT` · 240×21 · “22000”
+  - **Apartment Help** · `FRAME` · 330×220 · 6 children
+    - **Panel Title** · `TEXT` · 290×26 · “Setup guide”
+    - **Panel Subtitle** · `TEXT` · 290×18 · “Set rent, occupancy, and unit details.”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 0** · `TEXT` · 290×21 · “Use a clear unit number.”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 1** · `TEXT` · 290×21 · “Add accurate rental pricing.”
+- **Native / Apartment A-301** · `FRAME` · 1366×768 · 9 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / apartment-detail / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / admin-dashboard
+    - **Navigation / apartment-detail / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / apartments
+    - **Navigation / apartment-detail / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / tenants
+    - **Navigation / apartment-detail / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / lease-create
+    - **Navigation / apartment-detail / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / bills
+    - **Navigation / apartment-detail / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / payments
+    - **Navigation / apartment-detail / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / apartment-detail / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Apartment A-301”
+  - **Page Description** · `TEXT` · 650×23 · “Unit overview and rental information.”
+  - **Action / apartment-detail / apartment-create** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / apartment-detail / apartment-create
+  - **Unit Summary** · `FRAME` · 500×280 · 8 children
+    - **Panel Title** · `TEXT` · 460×26 · “Unit A-301”
+    - **Panel Subtitle** · `TEXT` · 460×18 · “2 Bedroom · 3rd floor”
+    - **Row Divider** · `RECTANGLE` · 460×1
+    - **Row 0** · `TEXT` · 460×21 · “Monthly rent                         PHP 22,000”
+    - **Row Divider** · `RECTANGLE` · 460×1
+    - **Row 1** · `TEXT` · 460×21 · “Status                               Available”
+    - **Row Divider** · `RECTANGLE` · 460×1
+    - **Row 2** · `TEXT` · 460×21 · “Last updated                         Sep 2, 2026”
+  - **Lease Summary** · `FRAME` · 512×280 · 6 children
+    - **Panel Title** · `TEXT` · 472×26 · “Current lease”
+    - **Panel Subtitle** · `TEXT` · 472×18 · “No tenant assigned”
+    - **Row Divider** · `RECTANGLE` · 472×1
+    - **Row 0** · `TEXT` · 472×21 · “Available for lease”
+    - **Row Divider** · `RECTANGLE` · 472×1
+    - **Row 1** · `TEXT` · 472×21 · “Select this apartment while creating a lease.”
+  - **Activity** · `FRAME` · 1032×160 · 2 children
+    - **Panel Title** · `TEXT` · 992×26 · “Recent activity”
+    - **Panel Subtitle** · `TEXT` · 992×18 · “No recent changes have been recorded.”
+- **Native / Tenants** · `FRAME` · 1366×768 · 7 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / tenants / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / admin-dashboard
+    - **Navigation / tenants / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / apartments
+    - **Navigation / tenants / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / tenants
+    - **Navigation / tenants / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / lease-create
+    - **Navigation / tenants / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / bills
+    - **Navigation / tenants / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / payments
+    - **Navigation / tenants / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenants / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Tenants”
+  - **Page Description** · `TEXT` · 650×23 · “Keep resident contact details and lease context organized.”
+  - **Action / tenants / tenants** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / tenants / tenants
+  - **Tenant Table** · `FRAME` · 1032×460 · 10 children
+    - **Panel Title** · `TEXT` · 992×26 · “Tenant directory”
+    - **Panel Subtitle** · `TEXT` · 992×18 · “Resident · Contact · Unit · Status”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 0** · `TEXT` · 992×21 · “Ana Reyes     +63 917 555 0184     B-204     Active”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 1** · `TEXT` · 992×21 · “Carlo Mendoza +63 905 442 9032     A-301     Active”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 2** · `TEXT` · 992×21 · “Lea Villanueva +63 998 113 7720    C-105     Ending soon”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 3** · `TEXT` · 992×21 · “Paolo Navarro +63 917 642 8801    —         Pending”
+- **Native / Create Lease** · `FRAME` · 1366×768 · 8 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / lease-create / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / admin-dashboard
+    - **Navigation / lease-create / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / apartments
+    - **Navigation / lease-create / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / tenants
+    - **Navigation / lease-create / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / lease-create
+    - **Navigation / lease-create / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / bills
+    - **Navigation / lease-create / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / payments
+    - **Navigation / lease-create / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / lease-create / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Create Lease”
+  - **Page Description** · `TEXT` · 650×23 · “Create a rental agreement for a tenant and unit.”
+  - **Action / lease-create / admin-dashboard** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / lease-create / admin-dashboard
+  - **Lease Form** · `FRAME` · 680×440 · 14 children
+    - **Panel Title** · `TEXT` · 640×26 · “Lease information”
+    - **Panel Subtitle** · `TEXT` · 640×18 · “Assign a tenant to an available apartment.”
+    - **Field label 0** · `TEXT` · 250×20 · “Tenant”
+    - **Field 0** · `RECTANGLE` · 280×44
+    - **Field value 0** · `TEXT` · 240×21 · “Ana Reyes”
+    - **Field label 1** · `TEXT` · 250×20 · “Apartment”
+    - **Field 1** · `RECTANGLE` · 280×44
+    - **Field value 1** · `TEXT` · 240×21 · “B-204”
+    - **Field label 2** · `TEXT` · 250×20 · “Start date”
+    - **Field 2** · `RECTANGLE` · 280×44
+    - **Field value 2** · `TEXT` · 240×21 · “2026-09-05”
+    - **Field label 3** · `TEXT` · 250×20 · “Monthly rent”
+    - **Field 3** · `RECTANGLE` · 280×44
+    - **Field value 3** · `TEXT` · 240×21 · “18500”
+  - **Lease Review** · `FRAME` · 330×220 · 6 children
+    - **Panel Title** · `TEXT` · 290×26 · “Ready to create”
+    - **Panel Subtitle** · `TEXT` · 290×18 · “Your agreement will be active after submission.”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 0** · `TEXT` · 290×21 · “Tenant and unit selected.”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 1** · `TEXT` · 290×21 · “Billing will start on Sep 5.”
+- **Native / Bills** · `FRAME` · 1366×768 · 7 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / bills / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / admin-dashboard
+    - **Navigation / bills / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / apartments
+    - **Navigation / bills / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / tenants
+    - **Navigation / bills / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / lease-create
+    - **Navigation / bills / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / bills
+    - **Navigation / bills / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / payments
+    - **Navigation / bills / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / bills / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Bills”
+  - **Page Description** · `TEXT` · 650×23 · “Monitor rent charges, balances, and due dates.”
+  - **Action / bills / payment-create** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / bills / payment-create
+  - **Bills Table** · `FRAME` · 1032×460 · 10 children
+    - **Panel Title** · `TEXT` · 992×26 · “Billing records”
+    - **Panel Subtitle** · `TEXT` · 992×18 · “Bill · Tenant · Unit · Due date · Balance · Status”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 0** · `TEXT` · 992×21 · “ST-1052     Paolo Navarro     A-301     Sep 15     PHP 22,000     Unpaid”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 1** · `TEXT` · 992×21 · “ST-1048     Ana Reyes         B-204     Sep 5      PHP 0          Paid”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 2** · `TEXT` · 992×21 · “ST-1042     Lea Villanueva    C-105     Sep 5      PHP 4,000      Partial”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 3** · `TEXT` · 992×21 · “ST-1031     Ramon Cruz        E-506     Aug 5      PHP 28,500     Overdue”
+- **Native / Record Payment** · `FRAME` · 1366×768 · 8 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / payment-create / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / admin-dashboard
+    - **Navigation / payment-create / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / apartments
+    - **Navigation / payment-create / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / tenants
+    - **Navigation / payment-create / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / lease-create
+    - **Navigation / payment-create / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / bills
+    - **Navigation / payment-create / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / payments
+    - **Navigation / payment-create / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-create / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Record Payment”
+  - **Page Description** · `TEXT` · 650×23 · “Record a verified tenant payment.”
+  - **Action / payment-create / payments** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / payment-create / payments
+  - **Payment Form** · `FRAME` · 680×440 · 14 children
+    - **Panel Title** · `TEXT` · 640×26 · “Payment information”
+    - **Panel Subtitle** · `TEXT` · 640×18 · “Select a bill and record the verified payment.”
+    - **Field label 0** · `TEXT` · 250×20 · “Bill / tenant”
+    - **Field 0** · `RECTANGLE` · 280×44
+    - **Field value 0** · `TEXT` · 240×21 · “ST-1048 · Ana Reyes”
+    - **Field label 1** · `TEXT` · 250×20 · “Payment date”
+    - **Field 1** · `RECTANGLE` · 280×44
+    - **Field value 1** · `TEXT` · 240×21 · “2026-09-02”
+    - **Field label 2** · `TEXT` · 250×20 · “Amount paid”
+    - **Field 2** · `RECTANGLE` · 280×44
+    - **Field value 2** · `TEXT` · 240×21 · “PHP 18,500”
+    - **Field label 3** · `TEXT` · 250×20 · “Payment method”
+    - **Field 3** · `RECTANGLE` · 280×44
+    - **Field value 3** · `TEXT` · 240×21 · “GCash”
+  - **Bill Summary** · `FRAME` · 330×260 · 8 children
+    - **Panel Title** · `TEXT` · 290×26 · “Selected bill”
+    - **Panel Subtitle** · `TEXT` · 290×18 · “ST-1048 · September rent”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 0** · `TEXT` · 290×21 · “Tenant                  Ana Reyes”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 1** · `TEXT` · 290×21 · “Apartment               B-204”
+    - **Row Divider** · `RECTANGLE` · 290×1
+    - **Row 2** · `TEXT` · 290×21 · “Remaining balance       PHP 18,500”
+- **Native / Payment History** · `FRAME` · 1366×768 · 7 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / payments / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / admin-dashboard
+    - **Navigation / payments / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / apartments
+    - **Navigation / payments / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / tenants
+    - **Navigation / payments / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / lease-create
+    - **Navigation / payments / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / bills
+    - **Navigation / payments / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / payments
+    - **Navigation / payments / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payments / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Payment History”
+  - **Page Description** · `TEXT` · 650×23 · “Review and reconcile tenant payments.”
+  - **Action / payments / payment-create** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / payments / payment-create
+  - **Payments Table** · `FRAME` · 1032×460 · 10 children
+    - **Panel Title** · `TEXT` · 992×26 · “Payment history”
+    - **Panel Subtitle** · `TEXT` · 992×18 · “Tenant · Unit · Date · Amount · Method · Reference”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 0** · `TEXT` · 992×21 · “Ana Reyes       B-204    Sep 2     PHP 18,500    GCash          GC-2026-0902”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 1** · `TEXT` · 992×21 · “Carlo Mendoza   A-301    Sep 1     PHP 22,000    Bank transfer  BDO-0901”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 2** · `TEXT` · 992×21 · “Lea Villanueva  C-105    Aug 30    PHP 10,000    Cash           OR-00491”
+    - **Row Divider** · `RECTANGLE` · 992×1
+    - **Row 3** · `TEXT` · 992×21 · “Mika Garcia     D-402    Aug 28    PHP 31,000    GCash          GC-2026-0828”
+- **Native / Payment Details** · `FRAME` · 1366×768 · 8 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / payment-detail / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / admin-dashboard
+    - **Navigation / payment-detail / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / apartments
+    - **Navigation / payment-detail / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / tenants
+    - **Navigation / payment-detail / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / lease-create
+    - **Navigation / payment-detail / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / bills
+    - **Navigation / payment-detail / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / payments
+    - **Navigation / payment-detail / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / payment-detail / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Payment Details”
+  - **Page Description** · `TEXT` · 650×23 · “Recorded September 2, 2026 at 10:42 AM.”
+  - **Action / payment-detail / payments** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / payment-detail / payments
+  - **Payment Receipt** · `FRAME` · 650×420 · 12 children
+    - **Panel Title** · `TEXT` · 610×26 · “Payment verified”
+    - **Panel Subtitle** · `TEXT` · 610×18 · “Amount paid · PHP 18,500.00”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 0** · `TEXT` · 610×21 · “Tenant                         Ana Reyes”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 1** · `TEXT` · 610×21 · “Apartment                      Unit B-204”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 2** · `TEXT` · 610×21 · “Payment date                   September 2, 2026”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 3** · `TEXT` · 610×21 · “Payment method                 GCash”
+    - **Row Divider** · `RECTANGLE` · 610×1
+    - **Row 4** · `TEXT` · 610×21 · “Reference                      GC-2026-0902-1842”
+  - **Applied Bill** · `FRAME` · 362×300 · 8 children
+    - **Panel Title** · `TEXT` · 322×26 · “Applied to”
+    - **Panel Subtitle** · `TEXT` · 322×18 · “September rent · Bill ST-1048”
+    - **Row Divider** · `RECTANGLE` · 322×1
+    - **Row 0** · `TEXT` · 322×21 · “Bill total                     PHP 18,500”
+    - **Row Divider** · `RECTANGLE` · 322×1
+    - **Row 1** · `TEXT` · 322×21 · “Payment                        - PHP 18,500”
+    - **Row Divider** · `RECTANGLE` · 322×1
+    - **Row 2** · `TEXT` · 322×21 · “Balance                        PHP 0”
+- **Native / Tenant Dashboard** · `FRAME` · 1366×768 · 11 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / tenant-dashboard / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / admin-dashboard
+    - **Navigation / tenant-dashboard / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / apartments
+    - **Navigation / tenant-dashboard / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / tenants
+    - **Navigation / tenant-dashboard / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / lease-create
+    - **Navigation / tenant-dashboard / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / bills
+    - **Navigation / tenant-dashboard / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / payments
+    - **Navigation / tenant-dashboard / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / tenant-dashboard / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Tenant Dashboard”
+  - **Page Description** · `TEXT` · 650×23 · “Apartment, lease, bills, and payment history in one place.”
+  - **Action / tenant-dashboard / profile** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / tenant-dashboard / profile
+  - **Tenant Metrics** · `FRAME` · 320×160 · 2 children
+    - **Panel Title** · `TEXT` · 280×26 · “My apartment”
+    - **Panel Subtitle** · `TEXT` · 280×18 · “Unit B-204 · 2 Bedroom · Active lease”
+  - **Tenant Rent** · `FRAME` · 320×160 · 2 children
+    - **Panel Title** · `TEXT` · 280×26 · “Monthly rent”
+    - **Panel Subtitle** · `TEXT` · 280×18 · “PHP 18,500 · Due every 5th”
+  - **Tenant Balance** · `FRAME` · 352×160 · 2 children
+    - **Panel Title** · `TEXT` · 312×26 · “Outstanding balance”
+    - **Panel Subtitle** · `TEXT` · 312×18 · “PHP 0.00 · You are up to date”
+  - **My Bills** · `FRAME` · 500×260 · 8 children
+    - **Panel Title** · `TEXT` · 460×26 · “My bills”
+    - **Panel Subtitle** · `TEXT` · 460×18 · “Recent billing records”
+    - **Row Divider** · `RECTANGLE` · 460×1
+    - **Row 0** · `TEXT` · 460×21 · “September 2026 rent              Paid”
+    - **Row Divider** · `RECTANGLE` · 460×1
+    - **Row 1** · `TEXT` · 460×21 · “August 2026 rent                 Paid”
+    - **Row Divider** · `RECTANGLE` · 460×1
+    - **Row 2** · `TEXT` · 460×21 · “Move-in charges                  Paid”
+  - **Payment History** · `FRAME` · 512×260 · 8 children
+    - **Panel Title** · `TEXT` · 472×26 · “Payment history”
+    - **Panel Subtitle** · `TEXT` · 472×18 · “Latest transactions”
+    - **Row Divider** · `RECTANGLE` · 472×1
+    - **Row 0** · `TEXT` · 472×21 · “GCash payment · Sep 2             PHP 18,500”
+    - **Row Divider** · `RECTANGLE` · 472×1
+    - **Row 1** · `TEXT` · 472×21 · “Bank transfer · Aug 3              PHP 18,500”
+    - **Row Divider** · `RECTANGLE` · 472×1
+    - **Row 2** · `TEXT` · 472×21 · “GCash payment · Aug 1              PHP 37,000”
+- **Native / Profile** · `FRAME` · 1366×768 · 8 children
+  - **Sidebar** · `FRAME` · 256×768 · 16 children
+    - **Brand Mark** · `RECTANGLE` · 40×40
+    - **Brand Mark Letter** · `TEXT` · 16×23 · “S”
+    - **Brand** · `TEXT` · 140×27 · “StayTrack”
+    - **Brand Subtitle** · `TEXT` · 150×17 · “Apartment Management”
+    - **Menu Label** · `TEXT` · 160×17 · “MAIN MENU”
+    - **Navigation / profile / admin-dashboard** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / admin-dashboard
+    - **Navigation / profile / apartments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / apartments
+    - **Navigation / profile / tenants** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / tenants
+    - **Navigation / profile / lease-create** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / lease-create
+    - **Navigation / profile / bills** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / bills
+    - **Navigation / profile / payments** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / payments
+    - **Navigation / profile / profile** · `INSTANCE` · 224×45 · horizontal row, padding 0/16/0/20px · instance of Navigation / profile / profile
+    - **Sidebar User** · `RECTANGLE` · 224×74
+    - **User Initials** · `TEXT` · 36×21 · “MS”
+    - **User Name** · `TEXT` · 120×21 · “Maria Santos”
+    - **User Role** · `TEXT` · 120×18 · “Administrator”
+  - **Top Bar** · `FRAME` · 1110×80 · 4 children
+    - **Workspace** · `TEXT` · 260×24 · “StayTrack Workspace”
+    - **Date** · `TEXT` · 260×18 · “Wednesday, September 2, 2026”
+    - **Top User** · `TEXT` · 150×23 · “Maria Santos”
+    - **Top Role** · `TEXT` · 150×18 · “Administrator”
+  - **Eyebrow** · `TEXT` · 280×18 · “STAYTRACK WORKSPACE”
+  - **Page Title** · `TEXT` · 600×48 · “Profile”
+  - **Page Description** · `TEXT` · 650×23 · “Manage your personal information and security.”
+  - **Action / profile / profile** · `INSTANCE` · 190×46 · horizontal row, padding 0/18/0/18px · instance of Action / profile / profile
+  - **Profile Nav** · `FRAME` · 260×400 · 8 children
+    - **Panel Title** · `TEXT` · 220×26 · “Maria Santos”
+    - **Panel Subtitle** · `TEXT` · 220×18 · “Administrator”
+    - **Row Divider** · `RECTANGLE` · 220×1
+    - **Row 0** · `TEXT` · 220×21 · “Personal information”
+    - **Row Divider** · `RECTANGLE` · 220×1
+    - **Row 1** · `TEXT` · 220×21 · “Password and security”
+    - **Row Divider** · `RECTANGLE` · 220×1
+    - **Row 2** · `TEXT` · 220×21 · “Danger zone”
+  - **Profile Form** · `FRAME` · 752×400 · 14 children
+    - **Panel Title** · `TEXT` · 712×26 · “Personal information”
+    - **Panel Subtitle** · `TEXT` · 712×18 · “Update your name and email address.”
+    - **Field label 0** · `TEXT` · 250×20 · “Full name”
+    - **Field 0** · `RECTANGLE` · 280×44
+    - **Field value 0** · `TEXT` · 240×21 · “Maria Santos”
+    - **Field label 1** · `TEXT` · 250×20 · “Email address”
+    - **Field 1** · `RECTANGLE` · 280×44
+    - **Field value 1** · `TEXT` · 240×21 · “maria@staytrack.ph”
+    - **Field label 2** · `TEXT` · 250×20 · “Phone number”
+    - **Field 2** · `RECTANGLE` · 280×44
+    - **Field value 2** · `TEXT` · 240×21 · “+63 917 882 0147”
+    - **Field label 3** · `TEXT` · 250×20 · “Role”
+    - **Field 3** · `RECTANGLE` · 280×44
+    - **Field value 3** · `TEXT` · 240×21 · “Administrator”
+- **Presentation / Admin Dashboard** · `FRAME` · 1366×768 · 126 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 69×17 · “StayTrack”
+  - **Brand sub** · `TEXT` · 115×12 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Nav active** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Badge / 24** · `RECTANGLE` · 30×28
+  - **Badge label / 24** · `TEXT` · 10×16 · “24”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Badge / 21** · `RECTANGLE` · 30×28
+  - **Badge label / 21** · `TEXT` · 10×16 · “21”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Leases** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Bills** · `TEXT` · 110×20 · “Bills”
+  - **Badge / 4** · `RECTANGLE` · 27×28
+  - **Badge label / 4** · `TEXT` · 7×16 · “4”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×56
+  - **Account avatar** · `RECTANGLE` · 38×38
+  - **Account MS** · `TEXT` · 38×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 95×12 · “maria@staytrack.ph”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “ADMIN PORTAL”
+  - **Page title** · `TEXT` · 500×46 · “Welcome back, Maria”
+  - **Page desc** · `TEXT` · 720×24 · “Here is what is happening across your properties today.”
+  - **Go / lease-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Create lease”
+  - **Go / payment-create** · `FRAME` · 178×48 · 1 children
+    - **Button label** · `TEXT` · 178×20 · “Record payment”
+  - **Metric / Total apartments** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “Total apartments”
+  - **Metric value** · `TEXT` · 40×36 · “24”
+  - **Metric sub** · `TEXT` · 79×13 · “+2 this quarter”
+  - **Metric link** · `TEXT` · 74×13 · “View units”
+  - **Metric / Occupied units** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “Occupied units”
+  - **Metric value** · `TEXT` · 36×36 · “19”
+  - **Metric sub** · `TEXT` · 85×13 · “79% occupancy”
+  - **Metric link** · `TEXT` · 80×13 · “5 available”
+  - **Metric / Active tenants** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “Active tenants”
+  - **Metric value** · `TEXT` · 35×36 · “21”
+  - **Metric sub** · `TEXT` · 75×13 · “+3 this month”
+  - **Metric link** · `TEXT` · 72×13 · “View tenants”
+  - **Metric / September revenue** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “September revenue”
+  - **Metric value** · `TEXT` · 166×30 · “PHP 286,500”
+  - **Metric sub** · `TEXT` · 91×13 · “+8.4% vs August”
+  - **Metric link** · `TEXT` · 82×13 · “View payments”
+  - **Recent payments panel** · `RECTANGLE` · 690×280
+  - **Recent payments** · `TEXT` · 200×22 · “Recent payments”
+  - **Recent helper** · `TEXT` · 240×18 · “Latest tenant transactions”
+  - **View all** · `TEXT` · 88×18 · “View all”
+  - **Divider** · `RECTANGLE` · 690×1
+  - **Table header** · `RECTANGLE` · 690×52
+  - **Head / TENANT** · `TEXT` · 170×17 · “TENANT”
+  - **Head / UNIT** · `TEXT` · 70×17 · “UNIT”
+  - **Head / DATE** · `TEXT` · 110×17 · “DATE”
+  - **Head / METHOD** · `TEXT` · 110×17 · “METHOD”
+  - **Head / AMOUNT** · `TEXT` · 120×17 · “AMOUNT”
+  - **Divider** · `RECTANGLE` · 690×1
+  - **Person avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 105×19 · “Ana Reyes”
+  - **Person sub** · `TEXT` · 105×18 · “Bill #ST-1048”
+  - **Cell** · `TEXT` · 70×20 · “B-204”
+  - **Cell** · `TEXT` · 110×20 · “Sep 2, 2026”
+  - **Badge / GCash** · `RECTANGLE` · 74×28
+  - **Badge label / GCash** · `TEXT` · 54×16 · “GCash”
+  - **Cell** · `TEXT` · 120×20 · “PHP 18,500”
+  - **Billing overview** · `RECTANGLE` · 346×280
+  - **Billing overview** · `TEXT` · 240×22 · “Billing overview”
+  - **Billing helper** · `TEXT` · 240×18 · “Current financial status”
+  - **Divider** · `RECTANGLE` · 346×1
+  - **Lease** · `TEXT` · 220×20 · “Active leases”
+  - **19** · `TEXT` · 50×20 · “19”
+  - **Unpaid** · `TEXT` · 220×20 · “Unpaid / partial”
+  - **4** · `TEXT` · 50×20 · “4”
+  - **Go / bills** · `FRAME` · 294×48 · 1 children
+    - **Button label** · `TEXT` · 294×20 · “Manage bills”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / logout** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×16
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / wallet** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×16
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Apartments** · `FRAME` · 1366×768 · 125 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 110×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Nav active** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Badge / 24** · `RECTANGLE` · 30×28
+  - **Badge label / 24** · `TEXT` · 10×16 · “24”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Badge / 21** · `RECTANGLE` · 30×28
+  - **Badge label / 21** · `TEXT` · 10×16 · “21”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Leases** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Bills** · `TEXT` · 110×20 · “Bills”
+  - **Badge / 4** · `RECTANGLE` · 27×28
+  - **Badge label / 4** · `TEXT` · 7×16 · “4”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×56
+  - **Account avatar** · `RECTANGLE` · 38×38
+  - **Account MS** · `TEXT` · 38×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 95×12 · “maria@staytrack.ph”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “PROPERTY MANAGEMENT”
+  - **Page title** · `TEXT` · 500×46 · “Apartments”
+  - **Page desc** · `TEXT` · 720×24 · “Manage inventory, rates, and availability across all units.”
+  - **Go / apartment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Add apartment”
+  - **Metric / TOTAL UNITS** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “TOTAL UNITS”
+  - **Metric value** · `TEXT` · 170×42 · “24”
+  - **Metric sub** · `TEXT` · 100×18 · “”
+  - **Metric / AVAILABLE** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “AVAILABLE”
+  - **Metric value** · `TEXT` · 170×42 · “3”
+  - **Metric sub** · `TEXT` · 100×18 · “”
+  - **Metric / OCCUPIED** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “OCCUPIED”
+  - **Metric value** · `TEXT` · 170×42 · “19”
+  - **Metric sub** · `TEXT` · 100×18 · “”
+  - **Metric / MAINTENANCE** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “MAINTENANCE”
+  - **Metric value** · `TEXT` · 170×42 · “1”
+  - **Metric sub** · `TEXT` · 100×18 · “”
+  - **Apartments table** · `RECTANGLE` · 1060×305
+  - **Search input** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search unit or type...”
+  - **Filter / All** · `RECTANGLE` · 52×42
+  - **Filter label** · `TEXT` · 52×18 · “All”
+  - **Filter / Available** · `RECTANGLE` · 90×42
+  - **Filter label** · `TEXT` · 90×18 · “Available”
+  - **Filter / Occupied** · `RECTANGLE` · 90×42
+  - **Filter label** · `TEXT` · 90×18 · “Occupied”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Head / UNIT** · `TEXT` · 275×17 · “UNIT”
+  - **Head / TYPE** · `TEXT` · 165×17 · “TYPE”
+  - **Head / FLOOR** · `TEXT` · 140×17 · “FLOOR”
+  - **Head / MONTHLY RENT** · `TEXT` · 210×17 · “MONTHLY RENT”
+  - **Head / STATUS** · `TEXT` · 145×17 · “STATUS”
+  - **Head / ACTIONS** · `TEXT` · 105×17 · “ACTIONS”
+  - **Divider** · `RECTANGLE` · 1088×1
+  - **Cell** · `TEXT` · 275×20 · “A-301”
+  - **Cell** · `TEXT` · 165×20 · “2 Bedroom”
+  - **Cell** · `TEXT` · 140×20 · “3rd floor”
+  - **Cell** · `TEXT` · 210×20 · “PHP 22,000”
+  - **Badge / Available** · `RECTANGLE` · 85×28
+  - **Badge label / Available** · `TEXT` · 65×16 · “Available”
+  - **Cell** · `TEXT` · 105×20 · “”
+  - **Divider** · `RECTANGLE` · 1088×1
+  - **Cell** · `TEXT` · 275×20 · “B-204”
+  - **Cell** · `TEXT` · 165×20 · “2 Bedroom”
+  - **Cell** · `TEXT` · 140×20 · “2nd floor”
+  - **Cell** · `TEXT` · 210×20 · “PHP 18,500”
+  - **Badge / Occupied** · `RECTANGLE` · 85×28
+  - **Badge label / Occupied** · `TEXT` · 65×16 · “Occupied”
+  - **Cell** · `TEXT` · 105×20 · “”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / logout** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×16
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / check** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 14×10
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / alert** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 19×17
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Tenants** · `FRAME` · 1366×768 · 119 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 110×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Badge / 24** · `RECTANGLE` · 30×28
+  - **Badge label / 24** · `TEXT` · 10×16 · “24”
+  - **Nav active** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Badge / 21** · `RECTANGLE` · 30×28
+  - **Badge label / 21** · `TEXT` · 10×16 · “21”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Leases** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Bills** · `TEXT` · 110×20 · “Bills”
+  - **Badge / 4** · `RECTANGLE` · 27×28
+  - **Badge label / 4** · `TEXT` · 7×16 · “4”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×56
+  - **Account avatar** · `RECTANGLE` · 38×38
+  - **Account MS** · `TEXT` · 38×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 95×12 · “maria@staytrack.ph”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “PEOPLE”
+  - **Page title** · `TEXT` · 500×46 · “Tenants”
+  - **Page desc** · `TEXT` · 720×24 · “Keep resident contact details, status, and lease context organized.”
+  - **Go / tenant-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Add tenant”
+  - **Tenants table** · `RECTANGLE` · 1060×484
+  - **Search input** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search name, email, or unit...”
+  - **Filter / All tenants** · `RECTANGLE` · 96×42
+  - **Filter label** · `TEXT` · 96×18 · “All tenants”
+  - **Filter / Active** · `RECTANGLE` · 74×42
+  - **Filter label** · `TEXT` · 74×18 · “Active”
+  - **Filter / Inactive** · `RECTANGLE` · 78×42
+  - **Filter label** · `TEXT` · 78×18 · “Inactive”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Head / TENANT** · `TEXT` · 430×17 · “TENANT”
+  - **Head / CONTACT** · `TEXT` · 210×17 · “CONTACT”
+  - **Head / CURRENT UNIT** · `TEXT` · 240×17 · “CURRENT UNIT”
+  - **Head / LEASE STATUS** · `TEXT` · 190×17 · “LEASE STATUS”
+  - **Head / ACTIONS** · `TEXT` · 100×17 · “ACTIONS”
+  - **Divider** · `RECTANGLE` · 1218×1
+  - **Person avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 378×19 · “Ana Reyes”
+  - **Person sub** · `TEXT` · 378×18 · “ana.reyes@example.ph”
+  - **Cell** · `TEXT` · 210×20 · “+63 917 555 0184”
+  - **Cell** · `TEXT` · 240×20 · “Unit B-204”
+  - **Badge / Active** · `RECTANGLE` · 64×28
+  - **Badge label / Active** · `TEXT` · 44×16 · “Active”
+  - **Cell** · `TEXT` · 100×20 · “”
+  - **Divider** · `RECTANGLE` · 1218×1
+  - **Person avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “CM”
+  - **Person** · `TEXT` · 378×19 · “Carlo Mendoza”
+  - **Person sub** · `TEXT` · 378×18 · “carlo.mendoza@example.ph”
+  - **Cell** · `TEXT` · 210×20 · “+63 905 442 9032”
+  - **Cell** · `TEXT` · 240×20 · “Unit A-301”
+  - **Badge / Active** · `RECTANGLE` · 64×28
+  - **Badge label / Active** · `TEXT` · 44×16 · “Active”
+  - **Cell** · `TEXT` · 100×20 · “”
+  - **Divider** · `RECTANGLE` · 1218×1
+  - **Person avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “LV”
+  - **Person** · `TEXT` · 378×19 · “Lea Villanueva”
+  - **Person sub** · `TEXT` · 378×18 · “lea.v@example.ph”
+  - **Cell** · `TEXT` · 210×20 · “+63 998 113 7720”
+  - **Cell** · `TEXT` · 240×20 · “Unit C-105”
+  - **Badge / Ending soon** · `RECTANGLE` · 92×28
+  - **Badge label / Ending soon** · `TEXT` · 72×16 · “Ending soon”
+  - **Cell** · `TEXT` · 100×20 · “”
+  - **Pagination** · `TEXT` · 200×20 · “Showing 14 of 21 tenants”
+  - **Filter / 1** · `RECTANGLE` · 42×42
+  - **Filter label** · `TEXT` · 42×18 · “1”
+  - **Filter / 2** · `RECTANGLE` · 42×42
+  - **Filter label** · `TEXT` · 42×18 · “2”
+  - **Filter / 3** · `RECTANGLE` · 42×42
+  - **Filter label** · `TEXT` · 42×18 · “3”
+  - **Filter / Next** · `RECTANGLE` · 54×42
+  - **Filter label** · `TEXT` · 54×18 · “Next”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / logout** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×16
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Bills** · `FRAME` · 1366×768 · 120 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Bills”
+  - **Page desc** · `TEXT` · 720×24 · “Monitor rent charges, balances, and due dates across active leases.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Metric / SEPTEMBER BILLED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “SEPTEMBER BILLED”
+  - **Metric value** · `TEXT` · 140×32 · “?362,500”
+  - **Metric / COLLECTED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “COLLECTED”
+  - **Metric value** · `TEXT` · 140×32 · “?286,500”
+  - **Metric / OUTSTANDING** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OUTSTANDING”
+  - **Metric value** · `TEXT` · 140×32 · “?76,000”
+  - **Metric / OVERDUE** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OVERDUE”
+  - **Metric value** · `TEXT` · 140×32 · “?32,500”
+  - **Bills table** · `RECTANGLE` · 1060×335
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or bill ID...”
+  - **Filter All** · `RECTANGLE` · 52×42
+  - **Filter text** · `TEXT` · 52×18 · “All”
+  - **Filter Unpaid** · `RECTANGLE` · 80×42
+  - **Filter text** · `TEXT` · 80×18 · “Unpaid”
+  - **Filter Partial** · `RECTANGLE` · 82×42
+  - **Filter text** · `TEXT` · 82×18 · “Partial”
+  - **Filter Paid** · `RECTANGLE` · 62×42
+  - **Filter text** · `TEXT` · 62×18 · “Paid”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 190×17 · “BILL / TENANT”
+  - **Header** · `TEXT` · 100×17 · “UNIT”
+  - **Header** · `TEXT` · 180×17 · “BILLING MONTH”
+  - **Header** · `TEXT` · 150×17 · “DUE DATE”
+  - **Header** · `TEXT` · 110×17 · “TOTAL”
+  - **Header** · `TEXT` · 130×17 · “BALANCE”
+  - **Header** · `TEXT` · 110×17 · “STATUS”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1052”
+  - **Cell** · `TEXT` · 100×20 · “A-301”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 15, 2026”
+  - **Cell** · `TEXT` · 110×20 · “?22,000”
+  - **Cell** · `TEXT` · 130×20 · “?22,000”
+  - **Badge / Unpaid** · `RECTANGLE` · 72×28
+  - **Badge label / Unpaid** · `TEXT` · 58×16 · “Unpaid”
+  - **Cell** · `TEXT` · 100×20 · “Record payment”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1048”
+  - **Cell** · `TEXT` · 100×20 · “B-204”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 5, 2026”
+  - **Cell** · `TEXT` · 110×20 · “?18,500”
+  - **Cell** · `TEXT` · 130×20 · “?0”
+  - **Badge / Paid** · `RECTANGLE` · 58×28
+  - **Badge label / Paid** · `TEXT` · 44×16 · “Paid”
+  - **Cell** · `TEXT` · 100×20 · “View payment”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / check** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 14×10
+  - **Icon / clock** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 18×18
+    - **Vector** · `VECTOR` · 3×7
+  - **Icon / alert** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 19×17
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+- **Presentation / Payment History** · `FRAME` · 1366×768 · 119 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Payment history”
+  - **Page desc** · `TEXT` · 720×24 · “Review and reconcile all recorded tenant payments.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Payments table** · `RECTANGLE` · 1060×484
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or reference...”
+  - **Method select** · `RECTANGLE` · 170×54
+  - **Method** · `TEXT` · 130×20 · “All methods     ?”
+  - **Go / export** · `FRAME` · 88×48 · 1 children
+    - **Button label** · `TEXT` · 88×20 · “?  Export”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 276×17 · “TENANT”
+  - **Header** · `TEXT` · 92×17 · “UNIT”
+  - **Header** · `TEXT` · 160×17 · “PAYMENT DATE”
+  - **Header** · `TEXT` · 140×17 · “AMOUNT”
+  - **Header** · `TEXT` · 150×17 · “METHOD”
+  - **Header** · `TEXT` · 170×17 · “REFERENCE”
+  - **Header** · `TEXT` · 160×17 · “RECEIVED BY”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 224×19 · “Ana Reyes”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1048”
+  - **Cell** · `TEXT` · 92×20 · “B-204”
+  - **Cell** · `TEXT` · 160×20 · “Sep 2, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?18,500”
+  - **Badge / GCash** · `RECTANGLE` · 68×28
+  - **Badge label / GCash** · `TEXT` · 54×16 · “GCash”
+  - **Cell** · `TEXT` · 170×20 · “GC-?-1842”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “CM”
+  - **Person** · `TEXT` · 224×19 · “Carlo Mendoza”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1047”
+  - **Cell** · `TEXT` · 92×20 · “A-301”
+  - **Cell** · `TEXT` · 160×20 · “Sep 1, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?22,000”
+  - **Badge / Bank transfer** · `RECTANGLE` · 112×28
+  - **Badge label / Bank transfer** · `TEXT` · 98×16 · “Bank transfer”
+  - **Cell** · `TEXT` · 170×20 · “BDO-0901-7641”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “LV”
+  - **Person** · `TEXT` · 224×19 · “Lea Villanueva”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1042”
+  - **Cell** · `TEXT` · 92×20 · “C-105”
+  - **Cell** · `TEXT` · 160×20 · “Aug 30, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?10,000”
+  - **Badge / Cash** · `RECTANGLE` · 60×28
+  - **Badge label / Cash** · `TEXT` · 46×16 · “Cash”
+  - **Cell** · `TEXT` · 170×20 · “OR-00491”
+  - **Cell** · `TEXT` · 160×20 · “John dela Cruz”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Pagination** · `TEXT` · 220×20 · “Showing 1?4 of 48 payments”
+  - **Filter 1** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “1”
+  - **Filter 2** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “2”
+  - **Filter 3** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “3”
+  - **Filter Next** · `RECTANGLE` · 54×42
+  - **Filter text** · `TEXT` · 54×18 · “Next”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+- **Presentation / Create Lease** · `FRAME` · 1366×900
+- **Presentation / Bills** · `FRAME` · 1366×768 · 120 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Bills”
+  - **Page desc** · `TEXT` · 720×24 · “Monitor rent charges, balances, and due dates across active leases.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Metric / SEPTEMBER BILLED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “SEPTEMBER BILLED”
+  - **Metric value** · `TEXT` · 140×32 · “?362,500”
+  - **Metric / COLLECTED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “COLLECTED”
+  - **Metric value** · `TEXT` · 140×32 · “?286,500”
+  - **Metric / OUTSTANDING** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OUTSTANDING”
+  - **Metric value** · `TEXT` · 140×32 · “?76,000”
+  - **Metric / OVERDUE** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OVERDUE”
+  - **Metric value** · `TEXT` · 140×32 · “?32,500”
+  - **Bills table** · `RECTANGLE` · 1060×335
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or bill ID...”
+  - **Filter All** · `RECTANGLE` · 52×42
+  - **Filter text** · `TEXT` · 52×18 · “All”
+  - **Filter Unpaid** · `RECTANGLE` · 80×42
+  - **Filter text** · `TEXT` · 80×18 · “Unpaid”
+  - **Filter Partial** · `RECTANGLE` · 82×42
+  - **Filter text** · `TEXT` · 82×18 · “Partial”
+  - **Filter Paid** · `RECTANGLE` · 62×42
+  - **Filter text** · `TEXT` · 62×18 · “Paid”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 190×17 · “BILL / TENANT”
+  - **Header** · `TEXT` · 100×17 · “UNIT”
+  - **Header** · `TEXT` · 180×17 · “BILLING MONTH”
+  - **Header** · `TEXT` · 150×17 · “DUE DATE”
+  - **Header** · `TEXT` · 110×17 · “TOTAL”
+  - **Header** · `TEXT` · 130×17 · “BALANCE”
+  - **Header** · `TEXT` · 110×17 · “STATUS”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1052”
+  - **Cell** · `TEXT` · 100×20 · “A-301”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 15, 2026”
+  - **Cell** · `TEXT` · 110×20 · “?22,000”
+  - **Cell** · `TEXT` · 130×20 · “?22,000”
+  - **Badge / Unpaid** · `RECTANGLE` · 72×28
+  - **Badge label / Unpaid** · `TEXT` · 58×16 · “Unpaid”
+  - **Cell** · `TEXT` · 100×20 · “Record payment”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1048”
+  - **Cell** · `TEXT` · 100×20 · “B-204”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 5, 2026”
+  - **Cell** · `TEXT` · 110×20 · “?18,500”
+  - **Cell** · `TEXT` · 130×20 · “?0”
+  - **Badge / Paid** · `RECTANGLE` · 58×28
+  - **Badge label / Paid** · `TEXT` · 44×16 · “Paid”
+  - **Cell** · `TEXT` · 100×20 · “View payment”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / check** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 14×10
+  - **Icon / clock** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 18×18
+    - **Vector** · `VECTOR` · 3×7
+  - **Icon / alert** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 19×17
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+- **Presentation / Payment History** · `FRAME` · 1366×768 · 119 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Payment history”
+  - **Page desc** · `TEXT` · 720×24 · “Review and reconcile all recorded tenant payments.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Payments table** · `RECTANGLE` · 1060×484
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or reference...”
+  - **Method select** · `RECTANGLE` · 170×54
+  - **Method** · `TEXT` · 130×20 · “All methods     ?”
+  - **Go / export** · `FRAME` · 88×48 · 1 children
+    - **Button label** · `TEXT` · 88×20 · “?  Export”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 276×17 · “TENANT”
+  - **Header** · `TEXT` · 92×17 · “UNIT”
+  - **Header** · `TEXT` · 160×17 · “PAYMENT DATE”
+  - **Header** · `TEXT` · 140×17 · “AMOUNT”
+  - **Header** · `TEXT` · 150×17 · “METHOD”
+  - **Header** · `TEXT` · 170×17 · “REFERENCE”
+  - **Header** · `TEXT` · 160×17 · “RECEIVED BY”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 224×19 · “Ana Reyes”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1048”
+  - **Cell** · `TEXT` · 92×20 · “B-204”
+  - **Cell** · `TEXT` · 160×20 · “Sep 2, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?18,500”
+  - **Badge / GCash** · `RECTANGLE` · 68×28
+  - **Badge label / GCash** · `TEXT` · 54×16 · “GCash”
+  - **Cell** · `TEXT` · 170×20 · “GC-?-1842”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “CM”
+  - **Person** · `TEXT` · 224×19 · “Carlo Mendoza”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1047”
+  - **Cell** · `TEXT` · 92×20 · “A-301”
+  - **Cell** · `TEXT` · 160×20 · “Sep 1, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?22,000”
+  - **Badge / Bank transfer** · `RECTANGLE` · 112×28
+  - **Badge label / Bank transfer** · `TEXT` · 98×16 · “Bank transfer”
+  - **Cell** · `TEXT` · 170×20 · “BDO-0901-7641”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “LV”
+  - **Person** · `TEXT` · 224×19 · “Lea Villanueva”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1042”
+  - **Cell** · `TEXT` · 92×20 · “C-105”
+  - **Cell** · `TEXT` · 160×20 · “Aug 30, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?10,000”
+  - **Badge / Cash** · `RECTANGLE` · 60×28
+  - **Badge label / Cash** · `TEXT` · 46×16 · “Cash”
+  - **Cell** · `TEXT` · 170×20 · “OR-00491”
+  - **Cell** · `TEXT` · 160×20 · “John dela Cruz”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Pagination** · `TEXT` · 220×20 · “Showing 1?4 of 48 payments”
+  - **Filter 1** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “1”
+  - **Filter 2** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “2”
+  - **Filter 3** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “3”
+  - **Filter Next** · `RECTANGLE` · 54×42
+  - **Filter text** · `TEXT` · 54×18 · “Next”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+- **Presentation / Create Lease** · `FRAME` · 1366×900
+- **Presentation / Bills** · `FRAME` · 1366×768 · 120 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Bills”
+  - **Page desc** · `TEXT` · 720×24 · “Monitor rent charges, balances, and due dates across active leases.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Metric / SEPTEMBER BILLED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “SEPTEMBER BILLED”
+  - **Metric value** · `TEXT` · 140×32 · “?362,500”
+  - **Metric / COLLECTED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “COLLECTED”
+  - **Metric value** · `TEXT` · 140×32 · “?286,500”
+  - **Metric / OUTSTANDING** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OUTSTANDING”
+  - **Metric value** · `TEXT` · 140×32 · “?76,000”
+  - **Metric / OVERDUE** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OVERDUE”
+  - **Metric value** · `TEXT` · 140×32 · “?32,500”
+  - **Bills table** · `RECTANGLE` · 1060×335
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or bill ID...”
+  - **Filter All** · `RECTANGLE` · 52×42
+  - **Filter text** · `TEXT` · 52×18 · “All”
+  - **Filter Unpaid** · `RECTANGLE` · 80×42
+  - **Filter text** · `TEXT` · 80×18 · “Unpaid”
+  - **Filter Partial** · `RECTANGLE` · 82×42
+  - **Filter text** · `TEXT` · 82×18 · “Partial”
+  - **Filter Paid** · `RECTANGLE` · 62×42
+  - **Filter text** · `TEXT` · 62×18 · “Paid”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 190×17 · “BILL / TENANT”
+  - **Header** · `TEXT` · 100×17 · “UNIT”
+  - **Header** · `TEXT` · 180×17 · “BILLING MONTH”
+  - **Header** · `TEXT` · 150×17 · “DUE DATE”
+  - **Header** · `TEXT` · 110×17 · “TOTAL”
+  - **Header** · `TEXT` · 130×17 · “BALANCE”
+  - **Header** · `TEXT` · 110×17 · “STATUS”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1052”
+  - **Cell** · `TEXT` · 100×20 · “A-301”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 15, 2026”
+  - **Cell** · `TEXT` · 110×20 · “?22,000”
+  - **Cell** · `TEXT` · 130×20 · “?22,000”
+  - **Badge / Unpaid** · `RECTANGLE` · 72×28
+  - **Badge label / Unpaid** · `TEXT` · 58×16 · “Unpaid”
+  - **Cell** · `TEXT` · 100×20 · “Record payment”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1048”
+  - **Cell** · `TEXT` · 100×20 · “B-204”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 5, 2026”
+  - **Cell** · `TEXT` · 110×20 · “?18,500”
+  - **Cell** · `TEXT` · 130×20 · “?0”
+  - **Badge / Paid** · `RECTANGLE` · 58×28
+  - **Badge label / Paid** · `TEXT` · 44×16 · “Paid”
+  - **Cell** · `TEXT` · 100×20 · “View payment”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / check** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 14×10
+  - **Icon / clock** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 18×18
+    - **Vector** · `VECTOR` · 3×7
+  - **Icon / alert** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 19×17
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+- **Presentation / Payment History** · `FRAME` · 1366×768 · 119 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Payment history”
+  - **Page desc** · `TEXT` · 720×24 · “Review and reconcile all recorded tenant payments.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Payments table** · `RECTANGLE` · 1060×484
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or reference...”
+  - **Method select** · `RECTANGLE` · 170×54
+  - **Method** · `TEXT` · 130×20 · “All methods     ?”
+  - **Go / export** · `FRAME` · 88×48 · 1 children
+    - **Button label** · `TEXT` · 88×20 · “?  Export”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 276×17 · “TENANT”
+  - **Header** · `TEXT` · 92×17 · “UNIT”
+  - **Header** · `TEXT` · 160×17 · “PAYMENT DATE”
+  - **Header** · `TEXT` · 140×17 · “AMOUNT”
+  - **Header** · `TEXT` · 150×17 · “METHOD”
+  - **Header** · `TEXT` · 170×17 · “REFERENCE”
+  - **Header** · `TEXT` · 160×17 · “RECEIVED BY”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 224×19 · “Ana Reyes”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1048”
+  - **Cell** · `TEXT` · 92×20 · “B-204”
+  - **Cell** · `TEXT` · 160×20 · “Sep 2, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?18,500”
+  - **Badge / GCash** · `RECTANGLE` · 68×28
+  - **Badge label / GCash** · `TEXT` · 54×16 · “GCash”
+  - **Cell** · `TEXT` · 170×20 · “GC-?-1842”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “CM”
+  - **Person** · `TEXT` · 224×19 · “Carlo Mendoza”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1047”
+  - **Cell** · `TEXT` · 92×20 · “A-301”
+  - **Cell** · `TEXT` · 160×20 · “Sep 1, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?22,000”
+  - **Badge / Bank transfer** · `RECTANGLE` · 112×28
+  - **Badge label / Bank transfer** · `TEXT` · 98×16 · “Bank transfer”
+  - **Cell** · `TEXT` · 170×20 · “BDO-0901-7641”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “LV”
+  - **Person** · `TEXT` · 224×19 · “Lea Villanueva”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1042”
+  - **Cell** · `TEXT` · 92×20 · “C-105”
+  - **Cell** · `TEXT` · 160×20 · “Aug 30, 2026”
+  - **Cell** · `TEXT` · 140×20 · “?10,000”
+  - **Badge / Cash** · `RECTANGLE` · 60×28
+  - **Badge label / Cash** · `TEXT` · 46×16 · “Cash”
+  - **Cell** · `TEXT` · 170×20 · “OR-00491”
+  - **Cell** · `TEXT` · 160×20 · “John dela Cruz”
+  - **Cell** · `TEXT` · 100×20 · “View details ?”
+  - **Pagination** · `TEXT` · 220×20 · “Showing 1?4 of 48 payments”
+  - **Filter 1** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “1”
+  - **Filter 2** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “2”
+  - **Filter 3** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “3”
+  - **Filter Next** · `RECTANGLE` · 54×42
+  - **Filter text** · `TEXT` · 54×18 · “Next”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+- **Presentation / Create Lease** · `FRAME` · 1366×900
+- **Presentation / Bills** · `FRAME` · 1366×768 · 121 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×56
+  - **Account avatar** · `RECTANGLE` · 38×38
+  - **Account MS** · `TEXT` · 38×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 95×12 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Bills”
+  - **Page desc** · `TEXT` · 720×24 · “Monitor rent charges, balances, and due dates across active leases.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Metric / SEPTEMBER BILLED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “SEPTEMBER BILLED”
+  - **Metric value** · `TEXT` · 140×32 · “PHP 362,500”
+  - **Metric / COLLECTED** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “COLLECTED”
+  - **Metric value** · `TEXT` · 140×32 · “PHP 286,500”
+  - **Metric / OUTSTANDING** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OUTSTANDING”
+  - **Metric value** · `TEXT` · 140×32 · “PHP 76,000”
+  - **Metric / OVERDUE** · `RECTANGLE` · 244×120
+  - **Metric bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 140×18 · “OVERDUE”
+  - **Metric value** · `TEXT` · 140×32 · “PHP 32,500”
+  - **Bills table** · `RECTANGLE` · 1060×335
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or bill ID...”
+  - **Filter All** · `RECTANGLE` · 52×42
+  - **Filter text** · `TEXT` · 52×18 · “All”
+  - **Filter Unpaid** · `RECTANGLE` · 80×42
+  - **Filter text** · `TEXT` · 80×18 · “Unpaid”
+  - **Filter Partial** · `RECTANGLE` · 82×42
+  - **Filter text** · `TEXT` · 82×18 · “Partial”
+  - **Filter Paid** · `RECTANGLE` · 62×42
+  - **Filter text** · `TEXT` · 62×18 · “Paid”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 190×17 · “BILL / TENANT”
+  - **Header** · `TEXT` · 100×17 · “UNIT”
+  - **Header** · `TEXT` · 180×17 · “BILLING MONTH”
+  - **Header** · `TEXT` · 150×17 · “DUE DATE”
+  - **Header** · `TEXT` · 110×17 · “TOTAL”
+  - **Header** · `TEXT` · 130×17 · “BALANCE”
+  - **Header** · `TEXT` · 110×17 · “STATUS”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1052”
+  - **Cell** · `TEXT` · 100×20 · “A-301”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 15, 2026”
+  - **Cell** · `TEXT` · 110×20 · “PHP 22,000”
+  - **Cell** · `TEXT` · 130×20 · “PHP 22,000”
+  - **Badge / Unpaid** · `RECTANGLE` · 72×28
+  - **Badge label / Unpaid** · `TEXT` · 58×16 · “Unpaid”
+  - **Cell** · `TEXT` · 100×20 · “Record payment”
+  - **Divider** · `RECTANGLE` · 1118×1
+  - **Cell** · `TEXT` · 190×20 · “ST-1048”
+  - **Cell** · `TEXT` · 100×20 · “B-204”
+  - **Cell** · `TEXT` · 180×20 · “September 2026”
+  - **Cell** · `TEXT` · 150×20 · “Sep 5, 2026”
+  - **Cell** · `TEXT` · 110×20 · “PHP 18,500”
+  - **Cell** · `TEXT` · 130×20 · “PHP 0”
+  - **Badge / Paid** · `RECTANGLE` · 58×28
+  - **Badge label / Paid** · `TEXT` · 44×16 · “Paid”
+  - **Cell** · `TEXT` · 100×20 · “View payment”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / check** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 14×10
+  - **Icon / clock** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 18×18
+    - **Vector** · `VECTOR` · 3×7
+  - **Icon / alert** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 19×17
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Payment History** · `FRAME` · 1366×768 · 120 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×56
+  - **Account avatar** · `RECTANGLE` · 38×38
+  - **Account MS** · `TEXT` · 38×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 95×12 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Page title** · `TEXT` · 600×46 · “Payment history”
+  - **Page desc** · `TEXT` · 720×24 · “Review and reconcile all recorded tenant payments.”
+  - **Go / payment-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Record payment”
+  - **Payments table** · `RECTANGLE` · 1060×484
+  - **Search** · `RECTANGLE` · 360×54
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Search placeholder** · `TEXT` · 315×20 · “Search tenant, unit, or reference...”
+  - **Method select** · `RECTANGLE` · 170×54
+  - **Method** · `TEXT` · 130×20 · “All methods”
+  - **Go / export** · `FRAME` · 88×48 · 1 children
+    - **Button label** · `TEXT` · 88×20 · “Export”
+  - **Table header** · `RECTANGLE` · 1060×52
+  - **Header** · `TEXT` · 276×17 · “TENANT”
+  - **Header** · `TEXT` · 92×17 · “UNIT”
+  - **Header** · `TEXT` · 160×17 · “PAYMENT DATE”
+  - **Header** · `TEXT` · 140×17 · “AMOUNT”
+  - **Header** · `TEXT` · 150×17 · “METHOD”
+  - **Header** · `TEXT` · 170×17 · “REFERENCE”
+  - **Header** · `TEXT` · 160×17 · “RECEIVED BY”
+  - **Header** · `TEXT` · 100×17 · “ACTION”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 224×19 · “Ana Reyes”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1048”
+  - **Cell** · `TEXT` · 92×20 · “B-204”
+  - **Cell** · `TEXT` · 160×20 · “Sep 2, 2026”
+  - **Cell** · `TEXT` · 140×20 · “PHP 18,500”
+  - **Badge / GCash** · `RECTANGLE` · 68×28
+  - **Badge label / GCash** · `TEXT` · 54×16 · “GCash”
+  - **Cell** · `TEXT` · 170×20 · “GC--1842”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “CM”
+  - **Person** · `TEXT` · 224×19 · “Carlo Mendoza”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1047”
+  - **Cell** · `TEXT` · 92×20 · “A-301”
+  - **Cell** · `TEXT` · 160×20 · “Sep 1, 2026”
+  - **Cell** · `TEXT` · 140×20 · “PHP 22,000”
+  - **Badge / Bank transfer** · `RECTANGLE` · 112×28
+  - **Badge label / Bank transfer** · `TEXT` · 98×16 · “Bank transfer”
+  - **Cell** · `TEXT` · 170×20 · “BDO-0901-7641”
+  - **Cell** · `TEXT` · 160×20 · “Maria Santos”
+  - **Cell** · `TEXT` · 100×20 · “View details”
+  - **Divider** · `RECTANGLE` · 1296×1
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “LV”
+  - **Person** · `TEXT` · 224×19 · “Lea Villanueva”
+  - **Sub** · `TEXT` · 224×18 · “Bill ST-1042”
+  - **Cell** · `TEXT` · 92×20 · “C-105”
+  - **Cell** · `TEXT` · 160×20 · “Aug 30, 2026”
+  - **Cell** · `TEXT` · 140×20 · “PHP 10,000”
+  - **Badge / Cash** · `RECTANGLE` · 60×28
+  - **Badge label / Cash** · `TEXT` · 46×16 · “Cash”
+  - **Cell** · `TEXT` · 170×20 · “OR-00491”
+  - **Cell** · `TEXT` · 160×20 · “John dela Cruz”
+  - **Cell** · `TEXT` · 100×20 · “View details”
+  - **Pagination** · `TEXT` · 220×20 · “Showing 14 of 48 payments”
+  - **Filter 1** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “1”
+  - **Filter 2** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “2”
+  - **Filter 3** · `RECTANGLE` · 42×42
+  - **Filter text** · `TEXT` · 42×18 · “3”
+  - **Filter Next** · `RECTANGLE` · 54×42
+  - **Filter text** · `TEXT` · 54×18 · “Next”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Create Lease** · `FRAME` · 1366×900 · 79 children
+  - **Sidebar** · `RECTANGLE` · 226×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “LEASES”
+  - **Page title** · `TEXT` · 600×46 · “Create lease”
+  - **Page desc** · `TEXT` · 720×24 · “Assign a tenant to an available apartment and set the rental terms.”
+  - **Go / dashboard** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Back to dashboard”
+  - **Badge / New lease ? Active** · `RECTANGLE` · 160×28
+  - **Badge label / New lease ? Active** · `TEXT` · 146×16 · “New lease  Active”
+  - **Lease form** · `RECTANGLE` · 840×600
+  - **Step badge** · `RECTANGLE` · 46×46
+  - **Step number** · `TEXT` · 46×18 · “01”
+  - **Section** · `TEXT` · 300×24 · “Rental assignment”
+  - **Section help** · `TEXT` · 350×18 · “Select a resident and an available unit.”
+  - **Tenant label** · `TEXT` · 260×20 · “Tenant”
+  - **Tenant field** · `RECTANGLE` · 360×55
+  - **Tenant value** · `TEXT` · 320×20 · “Ana Reyes”
+  - **Apartment label** · `TEXT` · 260×20 · “Apartment”
+  - **Apartment field** · `RECTANGLE` · 360×55
+  - **Apartment value** · `TEXT` · 320×20 · “Unit A-301  22,000 / month”
+  - **Start label** · `TEXT` · 260×20 · “Start date”
+  - **Start field** · `RECTANGLE` · 360×55
+  - **Start value** · `TEXT` · 320×20 · “15/09/2026”
+  - **End label** · `TEXT` · 260×20 · “End date”
+  - **End field** · `RECTANGLE` · 360×55
+  - **End value** · `TEXT` · 320×20 · “14/09/2027”
+  - **Divider** · `RECTANGLE` · 840×1
+  - **Step badge 2** · `RECTANGLE` · 46×46
+  - **Step 2** · `TEXT` · 46×18 · “02”
+  - **Financial title** · `TEXT` · 300×24 · “Financial information”
+  - **Financial helper** · `TEXT` · 350×18 · “Confirm rent and deposit amounts.”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Profile Settings** · `FRAME` · 1366×900 · 82 children
+  - **Sidebar** · `RECTANGLE` · 226×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 120×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Nav selected** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×75
+  - **Account avatar** · `RECTANGLE` · 48×48
+  - **Account MS** · `TEXT` · 48×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “ACCOUNT”
+  - **Page title** · `TEXT` · 600×46 · “Profile settings”
+  - **Page desc** · `TEXT` · 720×24 · “Manage your personal information, password, and account access.”
+  - **Profile card** · `RECTANGLE` · 280×390
+  - **Profile avatar** · `RECTANGLE` · 90×90
+  - **Profile initials** · `TEXT` · 90×30 · “MS”
+  - **Profile name** · `TEXT` · 240×23 · “Maria Santos”
+  - **Profile role** · `TEXT` · 240×20 · “Administrator”
+  - **Personal tab** · `RECTANGLE` · 240×55
+  - **Personal tab label** · `TEXT` · 200×20 · “Personal information”
+  - **Password tab** · `TEXT` · 200×20 · “Password & security”
+  - **Danger tab** · `TEXT` · 200×20 · “Danger zone”
+  - **Personal panel** · `RECTANGLE` · 650×480
+  - **Personal icon** · `RECTANGLE` · 46×46
+  - **Personal glyph** · `TEXT` · 24×22 · “”
+  - **Personal header** · `TEXT` · 350×24 · “Personal information”
+  - **Personal desc** · `TEXT` · 350×18 · “Update your name and email address.”
+  - **Field label** · `TEXT` · 260×20 · “Full name”
+  - **Input Full name** · `RECTANGLE` · 260×55
+  - **Input text** · `TEXT` · 224×20 · “Maria Santos”
+  - **Field label** · `TEXT` · 280×20 · “Email address”
+  - **Input Email address** · `RECTANGLE` · 280×55
+  - **Input text** · `TEXT` · 244×20 · “maria@staytrack.ph”
+  - **Field label** · `TEXT` · 260×20 · “Phone number”
+  - **Input Phone number** · `RECTANGLE` · 260×55
+  - **Input text** · `TEXT` · 224×20 · “+63 917 882 0147”
+  - **Field label** · `TEXT` · 280×20 · “Role”
+  - **Input Role** · `RECTANGLE` · 280×55
+  - **Input text** · `TEXT` · 244×20 · “Administrator”
+  - **Panel footer** · `RECTANGLE` · 650×90
+  - **Go / save-profile** · `FRAME` · 120×48 · 1 children
+    - **Button label** · `TEXT` · 120×20 · “Save changes”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Tenant Dashboard** · `FRAME` · 1366×768 · 53 children
+  - **Tenant sidebar** · `RECTANGLE` · 226×768
+  - **Tenant brand** · `RECTANGLE` · 48×48
+  - **Tenant home** · `TEXT` · 24×24 · “?”
+  - **Tenant brand label** · `TEXT` · 120×20 · “StayTrack”
+  - **Tenant brand sub** · `TEXT` · 120×17 · “Tenant Portal”
+  - **Portal menu** · `TEXT` · 160×18 · “TENANT PORTAL”
+  - **Tenant active** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenant-dashboard** · `TEXT` · 110×20 · “Overview”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenant-dashboard** · `TEXT` · 110×20 · “My apartment”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / tenant-dashboard** · `TEXT` · 110×20 · “My lease”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “My bills”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payment history”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Tenant topbar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Tenant workspace** · `TEXT` · 240×22 · “StayTrack Tenant Portal”
+  - **Tenant avatar** · `RECTANGLE` · 42×42
+  - **Tenant initials** · `TEXT` · 42×18 · “AR”
+  - **Tenant eyebrow** · `TEXT` · 200×18 · “TENANT PORTAL”
+  - **Tenant title** · `TEXT` · 400×46 · “Welcome, Ana”
+  - **Tenant desc** · `TEXT` · 640×24 · “Your apartment, lease, bills, and payment history in one place.”
+  - **Balance card** · `RECTANGLE` · 515×170
+  - **Balance label** · `TEXT` · 180×18 · “CURRENT BALANCE”
+  - **Balance value** · `TEXT` · 240×42 · “4,000”
+  - **Balance due** · `TEXT` · 250×18 · “Due September 15, 2026”
+  - **Go / payment-create** · `FRAME` · 158×48 · 1 children
+    - **Button label** · `TEXT` · 158×20 · “Pay balance”
+  - **Apartment card** · `RECTANGLE` · 521×170
+  - **Apartment title** · `TEXT` · 220×22 · “My apartment”
+  - **Apartment unit** · `TEXT` · 220×28 · “Unit B-204”
+  - **Apartment type** · `TEXT` · 260×20 · “2 Bedroom  2nd floor”
+  - **Badge / Active lease** · `RECTANGLE` · 105×28
+  - **Badge label / Active lease** · `TEXT` · 91×16 · “Active lease”
+  - **Upcoming bill panel** · `RECTANGLE` · 1060×236
+  - **Upcoming title** · `TEXT` · 250×22 · “Upcoming bill”
+  - **Upcoming sub** · `TEXT` · 250×18 · “September rent”
+  - **Divider** · `RECTANGLE` · 1060×1
+  - **Rent** · `TEXT` · 180×20 · “Monthly rent”
+  - **Rent value** · `TEXT` · 180×20 · “18,500”
+  - **Payment** · `TEXT` · 180×20 · “Previous payment”
+  - **Payment value** · `TEXT` · 180×20 · “14,500”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+- **Presentation / Login** · `FRAME` · 1366×768 · 35 children
+  - **Login left** · `RECTANGLE` · 682×768
+  - **Login right** · `RECTANGLE` · 684×768
+  - **Login rings 1** · `RECTANGLE` · 480×480
+  - **Login rings 2** · `RECTANGLE` · 320×320
+  - **Hero brand** · `TEXT` · 230×22 · “StayTrack”
+  - **Hero sub** · `TEXT` · 220×18 · “Apartment Management”
+  - **Hero kicker** · `TEXT` · 360×20 · “ONE PLACE. EVERY PROPERTY DETAIL.”
+  - **Hero title** · `TEXT` · 530×205 · “Run your
+apartments with
+clarity.”
+  - **Hero description** · `TEXT` · 535×54 · “Track units, tenants, leases, bills, and payments from a calm, reliable
+workspac”
+  - **Divider** · `RECTANGLE` · 490×1
+  - **Stat 1** · `TEXT` · 120×32 · “24”
+  - **Stat 1 sub** · `TEXT` · 140×18 · “Units managed”
+  - **Stat 2** · `TEXT` · 120×32 · “96%”
+  - **Stat 2 sub** · `TEXT` · 140×18 · “Occupancy”
+  - **Stat 3** · `TEXT` · 150×32 · “286K”
+  - **Stat 3 sub** · `TEXT` · 160×18 · “Collected this month”
+  - **Login card** · `RECTANGLE` · 450×570
+  - **Welcome** · `TEXT` · 300×18 · “WELCOME BACK”
+  - **Sign in title** · `TEXT` · 340×42 · “Sign in to StayTrack”
+  - **Sign in desc** · `TEXT` · 335×38 · “Sign in with your tenant account to view your apartment, bills, and lease.”
+  - **Email label** · `TEXT` · 300×20 · “Email address”
+  - **Email input** · `RECTANGLE` · 346×54
+  - **Email value** · `TEXT` · 300×20 · “ana.reyes@staytrack.ph”
+  - **Password label** · `TEXT` · 150×20 · “Password”
+  - **Forgot** · `TEXT` · 140×20 · “Forgot password”
+  - **Password input** · `RECTANGLE` · 346×54
+  - **Password dots** · `TEXT` · 200×20 · “”
+  - **Checkbox** · `RECTANGLE` · 20×20
+  - **Checkbox tick** · `TEXT` · 20×18 · “”
+  - **Keep signed** · `TEXT` · 290×20 · “Keep me signed in on this device”
+  - **Go / tenant-portal** · `FRAME` · 346×48 · 1 children
+    - **Button label** · `TEXT` · 346×20 · “Sign in to tenant portal”
+  - **Divider** · `RECTANGLE` · 346×1
+  - **Go / tenant-dashboard** · `FRAME` · 346×48 · 1 children
+    - **Button label** · `TEXT` · 346×20 · “Open tenant portal demo”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Admin access note** · `TEXT` · 346×32 · “Administrator accounts are created by the system administrator.”
+- **Presentation / Add Apartment** · `FRAME` · 1366×900 · 68 children
+  - **Sidebar** · `RECTANGLE` · 226×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Topbar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand** · `RECTANGLE` · 48×48
+  - **Home** · `TEXT` · 24×24 · “?”
+  - **StayTrack** · `TEXT` · 120×20 · “StayTrack”
+  - **Apartment Management** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **MS** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Active nav** · `RECTANGLE` · 186×48
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Eyebrow** · `TEXT` · 250×18 · “PROPERTY MANAGEMENT”
+  - **Title** · `TEXT` · 620×46 · “Add apartment”
+  - **Description** · `TEXT` · 720×24 · “Create a unit record with rates, capacity, and availability.”
+  - **Go / apartments** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Back to apartments”
+  - **Form panel** · `RECTANGLE` · 840×580
+  - **Panel title** · `TEXT` · 320×24 · “Apartment details”
+  - **Panel desc** · `TEXT` · 430×20 · “Add the essentials so your team can manage the unit.”
+  - **Field label** · `TEXT` · 350×20 · “Unit number”
+  - **Input Unit number** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “A-302”
+  - **Field label** · `TEXT` · 350×20 · “Apartment type”
+  - **Input Apartment type** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “2 Bedroom”
+  - **Field label** · `TEXT` · 350×20 · “Floor”
+  - **Input Floor** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “3rd floor”
+  - **Field label** · `TEXT` · 350×20 · “Monthly rent”
+  - **Input Monthly rent** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “22,000”
+  - **Field label** · `TEXT` · 350×20 · “Bedrooms”
+  - **Input Bedrooms** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “2”
+  - **Field label** · `TEXT` · 350×20 · “Bathrooms”
+  - **Input Bathrooms** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “1”
+  - **Go / apartments** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Save apartment”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Apartment A-301** · `FRAME` · 1366×768 · 68 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Topbar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand** · `RECTANGLE` · 48×48
+  - **Home** · `TEXT` · 24×24 · “?”
+  - **StayTrack** · `TEXT` · 120×20 · “StayTrack”
+  - **Apartment Management** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **MS** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Active nav** · `RECTANGLE` · 186×48
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Eyebrow** · `TEXT` · 250×18 · “PROPERTY MANAGEMENT”
+  - **Title** · `TEXT` · 620×46 · “Apartment A-301”
+  - **Description** · `TEXT` · 720×24 · “Unit overview and rental information.”
+  - **Go / apartment-create** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Edit apartment”
+  - **Go / apartments** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Back to apartments”
+  - **Unit summary** · `RECTANGLE` · 570×254
+  - **Unit icon** · `RECTANGLE` · 58×58
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Unit id** · `TEXT` · 250×32 · “A-301”
+  - **Unit type** · `TEXT` · 330×20 · “2 Bedroom  1 bath  3rd floor”
+  - **Divider** · `RECTANGLE` · 506×1
+  - **Rent label** · `TEXT` · 180×18 · “Monthly rent”
+  - **Rent** · `TEXT` · 220×30 · “22,000”
+  - **Status card** · `RECTANGLE` · 464×254
+  - **Status heading** · `TEXT` · 200×22 · “Availability”
+  - **Available pill** · `RECTANGLE` · 104×30
+  - **Available text** · `TEXT` · 84×16 · “Available”
+  - **Status help** · `TEXT` · 300×20 · “This unit is ready for a new lease.”
+  - **Go / lease-create** · `FRAME` · 400×48 · 1 children
+    - **Label** · `TEXT` · 400×20 · “Assign to a lease”
+  - **Details panel** · `RECTANGLE` · 1060×166
+  - **Details heading** · `TEXT` · 280×22 · “Apartment information”
+  - **Floor** · `TEXT` · 150×48 · “Floor
+3rd floor”
+  - **Beds** · `TEXT` · 150×48 · “Bedrooms
+2”
+  - **Baths** · `TEXT` · 150×48 · “Bathrooms
+1”
+  - **Created** · `TEXT` · 180×48 · “Created
+Sep 2, 2026”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / search** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 14×14
+    - **Vector** · `VECTOR` · 4×4
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Record Payment** · `FRAME` · 1366×900 · 67 children
+  - **Sidebar** · `RECTANGLE` · 226×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Topbar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand** · `RECTANGLE` · 48×48
+  - **Home** · `TEXT` · 24×24 · “?”
+  - **StayTrack** · `TEXT` · 120×20 · “StayTrack”
+  - **Apartment Management** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **MS** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Active nav** · `RECTANGLE` · 186×48
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Eyebrow** · `TEXT` · 250×18 · “FINANCE”
+  - **Title** · `TEXT` · 620×46 · “Record payment”
+  - **Description** · `TEXT` · 720×24 · “Record a tenant payment and update the outstanding balance.”
+  - **Go / bills** · `FRAME` · 160×48 · 1 children
+    - **Label** · `TEXT` · 160×20 · “Back to bills”
+  - **Payment form** · `RECTANGLE` · 840×560
+  - **Step badge** · `RECTANGLE` · 46×46
+  - **Step** · `TEXT` · 46×18 · “01”
+  - **Payment details** · `TEXT` · 300×24 · “Payment details”
+  - **Payment helper** · `TEXT` · 400×18 · “Choose the bill and enter the payment information.”
+  - **Field label** · `TEXT` · 740×20 · “Bill”
+  - **Input Bill** · `RECTANGLE` · 740×55
+  - **Input text** · `TEXT` · 704×20 · “ST-1052  Paolo Navarro / A-301”
+  - **Field label** · `TEXT` · 350×20 · “Amount received”
+  - **Input Amount received** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “22,000”
+  - **Field label** · `TEXT` · 350×20 · “Payment method”
+  - **Input Payment method** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “GCash”
+  - **Field label** · `TEXT` · 350×20 · “Reference number”
+  - **Input Reference number** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “GC-1234-5678”
+  - **Field label** · `TEXT` · 350×20 · “Payment date”
+  - **Input Payment date** · `RECTANGLE` · 350×55
+  - **Input text** · `TEXT` · 314×20 · “02/09/2026”
+  - **Go / payments** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Save payment”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Presentation / Payment Details** · `FRAME` · 1366×768 · 67 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Topbar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand** · `RECTANGLE` · 48×48
+  - **Home** · `TEXT` · 24×24 · “?”
+  - **StayTrack** · `TEXT` · 120×20 · “StayTrack”
+  - **Apartment Management** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **MS** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / lease-create** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / bills** · `TEXT` · 110×20 · “Bills”
+  - **Active nav** · `RECTANGLE` · 186×48
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon** · `TEXT` · 24×24 · “?”
+  - **Go / profile** · `TEXT` · 110×20 · “Profile”
+  - **Eyebrow** · `TEXT` · 250×18 · “PAYMENT ST-P-294”
+  - **Title** · `TEXT` · 620×46 · “Payment details”
+  - **Description** · `TEXT` · 720×24 · “Recorded September 2, 2026 at 10:42 AM.”
+  - **Go / export** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Download receipt”
+  - **Go / payments** · `FRAME` · 180×48 · 1 children
+    - **Label** · `TEXT` · 180×20 · “Back to payments”
+  - **Payment receipt** · `RECTANGLE` · 704×430
+  - **Receipt title** · `TEXT` · 300×28 · “Payment received”
+  - **Receipt sub** · `TEXT` · 350×20 · “ST-P-294  Sep 2, 2026  10:42 AM”
+  - **Divider** · `RECTANGLE` · 624×1
+  - **Tenant** · `TEXT` · 180×18 · “Tenant”
+  - **Tenant value** · `TEXT` · 190×20 · “Ana Reyes”
+  - **Bill** · `TEXT` · 180×18 · “Bill”
+  - **Bill value** · `TEXT` · 190×20 · “ST-1048”
+  - **Method** · `TEXT` · 180×18 · “Payment method”
+  - **Method value** · `TEXT` · 190×20 · “GCash”
+  - **Divider** · `RECTANGLE` · 624×1
+  - **Amount label** · `TEXT` · 220×22 · “Amount received”
+  - **Amount value** · `TEXT` · 240×34 · “18,500”
+  - **Tenant panel** · `RECTANGLE` · 258×430
+  - **Tenant info** · `TEXT` · 180×22 · “Tenant”
+  - **Tenant avatar** · `RECTANGLE` · 56×56
+  - **Tenant initials** · `TEXT` · 56×20 · “AR”
+  - **Tenant name** · `TEXT` · 180×20 · “Ana Reyes”
+  - **Tenant unit** · `TEXT` · 180×20 · “Unit B-204”
+  - **Go / payments** · `FRAME` · 198×48 · 1 children
+    - **Label** · `TEXT` · 198×20 · “View payment history”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / Overview** · `FRAME` · 1366×768 · 81 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 145×18 · “My dashboard”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 145×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 145×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 4 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 145×18 · “My bills”
+    - **Badge / 1** · `RECTANGLE` · 28×26
+    - **Badge text** · `TEXT` · 28×15 · “1”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 145×18 · “Payment history”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 145×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 330×20 · “My Dashboard”
+  - **Top sub** · `TEXT` · 420×18 · “Your rental information in one place.”
+  - **Bell button** · `RECTANGLE` · 42×42
+  - **Tenant Icon / bell** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Unread dot** · `RECTANGLE` · 8×8
+  - **Top avatar** · `RECTANGLE` · 40×40
+  - **Top AR** · `TEXT` · 40×18 · “AR”
+  - **Eyebrow** · `TEXT` · 200×18 · “TENANT PORTAL”
+  - **Welcome** · `TEXT` · 400×42 · “Welcome, Ana”
+  - **Intro** · `TEXT` · 600×22 · “View your apartment, lease, bills, and payment history.”
+  - **Summary / My apartment** · `RECTANGLE` · 330×164
+  - **Summary label** · `TEXT` · 190×18 · “My apartment”
+  - **Summary icon** · `RECTANGLE` · 48×48
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Summary value** · `TEXT` · 240×35 · “Unit B-204”
+  - **Summary sub** · `TEXT` · 260×18 · “2 Bedroom - 2nd floor”
+  - **Badge / Active lease** · `RECTANGLE` · 94×26
+  - **Badge text** · `TEXT` · 94×15 · “Active lease”
+  - **Summary / Monthly rent** · `RECTANGLE` · 330×164
+  - **Summary label** · `TEXT` · 190×18 · “Monthly rent”
+  - **Summary icon** · `RECTANGLE` · 48×48
+  - **Tenant Icon / wallet** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×13
+  - **Summary value** · `TEXT` · 240×35 · “PHP 18,500”
+  - **Summary sub** · `TEXT` · 260×18 · “Current lease rate”
+  - **Summary / Outstanding balance** · `RECTANGLE` · 330×164
+  - **Summary label** · `TEXT` · 190×18 · “Outstanding balance”
+  - **Summary icon** · `RECTANGLE` · 48×48
+  - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 10×16
+  - **Summary value** · `TEXT` · 240×35 · “PHP 0.00”
+  - **Summary sub** · `TEXT` · 260×18 · “Remaining bill balance”
+  - **Lease panel** · `RECTANGLE` · 1030×216
+  - **Lease title** · `TEXT` · 250×22 · “My Lease”
+  - **Lease subtitle** · `TEXT` · 270×18 · “Current rental agreement”
+  - **Lease icon** · `RECTANGLE` · 44×44
+  - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 11×17
+  - **Divider** · `RECTANGLE` · 1030×1
+  - **Lease label** · `TEXT` · 180×16 · “APARTMENT”
+  - **Lease value** · `TEXT` · 180×20 · “Unit B-204”
+  - **Lease note** · `TEXT` · 180×17 · “2 Bedroom”
+  - **Lease label** · `TEXT` · 180×16 · “START DATE”
+  - **Lease value** · `TEXT` · 180×20 · “Aug 1, 2026”
+  - **Lease note** · `TEXT` · 180×17 · “Move-in date”
+  - **Lease label** · `TEXT` · 180×16 · “END DATE”
+  - **Lease value** · `TEXT` · 180×20 · “Jul 31, 2027”
+  - **Lease note** · `TEXT` · 180×17 · “11 months remaining”
+  - **Lease label** · `TEXT` · 180×16 · “STATUS”
+  - **Lease value** · `TEXT` · 180×20 · “Active”
+  - **Lease note** · `TEXT` · 180×17 · “Current lease”
+  - **Bills panel** · `RECTANGLE` · 500×250
+  - **Bills title** · `TEXT` · 180×22 · “My Bills”
+  - **Bills sub** · `TEXT` · 230×18 · “Recent billing records”
+  - **Badge / No balance** · `RECTANGLE` · 98×26
+  - **Badge text** · `TEXT` · 98×15 · “No balance”
+  - **Payments panel** · `RECTANGLE` · 500×250
+  - **Payments title** · `TEXT` · 230×22 · “Payment history”
+  - **Payments sub** · `TEXT` · 230×18 · “Your latest transactions”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Maintenance icon** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav label** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / My Apartment** · `FRAME` · 1366×768 · 57 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 145×18 · “My dashboard”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 145×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 145×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 4 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 145×18 · “My bills”
+    - **Badge / 1** · `RECTANGLE` · 28×26
+    - **Badge text** · `TEXT` · 28×15 · “1”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 145×18 · “Payment history”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 145×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 330×20 · “My Apartment”
+  - **Top sub** · `TEXT` · 420×18 · “Your current apartment and rental details.”
+  - **Bell button** · `RECTANGLE` · 42×42
+  - **Tenant Icon / bell** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Unread dot** · `RECTANGLE` · 8×8
+  - **Top avatar** · `RECTANGLE` · 40×40
+  - **Top AR** · `TEXT` · 40×18 · “AR”
+  - **Eyebrow** · `TEXT` · 200×18 · “MY RENTAL”
+  - **Heading** · `TEXT` · 400×42 · “My apartment”
+  - **Description** · `TEXT` · 600×22 · “View the home currently assigned to your active lease.”
+  - **Apartment feature** · `RECTANGLE` · 1030×286
+  - **Apartment icon** · `RECTANGLE` · 64×64
+  - **Tenant Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Unit** · `TEXT` · 400×32 · “Unit B-204”
+  - **Apartment type** · `TEXT` · 330×21 · “2 Bedroom - 2nd floor”
+  - **Badge / Active lease** · `RECTANGLE` · 94×26
+  - **Badge text** · `TEXT` · 94×15 · “Active lease”
+  - **Divider** · `RECTANGLE` · 966×1
+  - **Details title** · `TEXT` · 250×20 · “Apartment details”
+  - **Detail label** · `TEXT` · 200×17 · “UNIT TYPE”
+  - **Detail value** · `TEXT` · 200×20 · “2 Bedroom”
+  - **Detail label** · `TEXT` · 200×17 · “FLOOR”
+  - **Detail value** · `TEXT` · 200×20 · “2nd floor”
+  - **Detail label** · `TEXT` · 200×17 · “MONTHLY RENT”
+  - **Detail value** · `TEXT` · 200×20 · “PHP 18,500”
+  - **Detail label** · `TEXT` · 200×17 · “LEASE STATUS”
+  - **Detail value** · `TEXT` · 200×20 · “Active”
+  - **Help panel** · `RECTANGLE` · 1030×132
+  - **Tenant Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Help title** · `TEXT` · 420×22 · “Need help with your apartment-”
+  - **Help copy** · `TEXT` · 570×20 · “Contact the property office for maintenance or account questions.”
+  - **Tenant Go / support** · `FRAME` · 180×46 · 1 children
+    - **Button label** · `TEXT` · 180×18 · “Contact support”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Maintenance icon** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav label** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / My Lease** · `FRAME` · 1366×768 · 60 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 145×18 · “My dashboard”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 145×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 145×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 4 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 145×18 · “My bills”
+    - **Badge / 1** · `RECTANGLE` · 28×26
+    - **Badge text** · `TEXT` · 28×15 · “1”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 145×18 · “Payment history”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 145×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 330×20 · “My Lease”
+  - **Top sub** · `TEXT` · 420×18 · “Your current rental agreement.”
+  - **Bell button** · `RECTANGLE` · 42×42
+  - **Tenant Icon / bell** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Unread dot** · `RECTANGLE` · 8×8
+  - **Top avatar** · `RECTANGLE` · 40×40
+  - **Top AR** · `TEXT` · 40×18 · “AR”
+  - **Eyebrow** · `TEXT` · 200×18 · “MY RENTAL”
+  - **Heading** · `TEXT` · 400×42 · “My lease”
+  - **Description** · `TEXT` · 600×22 · “Review your agreement, dates, rent, and lease status.”
+  - **Lease detail** · `RECTANGLE` · 1030×350
+  - **Lease heading** · `TEXT` · 360×24 · “Current rental agreement”
+  - **Badge / Active** · `RECTANGLE` · 72×26
+  - **Badge text** · `TEXT` · 72×15 · “Active”
+  - **Divider** · `RECTANGLE` · 966×1
+  - **Label** · `TEXT` · 200×16 · “APARTMENT”
+  - **Value** · `TEXT` · 200×20 · “Unit B-204”
+  - **Note** · `TEXT` · 200×17 · “2 Bedroom”
+  - **Label** · `TEXT` · 200×16 · “START DATE”
+  - **Value** · `TEXT` · 200×20 · “Aug 1, 2026”
+  - **Note** · `TEXT` · 200×17 · “Move-in date”
+  - **Label** · `TEXT` · 200×16 · “END DATE”
+  - **Value** · `TEXT` · 200×20 · “Jul 31, 2027”
+  - **Note** · `TEXT` · 200×17 · “11 months remaining”
+  - **Label** · `TEXT` · 200×16 · “SECURITY DEPOSIT”
+  - **Value** · `TEXT` · 200×20 · “PHP 37,000”
+  - **Note** · `TEXT` · 200×17 · “2 months rent”
+  - **Progress** · `TEXT` · 180×18 · “Lease progress”
+  - **Progress value** · `TEXT` · 80×18 · “9%”
+  - **Progress track** · `RECTANGLE` · 966×8
+  - **Progress fill** · `RECTANGLE` · 87×8
+  - **Terms panel** · `RECTANGLE` · 1030×170
+  - **Terms title** · `TEXT` · 260×22 · “Rental terms”
+  - **Terms copy** · `TEXT` · 720×22 · “Monthly rent is due on the 5th of each month. Your active lease ends July 31, 20”
+  - **Tenant Go / download-lease** · `FRAME` · 170×46 · 1 children
+    - **Button label** · `TEXT` · 170×18 · “Download lease”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Maintenance icon** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav label** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / My Bills** · `FRAME` · 1366×768 · 65 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 145×18 · “My dashboard”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 145×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 145×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 4 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 145×18 · “My bills”
+    - **Badge / 1** · `RECTANGLE` · 28×26
+    - **Badge text** · `TEXT` · 28×15 · “1”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 145×18 · “Payment history”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 145×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 330×20 · “My Bills”
+  - **Top sub** · `TEXT` · 420×18 · “Your recent billing records.”
+  - **Bell button** · `RECTANGLE` · 42×42
+  - **Tenant Icon / bell** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Unread dot** · `RECTANGLE` · 8×8
+  - **Top avatar** · `RECTANGLE` · 40×40
+  - **Top AR** · `TEXT` · 40×18 · “AR”
+  - **Eyebrow** · `TEXT` · 200×18 · “MY RENTAL”
+  - **Heading** · `TEXT` · 400×42 · “My bills”
+  - **Description** · `TEXT` · 600×22 · “Review rent charges, due dates, and payment status.”
+  - **Outstanding notice** · `RECTANGLE` · 1030×84
+  - **Tenant Icon / wallet** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×15
+  - **Notice title** · `TEXT` · 400×20 · “No outstanding balance”
+  - **Notice copy** · `TEXT` · 480×18 · “All current rent charges have been paid.”
+  - **Bills table** · `RECTANGLE` · 1030×352
+  - **Table title** · `TEXT` · 300×22 · “Billing history”
+  - **Table sub** · `TEXT` · 390×18 · “All billing records on your active lease”
+  - **Table head** · `RECTANGLE` · 1030×48
+  - **Column** · `TEXT` · 260×17 · “BILLING MONTH”
+  - **Column** · `TEXT` · 210×17 · “DUE DATE”
+  - **Column** · `TEXT` · 210×17 · “AMOUNT”
+  - **Column** · `TEXT` · 180×17 · “STATUS”
+  - **Divider** · `RECTANGLE` · 908×1
+  - **Cell** · `TEXT` · 260×20 · “September 2026”
+  - **Cell** · `TEXT` · 210×20 · “Sep 5, 2026”
+  - **Cell** · `TEXT` · 210×20 · “PHP 18,500”
+  - **Badge / Paid** · `RECTANGLE` · 58×26
+  - **Badge text** · `TEXT` · 58×15 · “Paid”
+  - **Divider** · `RECTANGLE` · 908×1
+  - **Cell** · `TEXT` · 260×20 · “August 2026”
+  - **Cell** · `TEXT` · 210×20 · “Aug 5, 2026”
+  - **Cell** · `TEXT` · 210×20 · “PHP 18,500”
+  - **Badge / Paid** · `RECTANGLE` · 58×26
+  - **Badge text** · `TEXT` · 58×15 · “Paid”
+  - **Divider** · `RECTANGLE` · 908×1
+  - **Cell** · `TEXT` · 260×20 · “Move-in charges”
+  - **Cell** · `TEXT` · 210×20 · “Aug 1, 2026”
+  - **Cell** · `TEXT` · 210×20 · “PHP 37,000”
+  - **Badge / Paid** · `RECTANGLE` · 58×26
+  - **Badge text** · `TEXT` · 58×15 · “Paid”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Maintenance icon** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav label** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / Payment History** · `FRAME` · 1366×768 · 66 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 145×18 · “My dashboard”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 145×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 145×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 4 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 145×18 · “My bills”
+    - **Badge / 1** · `RECTANGLE` · 28×26
+    - **Badge text** · `TEXT` · 28×15 · “1”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 145×18 · “Payment history”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 145×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 330×20 · “Payment History”
+  - **Top sub** · `TEXT` · 420×18 · “Your recent payment transactions.”
+  - **Bell button** · `RECTANGLE` · 42×42
+  - **Tenant Icon / bell** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Unread dot** · `RECTANGLE` · 8×8
+  - **Top avatar** · `RECTANGLE` · 40×40
+  - **Top AR** · `TEXT` · 40×18 · “AR”
+  - **Eyebrow** · `TEXT` · 200×18 · “MY RENTAL”
+  - **Heading** · `TEXT` · 450×42 · “Payment history”
+  - **Description** · `TEXT` · 620×22 · “A record of payments received for your lease and bills.”
+  - **Payment history panel** · `RECTANGLE` · 1030×438
+  - **Payment title** · `TEXT` · 330×22 · “Latest transactions”
+  - **Payment sub** · `TEXT` · 300×18 · “Payments are shown newest first.”
+  - **Search field** · `RECTANGLE` · 260×42
+  - **Tenant Icon / search** · `FRAME` · 18×18 · 2 children
+    - **Vector** · `VECTOR` · 11×11
+    - **Vector** · `VECTOR` · 3×3
+  - **Search placeholder** · `TEXT` · 190×18 · “Search payments”
+  - **Table head** · `RECTANGLE` · 1030×48
+  - **Column** · `TEXT` · 200×17 · “PAYMENT DATE”
+  - **Column** · `TEXT` · 220×17 · “METHOD”
+  - **Column** · `TEXT` · 250×17 · “REFERENCE”
+  - **Column** · `TEXT` · 210×17 · “AMOUNT”
+  - **Divider** · `RECTANGLE` · 928×1
+  - **Cell** · `TEXT` · 200×20 · “Sep 2, 2026”
+  - **Cell** · `TEXT` · 220×20 · “GCash”
+  - **Cell** · `TEXT` · 250×20 · “GC-1842”
+  - **Cell** · `TEXT` · 210×20 · “PHP 18,500”
+  - **Divider** · `RECTANGLE` · 928×1
+  - **Cell** · `TEXT` · 200×20 · “Aug 3, 2026”
+  - **Cell** · `TEXT` · 220×20 · “Bank transfer”
+  - **Cell** · `TEXT` · 250×20 · “BDO-5931”
+  - **Cell** · `TEXT` · 210×20 · “PHP 18,500”
+  - **Divider** · `RECTANGLE` · 928×1
+  - **Cell** · `TEXT` · 200×20 · “Aug 1, 2026”
+  - **Cell** · `TEXT` · 220×20 · “GCash”
+  - **Cell** · `TEXT` · 250×20 · “GC-4208”
+  - **Cell** · `TEXT` · 210×20 · “PHP 37,000”
+  - **Payment support** · `RECTANGLE` · 1030×118
+  - **Tenant Icon / user** · `FRAME` · 22×22 · 2 children
+    - **Vector** · `VECTOR` · 7×7
+    - **Vector** · `VECTOR` · 15×7
+  - **Support title** · `TEXT` · 350×21 · “Questions about a payment-”
+  - **Support copy** · `TEXT` · 600×18 · “Contact the property office for receipts or payment corrections.”
+  - **Tenant Go / support** · `FRAME` · 174×46 · 1 children
+    - **Button label** · `TEXT` · 174×18 · “Contact support”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Maintenance icon** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav label** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / Profile** · `FRAME` · 1366×768 · 64 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 145×18 · “My dashboard”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 145×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 145×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 4 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 145×18 · “My bills”
+    - **Badge / 1** · `RECTANGLE` · 28×26
+    - **Badge text** · `TEXT` · 28×15 · “1”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 145×18 · “Payment history”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 145×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 330×20 · “Profile”
+  - **Top sub** · `TEXT` · 420×18 · “Manage your account information.”
+  - **Bell button** · `RECTANGLE` · 42×42
+  - **Tenant Icon / bell** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Unread dot** · `RECTANGLE` · 8×8
+  - **Top avatar** · `RECTANGLE` · 40×40
+  - **Top AR** · `TEXT` · 40×18 · “AR”
+  - **Eyebrow** · `TEXT` · 200×18 · “ACCOUNT”
+  - **Heading** · `TEXT` · 450×42 · “Profile settings”
+  - **Description** · `TEXT` · 620×22 · “Update your personal information and security settings.”
+  - **Profile sidebar** · `RECTANGLE` · 266×360
+  - **Profile avatar** · `RECTANGLE` · 86×86
+  - **Profile initials** · `TEXT` · 86×28 · “AR”
+  - **Profile name** · `TEXT` · 226×22 · “Ana Reyes”
+  - **Profile role** · `TEXT` · 226×18 · “Tenant”
+  - **Personal active** · `RECTANGLE` · 226×48
+  - **Tenant Icon / user** · `FRAME` · 18×18 · 2 children
+    - **Vector** · `VECTOR` · 6×6
+    - **Vector** · `VECTOR` · 12×6
+  - **Personal active label** · `TEXT` · 160×18 · “Personal information”
+  - **Tenant Icon / file** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 10×15
+  - **Security label** · `TEXT` · 160×18 · “Password & security”
+  - **Profile content** · `RECTANGLE` · 736×430
+  - **Profile icon** · `RECTANGLE` · 44×44
+  - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+    - **Vector** · `VECTOR` · 7×7
+    - **Vector** · `VECTOR` · 13×7
+  - **Profile title** · `TEXT` · 320×22 · “Personal information”
+  - **Profile copy** · `TEXT` · 320×18 · “Update your contact details.”
+  - **Field label** · `TEXT` · 320×19 · “Full name”
+  - **Input / Full name** · `RECTANGLE` · 320×52
+  - **Input value** · `TEXT` · 292×19 · “Ana Reyes”
+  - **Field label** · `TEXT` · 320×19 · “Email address”
+  - **Input / Email address** · `RECTANGLE` · 320×52
+  - **Input value** · `TEXT` · 292×19 · “ana.reyes@staytrack.ph”
+  - **Field label** · `TEXT` · 320×19 · “Phone number”
+  - **Input / Phone number** · `RECTANGLE` · 320×52
+  - **Input value** · `TEXT` · 292×19 · “+63 917 555 0184”
+  - **Field label** · `TEXT` · 320×19 · “Role”
+  - **Input / Role** · `RECTANGLE` · 320×52
+  - **Input value** · `TEXT` · 292×19 · “Tenant”
+  - **Profile footer** · `RECTANGLE` · 736×76
+  - **Tenant Go / save-profile** · `FRAME` · 152×46 · 1 children
+    - **Button label** · `TEXT` · 152×18 · “Save changes”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Maintenance icon** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav label** · `TEXT` · 88×17 · “Maintenance”
+- **Tenant Flow / Notifications** · `FRAME` · 372×280 · 8 children
+  - **Notification title** · `TEXT` · 210×24 · “Notifications”
+  - **Today** · `TEXT` · 56×18 · “Today”
+  - **Tenant Go / close-notifications** · `FRAME` · 28×28 · 1 children
+    - **Tenant Icon / x** · `FRAME` · 18×18 · 1 children
+      - **Vector** · `VECTOR` · 9×9
+  - **Notification card** · `RECTANGLE` · 332×100
+  - **Notification dot** · `RECTANGLE` · 10×10
+  - **Notification heading** · `TEXT` · 270×20 · “Review your latest activity”
+  - **Notification copy** · `TEXT` · 260×38 · “Open the dashboard to see recent updates.”
+  - **Notification preferences** · `TEXT` · 310×20 · “Manage notification preferences”
+- **Tenant Flow / Maintenance** · `FRAME` · 1366×768 · 25 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 150×18 · “My dashboard”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 150×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 150×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 150×18 · “My bills”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 150×18 · “Payment history”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / wrench** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 12×12
+    - **Nav label** · `TEXT` · 150×18 · “Maintenance”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 150×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+- **Top title** · `TEXT` · 330×20 · “Maintenance”
+- **Tenant Flow / Notifications** · `FRAME` · 372×280 · 8 children
+  - **Notification title** · `TEXT` · 210×24 · “Notifications”
+  - **Today** · `TEXT` · 56×18 · “Today”
+  - **Tenant Go / close-notifications** · `FRAME` · 28×28 · 1 children
+    - **Tenant Icon / x** · `FRAME` · 18×18 · 1 children
+      - **Vector** · `VECTOR` · 9×9
+  - **Notification card** · `RECTANGLE` · 332×100
+  - **Notification dot** · `RECTANGLE` · 10×10
+  - **Notification heading** · `TEXT` · 270×20 · “Review your latest activity”
+  - **Notification copy** · `TEXT` · 260×38 · “Open the dashboard to see recent updates.”
+  - **Notification preferences** · `TEXT` · 310×20 · “Manage notification preferences”
+- **Tenant Flow / Maintenance** · `FRAME` · 1366×768 · 25 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 150×18 · “My dashboard”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 150×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 150×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 150×18 · “My bills”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 150×18 · “Payment history”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / wrench** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 12×12
+    - **Nav label** · `TEXT` · 150×18 · “Maintenance”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 150×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+- **Top title** · `TEXT` · 330×20 · “Maintenance”
+- **Tenant Flow / Notifications** · `FRAME` · 372×280 · 8 children
+  - **Notification title** · `TEXT` · 210×24 · “Notifications”
+  - **Today** · `TEXT` · 56×18 · “Today”
+  - **Tenant Go / close-notifications** · `FRAME` · 28×28 · 1 children
+    - **Tenant Icon / x** · `FRAME` · 18×18 · 1 children
+      - **Vector** · `VECTOR` · 9×9
+  - **Notification card** · `RECTANGLE` · 332×100
+  - **Notification dot** · `RECTANGLE` · 10×10
+  - **Notification heading** · `TEXT` · 270×20 · “Review your latest activity”
+  - **Notification copy** · `TEXT` · 260×38 · “Open the dashboard to see recent updates.”
+  - **Notification preferences** · `TEXT` · 310×20 · “Manage notification preferences”
+- **Tenant Flow / Maintenance** · `FRAME` · 1366×768 · 54 children
+  - **Sidebar** · `RECTANGLE` · 256×900
+  - **Divider** · `RECTANGLE` · 900×1
+  - **Logo tile** · `RECTANGLE` · 40×40
+  - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Wordmark** · `TEXT` · 135×20 · “StayTrack”
+  - **Brand descriptor** · `TEXT` · 145×17 · “Apartment Management”
+  - **Main menu** · `TEXT` · 160×17 · “MAIN MENU”
+  - **My rental** · `TEXT` · 160×17 · “MY RENTAL”
+  - **Account** · `TEXT` · 160×17 · “ACCOUNT”
+  - **Tenant Go / overview** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / grid** · `FRAME` · 20×20 · 4 children
+      - **Vector** · `VECTOR` · 6×6 · ×4
+    - **Nav label** · `TEXT` · 150×18 · “My dashboard”
+  - **Tenant Go / apartment** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / home** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 15×15
+    - **Nav label** · `TEXT` · 150×18 · “My apartment”
+  - **Tenant Go / lease** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / file** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 11×17
+    - **Nav label** · `TEXT` · 150×18 · “My lease”
+  - **Tenant Go / bills** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / receipt** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 10×16
+    - **Nav label** · `TEXT` · 150×18 · “My bills”
+  - **Tenant Go / payments** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / card** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 16×12
+      - **Vector** · `VECTOR` · 16×5
+    - **Nav label** · `TEXT` · 150×18 · “Payment history”
+  - **Tenant Go / maintenance** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / wrench** · `FRAME` · 20×20 · 1 children
+      - **Vector** · `VECTOR` · 12×12
+    - **Nav label** · `TEXT` · 150×18 · “Maintenance”
+  - **Tenant Go / profile** · `FRAME` · 224×46 · 2 children
+    - **Tenant Icon / user** · `FRAME` · 20×20 · 2 children
+      - **Vector** · `VECTOR` · 7×7
+      - **Vector** · `VECTOR` · 13×7
+    - **Nav label** · `TEXT` · 150×18 · “Profile”
+  - **User tile** · `RECTANGLE` · 224×72
+  - **User avatar** · `RECTANGLE` · 42×42
+  - **User initials** · `TEXT` · 42×18 · “AR”
+  - **User name** · `TEXT` · 130×18 · “Ana Reyes”
+  - **User mail** · `TEXT` · 138×17 · “ana.reyes@staytrack.ph”
+  - **Tenant Icon / logout** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 14×12
+  - **Sign out** · `TEXT` · 110×19 · “Sign out”
+  - **Topbar** · `RECTANGLE` · 1110×80
+  - **Divider** · `RECTANGLE` · 1110×1
+  - **Top title** · `TEXT` · 120×23 · “Maintenance”
+  - **Bell button** · `RECTANGLE` · 44×44
+  - **Bell icon** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×19
+  - **Notification dot** · `RECTANGLE` · 8×8
+  - **Maintenance heading** · `TEXT` · 324×36 · “Maintenance requests”
+  - **Maintenance description** · `TEXT` · 410×19 · “Track updates and request repairs for your apartment.”
+  - **New request button** · `RECTANGLE` · 160×44
+  - **New request plus** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 12×12
+  - **New request label** · `TEXT` · 86×17 · “New request”
+  - **Request card** · `RECTANGLE` · 994×188
+  - **Request icon bg** · `RECTANGLE` · 48×48
+  - **Request icon** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 15×16
+  - **Request title** · `TEXT` · 183×22 · “Kitchen faucet repair”
+  - **Request copy** · `TEXT` · 560×17 · “Reported Sep 12, 2026. A technician will contact you with an update.”
+  - **Progress badge** · `RECTANGLE` · 144×30
+  - **Progress check** · `FRAME` · 16×16 · 1 children
+    - **Vector** · `VECTOR` · 9×7
+  - **Progress label** · `TEXT` · 71×16 · “In progress”
+  - **Request divider** · `RECTANGLE` · 928×1
+  - **Request meta label** · `TEXT` · 43×13 · “STATUS”
+  - **Request meta** · `TEXT` · 177×17 · “Assigned to building team”
+  - **Updated label** · `TEXT` · 84×13 · “LAST UPDATED”
+  - **Updated text** · `TEXT` · 113×17 · “Today, 10:30 AM”
+  - **Help card** · `RECTANGLE` · 994×156
+  - **Help icon bg** · `RECTANGLE` · 48×48
+  - **Help icon** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 3×7
+  - **Help title** · `TEXT` · 151×22 · “Need urgent help”
+  - **Help copy** · `TEXT` · 600×17 · “For urgent concerns, contact your property manager so your request can be priori”
+  - **Contact button** · `RECTANGLE` · 160×42
+  - **Contact label** · `TEXT` · 112×17 · “Contact support”
+- **Top title** · `TEXT` · 330×20 · “Maintenance”
+- **Presentation / Maintenance Requests** · `FRAME` · 1366×768 · 187 children
+  - **Sidebar** · `RECTANGLE` · 226×768
+  - **Divider** · `RECTANGLE` · 768×1
+  - **Top bar** · `RECTANGLE` · 1140×78
+  - **Divider** · `RECTANGLE` · 1140×1
+  - **Brand mark** · `RECTANGLE` · 48×48
+  - **Brand house** · `TEXT` · 24×24 · “?”
+  - **Brand** · `TEXT` · 110×20 · “StayTrack”
+  - **Brand sub** · `TEXT` · 125×17 · “Apartment Management”
+  - **Workspace** · `TEXT` · 200×20 · “StayTrack Workspace”
+  - **Date** · `TEXT` · 250×20 · “Wednesday, September 2, 2026”
+  - **Bell** · `RECTANGLE` · 48×48
+  - **Bell glyph** · `TEXT` · 22×22 · “?”
+  - **Avatar** · `RECTANGLE` · 40×40
+  - **Avatar initials** · `TEXT` · 40×18 · “MS”
+  - **User** · `TEXT` · 100×19 · “Maria Santos”
+  - **Role** · `TEXT` · 100×18 · “Administrator”
+  - **Main menu** · `TEXT` · 150×18 · “MAIN MENU”
+  - **Nav active** · `RECTANGLE` · 186×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Dashboard** · `TEXT` · 110×20 · “Dashboard”
+  - **Property management** · `TEXT` · 170×17 · “PROPERTY MANAGEMENT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Apartments** · `TEXT` · 110×20 · “Apartments”
+  - **Badge / 24** · `RECTANGLE` · 30×28
+  - **Badge label / 24** · `TEXT` · 10×16 · “24”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Tenants** · `TEXT` · 110×20 · “Tenants”
+  - **Badge / 21** · `RECTANGLE` · 30×28
+  - **Badge label / 21** · `TEXT` · 10×16 · “21”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Leases** · `TEXT` · 110×20 · “Leases”
+  - **Finance** · `TEXT` · 170×17 · “FINANCE”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Bills** · `TEXT` · 110×20 · “Bills”
+  - **Badge / 4** · `RECTANGLE` · 27×28
+  - **Badge label / 4** · `TEXT` · 7×16 · “4”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Payments** · `TEXT` · 110×20 · “Payments”
+  - **Account** · `TEXT` · 170×17 · “ACCOUNT”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Nav / Profile** · `TEXT` · 110×20 · “Profile”
+  - **Account tile** · `RECTANGLE` · 186×56
+  - **Account avatar** · `RECTANGLE` · 38×38
+  - **Account MS** · `TEXT` · 38×18 · “MS”
+  - **Account name** · `TEXT` · 100×18 · “Maria Santos”
+  - **Account email** · `TEXT` · 100×17 · “maria@staytrack.ph”
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Sign out** · `TEXT` · 100×20 · “Sign out”
+  - **Eyebrow** · `TEXT` · 250×18 · “ADMIN PORTAL”
+  - **Page title** · `TEXT` · 500×46 · “Welcome back, Maria”
+  - **Page desc** · `TEXT` · 720×24 · “Here is what is happening across your properties today.”
+  - **Go / lease-create** · `FRAME` · 180×48 · 1 children
+    - **Button label** · `TEXT` · 180×20 · “Create lease”
+  - **Go / payment-create** · `FRAME` · 178×48 · 1 children
+    - **Button label** · `TEXT` · 178×20 · “Record payment”
+  - **Metric / Total apartments** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “Total apartments”
+  - **Metric value** · `TEXT` · 170×42 · “24”
+  - **Metric sub** · `TEXT` · 100×18 · “+2 this quarter”
+  - **Metric link** · `TEXT` · 96×18 · “View apartments”
+  - **Metric / Occupied units** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “Occupied units”
+  - **Metric value** · `TEXT` · 170×42 · “19”
+  - **Metric sub** · `TEXT` · 100×18 · “79% occupancy”
+  - **Metric link** · `TEXT` · 96×18 · “5 available”
+  - **Metric / Active tenants** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “Active tenants”
+  - **Metric value** · `TEXT` · 170×42 · “21”
+  - **Metric sub** · `TEXT` · 100×18 · “+3 this month”
+  - **Metric link** · `TEXT` · 96×18 · “View tenants”
+  - **Metric / September revenue** · `RECTANGLE` · 244×154
+  - **Metric icon bg** · `RECTANGLE` · 48×48
+  - **Icon / ?** · `TEXT` · 24×24 · “?”
+  - **Metric label** · `TEXT` · 150×20 · “September revenue”
+  - **Metric value** · `TEXT` · 170×42 · “PHP 286,500”
+  - **Metric sub** · `TEXT` · 100×18 · “+8.4% vs August”
+  - **Metric link** · `TEXT` · 96×18 · “View payments”
+  - **Recent payments panel** · `RECTANGLE` · 690×280
+  - **Recent payments** · `TEXT` · 200×22 · “Recent payments”
+  - **Recent helper** · `TEXT` · 240×18 · “Latest tenant transactions”
+  - **View all** · `TEXT` · 88×18 · “View all”
+  - **Divider** · `RECTANGLE` · 690×1
+  - **Table header** · `RECTANGLE` · 690×52
+  - **Head / TENANT** · `TEXT` · 270×17 · “TENANT”
+  - **Head / UNIT** · `TEXT` · 100×17 · “UNIT”
+  - **Head / DATE** · `TEXT` · 150×17 · “DATE”
+  - **Head / METHOD** · `TEXT` · 110×17 · “METHOD”
+  - **Head / AMOUNT** · `TEXT` · 120×17 · “AMOUNT”
+  - **Divider** · `RECTANGLE` · 798×1
+  - **Person avatar** · `RECTANGLE` · 40×40
+  - **Initial** · `TEXT` · 40×18 · “AR”
+  - **Person** · `TEXT` · 218×19 · “Ana Reyes”
+  - **Person sub** · `TEXT` · 218×18 · “Bill #ST-1048”
+  - **Cell** · `TEXT` · 100×20 · “B-204”
+  - **Cell** · `TEXT` · 150×20 · “Sep 2, 2026”
+  - **Badge / GCash** · `RECTANGLE` · 74×28
+  - **Badge label / GCash** · `TEXT` · 54×16 · “GCash”
+  - **Cell** · `TEXT` · 120×20 · “PHP 18,500”
+  - **Billing overview** · `RECTANGLE` · 346×280
+  - **Billing overview** · `TEXT` · 240×22 · “Billing overview”
+  - **Billing helper** · `TEXT` · 240×18 · “Current financial status”
+  - **Divider** · `RECTANGLE` · 346×1
+  - **Lease** · `TEXT` · 220×20 · “Active leases”
+  - **19** · `TEXT` · 50×20 · “19”
+  - **Unpaid** · `TEXT` · 220×20 · “Unpaid / partial”
+  - **4** · `TEXT` · 50×20 · “4”
+  - **Go / bills** · `FRAME` · 294×48 · 1 children
+    - **Button label** · `TEXT` · 294×20 · “Manage bills”
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / bell** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 17×17
+  - **Icon / grid** · `FRAME` · 24×24 · 4 children
+    - **Vector** · `VECTOR` · 7×7 · ×4
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / file** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 13×20
+  - **Icon / receipt** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 12×19
+  - **Icon / card** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 19×14
+    - **Vector** · `VECTOR` · 19×6
+  - **Icon / user** · `FRAME` · 24×24 · 2 children
+    - **Vector** · `VECTOR` · 8×8
+    - **Vector** · `VECTOR` · 16×8
+  - **Icon / logout** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×16
+  - **Icon / building** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / home** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×18
+  - **Icon / users** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 20×18
+  - **Icon / wallet** · `FRAME` · 24×24 · 1 children
+    - **Vector** · `VECTOR` · 18×16
+  - **Admin Go / maintenance** · `FRAME` · 186×46 · 2 children
+    - **Icon / maintenance** · `FRAME` · 22×22 · 1 children
+      - **Vector** · `VECTOR` · 14×14
+    - **Nav / Maintenance** · `TEXT` · 88×17 · “Maintenance”
+  - **Maintenance content backdrop** · `RECTANGLE` · 1140×689
+  - **Sidebar lower reset** · `RECTANGLE` · 226×238
+  - **Admin maintenance active** · `RECTANGLE` · 186×46
+  - **Admin maintenance icon** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 14×14
+  - **Admin maintenance label** · `TEXT` · 88×17 · “Maintenance”
+  - **Admin account heading** · `TEXT` · 62×15 · “ACCOUNT”
+  - **Admin profile icon** · `FRAME` · 22×22 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Admin profile label** · `TEXT` · 44×17 · “Profile”
+  - **Admin user tile** · `RECTANGLE` · 186×52
+  - **Admin user avatar** · `RECTANGLE` · 34×34
+  - **Admin user initials** · `TEXT` · 19×15 · “MS”
+  - **Admin user name** · `TEXT` · 83×16 · “Maria Santos”
+  - **Admin user email** · `TEXT` · 104×13 · “maria@staytrack.ph”
+  - **Admin signout icon** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 15×15
+  - **Admin signout** · `TEXT` · 56×17 · “Sign out”
+  - **Maintenance eyebrow** · `TEXT` · 77×15 · “OPERATIONS”
+  - **Maintenance title** · `TEXT` · 324×36 · “Maintenance requests”
+  - **Maintenance description** · `TEXT` · 505×19 · “Review tenant requests, assign a team, and track the repair status.”
+  - **New request button** · `RECTANGLE` · 158×44
+  - **New request icon** · `FRAME` · 18×18 · 1 children
+    - **Vector** · `VECTOR` · 11×11
+  - **New request text** · `TEXT` · 86×17 · “New request”
+  - **Maintenance metric** · `RECTANGLE` · 266×90
+  - **Maintenance metric icon bg** · `RECTANGLE` · 36×36
+  - **Maintenance metric icon** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 3×6
+  - **Maintenance metric label** · `TEXT` · 93×16 · “Open requests”
+  - **Maintenance metric value** · `TEXT` · 16×29 · “6”
+  - **Maintenance metric** · `RECTANGLE` · 266×90
+  - **Maintenance metric icon bg** · `RECTANGLE` · 36×36
+  - **Maintenance metric icon** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 3×6
+  - **Maintenance metric label** · `TEXT` · 71×16 · “In progress”
+  - **Maintenance metric value** · `TEXT` · 16×29 · “3”
+  - **Maintenance metric** · `RECTANGLE` · 266×90
+  - **Maintenance metric icon bg** · `RECTANGLE` · 36×36
+  - **Maintenance metric icon** · `FRAME` · 20×20 · 1 children
+    - **Vector** · `VECTOR` · 3×6
+  - **Maintenance metric label** · `TEXT` · 129×16 · “Resolved this month”
+  - **Maintenance metric value** · `TEXT` · 28×29 · “18”
+  - **Requests panel** · `RECTANGLE` · 1032×346
+  - **Requests panel title** · `TEXT` · 260×22 · “Recent maintenance requests”
+  - **Requests panel helper** · `TEXT` · 258×17 · “Current requests across all apartments”
+  - **Requests header** · `RECTANGLE` · 1032×42
+  - **Header request** · `TEXT` · 52×13 · “REQUEST”
+  - **Header unit** · `TEXT` · 27×13 · “UNIT”
+  - **Header status** · `TEXT` · 43×13 · “STATUS”
+  - **Header updated** · `TEXT` · 84×13 · “LAST UPDATED”
+  - **Request name** · `TEXT` · 154×17 · “Leaking kitchen faucet”
+  - **Request unit** · `TEXT` · 42×17 · “B-204”
+  - **Request status bg** · `RECTANGLE` · 104×26
+  - **Request status** · `TEXT` · 66×15 · “In progress”
+  - **Request updated** · `TEXT` · 103×16 · “Today, 10:30 AM”
+  - **Request divider** · `RECTANGLE` · 984×1
+  - **Request name** · `TEXT` · 119×17 · “Aircon inspection”
+  - **Request unit** · `TEXT` · 40×17 · “A-301”
+  - **Request status bg** · `RECTANGLE` · 104×26
+  - **Request status** · `TEXT` · 32×15 · “Open”
+  - **Request updated** · `TEXT` · 120×16 · “Yesterday, 4:20 PM”
+  - **Request divider** · `RECTANGLE` · 984×1
+  - **Request name** · `TEXT` · 176×17 · “Hallway light replacement”
+  - **Request unit** · `TEXT` · 41×17 · “C-105”
+  - **Request status bg** · `RECTANGLE` · 104×26
+  - **Request status** · `TEXT` · 54×15 · “Resolved”
+  - **Request updated** · `TEXT` · 81×16 · “Sep 10, 2026”
+- **Admin Flow / Notifications** · `FRAME` · 372×322 · 10 children
+  - **Notification title** · `TEXT` · 210×24 · “Notifications”
+  - **Today** · `TEXT` · 56×18 · “Today”
+  - **Tenant Go / close-notifications** · `FRAME` · 28×28 · 1 children
+    - **Tenant Icon / x** · `FRAME` · 18×18 · 1 children
+      - **Vector** · `VECTOR` · 9×9
+  - **Notification card** · `RECTANGLE` · 332×100
+  - **Notification dot** · `RECTANGLE` · 10×10
+  - **Notification heading** · `TEXT` · 270×20 · “Maintenance request needs review”
+  - **Notification copy** · `TEXT` · 260×38 · “Unit B-204 submitted a new repair request.”
+  - **Notification preferences** · `TEXT` · 310×20 · “View all notifications”
+  - **Admin notification detail card** · `RECTANGLE` · 324×42
+  - **Admin notification detail** · `TEXT` · 206×16 · “Two payments are due this week”

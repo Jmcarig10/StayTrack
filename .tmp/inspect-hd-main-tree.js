@@ -1,0 +1,1 @@
+const n=await figma.getNodeByIdAsync('284:5601');const main=n.children.find(x=>x.name==='Main');const walk=(x,d=0)=>({id:x.id,name:x.name,type:x.type,x:x.x,y:x.y,w:x.width,h:x.height,children:x.children?x.children.slice(0,20).map(c=>walk(c,d+1)):[]});return JSON.stringify(walk(main));

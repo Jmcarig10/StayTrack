@@ -1,0 +1,1 @@
+const ids=['278:3503','278:3944']; const all=n=>{const a=[n];if(n.children)for(const c of n.children)a.push(...all(c));return a;}; const out=[]; for(const id of ids){const n=await figma.getNodeByIdAsync(id);out.push({id,links:all(n).filter(x=>x.reactions&&x.reactions.length).map(x=>({id:x.id,name:x.name,dest:x.reactions[0]?.actions?.[0]?.destinationId||null}))});} return out;

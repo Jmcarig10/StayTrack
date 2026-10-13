@@ -1,0 +1,6 @@
+<x-app-layout>
+<section class="screen is-active" aria-labelledby="tenant-apartment-title">
+    <div class="page-heading"><span class="eyebrow">My rental</span><h1 id="tenant-apartment-title">My apartment</h1><p>Your current unit details.</p></div>
+    @if($lease)<article class="panel detail-main"><div class="detail-hero"><div class="detail-identity"><span class="detail-icon"><svg class="icon"><use href="#icon-home"/></svg></span><div><span class="eyebrow">Current unit</span><h2>Unit {{ $lease->apartment->unit_number }}</h2><p>{{ $lease->apartment->building_name ?: 'Building information is not available.' }}</p></div></div><span class="badge badge-success">{{ ucfirst($lease->apartment->status) }}</span></div><dl class="detail-list"><div><dt>Address</dt><dd>{{ $lease->apartment->property_address ?: 'Address information is not available.' }}</dd></div><div><dt>Unit type</dt><dd>{{ $lease->apartment->unit_type }}</dd></div><div><dt>Floor</dt><dd>{{ $lease->apartment->floor ?: 'Not available' }}</dd></div><div><dt>Monthly rent</dt><dd>₱{{ number_format($lease->monthly_rent, 2) }}</dd></div><div><dt>Lease ends</dt><dd>{{ $lease->end_date?->format('M d, Y') ?: 'Not set' }}</dd></div></dl></article>@else <article class="empty-state"><p>No active lease found.</p></article>@endif
+</section>
+</x-app-layout>
