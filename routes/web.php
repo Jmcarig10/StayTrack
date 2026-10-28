@@ -13,6 +13,8 @@ use App\Http\Controllers\TenantController;
 use App\Http\Controllers\TenantPortalController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ArchiveController;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,7 +26,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get(
         '/waiting-approval',
         function () {
-            if (auth()->check() && auth()->user()->isApproved()) {
+            $user = Auth::user();
+
+            if ($user instanceof User && $user->isApproved()) {
                 return redirect()->route('dashboard');
             }
 
