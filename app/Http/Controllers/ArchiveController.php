@@ -400,7 +400,9 @@ class ArchiveController extends Controller
     private function restoreMessage(string $type, Model $record): string
     {
         return match ($type) {
-            'tenants' => 'Tenant restored. Link a user account from the tenant page if they need portal access.',
+            'tenants' => $record->user_id
+                ? 'Tenant restored.'
+                : 'Tenant restored. Link a user account from the tenant page if they need portal access.',
             'leases' => $record->status === 'active'
                 ? 'Lease restored and the unit is marked occupied.'
                 : 'Lease restored.',

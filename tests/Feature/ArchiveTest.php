@@ -78,6 +78,28 @@ test('an admin can browse the archive and restore a tenant', function () {
     expect($tenant->fresh()->archived_by)->toBeNull();
 });
 
+test('archive search filters tenants and leases by their related records', function () {
+    $admin = User::factory()->create(['role' => 'admin', 'status' => 'approved']);
+    ['tenant' => $alpha, 'lease' => $alphaLease] = makeArchivedTenant('Alpha');
+    ['tenant' => $beta] = makeArchivedTenant('Beta');
+
+    $alpha->archive($admin->id);
+    $beta->archive($admin->id);
+    $alphaLease->archive($admin->id);
+
+    $this->actingAs($admin)
+        ->get(route('archive.index', ['type' => 'tenants', 'search' => 'Alpha']))
+        ->assertOk()
+        ->assertSee('Test Alpha')
+        ->assertDontSee('Test Beta');
+
+    $this->actingAs($admin)
+        ->get(route('archive.index', ['type' => 'leases', 'search' => 'Alpha']))
+        ->assertOk()
+        ->assertSee('Test Alpha')
+        ->assertDontSee('Test Beta');
+});
+
 test('maintenance requests are archived and can be restored', function () {
     $admin = User::factory()->create(['role' => 'admin', 'status' => 'approved']);
     ['tenant' => $tenant, 'apartment' => $apartment] = makeArchivedTenant('Maintenance');

@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Bill;
 use App\Models\Payment;
+use App\Support\TenantNotifications;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use App\Support\TenantNotifications;
 use Illuminate\Support\Facades\Storage;
-use Barryvdh\DomPDF\Facade\Pdf;
 
 class PaymentController extends Controller
 {
@@ -179,6 +179,7 @@ class PaymentController extends Controller
         if ($payment->bill->lease?->tenant) {
             TenantNotifications::record($payment->bill->lease->tenant, 'payment-verified-'.$payment->id, 'payment', 'Payment verified', 'Your payment of ₱'.number_format($payment->amount_paid, 2).' has been verified.', route('tenant.payments.show', $payment));
         }
+
         return back()->with('success', 'Payment verified.');
     }
 
@@ -191,12 +192,14 @@ class PaymentController extends Controller
         if ($payment->bill->lease?->tenant) {
             TenantNotifications::record($payment->bill->lease->tenant, 'payment-rejected-'.$payment->id, 'payment', 'Payment submission rejected', 'Your payment submission was rejected: '.$payment->rejection_reason, route('tenant.bills.pay', $payment->bill));
         }
+
         return back()->with('success', 'Payment rejected.');
     }
 
     public function proof(Payment $payment)
     {
         abort_unless($payment->proof_path && Storage::exists($payment->proof_path), 404);
+
         return response()->file(
             Storage::path($payment->proof_path),
             ['Content-Disposition' => 'inline; filename="'.basename($payment->proof_path).'"']
@@ -209,6 +212,7 @@ class PaymentController extends Controller
         $payment->load(['bill.lease.tenant', 'bill.lease.apartment', 'bill.payments']);
         $paid = (float) $payment->bill->payments->where('status', 'verified')->sum('amount_paid');
         $balance = max(0, (float) $payment->bill->total_amount - $paid);
+
         return Pdf::loadView('pdf.receipt', compact('payment', 'balance'))->download('staytrack-receipt-'.$payment->id.'.pdf');
     }
 
@@ -275,10 +279,6 @@ class PaymentController extends Controller
         $bill = $payment->bill;
 
         $payment->archive(auth()->id());
-
-        $totalBill =
-            (float) $bill->amount +
-            (float) $bill->late_fee;
 
         $this->recalculateBillStatus($bill);
 

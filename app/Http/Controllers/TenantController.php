@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Tenant;
 use App\Models\User;
+use App\Support\ApprovalAlerts;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 
 class TenantController extends Controller
 {
@@ -90,7 +94,7 @@ class TenantController extends Controller
         ]);
 
         if ($tenant->user_id !== null) {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'user_id' => 'This tenant is already linked to a user account. Unlink it first.',
             ]);
         }
@@ -98,13 +102,13 @@ class TenantController extends Controller
         $this->assertLinkable((int) $validated['user_id']);
         $user = User::findOrFail($validated['user_id']);
 
-        \Illuminate\Support\Facades\DB::transaction(function () use ($tenant, $user) {
+        DB::transaction(function () use ($tenant, $user) {
             $tenant->update(['user_id' => $user->id]);
             $user->update(['status' => 'approved']);
         });
-        \Illuminate\Support\Facades\Cache::forget('notifications:user:'.$user->id);
+        Cache::forget('notifications:user:'.$user->id);
 
-        \App\Support\ApprovalAlerts::toUser(
+        ApprovalAlerts::toUser(
             $user,
             'Account approved',
             'Account approved',
@@ -125,14 +129,14 @@ class TenantController extends Controller
 
         $user = User::find($tenant->user_id);
 
-        \Illuminate\Support\Facades\DB::transaction(function () use ($tenant, $user) {
+        DB::transaction(function () use ($tenant, $user) {
             $tenant->update(['user_id' => null]);
             if ($user && $user->role === 'tenant') {
                 $user->update(['status' => 'pending']);
             }
         });
         if ($user) {
-            \Illuminate\Support\Facades\Cache::forget('notifications:user:'.$user->id);
+            Cache::forget('notifications:user:'.$user->id);
         }
 
         return back()->with('success', 'Account unlinked. The user is pending approval again.');
@@ -158,12 +162,12 @@ class TenantController extends Controller
     {
         $user = User::findOrFail($userId);
         if ($user->role !== 'tenant') {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'user_id' => 'Only tenant accounts can be linked to a tenant record.',
             ]);
         }
         if ($pendingOnly && $user->status !== 'pending') {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'user_id' => $user->name.' is already '.$user->status.' and does not need approval linking. Pick a pending account, or leave the field empty.',
             ]);
         }
@@ -171,7 +175,7 @@ class TenantController extends Controller
             ->when($exceptTenantId, fn ($q) => $q->where('id', '!=', $exceptTenantId))
             ->value('id');
         if ($takenBy) {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'user_id' => $user->name.' is already linked to another tenant record and cannot be linked twice.',
             ]);
         }
@@ -183,14 +187,14 @@ class TenantController extends Controller
             $old = User::find($oldUserId);
             if ($old && $old->role === 'tenant') {
                 $old->update(['status' => 'pending']);
-                \Illuminate\Support\Facades\Cache::forget('notifications:user:'.$old->id);
+                Cache::forget('notifications:user:'.$old->id);
             }
         }
         if ($newUserId && $newUserId !== $oldUserId) {
             $new = User::find($newUserId);
             if ($new && $new->role === 'tenant' && $new->status === 'pending') {
                 $new->update(['status' => 'approved']);
-                \Illuminate\Support\Facades\Cache::forget('notifications:user:'.$new->id);
+                Cache::forget('notifications:user:'.$new->id);
             }
         }
     }
@@ -239,7 +243,7 @@ class TenantController extends Controller
     {
         $linkedUser = $tenant->user;
 
-        \Illuminate\Support\Facades\DB::transaction(function () use ($tenant, $linkedUser) {
+        DB::transaction(function () use ($tenant, $linkedUser) {
             if ($linkedUser && $linkedUser->role === 'tenant') {
                 $linkedUser->update(['status' => 'pending']);
             }
@@ -249,7 +253,7 @@ class TenantController extends Controller
         });
 
         if ($linkedUser) {
-            \Illuminate\Support\Facades\Cache::forget('notifications:user:'.$linkedUser->id);
+            Cache::forget('notifications:user:'.$linkedUser->id);
         }
 
         $message = $linkedUser

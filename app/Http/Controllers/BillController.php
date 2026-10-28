@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\Bill;
 use App\Models\Lease;
+use App\Models\Payment;
 use App\Support\TenantNotifications;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class BillController extends Controller
 {
@@ -21,18 +24,19 @@ class BillController extends Controller
             ->paginate(15)
             ->withQueryString();
 
-        $summary = \Illuminate\Support\Facades\Cache::remember('bills:index-summary', 60, function () {
+        $summary = Cache::remember('bills:index-summary', 60, function () {
             $monthTotal = (float) Bill::whereYear('billing_month', now()->year)
                 ->whereMonth('billing_month', now()->month)
                 ->selectRaw('COALESCE(SUM(amount + late_fee), 0) as t')
                 ->value('t');
-            $collected = (float) \App\Models\Payment::where('status', 'verified')->sum('amount_paid');
+            $collected = (float) Payment::where('status', 'verified')->sum('amount_paid');
             $billed = (float) Bill::selectRaw('COALESCE(SUM(amount + late_fee), 0) as t')->value('t');
             $overdueBalance = max(0, (float) Bill::where('status', 'overdue')
                 ->selectRaw('COALESCE(SUM(amount + late_fee), 0) as t')->value('t')
-                - (float) \App\Models\Payment::where('status', 'verified')
+                - (float) Payment::where('status', 'verified')
                     ->whereHas('bill', fn ($q) => $q->where('status', 'overdue'))
                     ->sum('amount_paid'));
+
             return compact('monthTotal', 'collected', 'billed', 'overdueBalance');
         });
         ['monthTotal' => $monthTotal, 'collected' => $collected, 'billed' => $billed, 'overdueBalance' => $overdueBalance] = $summary;
@@ -100,8 +104,8 @@ class BillController extends Controller
             $validated['late_fee'] ?? 0;
 
         $lease = Lease::findOrFail($validated['lease_id']);
-        $billMonth = \Carbon\Carbon::parse($validated['billing_month'])->startOfMonth();
-        $leaseStartMonth = \Carbon\Carbon::parse($lease->start_date)->startOfMonth();
+        $billMonth = Carbon::parse($validated['billing_month'])->startOfMonth();
+        $leaseStartMonth = Carbon::parse($lease->start_date)->startOfMonth();
 
         if ($billMonth->lt($leaseStartMonth)) {
             return back()
@@ -167,6 +171,7 @@ class BillController extends Controller
         $bill->load(['lease.tenant', 'lease.apartment', 'payments']);
         $paid = (float) $bill->payments->where('status', 'verified')->sum('amount_paid');
         $balance = max(0, (float) $bill->total_amount - $paid);
+
         return Pdf::loadView('pdf.invoice', compact('bill', 'paid', 'balance'))->download('staytrack-invoice-'.$bill->id.'.pdf');
     }
 
@@ -234,7 +239,7 @@ class BillController extends Controller
 
         $lease = Lease::findOrFail($validated['lease_id']);
 
-        if (\Carbon\Carbon::parse($validated['billing_month'])->startOfMonth()->lt(\Carbon\Carbon::parse($lease->start_date)->startOfMonth())) {
+        if (Carbon::parse($validated['billing_month'])->startOfMonth()->lt(Carbon::parse($lease->start_date)->startOfMonth())) {
             return back()
                 ->withInput()
                 ->withErrors([

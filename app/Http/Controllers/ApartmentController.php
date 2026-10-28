@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Apartment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class ApartmentController extends Controller
 {
@@ -11,7 +12,7 @@ class ApartmentController extends Controller
     {
         $apartments = Apartment::latest()->paginate(10);
 
-        $unitStats = \Illuminate\Support\Facades\Cache::remember('apartments:unit-stats', 60, fn () => Apartment::selectRaw("count(*) as total, sum(case when status='available' then 1 else 0 end) as avail, sum(case when status='occupied' then 1 else 0 end) as occ, sum(case when status='maintenance' then 1 else 0 end) as maint")->first());
+        $unitStats = Cache::remember('apartments:unit-stats', 60, fn () => Apartment::selectRaw("count(*) as total, sum(case when status='available' then 1 else 0 end) as avail, sum(case when status='occupied' then 1 else 0 end) as occ, sum(case when status='maintenance' then 1 else 0 end) as maint")->first());
 
         return view('apartments.index', compact('apartments', 'unitStats'));
     }

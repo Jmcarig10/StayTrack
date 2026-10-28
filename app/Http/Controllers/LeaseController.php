@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 
 class LeaseController extends Controller
 {
@@ -99,7 +100,7 @@ class LeaseController extends Controller
         ]);
 
         if (($validated['status'] ?? null) === 'active' && Lease::where('tenant_id', $validated['tenant_id'])->where('status', 'active')->exists()) {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'tenant_id' => 'This tenant already has an active lease and apartment. End it first or pick another tenant.',
             ]);
         }
@@ -213,9 +214,9 @@ class LeaseController extends Controller
 
         $apartments = Apartment::select('id', 'unit_number', 'monthly_rent')
             ->where(function ($query) use ($lease) {
-            $query->where('status', 'available')
-                ->orWhere('id', $lease->apartment_id);
-        })
+                $query->where('status', 'available')
+                    ->orWhere('id', $lease->apartment_id);
+            })
             ->orderBy('unit_number')
             ->get();
 
@@ -270,7 +271,7 @@ class LeaseController extends Controller
         ]);
 
         if (($validated['status'] ?? null) === 'active' && Lease::where('tenant_id', $validated['tenant_id'])->where('status', 'active')->where('id', '!=', $lease->id)->exists()) {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'tenant_id' => 'This tenant already has another active lease and apartment. End it first or pick another tenant.',
             ]);
         }
@@ -381,7 +382,7 @@ class LeaseController extends Controller
             ->exists();
 
         if ($conflict) {
-            throw \Illuminate\Validation\ValidationException::withMessages([
+            throw ValidationException::withMessages([
                 'apartment_id' => 'This unit is already held by another active or upcoming lease over those dates. Pick different dates or another unit.',
             ]);
         }

@@ -6,10 +6,11 @@ use App\Models\Apartment;
 use App\Models\Lease;
 use App\Models\MaintenanceRequest;
 use App\Models\Tenant;
+use App\Models\User;
+use App\Support\TenantNotifications;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Support\TenantNotifications;
 
 class MaintenanceRequestController extends Controller
 {
@@ -147,7 +148,7 @@ class MaintenanceRequestController extends Controller
             : 'A tenant';
         $unitNumber = $maintenanceRequest->apartment?->unit_number ?? '—';
         $adminBody = $tenantName.' submitted “'.$maintenanceRequest->title.'” (Unit '.$unitNumber.', '.ucfirst($maintenanceRequest->priority).' priority).';
-        \App\Models\User::where('role', 'admin')->select('id')->chunk(
+        User::where('role', 'admin')->select('id')->chunk(
             200,
             fn ($admins) => TenantNotifications::recordForUsers(
                 $admins,
@@ -211,7 +212,7 @@ class MaintenanceRequestController extends Controller
             'You confirmed “'.$maintenanceRequest->title.'” is fixed. Thank you!',
             $url
         );
-        \App\Models\User::where('role', 'admin')->select('id')->chunk(
+        User::where('role', 'admin')->select('id')->chunk(
             200,
             fn ($admins) => TenantNotifications::recordForUsers(
                 $admins,
