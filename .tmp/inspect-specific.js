@@ -1,0 +1,1 @@
+const ids=['278:3929','278:3938','278:3943','275:857','275:957','275:967','275:971','275:973','275:909'];const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);out.push({id,name:n&&n.name,reactions:n&&n.reactions});}return out;

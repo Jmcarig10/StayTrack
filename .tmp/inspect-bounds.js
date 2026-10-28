@@ -1,0 +1,1 @@
+const ids=['284:5720','284:5735'];const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);out.push({id,abs:n?.absoluteRenderBounds,abs2:n?.absoluteBoundingBox,x:n?.x,y:n?.y,w:n?.width,h:n?.height});}return JSON.stringify(out);

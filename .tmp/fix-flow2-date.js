@@ -1,0 +1,1 @@
+const root=await figma.getNodeByIdAsync('278:3503');const all=n=>{const a=[n];if(n.children)for(const c of n.children)a.push(...all(c));return a;};const t=all(root).find(n=>n.type==='TEXT'&&/September 2, 2026/.test(n.characters));if(t){t.characters='Saturday, September 19, 2026';t.name=t.characters;}return t&&t.characters;

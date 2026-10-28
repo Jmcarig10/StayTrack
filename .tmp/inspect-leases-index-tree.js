@@ -1,0 +1,1 @@
+const root=figma.currentPage.findAll(n=>n.id==='284:6636')[0]; const c=root.children.find(n=>n.name==='Main')?.children.find(n=>n.name==='Content'); const walk=n=>({id:n.id,name:n.name,type:n.type,x:n.x,y:n.y,w:n.width,h:n.height,chars:n.type==='TEXT'?n.characters:undefined,children:n.children?.map(walk)}); return c?.children.map(walk);

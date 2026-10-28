@@ -1,0 +1,1 @@
+const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o;};return all(figma.root).filter(n=>n.type==='SECTION').map(s=>({id:s.id,name:s.name,children:s.children.map(c=>({id:c.id,name:c.name,type:c.type}))}));

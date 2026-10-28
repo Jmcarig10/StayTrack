@@ -1,0 +1,1 @@
+const root=figma.currentPage.findAll(n=>n.id==='284:6636')[0];const t=root.findAll(n=>n.type==='FRAME'&&n.children?.some(c=>c.type==='TEXT'&&c.characters==='Juanito Mico'))[0];return t?.children.map(n=>({name:n.name,type:n.type,x:n.x,y:n.y,w:n.width,h:n.height,visible:n.visible,layout:n.layoutPositioning}));

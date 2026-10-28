@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-app-role="admin">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="StayTrack apartment management clickable prototype">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <title>StayTrack — Apartment Management</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./compat-shell.css">
+    <link rel="stylesheet" href="./compat-admin.css">
+    <link rel="stylesheet" href="./compat-flows.css">
+    <link rel="stylesheet" href="./compat-core.css">
+</head>
+<body>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+        <symbol id="icon-home" viewBox="0 0 24 24">
+            <path d="M3 11.5 12 3l9 8.5M5.5 9.5V21h13V9.5M9.5 21v-6h5v6"/>
+        </symbol>
+        <symbol id="icon-grid" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>
+        </symbol>
+        <symbol id="icon-building" viewBox="0 0 24 24">
+            <path d="M3 21h18M5 21V5l7-2 7 2v16M9 8h1m4 0h1M9 12h1m4 0h1M9 16h1m4 0h1"/>
+        </symbol>
+        <symbol id="icon-users" viewBox="0 0 24 24">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+        </symbol>
+        <symbol id="icon-file" viewBox="0 0 24 24">
+            <path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/>
+        </symbol>
+        <symbol id="icon-receipt" viewBox="0 0 24 24">
+            <path d="M6 3h12v19l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6M9 16h4"/>
+        </symbol>
+        <symbol id="icon-card" viewBox="0 0 24 24">
+            <rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 9h19M6 15h4"/>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>
+        </symbol>
+        <symbol id="icon-bell" viewBox="0 0 24 24">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M14.5 21h-5"/>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="icon-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+        <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+        <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+        <symbol id="icon-back" viewBox="0 0 24 24"><path d="M19 12H5M10 7l-5 5 5 5"/></symbol>
+        <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+        <symbol id="icon-eye-off" viewBox="0 0 24 24"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/><path d="m4 4 16 16"/></symbol>
+        <symbol id="icon-edit" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"/></symbol>
+        <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V3h8v3M19 6l-1 15H6L5 6M10 10v7M14 10v7"/></symbol>
+        <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+        <symbol id="icon-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+        <symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2.5 20h19ZM12 9v4M12 17h.01"/></symbol>
+        <symbol id="icon-wallet" viewBox="0 0 24 24"><path d="M3 6h16a2 2 0 0 1 2 2v11H3zM3 6l14-3v3M16 12h5v4h-5a2 2 0 1 1 0-4Z"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+        <symbol id="icon-bed" viewBox="0 0 24 24"><path d="M3 18V7M3 14h18v4M7 14V9h5a3 3 0 0 1 3 3v2M21 18V11"/></symbol>
+        <symbol id="icon-bath" viewBox="0 0 24 24"><path d="M4 13h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5ZM7 13V6a3 3 0 0 1 6 0M4 20l-1 2M20 20l1 2"/></symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+        <symbol id="icon-log-out" viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M15 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4"/></symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></symbol>
+        <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#prototype-main">Skip to main content</a>
+
+    <section class="screen login-screen is-active" data-screen="login" aria-labelledby="login-title">
+        <div class="login-layout">
+            <div class="login-showcase">
+                <a class="brand brand-on-dark" href="#" data-route="login" aria-label="StayTrack home">
+                    <span class="brand-mark"><svg class="icon"><use href="#icon-home"/></svg></span>
+                    <span><strong>StayTrack</strong><small>Apartment Management</small></span>
+                </a>
+                <div class="login-copy">
+                    <span class="eyebrow eyebrow-light">One place. Every property detail.</span>
+                    <h1>Run your apartments with clarity.</h1>
+                    <p>Track units, tenants, leases, bills, and payments from a calm, reliable workspace built for property teams.</p>
+                    <div class="login-proof">
+                        <div><strong>24</strong><span>Units managed</span></div>
+                        <div><strong>96%</strong><span>Occupancy</span></div>
+                        <div><strong>₱286K</strong><span>Collected this month</span></div>
+                    </div>
+                </div>
+                <p class="login-footer">Secure property operations for Metro Manila teams</p>
+            </div>
+
+            <div class="login-panel">
+                <div class="login-card">
+                    <div class="mobile-brand">
+                        <span class="brand-mark"><svg class="icon"><use href="#icon-home"/></svg></span>
+                        <strong>StayTrack</strong>
+                    </div>
+                    <span class="eyebrow">Welcome back</span>
+                    <h2 id="login-title">Sign in to StayTrack</h2>
+                    <p class="muted">Use the demo account to explore the clickable prototype.</p>
+
+                    <form class="form-stack" data-demo-form="login" data-success-route="dashboard" data-success-message="Welcome back, Maria." novalidate>
+                        <div class="field">
+                            <label for="login-email">Email address</label>
+                            <input id="login-email" name="email" type="email" value="maria@staytrack.ph" autocomplete="email" required>
+                        </div>
+                        <div class="field">
+                            <div class="label-row">
+                                <label for="login-password">Password</label>
+                                <button class="text-button" type="button" data-action="forgot-password">Forgot password?</button>
+                            </div>
+                            <div class="password-field">
+                                <input id="login-password" name="password" type="password" value="staytrack2026" autocomplete="current-password" required>
+                                <button type="button" class="icon-button password-toggle" data-password-toggle="login-password" aria-label="Show password">
+                                    <svg class="icon"><use href="#icon-eye"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <label class="check-row" for="remember-me">
+                            <input id="remember-me" type="checkbox" checked>
+                            <span>Keep me signed in on this device</span>
+                        </label>
+                        <button class="button button-primary button-large button-full" type="submit" data-role="admin">
+                            Sign in as administrator
+                            <svg class="icon"><use href="#icon-arrow"/></svg>
+                        </button>
+                    </form>
+
+                    <div class="or-divider"><span>or explore another view</span></div>
+                    <button class="button button-secondary button-full" type="button" data-route="tenant-dashboard" data-role="tenant">
+                        <svg class="icon"><use href="#icon-user"/></svg>
+                        Open tenant portal demo
+                    </button>
+                    <p class="login-help">New tenant? <a href="#" data-route="tenant-dashboard" data-role="tenant">Preview your account</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="app-shell" class="app-shell" hidden>
+        <button id="mobile-overlay" class="mobile-overlay" type="button" data-mobile-close aria-label="Close navigation" hidden></button>
+
+        <aside id="app-sidebar" class="app-sidebar" aria-label="Primary navigation">
+            <div class="sidebar-brand-row">
+                <a class="brand" href="#" data-route="dashboard" data-admin-route="dashboard" data-tenant-route="tenant-dashboard">
+                    <span class="brand-mark"><svg class="icon"><use href="#icon-home"/></svg></span>
+                    <span><strong>StayTrack</strong><small>Apartment Management</small></span>
+                </a>
+                <button class="icon-button sidebar-close" type="button" data-mobile-close aria-label="Close navigation">
+                    <svg class="icon"><use href="#icon-x"/></svg>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <p class="nav-label">Main menu</p>
+                <a class="nav-link is-active" href="#" data-route="dashboard" data-role-only="admin">
+                    <svg class="icon"><use href="#icon-grid"/></svg><span>Dashboard</span>
+                </a>
+                <a class="nav-link" href="#" data-route="tenant-dashboard" data-role-only="tenant">
+                    <svg class="icon"><use href="#icon-grid"/></svg><span>My dashboard</span>
+                </a>
+
+                <div data-role-only="admin">
+                    <p class="nav-label nav-label-spaced">Property management</p>
+                    <a class="nav-link" href="#" data-route="apartments"><svg class="icon"><use href="#icon-building"/></svg><span>Apartments</span><span class="nav-count">24</span></a>
+                    <a class="nav-link" href="#" data-route="tenants"><svg class="icon"><use href="#icon-users"/></svg><span>Tenants</span><span class="nav-count">21</span></a>
+                    <a class="nav-link" href="#" data-route="lease-create"><svg class="icon"><use href="#icon-file"/></svg><span>Leases</span></a>
+                    <p class="nav-label nav-label-spaced">Finance</p>
+                    <a class="nav-link" href="#" data-route="bills"><svg class="icon"><use href="#icon-receipt"/></svg><span>Bills</span><span class="nav-count nav-count-alert">4</span></a>
+                    <a class="nav-link" href="#" data-route="payments"><svg class="icon"><use href="#icon-card"/></svg><span>Payments</span></a>
+                </div>
+
+                <div data-role-only="tenant">
+                    <p class="nav-label nav-label-spaced">My rental</p>
+                    <a class="nav-link" href="#tenant-apartment" data-route="tenant-dashboard" data-scroll-target="tenant-apartment"><svg class="icon"><use href="#icon-home"/></svg><span>My apartment</span></a>
+                    <a class="nav-link" href="#tenant-lease" data-route="tenant-dashboard" data-scroll-target="tenant-lease"><svg class="icon"><use href="#icon-file"/></svg><span>My lease</span></a>
+                    <a class="nav-link" href="#tenant-bills" data-route="tenant-dashboard" data-scroll-target="tenant-bills"><svg class="icon"><use href="#icon-receipt"/></svg><span>My bills</span><span class="nav-count nav-count-alert">1</span></a>
+                    <a class="nav-link" href="#tenant-payments" data-route="tenant-dashboard" data-scroll-target="tenant-payments"><svg class="icon"><use href="#icon-card"/></svg><span>Payment history</span></a>
+                </div>
+
+                <p class="nav-label nav-label-spaced">Account</p>
+                <a class="nav-link" href="#" data-route="profile"><svg class="icon"><use href="#icon-user"/></svg><span>Profile</span></a>
+            </nav>
+
+            <div class="sidebar-account">
+                <div class="account-card">
+                    <span class="avatar" data-user-initials>MS</span>
+                    <span class="account-copy"><strong data-user-name>Maria Santos</strong><small data-user-email>maria@staytrack.ph</small></span>
+                </div>
+                <button class="nav-link sign-out" type="button" data-route="login">
+                    <svg class="icon"><use href="#icon-log-out"/></svg><span>Sign out</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="app-content">
+            <header class="topbar">
+                <button class="icon-button mobile-menu-button" type="button" data-mobile-menu aria-controls="app-sidebar" aria-expanded="false" aria-label="Open navigation">
+                    <svg class="icon"><use href="#icon-menu"/></svg>
+                </button>
+                <div class="topbar-context">
+                    <span class="topbar-kicker">StayTrack Workspace</span>
+                    <span class="topbar-date">Wednesday, September 2, 2026</span>
+                </div>
+                <div class="topbar-actions">
+                    <button class="icon-button notification-trigger" type="button" data-toggle-notifications aria-controls="notification-panel" aria-expanded="false" aria-label="Open notifications">
+                        <svg class="icon"><use href="#icon-bell"/></svg><span class="notification-dot" aria-label="3 unread notifications"></span>
+                    </button>
+                    <button class="topbar-profile" type="button" data-route="profile" aria-label="Open profile">
+                        <span class="avatar avatar-small" data-user-initials>MS</span>
+                        <span><strong data-user-name>Maria Santos</strong><small data-user-role>Administrator</small></span>
+                        <svg class="icon icon-chevron"><use href="#icon-chevron"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <aside id="notification-panel" class="notification-panel" aria-label="Notifications" hidden>
+                <div class="overlay-header">
+                    <div><span class="eyebrow">Updates</span><h2>Notifications</h2></div>
+                    <button class="icon-button" type="button" data-close-notifications aria-label="Close notifications"><svg class="icon"><use href="#icon-x"/></svg></button>
+                </div>
+                <button class="notification-item is-unread" type="button" data-route="bills">
+                    <span class="notification-icon danger"><svg class="icon"><use href="#icon-alert"/></svg></span>
+                    <span><strong>Two bills are overdue</strong><small>Unit B-204 and Unit C-105 need attention.</small><time>12 minutes ago</time></span>
+                </button>
+                <button class="notification-item is-unread" type="button" data-route="payments">
+                    <span class="notification-icon success"><svg class="icon"><use href="#icon-check"/></svg></span>
+                    <span><strong>Payment received</strong><small>Ana Reyes paid ₱18,500 through GCash.</small><time>1 hour ago</time></span>
+                </button>
+                <button class="notification-item" type="button" data-route="apartments">
+                    <span class="notification-icon info"><svg class="icon"><use href="#icon-building"/></svg></span>
+                    <span><strong>Unit A-301 is now available</strong><small>The previous lease has been closed.</small><time>Yesterday</time></span>
+                </button>
+                <button class="button button-ghost button-full" type="button" data-action="mark-notifications-read">Mark all as read</button>
+            </aside>
+
+            <main id="prototype-main" class="main-content" tabindex="-1">
+                <section class="screen" data-screen="dashboard" aria-labelledby="dashboard-title">
+                    <div class="page-heading heading-with-actions">
+                        <div><span class="eyebrow">Admin portal</span><h1 id="dashboard-title">Welcome back, Maria</h1><p>Here is what is happening across your properties today.</p></div>
+                        <div class="button-row">
+                            <button class="button button-secondary" type="button" data-route="payment-create"><svg class="icon"><use href="#icon-card"/></svg>Record payment</button>
+                            <button class="button button-primary" type="button" data-route="lease-create"><svg class="icon"><use href="#icon-plus"/></svg>Create lease</button>
+                        </div>
+                    </div>
+
+                    <div class="metric-grid">
+                        <article class="metric-card" data-metric="apartments">
+                            <div class="metric-top"><span class="metric-label">Total apartments</span><span class="metric-icon slate"><svg class="icon"><use href="#icon-building"/></svg></span></div>
+                            <strong class="metric-value">24</strong><div class="metric-foot"><span class="trend positive">+2 this quarter</span><button type="button" data-route="apartments">View apartments <svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+                        </article>
+                        <article class="metric-card" data-metric="occupied">
+                            <div class="metric-top"><span class="metric-label">Occupied units</span><span class="metric-icon green"><svg class="icon"><use href="#icon-home"/></svg></span></div>
+                            <strong class="metric-value">19</strong><div class="metric-foot"><span><b>79%</b> occupancy</span><span>5 available</span></div>
+                        </article>
+                        <article class="metric-card" data-metric="tenants">
+                            <div class="metric-top"><span class="metric-label">Active tenants</span><span class="metric-icon blue"><svg class="icon"><use href="#icon-users"/></svg></span></div>
+                            <strong class="metric-value">21</strong><div class="metric-foot"><span class="trend positive">+3 this month</span><button type="button" data-route="tenants">View tenants <svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+                        </article>
+                        <article class="metric-card" data-metric="revenue">
+                            <div class="metric-top"><span class="metric-label">September revenue</span><span class="metric-icon amber"><svg class="icon"><use href="#icon-wallet"/></svg></span></div>
+                            <strong class="metric-value">₱286,500</strong><div class="metric-foot"><span class="trend positive">+8.4% vs August</span><button type="button" data-route="payments">View payments <svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+                        </article>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <article class="panel panel-wide">
+                            <div class="panel-header"><div><h2>Recent payments</h2><p>Latest tenant transactions</p></div><button class="text-link" type="button" data-route="payments">View all <svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+                            <div class="table-wrap">
+                                <table data-table="recent-payments">
+                                    <caption class="sr-only">Recent tenant payments</caption>
+                                    <thead><tr><th>Tenant</th><th>Unit</th><th>Date</th><th>Method</th><th class="align-right">Amount</th></tr></thead>
+                                    <tbody>
+                                        <tr class="clickable-row" data-route="payment-detail"><td><span class="person-cell"><span class="avatar avatar-soft">AR</span><span><strong>Ana Reyes</strong><small>Bill #ST-1048</small></span></span></td><td>B-204</td><td>Sep 2, 2026</td><td><span class="tag tag-blue">GCash</span></td><td class="align-right"><strong>₱18,500</strong><small class="status-text success-text">Paid</small></td></tr>
+                                        <tr><td><span class="person-cell"><span class="avatar avatar-soft">CM</span><span><strong>Carlo Mendoza</strong><small>Bill #ST-1047</small></span></span></td><td>A-301</td><td>Sep 1, 2026</td><td><span class="tag tag-slate">Bank transfer</span></td><td class="align-right"><strong>₱22,000</strong><small class="status-text success-text">Paid</small></td></tr>
+                                        <tr><td><span class="person-cell"><span class="avatar avatar-soft">LV</span><span><strong>Lea Villanueva</strong><small>Bill #ST-1042</small></span></span></td><td>C-105</td><td>Aug 30, 2026</td><td><span class="tag tag-green">Cash</span></td><td class="align-right"><strong>₱10,000</strong><small class="status-text warning-text">Partial</small></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </article>
+
+                        <article class="panel finance-panel">
+                            <div class="panel-header"><div><h2>Billing overview</h2><p>Current financial status</p></div></div>
+                            <div class="summary-list">
+                                <div><span><span class="summary-icon blue"><svg class="icon"><use href="#icon-file"/></svg></span>Active leases</span><strong>19</strong></div>
+                                <div><span><span class="summary-icon amber"><svg class="icon"><use href="#icon-receipt"/></svg></span>Unpaid / partial</span><strong class="warning-text">4</strong></div>
+                                <div><span><span class="summary-icon red"><svg class="icon"><use href="#icon-alert"/></svg></span>Overdue bills</span><strong class="danger-text">2</strong></div>
+                            </div>
+                            <button class="button button-primary button-full" type="button" data-route="bills"><svg class="icon"><use href="#icon-receipt"/></svg>Manage bills</button>
+                        </article>
+                    </div>
+
+                    <div class="dashboard-grid dashboard-grid-lower">
+                        <article class="panel occupancy-card">
+                            <div class="panel-header"><div><h2>Apartment overview</h2><p>Live unit distribution</p></div></div>
+                            <div class="occupancy-body"><div class="donut" role="img" aria-label="79 percent occupied"><span><strong>79%</strong><small>Occupied</small></span></div><ul class="legend"><li><span class="legend-dot occupied"></span>Occupied <strong>19</strong></li><li><span class="legend-dot available"></span>Available <strong>3</strong></li><li><span class="legend-dot reserved"></span>Reserved <strong>1</strong></li><li><span class="legend-dot maintenance"></span>Maintenance <strong>1</strong></li></ul></div>
+                        </article>
+                        <article class="panel panel-wide recent-leases">
+                            <div class="panel-header"><div><h2>Recent leases</h2><p>Latest rental agreements</p></div><button class="text-link" type="button" data-route="lease-create">Create new <svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+                            <div class="lease-list">
+                                <button type="button" data-route="lease-create"><span class="summary-icon green"><svg class="icon"><use href="#icon-file"/></svg></span><span><strong>Ana Reyes</strong><small>Unit B-204 · Aug 1, 2026 – Jul 31, 2027</small></span><span class="badge badge-success">Active</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+                                <button type="button" data-route="lease-create"><span class="summary-icon blue"><svg class="icon"><use href="#icon-file"/></svg></span><span><strong>Carlo Mendoza</strong><small>Unit A-301 · Sep 1, 2026 – Aug 31, 2027</small></span><span class="badge badge-success">Active</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+                                <button type="button" data-route="lease-create"><span class="summary-icon amber"><svg class="icon"><use href="#icon-clock"/></svg></span><span><strong>Mika Garcia</strong><small>Unit D-402 · Starts Sep 15, 2026</small></span><span class="badge badge-warning">Pending</span><svg class="icon"><use href="#icon-chevron"/></svg></button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="screen" data-screen="apartments" aria-labelledby="apartments-title">
+                    <div class="page-heading heading-with-actions"><div><span class="eyebrow">Property management</span><h1 id="apartments-title">Apartments</h1><p>Manage inventory, rates, and availability across all units.</p></div><button class="button button-primary" type="button" data-route="apartment-create"><svg class="icon"><use href="#icon-plus"/></svg>Add apartment</button></div>
+                    <div class="metric-grid compact-metrics">
+                        <article class="mini-stat"><span class="summary-icon slate"><svg class="icon"><use href="#icon-building"/></svg></span><span><small>Total units</small><strong>24</strong></span></article>
+                        <article class="mini-stat"><span class="summary-icon green"><svg class="icon"><use href="#icon-check"/></svg></span><span><small>Available</small><strong>3</strong></span></article>
+                        <article class="mini-stat"><span class="summary-icon blue"><svg class="icon"><use href="#icon-home"/></svg></span><span><small>Occupied</small><strong>19</strong></span></article>
+                        <article class="mini-stat"><span class="summary-icon red"><svg class="icon"><use href="#icon-alert"/></svg></span><span><small>Maintenance</small><strong>1</strong></span></article>
+                    </div>
+                    <article class="panel">
+                        <div class="toolbar">
+                            <label class="search-field" for="apartment-search"><svg class="icon"><use href="#icon-search"/></svg><span class="sr-only">Search apartments</span><input id="apartment-search" type="search" placeholder="Search unit or type…" data-table-search="apartments-table"></label>
+                            <div class="filter-group" aria-label="Filter apartment status"><button class="chip is-active" type="button" data-status-filter="all" data-table="apartments-table">All</button><button class="chip" type="button" data-status-filter="available" data-table="apartments-table">Available</button><button class="chip" type="button" data-status-filter="occupied" data-table="apartments-table">Occupied</button><button class="chip" type="button" data-status-filter="maintenance" data-table="apartments-table">Maintenance</button></div>
+                        </div>
+                        <div class="table-wrap">
+                            <table id="apartments-table">
+                                <caption class="sr-only">Apartment inventory</caption>
+                                <thead><tr><th>Unit</th><th>Type</th><th>Floor</th><th>Monthly rent</th><th>Status</th><th class="align-right">Actions</th></tr></thead>
+                                <tbody>
+                                    <tr data-status="available"><td><span class="unit-cell"><span class="unit-icon"><svg class="icon"><use href="#icon-building"/></svg></span><span><strong>A-301</strong><small>2 beds · 1 bath</small></span></span></td><td>2 Bedroom</td><td>3rd floor</td><td><strong>₱22,000</strong></td><td><span class="badge badge-success">Available</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="apartment-detail" aria-label="View apartment A-301"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-route="apartment-create" data-mode="edit" aria-label="Edit apartment A-301"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Apartment A-301" aria-label="Delete apartment A-301"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                                    <tr data-status="occupied"><td><span class="unit-cell"><span class="unit-icon"><svg class="icon"><use href="#icon-building"/></svg></span><span><strong>B-204</strong><small>2 beds · 1 bath</small></span></span></td><td>2 Bedroom</td><td>2nd floor</td><td><strong>₱18,500</strong></td><td><span class="badge badge-info">Occupied</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="apartment-detail" aria-label="View apartment B-204"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-route="apartment-create" data-mode="edit" aria-label="Edit apartment B-204"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Apartment B-204" aria-label="Delete apartment B-204"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                                    <tr data-status="occupied"><td><span class="unit-cell"><span class="unit-icon"><svg class="icon"><use href="#icon-building"/></svg></span><span><strong>C-105</strong><small>Studio · 1 bath</small></span></span></td><td>Studio</td><td>1st floor</td><td><strong>₱14,000</strong></td><td><span class="badge badge-info">Occupied</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="apartment-detail" aria-label="View apartment C-105"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-route="apartment-create" data-mode="edit" aria-label="Edit apartment C-105"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Apartment C-105" aria-label="Delete apartment C-105"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                                    <tr data-status="maintenance"><td><span class="unit-cell"><span class="unit-icon"><svg class="icon"><use href="#icon-building"/></svg></span><span><strong>D-402</strong><small>3 beds · 2 baths</small></span></span></td><td>3 Bedroom</td><td>4th floor</td><td><strong>₱31,000</strong></td><td><span class="badge badge-danger">Maintenance</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="apartment-detail" aria-label="View apartment D-402"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-route="apartment-create" data-mode="edit" aria-label="Edit apartment D-402"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Apartment D-402" aria-label="Delete apartment D-402"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                                    <tr data-status="reserved"><td><span class="unit-cell"><span class="unit-icon"><svg class="icon"><use href="#icon-building"/></svg></span><span><strong>PH-08</strong><small>3 beds · 3 baths</small></span></span></td><td>Penthouse</td><td>8th floor</td><td><strong>₱58,000</strong></td><td><span class="badge badge-warning">Reserved</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="apartment-detail" aria-label="View apartment PH-08"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-route="apartment-create" data-mode="edit" aria-label="Edit apartment PH-08"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Apartment PH-08" aria-label="Delete apartment PH-08"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination"><span>Showing 1–5 of 24 apartments</span><div><button type="button" disabled>Previous</button><button class="is-current" type="button" aria-current="page">1</button><button type="button">2</button><button type="button">3</button><button type="button">Next</button></div></div>
+                    </article>
+                </section>
+
+                <section class="screen" data-screen="apartment-detail" aria-labelledby="apartment-detail-title">
+                    <div class="page-heading heading-with-actions"><div><button class="back-link" type="button" data-route="apartments"><svg class="icon"><use href="#icon-back"/></svg>Back to apartments</button><h1 id="apartment-detail-title">Apartment A-301</h1><p>Unit overview and rental information.</p></div><button class="button button-primary" type="button" data-route="apartment-create" data-mode="edit"><svg class="icon"><use href="#icon-edit"/></svg>Edit apartment</button></div>
+                    <div class="detail-hero">
+                        <div class="detail-identity"><span class="detail-icon"><svg class="icon"><use href="#icon-building"/></svg></span><div><span class="eyebrow">Unit</span><h2>A-301</h2><p>2 Bedroom · 3rd floor</p></div></div>
+                        <span class="badge badge-success badge-large">Available</span>
+                    </div>
+                    <div class="detail-grid">
+                        <article class="panel detail-main">
+                            <div class="value-grid"><div><span>Monthly rent</span><strong>₱22,000</strong></div><div><span>Security deposit</span><strong>₱44,000</strong></div><div><span>Bedrooms</span><strong>2</strong></div><div><span>Bathrooms</span><strong>1</strong></div></div>
+                            <div class="section-divider"></div>
+                            <h3>Apartment information</h3>
+                            <dl class="detail-list"><div><dt>Unit number</dt><dd>A-301</dd></div><div><dt>Floor</dt><dd>3rd floor</dd></div><div><dt>Unit type</dt><dd>2 Bedroom</dd></div><div><dt>Availability</dt><dd><span class="badge badge-success">Available now</span></dd></div></dl>
+                            <div class="section-divider"></div>
+                            <h3>Description</h3><p class="body-copy">Bright corner unit with a city-facing balcony, built-in kitchen storage, and dedicated laundry space. Recently refreshed and ready for move-in.</p>
+                        </article>
+                        <aside class="panel detail-side">
+                            <h3>At a glance</h3>
+                            <div class="amenity-list"><div><span class="summary-icon slate"><svg class="icon"><use href="#icon-bed"/></svg></span><span><strong>2 bedrooms</strong><small>Queen-size ready</small></span></div><div><span class="summary-icon blue"><svg class="icon"><use href="#icon-bath"/></svg></span><span><strong>1 bathroom</strong><small>Hot shower installed</small></span></div><div><span class="summary-icon green"><svg class="icon"><use href="#icon-pin"/></svg></span><span><strong>Quezon City</strong><small>Near MRT and essentials</small></span></div></div>
+                            <button class="button button-secondary button-full" type="button" data-route="lease-create">Assign to a lease</button>
+                        </aside>
+                    </div>
+                </section>
+
+                <section class="screen" data-screen="apartment-create" aria-labelledby="apartment-create-title">
+                    <div class="page-heading"><button class="back-link" type="button" data-route="apartments"><svg class="icon"><use href="#icon-back"/></svg>Back to apartments</button><span class="eyebrow">Property management</span><h1 id="apartment-create-title">Add apartment</h1><p>Create a unit record with rates, capacity, and availability.</p></div>
+                    <form class="form-panel" data-demo-form="apartment-create" data-success-route="apartments" data-success-message="Apartment A-302 was added successfully.">
+                        <div class="form-section"><div class="form-section-heading"><span class="section-number">01</span><div><h2>Unit information</h2><p>Basic identifying details for this apartment.</p></div></div><div class="form-grid"><div class="field"><label for="apartment-unit">Unit number <span aria-hidden="true">*</span></label><input id="apartment-unit" name="unit_number" value="A-302" required></div><div class="field"><label for="apartment-floor">Floor</label><input id="apartment-floor" name="floor" value="3rd floor"></div><div class="field"><label for="apartment-type">Unit type <span aria-hidden="true">*</span></label><select id="apartment-type" name="unit_type" required><option>Studio</option><option>1 Bedroom</option><option selected>2 Bedroom</option><option>3 Bedroom</option><option>Penthouse</option></select></div><div class="field"><label for="apartment-status">Status <span aria-hidden="true">*</span></label><select id="apartment-status" name="status" required><option selected>Available</option><option>Occupied</option><option>Reserved</option><option>Maintenance</option></select></div></div></div>
+                        <div class="form-section"><div class="form-section-heading"><span class="section-number">02</span><div><h2>Rates and capacity</h2><p>Monthly pricing and unit configuration.</p></div></div><div class="form-grid"><div class="field currency-field"><label for="apartment-rent">Monthly rent <span aria-hidden="true">*</span></label><span>₱</span><input id="apartment-rent" name="monthly_rent" type="number" value="22000" required></div><div class="field currency-field"><label for="apartment-deposit">Security deposit</label><span>₱</span><input id="apartment-deposit" name="security_deposit" type="number" value="44000"></div><div class="field"><label for="apartment-bedrooms">Bedrooms</label><input id="apartment-bedrooms" name="bedrooms" type="number" value="2" min="0"></div><div class="field"><label for="apartment-bathrooms">Bathrooms</label><input id="apartment-bathrooms" name="bathrooms" type="number" value="1" min="0"></div></div><div class="field field-wide"><label for="apartment-description">Description</label><textarea id="apartment-description" rows="4" placeholder="Describe the apartment, amenities, or location…">Bright corner unit with a city-facing balcony and built-in kitchen storage.</textarea></div></div>
+                        <div class="form-actions"><button class="button button-secondary" type="button" data-route="apartments">Cancel</button><button class="button button-primary" type="submit"><svg class="icon"><use href="#icon-check"/></svg>Save apartment</button></div>
+                    </form>
+                </section>
+
+                <section class="screen" data-screen="tenants" aria-labelledby="tenants-title">
+                    <div class="page-heading heading-with-actions"><div><span class="eyebrow">People</span><h1 id="tenants-title">Tenants</h1><p>Keep resident contact details, status, and lease context organized.</p></div><details class="quick-create"><summary class="button button-primary"><svg class="icon"><use href="#icon-plus"/></svg>Add tenant</summary><form class="quick-create-card" data-demo-form="tenant-create" data-success-route="tenants" data-success-message="Tenant profile created successfully."><div class="quick-create-heading"><div><h2>New tenant</h2><p>Add a resident profile.</p></div></div><div class="form-grid"><div class="field"><label for="tenant-first-name">First name</label><input id="tenant-first-name" value="Paolo" required></div><div class="field"><label for="tenant-last-name">Last name</label><input id="tenant-last-name" value="Navarro" required></div><div class="field"><label for="tenant-email">Email</label><input id="tenant-email" type="email" value="paolo.navarro@example.ph"></div><div class="field"><label for="tenant-phone">Phone</label><input id="tenant-phone" value="+63 917 642 8801"></div></div><div class="field field-wide"><label for="tenant-address">Address</label><input id="tenant-address" value="Diliman, Quezon City"></div><div class="form-actions"><button class="button button-secondary" type="reset">Clear</button><button class="button button-primary" type="submit">Save tenant</button></div></form></details></div>
+                    <article class="panel">
+                        <div class="toolbar"><label class="search-field" for="tenant-search"><svg class="icon"><use href="#icon-search"/></svg><span class="sr-only">Search tenants</span><input id="tenant-search" type="search" placeholder="Search name, email, or unit…" data-table-search="tenants-table"></label><div class="filter-group"><button class="chip is-active" type="button" data-status-filter="all" data-table="tenants-table">All tenants</button><button class="chip" type="button" data-status-filter="active" data-table="tenants-table">Active</button><button class="chip" type="button" data-status-filter="inactive" data-table="tenants-table">Inactive</button></div></div>
+                        <div class="table-wrap"><table id="tenants-table"><caption class="sr-only">Tenant records</caption><thead><tr><th>Tenant</th><th>Contact</th><th>Current unit</th><th>Lease status</th><th class="align-right">Actions</th></tr></thead><tbody>
+                            <tr data-status="active"><td><span class="person-cell"><span class="avatar avatar-soft">AR</span><span><strong>Ana Reyes</strong><small>ana.reyes@example.ph</small></span></span></td><td>+63 917 555 0184</td><td><strong>Unit B-204</strong><small>2 Bedroom</small></td><td><span class="badge badge-success">Active</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="tenant-dashboard" data-role="tenant" aria-label="View Ana Reyes portal"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-action="edit-tenant" aria-label="Edit Ana Reyes"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Tenant Ana Reyes" aria-label="Delete Ana Reyes"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                            <tr data-status="active"><td><span class="person-cell"><span class="avatar avatar-soft">CM</span><span><strong>Carlo Mendoza</strong><small>carlo.mendoza@example.ph</small></span></span></td><td>+63 905 442 9032</td><td><strong>Unit A-301</strong><small>2 Bedroom</small></td><td><span class="badge badge-success">Active</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="tenant-dashboard" data-role="tenant" aria-label="View Carlo Mendoza portal"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-action="edit-tenant" aria-label="Edit Carlo Mendoza"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Tenant Carlo Mendoza" aria-label="Delete Carlo Mendoza"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                            <tr data-status="active"><td><span class="person-cell"><span class="avatar avatar-soft">LV</span><span><strong>Lea Villanueva</strong><small>lea.v@example.ph</small></span></span></td><td>+63 998 113 7720</td><td><strong>Unit C-105</strong><small>Studio</small></td><td><span class="badge badge-warning">Ending soon</span></td><td class="table-actions"><button class="icon-button" type="button" data-route="tenant-dashboard" data-role="tenant" aria-label="View Lea Villanueva portal"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-action="edit-tenant" aria-label="Edit Lea Villanueva"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Tenant Lea Villanueva" aria-label="Delete Lea Villanueva"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                            <tr data-status="inactive"><td><span class="person-cell"><span class="avatar avatar-soft">JR</span><span><strong>Jose Ramos</strong><small>jose.ramos@example.ph</small></span></span></td><td>+63 917 330 2259</td><td><span class="muted">No unit</span></td><td><span class="badge badge-neutral">Inactive</span></td><td class="table-actions"><button class="icon-button" type="button" data-action="view-tenant" aria-label="View Jose Ramos"><svg class="icon"><use href="#icon-eye"/></svg></button><button class="icon-button" type="button" data-action="edit-tenant" aria-label="Edit Jose Ramos"><svg class="icon"><use href="#icon-edit"/></svg></button><button class="icon-button danger-action" type="button" data-confirm-delete data-delete-target="Tenant Jose Ramos" aria-label="Delete Jose Ramos"><svg class="icon"><use href="#icon-trash"/></svg></button></td></tr>
+                        </tbody></table></div><div class="pagination"><span>Showing 1–4 of 21 tenants</span><div><button type="button" disabled>Previous</button><button class="is-current" type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">Next</button></div></div>
+                    </article>
+                </section>
+
+                <section class="screen" data-screen="lease-create" aria-labelledby="lease-create-title">
+                    <div class="page-heading heading-with-actions"><div><button class="back-link" type="button" data-route="dashboard"><svg class="icon"><use href="#icon-back"/></svg>Back to dashboard</button><span class="eyebrow">Leases</span><h1 id="lease-create-title">Create lease</h1><p>Assign a tenant to an available apartment and set the rental terms.</p></div><span class="badge badge-success badge-large">New lease · Active</span></div>
+                    <form class="form-panel" data-demo-form="lease-create" data-success-route="bills" data-success-message="Lease created. Unit A-301 is now occupied and the first bill was generated.">
+                        <input type="hidden" name="status" value="active">
+                        <div class="form-section"><div class="form-section-heading"><span class="section-number">01</span><div><h2>Rental assignment</h2><p>Select a resident and an available unit.</p></div></div><div class="form-grid"><div class="field"><label for="lease-tenant">Tenant</label><select id="lease-tenant" required><option value="">Select tenant</option><option selected>Ana Reyes</option><option>Carlo Mendoza</option><option>Mika Garcia</option><option>Paolo Navarro</option></select><small>Only active tenant profiles are shown.</small></div><div class="field"><label for="lease-apartment">Apartment</label><select id="lease-apartment" required><option value="">Select available apartment</option><option selected>Unit A-301 — ₱22,000 / month</option><option>Unit A-302 — ₱22,000 / month</option><option>Unit E-506 — ₱27,500 / month</option></select><small>Occupied and maintenance units are excluded.</small></div><div class="field"><label for="lease-start">Start date</label><input id="lease-start" type="date" value="2026-09-15" required></div><div class="field"><label for="lease-end">End date</label><input id="lease-end" type="date" value="2027-09-14" required></div></div></div>
+                        <div class="form-section"><div class="form-section-heading"><span class="section-number">02</span><div><h2>Financial information</h2><p>Confirm rent and deposit amounts.</p></div></div><div class="form-grid"><div class="field currency-field"><label for="lease-rent">Monthly rent</label><span>₱</span><input id="lease-rent" type="number" value="22000" required></div><div class="field currency-field"><label for="lease-deposit">Security deposit</label><span>₱</span><input id="lease-deposit" type="number" value="44000"></div></div><div class="field field-wide"><label for="lease-terms">Lease terms</label><textarea id="lease-terms" rows="5">Rent is due on the first day of each month. A five-day grace period applies. Utilities are billed separately based on consumption.</textarea></div><div class="info-callout"><span class="summary-icon blue"><svg class="icon"><use href="#icon-check"/></svg></span><div><strong>This lease will be activated immediately</strong><p>Unit A-301 will be marked occupied, and the first monthly rent bill will be generated automatically.</p></div></div></div>
+                        <div class="form-actions"><button class="button button-secondary" type="button" data-route="dashboard">Cancel</button><button class="button button-primary" type="submit"><svg class="icon"><use href="#icon-check"/></svg>Create active lease</button></div>
+                    </form>
+                </section>
+
+                <section class="screen" data-screen="bills" aria-labelledby="bills-title">
+                    <div class="page-heading heading-with-actions"><div><span class="eyebrow">Finance</span><h1 id="bills-title">Bills</h1><p>Monitor rent charges, balances, and due dates across active leases.</p></div><button class="button button-primary" type="button" data-route="payment-create"><svg class="icon"><use href="#icon-card"/></svg>Record payment</button></div>
+                    <div class="metric-grid compact-metrics"><article class="mini-stat"><span class="summary-icon slate"><svg class="icon"><use href="#icon-receipt"/></svg></span><span><small>September billed</small><strong>₱362,500</strong></span></article><article class="mini-stat"><span class="summary-icon green"><svg class="icon"><use href="#icon-check"/></svg></span><span><small>Collected</small><strong>₱286,500</strong></span></article><article class="mini-stat"><span class="summary-icon amber"><svg class="icon"><use href="#icon-clock"/></svg></span><span><small>Outstanding</small><strong>₱76,000</strong></span></article><article class="mini-stat"><span class="summary-icon red"><svg class="icon"><use href="#icon-alert"/></svg></span><span><small>Overdue</small><strong>₱32,500</strong></span></article></div>
+                    <article class="panel"><div class="toolbar"><label class="search-field" for="bill-search"><svg class="icon"><use href="#icon-search"/></svg><span class="sr-only">Search bills</span><input id="bill-search" type="search" placeholder="Search tenant, unit, or bill ID…" data-table-search="bills-table"></label><div class="filter-group"><button class="chip is-active" type="button" data-status-filter="all" data-table="bills-table">All</button><button class="chip" type="button" data-status-filter="unpaid" data-table="bills-table">Unpaid</button><button class="chip" type="button" data-status-filter="partial" data-table="bills-table">Partial</button><button class="chip" type="button" data-status-filter="paid" data-table="bills-table">Paid</button><button class="chip" type="button" data-status-filter="overdue" data-table="bills-table">Overdue</button></div></div><div class="table-wrap"><table id="bills-table"><caption class="sr-only">Billing records</caption><thead><tr><th>Bill / tenant</th><th>Unit</th><th>Billing month</th><th>Due date</th><th>Total</th><th>Balance</th><th>Status</th><th class="align-right">Action</th></tr></thead><tbody>
+                        <tr data-status="unpaid"><td><strong>ST-1052</strong><small>Paolo Navarro</small></td><td>A-301</td><td>September 2026</td><td>Sep 15, 2026</td><td>₱22,000</td><td><strong>₱22,000</strong></td><td><span class="badge badge-neutral">Unpaid</span></td><td class="align-right"><button class="button button-small button-secondary" type="button" data-route="payment-create">Record payment</button></td></tr>
+                        <tr data-status="paid"><td><strong>ST-1048</strong><small>Ana Reyes</small></td><td>B-204</td><td>September 2026</td><td>Sep 5, 2026</td><td>₱18,500</td><td><strong>₱0</strong></td><td><span class="badge badge-success">Paid</span></td><td class="align-right"><button class="button button-small button-ghost" type="button" data-route="payment-detail">View payment</button></td></tr>
+                        <tr data-status="partial"><td><strong>ST-1042</strong><small>Lea Villanueva</small></td><td>C-105</td><td>September 2026</td><td>Sep 5, 2026</td><td>₱14,000</td><td><strong>₱4,000</strong></td><td><span class="badge badge-warning">Partial</span></td><td class="align-right"><button class="button button-small button-secondary" type="button" data-route="payment-create">Pay balance</button></td></tr>
+                        <tr data-status="overdue"><td><strong>ST-1031</strong><small>Ramon Cruz</small></td><td>E-506</td><td>August 2026</td><td>Aug 5, 2026</td><td>₱28,500</td><td><strong class="danger-text">₱28,500</strong></td><td><span class="badge badge-danger">Overdue</span></td><td class="align-right"><button class="button button-small button-secondary" type="button" data-route="payment-create">Record payment</button></td></tr>
+                    </tbody></table></div><div class="pagination"><span>Showing 1–4 of 22 bills</span><div><button type="button" disabled>Previous</button><button class="is-current" type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">Next</button></div></div></article>
+                </section>
+
+                <section class="screen" data-screen="payment-create" aria-labelledby="payment-create-title">
+                    <div class="page-heading"><button class="back-link" type="button" data-route="bills"><svg class="icon"><use href="#icon-back"/></svg>Back to bills</button><span class="eyebrow">Payments</span><h1 id="payment-create-title">Record payment</h1><p>Apply a tenant payment to an outstanding bill.</p></div>
+                    <div class="payment-layout"><form class="form-panel form-panel-compact" data-demo-form="payment-create" data-success-route="payments" data-success-message="Payment of ₱18,500 was recorded successfully."><div class="form-section no-border"><div class="form-section-heading"><span class="section-number">01</span><div><h2>Payment information</h2><p>Select a bill and enter the transaction details.</p></div></div><div class="field field-wide"><label for="payment-bill">Bill / tenant</label><select id="payment-bill" required><option value="" data-tenant="—" data-unit="—" data-total="0" data-paid="0" data-balance="0">Select an outstanding bill</option><option value="1052" data-tenant="Paolo Navarro" data-unit="A-301" data-total="22000" data-paid="0" data-balance="22000">ST-1052 · Paolo Navarro · Unit A-301 · ₱22,000 due</option><option value="1048" selected data-tenant="Ana Reyes" data-unit="B-204" data-total="18500" data-paid="0" data-balance="18500">ST-1048 · Ana Reyes · Unit B-204 · ₱18,500 due</option><option value="1042" data-tenant="Lea Villanueva" data-unit="C-105" data-total="14000" data-paid="10000" data-balance="4000">ST-1042 · Lea Villanueva · Unit C-105 · ₱4,000 due</option><option value="1031" data-tenant="Ramon Cruz" data-unit="E-506" data-total="28500" data-paid="0" data-balance="28500">ST-1031 · Ramon Cruz · Unit E-506 · ₱28,500 overdue</option></select></div><div class="form-grid"><div class="field"><label for="payment-date">Payment date</label><input id="payment-date" type="date" value="2026-09-02" required></div><div class="field currency-field"><label for="payment-amount">Amount paid</label><span>₱</span><input id="payment-amount" type="number" value="18500" min="1" required></div><div class="field"><label for="payment-method">Payment method</label><select id="payment-method" required><option>Cash</option><option selected>GCash</option><option>Bank transfer</option><option>Online payment</option></select></div><div class="field"><label for="payment-reference">Reference number</label><input id="payment-reference" value="GC-2026-0902-1842"></div></div><div class="field field-wide"><label for="payment-notes">Notes</label><textarea id="payment-notes" rows="3">September rent payment received and verified.</textarea></div></div><div class="form-actions"><button class="button button-secondary" type="button" data-route="bills">Cancel</button><button class="button button-primary" type="submit"><svg class="icon"><use href="#icon-check"/></svg>Record payment</button></div></form>
+                        <aside class="panel bill-summary"><div class="panel-header"><div><span class="eyebrow">Selected bill</span><h2>Bill summary</h2></div><span class="badge badge-neutral">ST-1048</span></div><dl><div><dt>Tenant</dt><dd id="payment-summary-tenant">Ana Reyes</dd></div><div><dt>Apartment</dt><dd id="payment-summary-unit">Unit B-204</dd></div><div><dt>Bill total</dt><dd id="payment-summary-total">₱18,500.00</dd></div><div><dt>Previously paid</dt><dd id="payment-summary-paid">₱0.00</dd></div><div class="summary-balance"><dt>Remaining balance</dt><dd id="payment-summary-balance">₱18,500.00</dd></div></dl><div class="info-callout compact"><span class="summary-icon green"><svg class="icon"><use href="#icon-check"/></svg></span><p>Paying the full balance will mark this bill as paid.</p></div></aside></div>
+                </section>
+
+                <section class="screen" data-screen="payments" aria-labelledby="payments-title">
+                    <div class="page-heading heading-with-actions"><div><span class="eyebrow">Finance</span><h1 id="payments-title">Payment history</h1><p>Review and reconcile all recorded tenant payments.</p></div><button class="button button-primary" type="button" data-route="payment-create"><svg class="icon"><use href="#icon-plus"/></svg>Record payment</button></div>
+                    <article class="panel"><div class="toolbar"><label class="search-field" for="payment-search"><svg class="icon"><use href="#icon-search"/></svg><span class="sr-only">Search payments</span><input id="payment-search" type="search" placeholder="Search tenant, unit, or reference…" data-table-search="payments-table"></label><div class="toolbar-actions"><label class="select-compact" for="payment-method-filter"><svg class="icon"><use href="#icon-filter"/></svg><select id="payment-method-filter" data-payment-method-filter><option value="all">All methods</option><option>GCash</option><option>Cash</option><option>Bank transfer</option></select></label><button class="button button-secondary" type="button" data-action="export-payments"><svg class="icon"><use href="#icon-download"/></svg>Export</button></div></div><div class="table-wrap"><table id="payments-table"><caption class="sr-only">Payment history</caption><thead><tr><th>Tenant</th><th>Unit</th><th>Payment date</th><th>Amount</th><th>Method</th><th>Reference</th><th>Received by</th><th class="align-right">Action</th></tr></thead><tbody>
+                        <tr data-method="gcash"><td><span class="person-cell"><span class="avatar avatar-soft">AR</span><span><strong>Ana Reyes</strong><small>Bill ST-1048</small></span></span></td><td>B-204</td><td>Sep 2, 2026</td><td><strong>₱18,500</strong></td><td><span class="tag tag-blue">GCash</span></td><td>GC-…-1842</td><td>Maria Santos</td><td class="align-right"><button class="text-link" type="button" data-route="payment-detail">View details <svg class="icon"><use href="#icon-arrow"/></svg></button></td></tr>
+                        <tr data-method="bank transfer"><td><span class="person-cell"><span class="avatar avatar-soft">CM</span><span><strong>Carlo Mendoza</strong><small>Bill ST-1047</small></span></span></td><td>A-301</td><td>Sep 1, 2026</td><td><strong>₱22,000</strong></td><td><span class="tag tag-slate">Bank transfer</span></td><td>BDO-0901-7641</td><td>Maria Santos</td><td class="align-right"><button class="text-link" type="button" data-route="payment-detail">View details <svg class="icon"><use href="#icon-arrow"/></svg></button></td></tr>
+                        <tr data-method="cash"><td><span class="person-cell"><span class="avatar avatar-soft">LV</span><span><strong>Lea Villanueva</strong><small>Bill ST-1042</small></span></span></td><td>C-105</td><td>Aug 30, 2026</td><td><strong>₱10,000</strong></td><td><span class="tag tag-green">Cash</span></td><td>OR-00491</td><td>John dela Cruz</td><td class="align-right"><button class="text-link" type="button" data-route="payment-detail">View details <svg class="icon"><use href="#icon-arrow"/></svg></button></td></tr>
+                        <tr data-method="gcash"><td><span class="person-cell"><span class="avatar avatar-soft">MG</span><span><strong>Mika Garcia</strong><small>Bill ST-1039</small></span></span></td><td>D-402</td><td>Aug 28, 2026</td><td><strong>₱31,000</strong></td><td><span class="tag tag-blue">GCash</span></td><td>GC-…-6204</td><td>Maria Santos</td><td class="align-right"><button class="text-link" type="button" data-route="payment-detail">View details <svg class="icon"><use href="#icon-arrow"/></svg></button></td></tr>
+                    </tbody></table></div><div class="pagination"><span>Showing 1–4 of 48 payments</span><div><button type="button" disabled>Previous</button><button class="is-current" type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">Next</button></div></div></article>
+                </section>
+
+                <section class="screen" data-screen="payment-detail" aria-labelledby="payment-detail-title">
+                    <div class="page-heading heading-with-actions"><div><button class="back-link" type="button" data-route="payments"><svg class="icon"><use href="#icon-back"/></svg>Back to payments</button><span class="eyebrow">Payment ST-P-294</span><h1 id="payment-detail-title">Payment details</h1><p>Recorded September 2, 2026 at 10:42 AM.</p></div><button class="button button-secondary" type="button" data-action="download-receipt"><svg class="icon"><use href="#icon-download"/></svg>Download receipt</button></div>
+                    <div class="receipt-layout"><article class="panel receipt-card"><div class="receipt-status"><span class="success-seal"><svg class="icon"><use href="#icon-check"/></svg></span><span class="eyebrow">Amount paid</span><strong>₱18,500.00</strong><span class="badge badge-success">Payment verified</span></div><div class="section-divider"></div><dl class="receipt-details"><div><dt>Tenant</dt><dd>Ana Reyes</dd></div><div><dt>Apartment</dt><dd>Unit B-204</dd></div><div><dt>Payment date</dt><dd>September 2, 2026</dd></div><div><dt>Payment method</dt><dd><span class="tag tag-blue">GCash</span></dd></div><div><dt>Reference number</dt><dd>GC-2026-0902-1842</dd></div><div><dt>Received by</dt><dd>Maria Santos</dd></div></dl><div class="receipt-note"><span>Notes</span><p>September rent payment received and verified.</p></div></article><aside class="panel receipt-side"><span class="eyebrow">Applied to</span><h2>September rent</h2><p>Bill ST-1048</p><dl><div><dt>Bill total</dt><dd>₱18,500.00</dd></div><div><dt>Payment</dt><dd class="success-text">− ₱18,500.00</dd></div><div class="summary-balance"><dt>Balance</dt><dd>₱0.00</dd></div></dl><div class="info-callout compact"><span class="summary-icon green"><svg class="icon"><use href="#icon-check"/></svg></span><p>This bill is fully paid.</p></div><button class="button button-secondary button-full" type="button" data-route="payments">View all payments</button></aside></div>
+                </section>
+
+                <section class="screen" data-screen="tenant-dashboard" aria-labelledby="tenant-dashboard-title">
+                    <div class="page-heading"><span class="eyebrow">Tenant portal</span><h1 id="tenant-dashboard-title">Welcome, Ana</h1><p>Your apartment, lease, bills, and payment history in one place.</p></div>
+                    <div id="tenant-apartment" class="tenant-summary-grid">
+                        <article class="tenant-summary-card"><div class="metric-top"><span>My apartment</span><span class="metric-icon slate"><svg class="icon"><use href="#icon-home"/></svg></span></div><strong>Unit B-204</strong><p>2 Bedroom · 2nd floor</p><span class="badge badge-success">Active lease</span></article>
+                        <article class="tenant-summary-card"><div class="metric-top"><span>Monthly rent</span><span class="metric-icon blue"><svg class="icon"><use href="#icon-wallet"/></svg></span></div><strong>₱18,500</strong><p>Due every 5th of the month</p><span class="muted">Next due Oct 5, 2026</span></article>
+                        <article class="tenant-summary-card"><div class="metric-top"><span>Outstanding balance</span><span class="metric-icon green"><svg class="icon"><use href="#icon-check"/></svg></span></div><strong>₱0.00</strong><p>All September bills paid</p><span class="success-text">You are up to date</span></article>
+                    </div>
+                    <article id="tenant-lease" class="panel tenant-lease-card"><div class="panel-header"><div><h2>My lease</h2><p>Current rental agreement</p></div><span class="badge badge-success">Active</span></div><div class="lease-detail-grid"><div><span>Apartment</span><strong>Unit B-204</strong><small>2 Bedroom</small></div><div><span>Start date</span><strong>Aug 1, 2026</strong><small>Move-in date</small></div><div><span>End date</span><strong>Jul 31, 2027</strong><small>11 months remaining</small></div><div><span>Security deposit</span><strong>₱37,000</strong><small>2 months rent</small></div></div><div class="lease-progress"><div><span>Lease progress</span><strong>9%</strong></div><span><i style="width:9%"></i></span></div></article>
+                    <div class="tenant-content-grid"><article id="tenant-bills" class="panel"><div class="panel-header"><div><h2>My bills</h2><p>Recent billing records</p></div><span class="badge badge-success">No balance</span></div><div class="tenant-bill-list"><div><span class="summary-icon green"><svg class="icon"><use href="#icon-check"/></svg></span><span><strong>September 2026 rent</strong><small>Due Sep 5 · Paid Sep 2</small></span><span><strong>₱18,500</strong><small class="success-text">Paid</small></span></div><div><span class="summary-icon slate"><svg class="icon"><use href="#icon-receipt"/></svg></span><span><strong>August 2026 rent</strong><small>Due Aug 5 · Paid Aug 3</small></span><span><strong>₱18,500</strong><small class="success-text">Paid</small></span></div><div><span class="summary-icon slate"><svg class="icon"><use href="#icon-receipt"/></svg></span><span><strong>Move-in charges</strong><small>Paid Aug 1</small></span><span><strong>₱37,000</strong><small class="success-text">Paid</small></span></div></div></article><article id="tenant-payments" class="panel"><div class="panel-header"><div><h2>Payment history</h2><p>Your latest transactions</p></div></div><div class="payment-timeline"><div><span class="timeline-dot"></span><span><strong>GCash payment</strong><small>Sep 2, 2026 · GC-…-1842</small></span><strong>₱18,500</strong></div><div><span class="timeline-dot"></span><span><strong>Bank transfer</strong><small>Aug 3, 2026 · BDO-…-5931</small></span><strong>₱18,500</strong></div><div><span class="timeline-dot"></span><span><strong>GCash payment</strong><small>Aug 1, 2026 · GC-…-4208</small></span><strong>₱37,000</strong></div></div></article></div>
+                    <div class="tenant-help"><span class="summary-icon blue"><svg class="icon"><use href="#icon-user"/></svg></span><div><strong>Need help with your account?</strong><p>Contact the property office at +63 2 8123 4567 or support@staytrack.ph.</p></div><button class="button button-secondary" type="button" data-action="contact-support">Contact support</button></div>
+                </section>
+
+                <section class="screen" data-screen="profile" aria-labelledby="profile-title">
+                    <div class="page-heading"><span class="eyebrow">Account</span><h1 id="profile-title">Profile settings</h1><p>Manage your personal information, password, and account access.</p></div>
+                    <div class="profile-layout"><div class="profile-nav panel"><div class="profile-avatar-block"><span class="avatar avatar-large" data-user-initials>MS</span><strong data-user-name>Maria Santos</strong><small data-user-role>Administrator</small></div><a href="#profile-information" class="is-active"><svg class="icon"><use href="#icon-user"/></svg>Personal information</a><a href="#profile-security"><svg class="icon"><use href="#icon-file"/></svg>Password & security</a><a href="#profile-danger"><svg class="icon"><use href="#icon-alert"/></svg>Danger zone</a></div><div class="profile-content">
+                        <form id="profile-information" class="form-panel form-panel-compact" data-demo-form="profile" data-success-message="Profile information saved."><div class="form-section no-border"><div class="form-section-heading"><span class="section-number"><svg class="icon"><use href="#icon-user"/></svg></span><div><h2>Personal information</h2><p>Update your name and email address.</p></div></div><div class="form-grid"><div class="field"><label for="profile-name">Full name</label><input id="profile-name" value="Maria Santos" required></div><div class="field"><label for="profile-email">Email address</label><input id="profile-email" type="email" value="maria@staytrack.ph" required></div><div class="field"><label for="profile-phone">Phone number</label><input id="profile-phone" value="+63 917 882 0147"></div><div class="field"><label for="profile-role">Role</label><input id="profile-role" value="Administrator" disabled></div></div></div><div class="form-actions"><button class="button button-primary" type="submit">Save changes</button></div></form>
+                        <form id="profile-security" class="form-panel form-panel-compact" data-demo-form="password" data-success-message="Password updated securely."><div class="form-section no-border"><div class="form-section-heading"><span class="section-number"><svg class="icon"><use href="#icon-file"/></svg></span><div><h2>Update password</h2><p>Use at least eight characters with a number or symbol.</p></div></div><div class="field field-wide"><label for="current-password">Current password</label><input id="current-password" type="password" placeholder="Enter current password"></div><div class="form-grid"><div class="field"><label for="new-password">New password</label><input id="new-password" type="password" placeholder="Enter new password"></div><div class="field"><label for="confirm-password">Confirm new password</label><input id="confirm-password" type="password" placeholder="Repeat new password"></div></div></div><div class="form-actions"><button class="button button-primary" type="submit">Update password</button></div></form>
+                        <section id="profile-danger" class="danger-zone"><div><h2>Delete account</h2><p>Permanently remove this account and all associated access. This cannot be undone.</p></div><button class="button button-danger" type="button" data-confirm-delete data-delete-target="your StayTrack account">Delete account</button></section>
+                    </div></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <div id="delete-modal" class="modal-backdrop" hidden>
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title" aria-describedby="delete-modal-copy">
+            <button class="icon-button modal-close" type="button" data-cancel-delete aria-label="Close confirmation"><svg class="icon"><use href="#icon-x"/></svg></button>
+            <span class="modal-icon danger"><svg class="icon"><use href="#icon-trash"/></svg></span>
+            <h2 id="delete-modal-title">Delete this record?</h2>
+            <p id="delete-modal-copy">You are about to delete <strong data-delete-name>this item</strong>. This action cannot be undone.</p>
+            <div class="modal-actions"><button class="button button-secondary" type="button" data-cancel-delete>Cancel</button><button class="button button-danger" type="button" data-delete-confirmed>Yes, delete</button></div>
+        </section>
+    </div>
+
+    <div id="success-toast" class="toast" role="status" aria-live="polite" hidden>
+        <span class="toast-icon"><svg class="icon"><use href="#icon-check"/></svg></span>
+        <div><strong>Success</strong><p data-toast-message>Your changes were saved.</p></div>
+        <button class="icon-button" type="button" data-toast-close aria-label="Dismiss message"><svg class="icon"><use href="#icon-x"/></svg></button>
+    </div>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>

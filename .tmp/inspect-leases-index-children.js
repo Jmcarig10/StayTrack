@@ -1,0 +1,1 @@
+const root=figma.currentPage.findAll(n=>n.id==='284:6636')[0]; const c=root.children.find(n=>n.name==='Main')?.children.find(n=>n.name==='Content'); return c?.children.map(n=>({id:n.id,name:n.name,type:n.type,x:n.x,y:n.y,w:n.width,h:n.height}));

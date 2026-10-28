@@ -1,0 +1,43 @@
+const login=await figma.getNodeByIdAsync('275:913');
+const auth=await figma.getNodeByIdAsync('205:639');
+if(!login||!auth)return {ok:false,error:'Login or authentication section not found'};
+const existing=auth.children.find(n=>n.name==='Authentication / Create Account - Corrected');
+if(existing)return {ok:true,existing:true,frameId:existing.id};
+const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o};
+const first=(root,pred)=>all(root).find(pred);
+const textIn=(root,pred)=>all(root).find(n=>n.type==='TEXT'&&pred(n.characters||'',n));
+const fontLoads=new Map();
+const setText=async(n,value)=>{if(!n||n.type!=='TEXT')return;for(const seg of n.getStyledTextSegments(['fontName'])){const f=seg.fontName;const key=`${f.family}|${f.style}`;if(!fontLoads.has(key))fontLoads.set(key,figma.loadFontAsync(f));}await Promise.all([...fontLoads.values()]);n.characters=value;};
+const reg=login.clone();reg.name='Authentication / Create Account - Corrected';reg.x=Math.max(...auth.children.filter(n=>n.id!==reg.id).map(n=>n.x+n.width))+280;reg.y=0;
+const card=first(reg,n=>n.name==='Login card');
+const header=first(card,n=>n.name==='Nested Frame');
+const form=first(card,n=>n.name==='Form stack');
+const email=first(form,n=>n.name==='Email field');
+const password=first(form,n=>n.name==='Password field');
+const remember=first(form,n=>n.name==='Remember row');
+const submit=first(form,n=>n.name==='Sign in button');
+const footer=first(card,n=>n.name==='Register link');
+const created=[];
+// Clone the existing field treatments so every field stays editable and visually consistent.
+const nameField=email.clone();nameField.name='Name field';form.insertChild(0,nameField);created.push(nameField.id);
+const confirmField=password.clone();confirmField.name='Confirm password field';form.insertChild(3,confirmField);created.push(confirmField.id);
+// Registration form content.
+await setText(textIn(header,t=>t==='WELCOME BACK'),'CREATE YOUR ACCOUNT');
+await setText(textIn(header,t=>t==='Sign in to StayTrack'),'Join StayTrack');
+await setText(textIn(header,t=>t.startsWith('Enter your credentials')),'Set up your account to start managing apartments.');
+await setText(textIn(nameField,()=>true),'Name');
+const nameInput=textIn(nameField,t=>t==='you@example.com');await setText(nameInput,'Your name');
+const pwdLabel=textIn(password,t=>t==='Password');await setText(pwdLabel,'Password');
+const pwdInput=textIn(password,t=>t==='Enter your password');await setText(pwdInput,'Create a password');
+const confirmLabel=textIn(confirmField,t=>t==='Password');await setText(confirmLabel,'Confirm password');
+const confirmForgot=textIn(confirmField,t=>t==='Forgot password?');if(confirmForgot)confirmForgot.visible=false;
+const confirmInput=textIn(confirmField,t=>t==='Enter your password');await setText(confirmInput,'Confirm your password');
+await setText(textIn(submit,t=>t==='Sign in'),'Create account');
+await setText(textIn(footer,t=>t==='New to StayTrack?'),'Already registered?');
+await setText(textIn(footer,t=>t==='Create an account'),'Sign in');
+remember.visible=false;
+form.itemSpacing=14;
+card.name='Create account card';
+footer.name='Sign in link';
+// Keep the same desktop panel treatment; the card hugs the expanded form and stays centered.
+return {ok:true,frameId:reg.id,createdNodeIds:[reg.id,...created],fieldCount:4,frame:{x:reg.x,y:reg.y,w:reg.width,h:reg.height},card:{id:card.id,w:card.width,h:card.height},fontCount:fontLoads.size};

@@ -1,0 +1,1 @@
+const p=await figma.getNodeByIdAsync('275:943');return {x:p.x,y:p.y,w:p.width,h:p.height,layoutMode:p.layoutMode,itemSpacing:p.itemSpacing,align:p.primaryAxisAlignItems,counter:p.counterAxisAlignItems,children:p.children.map(c=>({id:c.id,name:c.name,x:c.x,y:c.y,w:c.width,h:c.height}))};

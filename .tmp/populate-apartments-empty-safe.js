@@ -1,0 +1,35 @@
+const root = figma.currentPage.findAll(n => n.id === '284:5720')[0];
+if (!root) return JSON.stringify({ error: 'Apartments frame not found' });
+const main = root.children.find(n => n.name === 'Main');
+const content = main?.children.find(n => n.name === 'Content');
+if (!content) return JSON.stringify({ error: 'Apartments content missing' });
+if (content.children.length > 0) return JSON.stringify({ error: 'Content is not empty; no changes made' });
+await Promise.all([
+  figma.loadFontAsync({ family: 'Figtree', style: 'Regular' }),
+  figma.loadFontAsync({ family: 'Figtree', style: 'Bold' }),
+  figma.loadFontAsync({ family: 'Inter', style: 'Regular' })
+]);
+const C={navy:{r:.0588,g:.0902,b:.1647},ink:{r:.0588,g:.0902,b:.1647},text:{r:.2,g:.2549,b:.3333},muted:{r:.3922,g:.4549,b:.5451},eyebrow:{r:.5804,g:.6392,b:.7216},bg:{r:.9725,g:.9804,b:.9882},white:{r:1,g:1,b:1},border:{r:.8588,g:.8941,b:.9373},pale:{r:.9569,g:.9686,b:.9843},green:{r:0,g:.5608,b:.4},greenPale:{r:.902,g:.9804,b:.949},blue:{r:.1176,g:.3804,b:.9608},bluePale:{r:.9137,g:.949,b:1},red:{r:.85,g:.12,b:.12},redPale:{r:1,g:.9255,b:.9255}};
+const solid=c=>[{type:'SOLID',color:c}];
+const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o};
+const sources={};for(const n of all(figma.currentPage)){if(/^Icon \/ /.test(n.name||'')&&n.type==='FRAME'&&!sources[n.name])sources[n.name]=n;if(/^lucide:/.test(n.name||'')&&n.type==='FRAME'&&n.children?.length&&!sources[n.name])sources[n.name]=n;}
+const aliases={'lucide:building-2':'Icon / building','lucide:check':'Icon / check','lucide:house':'Icon / home','lucide:triangle-alert':'Icon / alert','lucide:eye':'Icon / eye','lucide:pencil':'Icon / pencil','lucide:trash-2':'Icon / trash','lucide:plus':'Icon / plus','lucide:search':'Icon / search','lucide:chevron-down':'Icon / chevron-down'};
+const frame=(p,n,x,y,w,h,fill=C.white,stroke=null,r=14)=>{const f=figma.createFrame();f.name=n;f.x=x;f.y=y;f.resize(w,h);f.fills=solid(fill);f.cornerRadius=r;if(stroke){f.strokes=solid(stroke);f.strokeWeight=1}p.appendChild(f);return f};
+const text=(p,n,v,x,y,w,s=16,c=C.text,b=false)=>{const t=figma.createText();t.name=n;t.characters=v;t.fontName={family:'Figtree',style:b?'Bold':'Regular'};t.fontSize=s;t.fills=solid(c);t.x=x;t.y=y;t.resize(w,Math.max(18,s*1.35));t.textAutoResize='HEIGHT';p.appendChild(t);return t};
+const icon=(p,k,x,y,s=22,c=C.text)=>{const src=(k==='lucide:plus'||k==='lucide:pencil'||k==='lucide:trash-2')?null:(sources[aliases[k]]||sources[k]);if(src){const v=src.clone();v.name=k;v.fills=[];v.x=x;v.y=y;v.resize(s,s);p.appendChild(v);for(const n of all(v))if(n.type==='VECTOR'&&n.strokes?.length)n.strokes=solid(c);return v;}const v=figma.createFrame();v.name=k;v.x=x;v.y=y;v.resize(s,s);v.fills=[];p.appendChild(v);if(k==='lucide:plus'){const a=figma.createRectangle();a.resize(s,2);a.x=0;a.y=s/2-1;a.fills=solid(c);v.appendChild(a);const b=figma.createRectangle();b.resize(2,s);b.x=s/2-1;b.y=0;b.fills=solid(c);v.appendChild(b);}else if(k==='lucide:pencil'){const a=figma.createRectangle();a.resize(s*.72,4);a.x=3;a.y=s*.58;a.rotation=-45;a.fills=solid(c);v.appendChild(a);}else if(k==='lucide:trash-2'){const a=figma.createRectangle();a.resize(s*.62,s*.65);a.x=s*.19;a.y=s*.25;a.fills=[];a.strokes=solid(c);a.strokeWeight=1.5;v.appendChild(a);const b=figma.createRectangle();b.resize(s*.76,2);b.x=s*.12;b.y=s*.16;b.fills=solid(c);v.appendChild(b);}return v};
+const stat=(x,label,value,k,bg,ic)=>{const card=frame(content,'Stat / '+label,x,195,365,120,C.white,C.border,16);const ib=frame(card,'Icon background',24,24,48,48,bg,null,14);icon(ib,k,12,12,24,ic);text(card,'Label',label,88,27,240,15,C.muted,true);text(card,'Value',value,88,54,240,28,C.ink,true);};
+content.layoutMode='NONE';content.fills=solid(C.bg);
+text(content,'Eyebrow','PROPERTY MANAGEMENT',40,40,700,16,C.eyebrow,true);
+text(content,'Page title','Apartments',40,67,1000,38,C.ink,true);
+text(content,'Page description','Manage inventory, rates, and availability across all units.',40,120,1000,18,C.muted);
+const action=frame(content,'Action / Add apartment',1365,105,195,56,C.navy,null,12);icon(action,'lucide:plus',18,17,22,C.white);text(action,'Label','Add apartment',50,17,130,16,C.white,true);
+stat(40,'TOTAL UNITS','4','lucide:building-2',C.pale,C.text);stat(425,'AVAILABLE','2','lucide:check',C.greenPale,C.green);stat(810,'OCCUPIED','2','lucide:house',C.bluePale,C.blue);stat(1195,'MAINTENANCE','0','lucide:triangle-alert',C.redPale,C.red);
+const panel=frame(content,'Apartments table',40,345,1520,520,C.white,C.border,18);
+const toolbar=frame(panel,'Toolbar',0,0,1520,100,C.white,null,18);const search=frame(toolbar,'Search input',26,23,440,56,C.white,C.border,10);icon(search,'lucide:search',16,18,20,C.muted);text(search,'Placeholder','Search unit...',48,17,360,16,C.eyebrow);
+const filters=['All','Available','Occupied','Maintenance'];let total=0;const widths=filters.map(f=>Math.max(92,f.length*9+34));for(const w of widths)total+=w;total+=(filters.length-1)*10;let fx=1520-26-total;filters.forEach(f=>{const w=Math.max(92,f.length*9+34);const chip=frame(toolbar,'Filter / '+f,fx,22,w,48,f==='All'?C.navy:C.white,f==='All'?null:C.border,24);text(chip,'Label',f,14,14,w-28,15,f==='All'?C.white:C.muted,f==='All');fx+=w+10;});
+frame(panel,'Header background',0,100,1520,56,C.pale,null,0);[['UNIT',26],['TYPE',338],['FLOOR',538],['MONTHLY RENT',714],['STATUS',969],['ACTIONS',1425]].forEach(([v,x])=>text(panel,'Header / '+v,v,x,119,180,13,C.eyebrow,true));
+const rows=[['B-101','2 beds · 1 bath','Studio','2nd floor','₱8,000.00','Available',C.green,C.greenPale],['A-002','2 beds · 1 bath','2 Bedroom','1st floor','₱10,000.00','Available',C.green,C.greenPale],['A-001','2 beds · 1 bath','2 Bedroom','1st floor','₱8,000.00','Occupied',C.blue,C.bluePale],['A-101','1 bed · 1 bath','1 Bedroom','1st floor','₱800.00','Occupied',C.blue,C.bluePale]];
+rows.forEach((r,i)=>{const y=156+i*91;if(i)frame(panel,'Divider '+i,0,y,1520,1,C.border,null,0);const av=frame(panel,'Unit icon',26,y+20,50,50,C.pale,null,16);icon(av,'lucide:building-2',13,13,24,C.text);text(panel,'Unit '+r[0],r[0],92,y+20,210,16,C.ink,true);text(panel,'Details '+r[0],r[1],92,y+48,210,14,C.muted);text(panel,'Type '+r[0],r[2],338,y+28,170,16,C.muted);text(panel,'Floor '+r[0],r[3],538,y+28,170,16,C.muted);text(panel,'Rent '+r[0],r[4],714,y+28,190,16,C.ink,true);const b=frame(panel,'Status '+r[0],969,y+21,88,32,r[7],null,18);text(b,'Label',r[5],12,8,64,14,r[6],true);icon(panel,'lucide:eye',1200,y+32,22,C.muted);icon(panel,'lucide:pencil',1260,y+32,22,C.muted);icon(panel,'lucide:trash-2',1320,y+32,22,C.red);});
+return JSON.stringify({updated:'284:5720',layout:'website-matched',searchPlaceholder:'Search unit...',prototypeConnectionsChanged:false});
+
+

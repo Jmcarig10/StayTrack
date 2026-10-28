@@ -1,0 +1,2 @@
+const link=async(a,b)=>{const f=await figma.getNodeByIdAsync(a),t=await figma.getNodeByIdAsync(b);await f.setReactionsAsync([{trigger:{type:'ON_CLICK'},actions:[{type:'NODE',destinationId:t.id,navigation:'NAVIGATE',transition:{type:'DISSOLVE',duration:0.2,easing:{type:'EASE_IN_AND_OUT'}}}]}]);return {from:a,to:b};};
+const out=[];out.push(await link('282:1794','283:2455'));out.push(await link('283:2452','278:3890'));return out;

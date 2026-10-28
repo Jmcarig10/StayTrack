@@ -1,0 +1,1 @@
+const ids=['179:1511','151:3230','151:3338','131:946','179:1731','151:3864'];const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);out.push({id,name:n?.name,children:n?.children?.map(c=>({id:c.id,name:c.name,type:c.type,visible:c.visible,x:c.x,y:c.y,w:c.width,h:c.height,children:c.children?.length||0}))});}return JSON.stringify(out);

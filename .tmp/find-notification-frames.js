@@ -1,0 +1,1 @@
+const page=figma.currentPage;const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o};return all(page).filter(n=>/notification/i.test(n.name||'')).map(n=>({id:n.id,name:n.name,type:n.type,parent:n.parent&&{id:n.parent.id,name:n.parent.name,type:n.parent.type},x:n.x,y:n.y,w:n.width,h:n.height,visible:n.visible}));

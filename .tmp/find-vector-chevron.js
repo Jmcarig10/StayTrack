@@ -1,0 +1,1 @@
+return figma.currentPage.findAll(x=>/chevron|arrow|close|x$/i.test(x.name||'') && (x.type==='FRAME'||x.type==='VECTOR'||x.type==='GROUP')).map(x=>({id:x.id,name:x.name,type:x.type,w:x.width,h:x.height,children:x.children?.length||0})).slice(0,100);

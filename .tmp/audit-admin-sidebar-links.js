@@ -1,0 +1,3 @@
+const ids=['284:5601','284:5720','284:5867','284:5983','284:6086','284:6189','284:6327','284:6430','284:6533','284:6636','284:6751','284:6867','358:5091','358:5295','358:5524','358:5710'];
+const all=(n,o=[])=>{o.push(n);if(n.children)for(const c of n.children)all(c,o);return o};const out=[];
+for(const id of ids){const r=await figma.getNodeByIdAsync(id);const links={};for(const n of all(r).filter(n=>/^Prototype hotspot \/ sidebar:/.test(n.name||''))){const label=n.name.slice('Prototype hotspot / sidebar:'.length);links[label]=Array.from(n.reactions||[]).flatMap(x=>(x.actions||[]).filter(a=>a.type==='NODE').map(a=>({destinationId:a.destinationId,navigation:a.navigation})));}out.push({id,name:r.name,width:r.width,height:r.height,links});}return out;

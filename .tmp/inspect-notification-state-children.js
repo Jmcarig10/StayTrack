@@ -1,0 +1,1 @@
+const n=await figma.getNodeByIdAsync('283:1870');const all=(x,o=[])=>{o.push(x);if(x.children)for(const c of x.children)all(c,o);return o};return all(n).map(x=>({id:x.id,name:x.name,type:x.type,reactions:(x.reactions||[]).flatMap(r=>(r.actions||[]).map(a=>({type:a.type,to:a.destinationId||null,nav:a.navigation||null})))}));

@@ -1,0 +1,1 @@
+const ids=['278:3890','277:1041','278:2323','278:1636','278:1985','278:2661','278:2999'];const out=[];for(const id of ids){const n=await figma.getNodeByIdAsync(id);let p=n;const chain=[];while(p){chain.push({id:p.id,name:p.name,type:p.type});p=p.parent;}out.push({id,name:n?.name,type:n?.type,chain});}return out;

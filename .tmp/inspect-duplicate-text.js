@@ -1,0 +1,1 @@
+const ids=['275:860','275:913']; const all=(x,o=[])=>{o.push(x);if(x.children)for(const c of x.children)all(c,o);return o;}; const out=[]; for(const id of ids){const r=await figma.getNodeByIdAsync(id); out.push({id,name:r&&r.name,texts:r?all(r).filter(n=>n.type==='TEXT').map(n=>({id:n.id,name:n.name,text:n.characters,parent:n.parent&&n.parent.id})):[]});} return out;

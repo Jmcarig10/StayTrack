@@ -1,0 +1,1 @@
+const a=await figma.getNodeByIdAsync('283:1921');const b=await figma.getNodeByIdAsync('282:1371');await a.setReactionsAsync([{trigger:{type:'ON_CLICK'},actions:[{type:'NODE',destinationId:b.id,navigation:'NAVIGATE',transition:{type:'DISSOLVE',duration:0.2,easing:{type:'EASE_IN_AND_OUT'}}}]}]);return {a:a.id,b:b.id,reactions:a.reactions.length};

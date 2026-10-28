@@ -1,0 +1,1 @@
+const n=await figma.getNodeByIdAsync('278:2323'); const out=[]; const walk=(x,d=0)=>{out.push({id:x.id,name:x.name,type:x.type,x:Math.round(x.x),y:Math.round(x.y),w:Math.round(x.width),h:Math.round(x.height),chars:x.type==='TEXT'?x.characters.slice(0,90):undefined});if(d<4&&x.children)for(const c of x.children)walk(c,d+1);}; walk(n); return out;

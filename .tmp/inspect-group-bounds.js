@@ -1,0 +1,1 @@
+const g=await figma.getNodeByIdAsync('365:6877');const r=await figma.getNodeByIdAsync('284:5601');return {group:{x:g.x,y:g.y,abs:g.absoluteRenderBounds},frame:{x:r.x,y:r.y,abs:r.absoluteRenderBounds}};
